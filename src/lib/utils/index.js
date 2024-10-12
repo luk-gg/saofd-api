@@ -1,9 +1,4 @@
-// Linear Interpolation: find a value between val1 and val2. Weight is a value between 0 and 1 that indicates the interpolation factor (0 returns val1, 1 returns val2).
-// https://www.trysmudford.com/blog/linear-interpolation-functions/
-// export function lerp(val1, val2, weight) {
-//     return val1 * (1 - weight) + val2 * weight
-// }
-
+import fs from "fs"
 
 // Uses linear interpolation to incrementally add missing values to an UnrealEngine array of [{ Time, Value }] objects and return them as [{ x, y }]
 export function RCIM_Linear(arr) {
@@ -28,4 +23,20 @@ export function RCIM_Linear(arr) {
 
 export function imgPath(path) {
     return path.replace("/Game", "/Content").split(".")[0] + ".png"
+}
+
+// Shrinks each entries[] object to only have the necessary keys for displaying in a list, i.e. name and icon.
+export function getBriefArr(arr) {
+    return arr
+        .map(data => {
+            const { id, name, type, elements, icon } = data || {}
+            return { id, name, type, elements, icon }
+        })
+}
+
+export function writeJson(dir, fileName, data) {
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(`${dir}/${fileName}.json`, JSON.stringify(data))
 }

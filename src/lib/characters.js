@@ -4,12 +4,13 @@ import CHARACTER_ADVANCED_SKILLS from "./characterAdvancedSkills.js"
 import CHARACTER_PASSIVE_SKILLS from "./characterPassiveSkills.js"
 import CHARACTER_RANK_REWARDS from "./characterRankRewards.js"
 import CHARACTER_AWAKENING_STATS from "./characterAwakeningStats.js"
+import { getBriefArr } from "./utils/index.js";
 
 // TODO: images
 // TODO: roles
 // TODO: weapons they can equip (EVGWeaponDivision::DualSword)
 
-const characters = await Promise.all(
+const entries = await Promise.all(
     Object.entries(DT_BattleCharacterConstStatusData[0].Rows)
         // Since the file contains enemies as well, filter down to playable characters
         .filter(([key]) => key.includes("UCR"))
@@ -35,4 +36,6 @@ const characters = await Promise.all(
         })
 )
 
-export default characters
+export const entries_brief = getBriefArr(entries)
+
+export default entries

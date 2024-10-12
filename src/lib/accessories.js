@@ -3,10 +3,10 @@
 import DT_OrnamentData from "../../game/client/Content/Product/DataTable/Inventory/DT_OrnamentData.json"
 import DT_OrnamentGenerateLotData from "../../game/client/Content/Product/DataTable/Inventory/DT_OrnamentGenerateLotData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { imgPath } from "./utils";
+import { getBriefArr, imgPath } from "./utils";
 import ACCESSORY_HEALTH from "./accessoryHealth"
 
-export default Object.entries(DT_OrnamentData[0].Rows)
+const entries = Object.entries(DT_OrnamentData[0].Rows)
     .map(([accId, accessory]) => {
         const name = en.ST_SevenUI[accessory.name]
         const icon = imgPath(accessory.icon.AssetPathName)
@@ -29,3 +29,7 @@ export default Object.entries(DT_OrnamentData[0].Rows)
             health: ACCESSORY_HEALTH[accId]
         }
     })
+
+export const entries_brief = getBriefArr(entries)
+
+export default entries
