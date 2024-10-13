@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_Quest_Mission_Data_Story_5-8",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'SGQuestMissionDataRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "大目標：レイドボスを倒せ": {
+        "id": 58999,
+        "text": {
+          "UID": "QuestObjective_1"
+        },
+        "type": "ESGMissionType::Main",
+        "group_ids": [],
+        "condition": "ESGMissionConditionType::EnemyKill",
+        "value": 1,
+        "target_ids": [
+          "RBOSS003_99"
+        ],
+        "target_location_ids": [],
+        "npc_location_ids": [],
+        "time": -1,
+        "reward_score": 20000,
+        "reward_exp": 0,
+        "is_value_hide": false,
+        "attributes": []
+      },
+      "ボスを制限時間内に倒せ": {
+        "id": 58001,
+        "text": {
+          "UID": "RaidBossObjective_8"
+        },
+        "type": "ESGMissionType::Accident",
+        "group_ids": [],
+        "condition": "ESGMissionConditionType::MissionClear",
+        "value": 0,
+        "target_ids": [],
+        "target_location_ids": [
+          58999
+        ],
+        "npc_location_ids": [],
+        "time": 1800,
+        "reward_score": 10000,
+        "reward_exp": 0,
+        "is_value_hide": true,
+        "attributes": []
+      }
+    }
+  }
+]

@@ -1,0 +1,1223 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_PlayerBattleNavigationData",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'SGPlayerBattleNavigationDataRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "登場演出時": {
+        "type": "ESGPlayerBattleVoiceType::PlayerEntry",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          0,
+          10,
+          20
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "クエストクリア時": {
+        "type": "ESGPlayerBattleVoiceType::QuestClear",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          30,
+          40,
+          50
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "MVP演出時": {
+        "type": "ESGPlayerBattleVoiceType::Mvp",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          0
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "敵を発見": {
+        "type": "ESGPlayerBattleVoiceType::BelligerentEnemy",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          100
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "強敵を発見": {
+        "type": "ESGPlayerBattleVoiceType::BelligerentNamedEnemy",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          110
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ギミックを察知": {
+        "type": "ESGPlayerBattleVoiceType::InteractRange",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          120
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ザコ敵を全滅させた": {
+        "type": "ESGPlayerBattleVoiceType::EnemyExterminated",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          200
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "強敵を含む敵の群れを全滅させた": {
+        "type": "ESGPlayerBattleVoiceType::NamedEnemyExterminated",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          210
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "蘇生する": {
+        "type": "ESGPlayerBattleVoiceType::Resurrect",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          300
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "蘇生される、体力回復をうける": {
+        "type": "ESGPlayerBattleVoiceType::Recovery",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          310
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "バフを受ける": {
+        "type": "ESGPlayerBattleVoiceType::Buff",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          320
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：スタンにした": {
+        "type": "ESGPlayerBattleVoiceType::EnemyStatusAilment",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          7000
+        ],
+        "value": 6,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：毒にした": {
+        "type": "ESGPlayerBattleVoiceType::EnemyStatusAilment",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          7001
+        ],
+        "value": 4,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：凍結にした": {
+        "type": "ESGPlayerBattleVoiceType::EnemyStatusAilment",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          7002
+        ],
+        "value": 3,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：挑発にした": {
+        "type": "ESGPlayerBattleVoiceType::EnemyStatusAilment",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          7003
+        ],
+        "value": 7,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ダウン状態": {
+        "type": "ESGPlayerBattleVoiceType::EnemyDown",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          420
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "怒り状態": {
+        "type": "ESGPlayerBattleVoiceType::EnemyAnger",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          430
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ボスフェーズチェンジ": {
+        "type": "ESGPlayerBattleVoiceType::EnemyPhaseChange",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          440,
+          450
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "最終フェーズ": {
+        "type": "ESGPlayerBattleVoiceType::EnemyLastPhaseChange",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          460,
+          470
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "自分のHPが30%以下": {
+        "type": "ESGPlayerBattleVoiceType::NearlyDie",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          400
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：毒になる": {
+        "type": "ESGPlayerBattleVoiceType::StatusAilment",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7004
+        ],
+        "value": 4,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：スタンになる": {
+        "type": "ESGPlayerBattleVoiceType::StatusAilment",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7005
+        ],
+        "value": 6,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：暗闇になる": {
+        "type": "ESGPlayerBattleVoiceType::StatusAilment",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7006
+        ],
+        "value": 1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "状態異常：拘束になる": {
+        "type": "ESGPlayerBattleVoiceType::StatusAilment",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7007
+        ],
+        "value": 9,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "リスポーン時": {
+        "type": "ESGPlayerBattleVoiceType::Respawn",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          600
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ダウン": {
+        "type": "ESGPlayerBattleVoiceType::Death",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          610
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "退場": {
+        "type": "ESGPlayerBattleVoiceType::Destroy",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          610
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "レベルアップ": {
+        "type": "ESGPlayerBattleVoiceType::Levelup",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          700
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スキルが解放できるレベルアップ時": {
+        "type": "ESGPlayerBattleVoiceType::LevelupSkillUnlock",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          710
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スキル解放": {
+        "type": "ESGPlayerBattleVoiceType::SkillUnlock",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          720
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スペシャルアーツ解放": {
+        "type": "ESGPlayerBattleVoiceType::SpecialArtsCoolTime",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          730
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "装備アイテム（コモン/アンコモン）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::ItemGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          800
+        ],
+        "value": 0,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "装備アイテム（レア/エピック）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::ItemGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          810
+        ],
+        "value": 1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "装備アイテム（レジェンダリ）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::ItemGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          820
+        ],
+        "value": 2,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "インタラクト": {
+        "type": "ESGPlayerBattleVoiceType::Interact",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          840
+        ],
+        "value": -1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "アドオン（コモン）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::AddonGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          850
+        ],
+        "value": 0,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "アドオン（レア）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::AddonGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          860
+        ],
+        "value": 1,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "アドオン（レジェンダリ）を拾う": {
+        "type": "ESGPlayerBattleVoiceType::AddonGet",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          870
+        ],
+        "value": 2,
+        "priority": 4,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（開始）汎用": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaStart",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1000
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（開始）敵全滅攻略説明": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaStart",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1000
+        ],
+        "value": 2,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（開始）中ボス攻略説明": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaStart",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1030
+        ],
+        "value": 3,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（開始）拠点攻略説明": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaStart",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1060
+        ],
+        "value": 4,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（開始）ペイロード説明": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaStart",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1090
+        ],
+        "value": 7,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（中間）汎用": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaProgress",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1010
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（中間）敵全滅開始": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaProgress",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1230
+        ],
+        "value": 2,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（中間）中ボス戦開始": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaProgress",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1040
+        ],
+        "value": 3,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（中間）拠点攻略報告": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaProgress",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1070
+        ],
+        "value": 4,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（クリア）汎用": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaEnd",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1020
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（クリア）敵全滅": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaEnd",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1020
+        ],
+        "value": 2,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（クリア）中ボス戦": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaEnd",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1050
+        ],
+        "value": 3,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（クリア）拠点攻略": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaEnd",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1080
+        ],
+        "value": 4,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "個別ルート：（クリア）ペイロード": {
+        "type": "ESGPlayerBattleVoiceType::PlatoonAreaEnd",
+        "target": "ESGBattleVoiceTargetType::PlatoonMember",
+        "ids": [
+          1110
+        ],
+        "value": 7,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "フィールドボス接敵時": {
+        "type": "ESGPlayerBattleVoiceType::FieldBossArea",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7009
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）汎用": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1200
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）討伐": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1230
+        ],
+        "value": 2,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）中ボス討伐": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          120,
+          130
+        ],
+        "value": 3,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）防衛インタラクト": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1270
+        ],
+        "value": 14,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）複数インタラクト": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1270
+        ],
+        "value": 15,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）制限時間：敵討伐": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1230
+        ],
+        "value": 17,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（開始）制限時間：ギミック討伐": {
+        "type": "ESGPlayerBattleVoiceType::BeginMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1270
+        ],
+        "value": 18,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（中間）汎用": {
+        "type": "ESGPlayerBattleVoiceType::ProgressMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1210
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）汎用": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1220
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）討伐": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1240
+        ],
+        "value": 2,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）中ボス討伐": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          230,
+          240,
+          250
+        ],
+        "value": 3,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）防衛インタラクト": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1280
+        ],
+        "value": 14,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）複数インタラクト": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1280
+        ],
+        "value": 15,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）制限時間：敵討伐": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1240
+        ],
+        "value": 17,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ミッション：（クリア）制限時間：ギミック討伐": {
+        "type": "ESGPlayerBattleVoiceType::EndMission",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1280
+        ],
+        "value": 18,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "部位破壊汎用": {
+        "type": "ESGPlayerBattleVoiceType::PartsBreakCommon",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1300,
+          1310
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "部位再生汎用": {
+        "type": "ESGPlayerBattleVoiceType::PartsRegenerationCommon",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1320,
+          1330
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "弱点露出汎用": {
+        "type": "ESGPlayerBattleVoiceType::WeakPointExposureCommon",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1340,
+          1350
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "待機中": {
+        "type": "ESGPlayerBattleVoiceType::Wait",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1430,
+          1440
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "パーティー連結": {
+        "type": "ESGPlayerBattleVoiceType::BeginPlatoonLink",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          1500,
+          1510,
+          1520
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "パーティー連結解散": {
+        "type": "ESGPlayerBattleVoiceType::EndPlatoonLink",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          1530,
+          1540,
+          1550
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "リンク・アーツ発動": {
+        "type": "ESGPlayerBattleVoiceType::BeginLinkArts",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1600
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "リンク・アーツ終了": {
+        "type": "ESGPlayerBattleVoiceType::EndLinkArts",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          1610
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携の呼びかけ": {
+        "type": "ESGPlayerBattleVoiceType::EnemyRoleLink",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6700,
+          6710
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携（突進攻撃）準備": {
+        "type": "ESGPlayerBattleVoiceType::RoleLinkAssign",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6700
+        ],
+        "value": 0,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携（防御）準備": {
+        "type": "ESGPlayerBattleVoiceType::RoleLinkAssign",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6710
+        ],
+        "value": 2,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携（射撃）準備": {
+        "type": "ESGPlayerBattleVoiceType::RoleLinkAssign",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6720
+        ],
+        "value": 1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携成功": {
+        "type": "ESGPlayerBattleVoiceType::RoleLinkSuccess",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6780,
+          6790
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "ロール連携失敗": {
+        "type": "ESGPlayerBattleVoiceType::RoleLinkFailure",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          6800,
+          6810
+        ],
+        "value": -1,
+        "priority": 3,
+        "is_voice_only": false,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチ起点": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChainOrigin",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7010
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチ繋ぎ汎用": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          6900
+        ],
+        "value": -1,
+        "priority": 1,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：キリト": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7011
+        ],
+        "value": 1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：アスナ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7012
+        ],
+        "value": 2,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：シノン": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7013
+        ],
+        "value": 3,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：リーファ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7014
+        ],
+        "value": 4,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：リズベット": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7015
+        ],
+        "value": 5,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：シリカ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7016
+        ],
+        "value": 6,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：ユウキ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7017
+        ],
+        "value": 7,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：アルゴ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7018
+        ],
+        "value": 8,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：クライン": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7019
+        ],
+        "value": 9,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：エギル": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7020
+        ],
+        "value": 10,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：レン": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7021
+        ],
+        "value": 11,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：フカ次郎": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7022
+        ],
+        "value": 12,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：アリス": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7023
+        ],
+        "value": 13,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：ユージオ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7024
+        ],
+        "value": 14,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：ヒースクリフ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7025
+        ],
+        "value": 15,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：オベイロン": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7026
+        ],
+        "value": 19,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：死銃": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7027
+        ],
+        "value": 16,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：ユナ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7028
+        ],
+        "value": 17,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：エイジ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7029
+        ],
+        "value": 18,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：アドミニストレータ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7030
+        ],
+        "value": 20,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スイッチチェイン繋ぎ：ユイ": {
+        "type": "ESGPlayerBattleVoiceType::SwitchChain",
+        "target": "ESGBattleVoiceTargetType::None",
+        "ids": [
+          7031
+        ],
+        "value": 21,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "レムナント破壊": {
+        "type": "ESGPlayerBattleVoiceType::Remnant",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          7032
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "スキンアイテム・プレイヤーカードイラスト取得": {
+        "type": "ESGPlayerBattleVoiceType::SkinAndPlayerCardIllust",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          810
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      },
+      "メモリークリスタル取得": {
+        "type": "ESGPlayerBattleVoiceType::MemoryCrystal",
+        "target": "ESGBattleVoiceTargetType::Self",
+        "ids": [
+          830
+        ],
+        "value": -1,
+        "priority": 2,
+        "is_voice_only": true,
+        "facial_expression": "ESGNavigationFacialExpression::Default"
+      }
+    }
+  }
+]

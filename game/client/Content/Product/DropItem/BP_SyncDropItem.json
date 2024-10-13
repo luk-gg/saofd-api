@@ -1,0 +1,235 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SyncDropItem_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BP_DropItemBase_C'",
+      "ObjectPath": "/Game/Product/DropItem/BP_DropItemBase.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_SyncDropItem_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_SyncDropItem_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.2"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "SignalSphere (omit)",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SphereComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SyncDropItem_C'Default__BP_SyncDropItem_C'",
+      "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BP_SyncDropItem_C",
+    "Name": "Default__BP_SyncDropItem_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/DropItem/BP_SyncDropItem.BP_SyncDropItem_C'",
+    "Template": {
+      "ObjectName": "BP_DropItemBase_C'Default__BP_DropItemBase_C'",
+      "ObjectPath": "/Game/Product/DropItem/BP_DropItemBase.1"
+    },
+    "Properties": {
+      "interact_component": {
+        "ObjectName": "SGInteractComponent'Default__BP_SyncDropItem_C:SGInteract'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.6"
+      },
+      "vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BP_SyncDropItem_C:Vfx'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.10"
+      },
+      "staticmesh_component": {
+        "ObjectName": "StaticMeshComponent'Default__BP_SyncDropItem_C:StaticMeshComponent'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.9"
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_SyncDropItem_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_SyncDropItem_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_SyncDropItem_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.3"
+      },
+      "VariableGuid": "68003731-48C43941-805E84A7-6B109E6D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SphereComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent'BP_SyncDropItem_C:SignalSphere (omit)_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.8"
+      },
+      "ParentComponentOrVariableName": "Vfx",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "F378E4AE-42A9C26C-751D14B7-5B45D127",
+      "InternalVariableName": "SignalSphere (omit)"
+    }
+  },
+  {
+    "Type": "SGInteractComponent",
+    "Name": "SGInteract",
+    "Outer": "Default__BP_SyncDropItem_C",
+    "Class": "UScriptClass'SGInteractComponent'",
+    "Template": {
+      "ObjectName": "SGInteractComponent'Default__BP_DropItemBase_C:SGInteract'",
+      "ObjectPath": "/Game/Product/DropItem/BP_DropItemBase.7"
+    },
+    "Properties": {
+      "interact_prompt_type": "ESGGameEventInteractPromptType::Check",
+      "distance": 150.0,
+      "angle_check_type": "ESGInteractAngleCheckType::None"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_SyncDropItem_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SyncDropItem_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_SyncDropItem_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_SyncDropItem_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/DropItem/BP_SyncDropItem.4"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SignalSphere (omit)_GEN_VARIABLE",
+    "Outer": "BP_SyncDropItem_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 40.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "CanCharacterStepUpOn": "ECB_No",
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 30.0
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent",
+    "Outer": "Default__BP_SyncDropItem_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Template": {
+      "ObjectName": "StaticMeshComponent'Default__BP_DropItemBase_C:StaticMeshComponent'",
+      "ObjectPath": "/Game/Product/DropItem/BP_DropItemBase.9"
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "Vfx",
+    "Outer": "Default__BP_SyncDropItem_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__BP_DropItemBase_C:Vfx'",
+      "ObjectPath": "/Game/Product/DropItem/BP_DropItemBase.10"
+    }
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PA_MIC002_000",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'PA_MIC002_000:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/Product/Weapon/Human/Common/Model/MIC/MIC002_000/Mesh/PA_MIC002_000.3"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PA_MIC002_000:SkeletalBodySetup_1'",
+          "ObjectPath": "/Game/Product/Weapon/Human/Common/Model/MIC/MIC002_000/Mesh/PA_MIC002_000.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PA_MIC002_000:SkeletalBodySetup_2'",
+          "ObjectPath": "/Game/Product/Weapon/Human/Common/Model/MIC/MIC002_000/Mesh/PA_MIC002_000.5"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PA_MIC002_000:PhysicsConstraintTemplate_0'",
+          "ObjectPath": "/Game/Product/Weapon/Human/Common/Model/MIC/MIC002_000/Mesh/PA_MIC002_000.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PA_MIC002_000:PhysicsConstraintTemplate_1'",
+          "ObjectPath": "/Game/Product/Weapon/Human/Common/Model/MIC/MIC002_000/Mesh/PA_MIC002_000.2"
+        }
+      ],
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "PA_MIC002_000",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "b_Wsim_Mic002_CLTH_S_1_1",
+        "ConstraintBone1": "b_Wsim_Mic002_CLTH_S_1_1",
+        "ConstraintBone2": "w_R_Attach",
+        "Pos2": {
+          "X": 0.0,
+          "Y": 3.6448138,
+          "Z": -6.7166214
+        },
+        "PriAxis2": {
+          "X": -2.220446E-16,
+          "Y": 1.0,
+          "Z": -0.0
+        },
+        "SecAxis2": {
+          "X": -1.0,
+          "Y": -2.220446E-16,
+          "Z": -0.0
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "PA_MIC002_000",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "b_Wsim_Mic002_CLTH_S_1_2",
+        "ConstraintBone1": "b_Wsim_Mic002_CLTH_S_1_2",
+        "ConstraintBone2": "b_Wsim_Mic002_CLTH_S_1_1",
+        "Pos2": {
+          "X": 3.3223777,
+          "Y": 0.0,
+          "Z": -3.5527137E-15
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "PA_MIC002_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.0032077206,
+              "Y": 0.60612017,
+              "Z": -2.1042283
+            },
+            "Rotation": {
+              "Pitch": -42.99837,
+              "Yaw": -90.0,
+              "Roll": 0.038568832
+            },
+            "Radius": 9.866652,
+            "Length": 5.368831,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "w_R_Attach",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "DAA4FCEC40C7F191A9FBDC97A2E310DE"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "PA_MIC002_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.1556432,
+              "Y": -0.0006131098,
+              "Z": -0.03473151
+            },
+            "Rotation": {
+              "Pitch": 6.3611094E-15,
+              "Yaw": 89.929825,
+              "Roll": -89.84663
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "b_Wsim_Mic002_CLTH_S_1_1",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "D2E2C5074D0DD8D089D981B0AD18002F"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "PA_MIC002_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 2.021869,
+              "Y": 0.0028129055,
+              "Z": -0.039382156
+            },
+            "Rotation": {
+              "Pitch": -1.5902774E-14,
+              "Yaw": -90.34831,
+              "Roll": -89.84277
+            },
+            "Radius": 0.505,
+            "Length": 0.505,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "b_Wsim_Mic002_CLTH_S_1_2",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4DDC33F94EB3DCC3F8C1D69260775A90"
+  }
+]

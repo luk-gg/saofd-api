@@ -1,0 +1,1021 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "DT_ChallengeTextData",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'SGUIChallengeTextDataRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "PlayCharacter": {
+        "Key": "play_character",
+        "TextId": {
+          "UID": "ChallengeDetail_32"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "PlayCharacter_TempText",
+          "SourceString": "<Yellow>{name}</>でマルチプレイを累計<Yellow>{count}</>回プレイする",
+          "LocalizedString": "<Yellow>{name}</>でマルチプレイを累計<Yellow>{count}</>回プレイする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": true
+          }
+        ]
+      },
+      "EnemyKill": {
+        "Key": "enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_33"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "EnemyKill_TempText",
+          "SourceString": "<Yellow>{name}</>のキャラクターで累計<Yellow>{count}</>体の敵を倒す",
+          "LocalizedString": "<Yellow>{name}</>のキャラクターで累計<Yellow>{count}</>体の敵を倒す"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::KillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "PlayRule": {
+        "Key": "play_rule",
+        "TextId": {
+          "UID": "ChallengeDetail_1"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "PlayRule_TempText",
+          "SourceString": "<Yellow>{mode}</>を累計<Yellow>{count}</>回プレイする",
+          "LocalizedString": "<Yellow>{mode}</>を累計<Yellow>{count}</>回プレイする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Combo": {
+        "Key": "combo",
+        "TextId": {
+          "UID": "ChallengeDetail_4"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Commbo_TempText",
+          "SourceString": "<Yellow>{name}</>のキャラクターで1クエスト中のコンボ<Yellow>{count}</>hit以上を達成する",
+          "LocalizedString": "<Yellow>{name}</>のキャラクターで1クエスト中のコンボ<Yellow>{count}</>hit以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestCombo",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Ultimate": {
+        "Key": "ultimate",
+        "TextId": {
+          "UID": "ChallengeDetail_5"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "3247A4524810CA11B0B926BE5914F9CC",
+          "SourceString": "<Yellow>{role}</>のキャラクターでアルティメットスキルを累計<Yellow>{count}</>回使用する",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターでアルティメットスキルを累計<Yellow>{count}</>回使用する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::UseUltimateSkill",
+            "is_write_json": true
+          }
+        ]
+      },
+      "FlyEnemyKill": {
+        "Key": "fly_enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_6"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "9B78D44F4057A138E2ED19952D80AE82",
+          "SourceString": "いずれかのキャラクターで空中、または飛行中の攻撃で敵を累計<Yellow>{count}</>体倒す",
+          "LocalizedString": "いずれかのキャラクターで空中、または飛行中の攻撃で敵を累計<Yellow>{count}</>体倒す"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::FlyKillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestTotalDamage": {
+        "Key": "quest_total_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_7"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Damege_TempText",
+          "SourceString": "いずれかのキャラクターで1クエスト中の総与ダメージ<Yellow>{count}</>以上を達成する",
+          "LocalizedString": "いずれかのキャラクターで1クエスト中の総与ダメージ<Yellow>{count}</>以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestDamage",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestTotalHeal": {
+        "Key": "quest_total_heal",
+        "TextId": {
+          "UID": "ChallengeDetail_8"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Heal_TempText",
+          "SourceString": "いずれかのキャラクターで1クエスト中の総回復量<Yellow>{count}</>以上を達成する",
+          "LocalizedString": "いずれかのキャラクターで1クエスト中の総回復量<Yellow>{count}</>以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestHeal",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestEnemyKill": {
+        "Key": "quest_enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_9"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Damege2_TempText",
+          "SourceString": "いずれかのキャラクターで1クエスト中の敵撃破数<Yellow>{count}</>体以上を達成する",
+          "LocalizedString": "いずれかのキャラクターで1クエスト中の敵撃破数<Yellow>{count}</>体以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestKillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestDown": {
+        "Key": "quest_down",
+        "TextId": {
+          "UID": "ChallengeDetail_10"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "NoDown_TempText",
+          "SourceString": "いずれかのキャラクターで1クエスト中のダウン数<Yellow>{count}</>回以下を達成する",
+          "LocalizedString": "いずれかのキャラクターで1クエスト中のダウン数<Yellow>{count}</>回以下を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestDown",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestRevival": {
+        "Key": "quest_revival",
+        "TextId": {
+          "UID": "ChallengeDetail_11"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Revival_TempText",
+          "SourceString": "いずれかのキャラクターで1クエスト中の蘇生回数<Yellow>{count}</>回以上を達成する",
+          "LocalizedString": "いずれかのキャラクターで1クエスト中の蘇生回数<Yellow>{count}</>回以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestRevival",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Taunt": {
+        "Key": "taunt",
+        "TextId": {
+          "UID": "ChallengeDetail_14"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "1BFD5210490567D3D92F7CB2C4029385",
+          "SourceString": "タンクロールのキャラクターで累計<Yellow>{count}</>回敵に挑発を付与する",
+          "LocalizedString": "タンクロールのキャラクターで累計<Yellow>{count}</>回敵に挑発を付与する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::Taunt",
+            "is_write_json": true
+          }
+        ]
+      },
+      "FighterEnemKill": {
+        "Key": "fighter_enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_15"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "3E1855D7424D648F26C2DD9093F3FAE3",
+          "SourceString": "ファイターロールのキャラクターで累計<Yellow>{count}</>体の敵を倒す",
+          "LocalizedString": "ファイターロールのキャラクターで累計<Yellow>{count}</>体の敵を倒す"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::KillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "LogueDamage": {
+        "Key": "logue_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_16"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "082586E34937A59033BEC9B9DF154CF5",
+          "SourceString": "ローグロールのキャラクターで累計<Yellow>{count}</>ダメージ与える",
+          "LocalizedString": "ローグロールのキャラクターで累計<Yellow>{count}</>ダメージ与える"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::Damage",
+            "is_write_json": true
+          }
+        ]
+      },
+      "RangerWeakDamage": {
+        "Key": "ranger_weak_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_17"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "F32BDCB645F6F8B76C637FB7665E8137",
+          "SourceString": "レンジャーロールのキャラクターで累計<Yellow>{count}</>回部位弱点を攻撃する",
+          "LocalizedString": "レンジャーロールのキャラクターで累計<Yellow>{count}</>回部位弱点を攻撃する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::HeadShot",
+            "is_write_json": true
+          }
+        ]
+      },
+      "MageDamage": {
+        "Key": "mage_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_18"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "7BAD2B5E4E1282A5457816813674AF89",
+          "SourceString": "メイジロールのキャラクターで累計<Yellow>{count}</>回敵にダメージを与える",
+          "LocalizedString": "メイジロールのキャラクターで累計<Yellow>{count}</>回敵にダメージを与える"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::DamageCount",
+            "is_write_json": true
+          }
+        ]
+      },
+      "SupportBuff": {
+        "Key": "support_buff",
+        "TextId": {
+          "UID": "ChallengeDetail_19"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "68C182464BE7C1681A50898D1BBB9DA8",
+          "SourceString": "サポートロールのキャラクターで累計<Yellow>{count}</>回バフや回復を味方に与える",
+          "LocalizedString": "サポートロールのキャラクターで累計<Yellow>{count}</>回バフや回復を味方に与える"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::SupportBuff",
+            "is_write_json": true
+          }
+        ]
+      },
+      "NoDown": {
+        "Key": "no_down",
+        "TextId": {
+          "UID": "ChallengeDetail_20"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "55A036BF4E4161EE3C5AB098D10FEF7F",
+          "SourceString": "いずれかのキャラクターで一度もダウンせずにユニオンクエストかレイドボスを<Yellow>{count}</>回クリアする",
+          "LocalizedString": "いずれかのキャラクターで一度もダウンせずにユニオンクエストかレイドボスを<Yellow>{count}</>回クリアする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestClear",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::Down",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Col": {
+        "Key": "col",
+        "TextId": {
+          "UID": "ChallengeDetail_27"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Cal_TempText",
+          "SourceString": "マルチプレイのクエストで累計<Yellow>{count}</>コル取得する",
+          "LocalizedString": "マルチプレイのクエストで累計<Yellow>{count}</>コル取得する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetCol",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Item": {
+        "Key": "item",
+        "TextId": {
+          "UID": "ChallengeDetail_28"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Item_TempText",
+          "SourceString": "マルチプレイのクエストで累計<Yellow>{count}</>個の装備アイテムを取得する",
+          "LocalizedString": "マルチプレイのクエストで累計<Yellow>{count}</>個の装備アイテムを取得する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetEquipItem",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Synchro": {
+        "Key": "synchro",
+        "TextId": {
+          "UID": "ChallengeDetail_21"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Roll_TempText",
+          "SourceString": "いずれかのキャラクターでシンクロカウンターに累計<Yellow>{count}</>回参加する",
+          "LocalizedString": "いずれかのキャラクターでシンクロカウンターに累計<Yellow>{count}</>回参加する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::RoleCombination",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuickMatch": {
+        "Key": "quick_match",
+        "TextId": {
+          "UID": "ChallengeDetail_2"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "87A801F54F3D68AE34D36085B3B38B4C",
+          "SourceString": "クイックマッチに累計<Yellow>{count}</>回参加する",
+          "LocalizedString": "クイックマッチに累計<Yellow>{count}</>回参加する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::quick_match",
+            "is_write_json": true
+          }
+        ]
+      },
+      "TreasureBox": {
+        "Key": "treasure_box",
+        "TextId": {
+          "UID": "ChallengeDetail_34"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "RaidKill_TempText",
+          "SourceString": "マルチプレイのクエストで累計<Yellow>{count}</>回宝箱を開ける",
+          "LocalizedString": "マルチプレイのクエストで累計<Yellow>{count}</>回宝箱を開ける"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::TreasureBox",
+            "is_write_json": true
+          }
+        ]
+      },
+      "FieldEnemyKill": {
+        "Key": "field_enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_22"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "RaidKill2_TempText",
+          "SourceString": "いずれかのキャラクターでユニオンクエストで1クエスト中の敵撃破数<Yellow>{count}</>体以上を達成する",
+          "LocalizedString": "いずれかのキャラクターでユニオンクエストで1クエスト中の敵撃破数<Yellow>{count}</>体以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestKillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "RaidDamage": {
+        "Key": "raid_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_23"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Critical_TempText",
+          "SourceString": "いずれかのキャラクターでレイドボスクエストで1クエスト中の総与ダメージ<Yellow>{count}</>以上を達成する",
+          "LocalizedString": "いずれかのキャラクターでレイドボスクエストで1クエスト中の総与ダメージ<Yellow>{count}</>以上を達成する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::QuestDamage",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Switch": {
+        "Key": "switch",
+        "TextId": {
+          "UID": "ChallengeDetail_12"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Switch_TempText",
+          "SourceString": "[連携参加]いずれかのキャラクターでスイッチチェインに累計<Yellow>{count}</>回参加する",
+          "LocalizedString": "[連携参加]いずれかのキャラクターでスイッチチェインに累計<Yellow>{count}</>回参加する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::SwitchChain",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestRank": {
+        "Key": "quest_rank",
+        "TextId": {
+          "UID": "ChallengeDetail_13"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Gimmick_TempText",
+          "SourceString": "いずれかのキャラクターでAランク以上の評価でマルチプレイのクエストを累計<Yellow>{count}</>回クリアする",
+          "LocalizedString": "いずれかのキャラクターでAランク以上の評価でマルチプレイのクエストを累計<Yellow>{count}</>回クリアする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetResultRank_A",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekDamage": {
+        "Key": "week_damage",
+        "TextId": {
+          "UID": "ChallengeDetail_24"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Headshot_TempText",
+          "SourceString": "<Yellow>{role}</>のキャラクターで累計<Yellow>{count}</>ダメージ与える",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターで累計<Yellow>{count}</>ダメージ与える"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::Damage",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekEnemyKill": {
+        "Key": "week_enemy_kill",
+        "TextId": {
+          "UID": "ChallengeDetail_25"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Level_TempText",
+          "SourceString": "<Yellow>{role}</>のキャラクターで累計<Yellow>{count}</>体の敵を倒す",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターで累計<Yellow>{count}</>体の敵を倒す"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::KillEnemy",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekPlayField": {
+        "Key": "week_play_field",
+        "TextId": {
+          "UID": "ChallengeDetail_26"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "PlayField_TempText",
+          "SourceString": "<Yellow>{role}</>のキャラクターでユニオンクエストを累計<Yellow>{count}</>回プレイする",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターでユニオンクエストを累計<Yellow>{count}</>回プレイする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekPlayRaid": {
+        "Key": "week_play_raid",
+        "TextId": {
+          "UID": "ChallengeDetail_35"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "PlayRaid_TempText",
+          "SourceString": "<Yellow>{role}</>のキャラクターでレイドボスクエストを累計<Yellow>{count}</>回プレイする",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターでレイドボスクエストを累計<Yellow>{count}</>回プレイする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekPlayFree": {
+        "Key": "week_play_free",
+        "TextId": {
+          "UID": "ChallengeDetail_36"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "PlayFree_TempText",
+          "SourceString": "<Yellow>{role}</>のキャラクターでフリークエストを累計<Yellow>{count}</>回プレイする",
+          "LocalizedString": "<Yellow>{role}</>のキャラクターでフリークエストを累計<Yellow>{count}</>回プレイする"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayRule",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekCol": {
+        "Key": "week_col",
+        "TextId": {
+          "UID": "ChallengeDetail_27"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Cal_TempText",
+          "SourceString": "マルチプレイのクエストで累計<Yellow>{count}</>コル取得する",
+          "LocalizedString": "マルチプレイのクエストで累計<Yellow>{count}</>コル取得する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetCol",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekItem": {
+        "Key": "week_item",
+        "TextId": {
+          "UID": "ChallengeDetail_28"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Item_TempText",
+          "SourceString": "マルチプレイのクエストで累計<Yellow>{count}</>個の装備アイテムを取得する",
+          "LocalizedString": "マルチプレイのクエストで累計<Yellow>{count}</>個の装備アイテムを取得する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetEquipItem",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Mvp": {
+        "Key": "mvp",
+        "TextId": {
+          "UID": "ChallengeDetail_29"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Mvp1_TempText",
+          "SourceString": "いずれかのキャラクターでフィールドバトルかレイドボスバトルで累計<Yellow>{count}</>回MVPになる",
+          "LocalizedString": "いずれかのキャラクターでフィールドバトルかレイドボスバトルで累計<Yellow>{count}</>回MVPになる"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetMVP",
+            "is_write_json": true
+          }
+        ]
+      },
+      "WeekSynchro": {
+        "Key": "week_synchro",
+        "TextId": {
+          "UID": "ChallengeDetail_39"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "C4C4BADB410B75DFBDE963A8AA2E2B93",
+          "SourceString": "[キャラ指定]<Yellow>{role}</>のキャラクターでシンクロカウンターに累計<Yellow>{count}</>回参加する",
+          "LocalizedString": "[キャラ指定]<Yellow>{role}</>のキャラクターでシンクロカウンターに累計<Yellow>{count}</>回参加する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::RoleCombination",
+            "is_write_json": true
+          }
+        ]
+      },
+      "QuestTopRank": {
+        "Key": "quest_top_rank",
+        "TextId": {
+          "UID": "ChallengeDetail_30"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "RareAddon_TempText",
+          "SourceString": "マルチプレイのクエストでSランク評価を累計<Yellow>{count}</>回取得する",
+          "LocalizedString": "マルチプレイのクエストでSランク評価を累計<Yellow>{count}</>回取得する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::GetResultRank_S",
+            "is_write_json": true
+          }
+        ]
+      },
+      "ExEquip": {
+        "Key": "ex_equip",
+        "TextId": {
+          "UID": "ChallengeDetail_31"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "MaxAddon_TempText",
+          "SourceString": "マルチプレイのクエストでアドオンを累計<Yellow>{count}</>回装備する",
+          "LocalizedString": "マルチプレイのクエストでアドオンを累計<Yellow>{count}</>回装備する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::EquipmentAddon",
+            "is_write_json": true
+          }
+        ]
+      },
+      "Point": {
+        "Key": "point",
+        "TextId": {
+          "UID": "ChallengeDetail_37"
+        },
+        "TempText": {
+          "Namespace": "DT_ChallengeTextData",
+          "Key": "Point_TempText",
+          "SourceString": "バトルパスポイントを<Yellow>{count}</>ポイント集める",
+          "LocalizedString": "バトルパスポイントを<Yellow>{count}</>ポイント集める"
+        },
+        "AchieveInfoArray": []
+      },
+      "free": {
+        "Key": "free",
+        "TextId": {
+          "UID": "LobbyTerop_6"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "0B91B0B848C3FC39D2C7A5BCB53451ED",
+          "SourceString": "フリークエスト",
+          "LocalizedString": "フリークエスト"
+        },
+        "AchieveInfoArray": []
+      },
+      "field": {
+        "Key": "field",
+        "TextId": {
+          "UID": "LobbyTerop_7"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "10ED28654F78DF64080246A94299A82D",
+          "SourceString": "ユニオンクエスト",
+          "LocalizedString": "ユニオンクエスト"
+        },
+        "AchieveInfoArray": []
+      },
+      "raid": {
+        "Key": "raid",
+        "TextId": {
+          "UID": "LobbyTerop_8"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "0A1BB7434937329F0C667CBFDC69AD0A",
+          "SourceString": "レイドボスクエスト",
+          "LocalizedString": "レイドボスクエスト"
+        },
+        "AchieveInfoArray": []
+      },
+      "tank": {
+        "Key": "tank",
+        "TextId": {
+          "UID": "CharaSelectTerop_1"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "67D841004E8417FDAD498A9A375E183B",
+          "SourceString": "タンク",
+          "LocalizedString": "タンク"
+        },
+        "AchieveInfoArray": []
+      },
+      "fighter": {
+        "Key": "fighter",
+        "TextId": {
+          "UID": "CharaSelectTerop_2"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "20C1FC5D425B1703E1FC9B9C6EA7D54A",
+          "SourceString": "ファイター",
+          "LocalizedString": "ファイター"
+        },
+        "AchieveInfoArray": []
+      },
+      "rogue": {
+        "Key": "rogue",
+        "TextId": {
+          "UID": "CharaSelectTerop_3"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "6F736BB74223B5227FF3B4869190DEB7",
+          "SourceString": "ローグ",
+          "LocalizedString": "ローグ"
+        },
+        "AchieveInfoArray": []
+      },
+      "ranger": {
+        "Key": "ranger",
+        "TextId": {
+          "UID": "CharaSelectTerop_4"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "415139B3404330F72806B599927EDD61",
+          "SourceString": "レンジャー",
+          "LocalizedString": "レンジャー"
+        },
+        "AchieveInfoArray": []
+      },
+      "mage": {
+        "Key": "mage",
+        "TextId": {
+          "UID": "CharaSelectTerop_5"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "6984E20E4256F6E4DBD0878BCCF506DB",
+          "SourceString": "メイジ",
+          "LocalizedString": "メイジ"
+        },
+        "AchieveInfoArray": []
+      },
+      "support": {
+        "Key": "support",
+        "TextId": {
+          "UID": "CharaSelectTerop_6"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "315144134216CD29E25BC0BB1091457F",
+          "SourceString": "サポート",
+          "LocalizedString": "サポート"
+        },
+        "AchieveInfoArray": []
+      },
+      "WeekSwitch": {
+        "Key": "week_switch",
+        "TextId": {
+          "UID": "ChallengeDetail_40"
+        },
+        "TempText": {
+          "Namespace": "",
+          "Key": "43484E94441AADDC5AC4678FBEE62B26",
+          "SourceString": "[キャラ指定]<Yellow>{role}</>のキャラクターでスイッチチェインに累計<Yellow>{count}</>回参加する",
+          "LocalizedString": "[キャラ指定]<Yellow>{role}</>のキャラクターでスイッチチェインに累計<Yellow>{count}</>回参加する"
+        },
+        "AchieveInfoArray": [
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::PlayCharacter",
+            "is_write_json": false
+          },
+          {
+            "is_achieve": false,
+            "count": 0,
+            "challenge_item": "ESGChallengeProcessType::SwitchChain",
+            "is_write_json": true
+          }
+        ]
+      }
+    }
+  }
+]
