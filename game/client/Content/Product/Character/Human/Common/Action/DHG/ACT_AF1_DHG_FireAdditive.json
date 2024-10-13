@@ -1,0 +1,106 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_DHG_FireAdditive",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FireAdditive",
+      "action_id": 301,
+      "layer_index": 2,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimSequence'AF_WG5_ATK_AIM_F_MID_ATTACK_R'",
+          "ObjectPath": "/Game/Product/AnimSequence/Human/AF/WG5/AF_WG5_ATK_AIM_F_MID_ATTACK_R.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_FireAdditive:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_FireAdditive:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_DHG_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_DHG_FireAdditive:VGActionEvent_0.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_DHG_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "射撃音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_DHG_FireAdditive:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_SA_LV1_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_SA_LV1.0"
+      },
+      "inner_radius": 1.5,
+      "outer_radius": 2.5,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20060,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  }
+]

@@ -1,0 +1,474 @@
+[
+  {
+    "Type": "SGANMassiveLinkArtsEntry",
+    "Name": "SGANMassiveLinkArtsEntry_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANMassiveLinkArtsEntry'"
+  },
+  {
+    "Type": "SGANSActionLinkHoming",
+    "Name": "SGANSActionLinkHoming_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'SGANSActionLinkHoming'",
+    "Properties": {
+      "rotate_per_sec": 50000.0
+    }
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideAll",
+        "ESGHudDisplayType::HidePrompt"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SR_MLA_Wait",
+      "action_id": 8500,
+      "states": [
+        "EVGActionState::Weapon",
+        "EVGActionState::LinkSkill"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_SR_MassiveLinkArts_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/MNT_AU_SR_MassiveLinkArts_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_78'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_53'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "失敗時遷移",
+      "start_frame": 47,
+      "num_frames": 41,
+      "start_time": 1.5666667,
+      "end_time": 2.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 88,
+      "end_time": 2.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃遷移",
+      "start_frame": 47,
+      "num_frames": 41,
+      "start_time": 1.5666667,
+      "end_time": 2.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionLinkHoming'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_16.SGANSActionLinkHoming_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 88,
+      "end_time": 2.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_17.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ハンドガン装備時専用遷移",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "HUD非表示",
+      "num_frames": 88,
+      "end_time": 2.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_5.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_53",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_53.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_78",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 88,
+      "end_time": 2.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_78.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANMassiveLinkArtsEntry'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_8.SGANMassiveLinkArtsEntry_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_AF1_WSR_MassiveLinkArts_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_MassiveLinkArts_Wait:VGActionEvent_9.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_MassiveLinkArts_Wait.22"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20080,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_53",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6930,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base",
+      "is_local_user_only": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::MassiveLinkArtsFailure",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 8501,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::MassiveLinkArtsAttackReady",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 8510,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::WeaponChangeWG2",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 99
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_HeroOrder'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_HeroOrder.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_78",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        28
+      ],
+      "ik_state": false
+    }
+  }
+]

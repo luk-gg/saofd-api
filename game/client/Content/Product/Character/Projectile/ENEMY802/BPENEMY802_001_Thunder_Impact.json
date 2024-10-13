@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__ImmovableDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'ImmovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY802_001_Thunder_Impact_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY802_001_Thunder_Impact_C'Default__BPENEMY802_001_Thunder_Impact_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__ImmovableDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY802_001_Thunder_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY802_001_Thunder_Impact_C",
+    "Name": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.BPENEMY802_001_Thunder_Impact_C'",
+    "Template": {
+      "ObjectName": "ImmovableDamageProjectileCommon_C'Default__ImmovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_GIM_Thunder_explosion'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Gimmick/efs_GIM_Thunder_explosion.0"
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY802_001_Thunder_Impact_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Sphere",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY802_001_Thunder_Impact_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY802_001_Thunder_Impact_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY802_001_Thunder_Impact_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.2"
+      },
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_life_span": 3.0,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "m_damage_attribute": "ESGDamageAttribute::Thunder",
+          "m_attribute_damage_coeff": 25.0,
+          "impact": "ESGDamageImpact::High",
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::HitPointRelativeAngle",
+            "velocity": {
+              "X": 125.0,
+              "Y": 125.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY802_001_Thunder_Impact_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY802_001_Thunder_Impact_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY802_001_Thunder_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__ImmovableDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY802_001_Thunder_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY802_001_Thunder_Impact_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.5"
+      },
+      "VariableGuid": "FB4AF69E-4B04A367-DB9BC98D-E30E8A76",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__ImmovableDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY802_001_Thunder_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__ImmovableDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY802_001_Thunder_Impact_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__ImmovableDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.10"
+    },
+    "Properties": {
+      "SphereRadius": 250.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY802_001_Thunder_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY802/BPENEMY802_001_Thunder_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY802_001_Thunder_Impact_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__ImmovableDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.11"
+    }
+  }
+]

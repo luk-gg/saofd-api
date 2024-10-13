@@ -1,0 +1,490 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'ImmovableMultiHitInhaleProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPUCR004_2_ULT_TyrantHurricane_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.11"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPUCR004_2_ULT_TyrantHurricane_C'Default__BPUCR004_2_ULT_TyrantHurricane_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 600.0,
+        "Y": 600.0,
+        "Z": 1000.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      }
+    }
+  },
+  {
+    "Type": "BPUCR004_2_ULT_TyrantHurricane_C",
+    "Name": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.BPUCR004_2_ULT_TyrantHurricane_C'",
+    "Template": {
+      "ObjectName": "ImmovableMultiHitInhaleProjectileCommon_C'Default__ImmovableMultiHitInhaleProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.4"
+    },
+    "Properties": {
+      "m_inhale_range": 1500.0,
+      "m_inhale_rate": 800.0,
+      "m_max_hit_count": -1,
+      "m_next_hit_span": 0.5,
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.9"
+      },
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.8"
+      },
+      "m_can_not_chara_move": true,
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_SKL_LBLULT_Magic_Tyrant_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_LBLULT_Magic_Tyrant_lo.0"
+        }
+      ],
+      "m_hit_effects_wind": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Wind_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Wind_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10152,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Wind_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Wind_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10152,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Wind_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Wind_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10152,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 70,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 73,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 72,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.10"
+      },
+      "m_shape_type": "EHitBoxShapeType::Cylinder",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.12"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.2"
+      },
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20486,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_life_span": 3.75,
+      "m_is_destroy_spawn_effects_same_time_collion": true,
+      "m_is_destroy_spawn_se_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 1.97,
+          "m_damage_attribute": "ESGDamageAttribute::Wind",
+          "attr": [
+            "EVGDamageAttr::Range",
+            "EVGDamageAttr::Skill",
+            "EVGDamageAttr::SpecialArtsDamage",
+            "EVGDamageAttr::Penetrate",
+            "EVGDamageAttr::ForceReaction",
+            "EVGDamageAttr::ArmorBreakable"
+          ],
+          "impact": "ESGDamageImpact::High",
+          "guard_impact": "ESGGuardDamageImpact::Break",
+          "burst_damage": 2.0,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection"
+          },
+          "reaction_value": 800.0
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.13"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.3"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 1000.0,
+      "CapsuleRadius": 500.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPUCR004_2_ULT_TyrantHurricane_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.5"
+      },
+      "VariableGuid": "278627AE-40E84005-5F3B53AD-72DE69A1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'",
+    "Template": {
+      "ObjectName": "SGProjectileMultiHitComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:ProjectileMultiHitComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'",
+    "Template": {
+      "ObjectName": "SGSpawnProjectileComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:SpawnProjectileComponet'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.9"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.10"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPUCR004_2_ULT_TyrantHurricane_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.12"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR004_2_ULT_TyrantHurricane_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR004_2_ULT/BPUCR004_2_ULT_TyrantHurricane.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPUCR004_2_ULT_TyrantHurricane_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.13"
+    }
+  }
+]

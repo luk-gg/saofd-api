@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_EMO_0006_A_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "EMO_0006_A_Start_Loop",
+      "action_id": 30120,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_EMO_0006_A_s_l'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AM/MNT_AM_EMO_0006_A_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_EMO_0006_A_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AM/ACT_AM_EMO_0006_A_Start_Loop.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AM_EMO_0006_A_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器非表示",
+      "num_frames": 152,
+      "end_time": 5.066667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_EMO_0006_A_Start_Loop:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AM/ACT_AM_EMO_0006_A_Start_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

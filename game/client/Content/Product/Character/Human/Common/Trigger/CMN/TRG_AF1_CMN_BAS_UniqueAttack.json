@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_AF1_CMN_BAS_UniqueAttack",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Rage",
+      "m_action_id": 1550,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_L1_Press'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_L1_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::IsStrengthenedMode",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::IsCanUseUniqueAbilitySkill",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,475 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__ImmovableDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'ImmovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPUCR005_2_SKL002_ThunderPile_9040105_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPUCR005_2_SKL002_ThunderPile_9040105_C'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__ImmovableDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 200.0,
+        "Y": 200.0,
+        "Z": 280.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.0"
+      }
+    }
+  },
+  {
+    "Type": "BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Name": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.BPUCR005_2_SKL002_ThunderPile_9040105_C'",
+    "Template": {
+      "ObjectName": "ImmovableDamageProjectileCommon_C'Default__ImmovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Dark_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Dark_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 70,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Dark_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Dark_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 73,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Dark_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Dark_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 72,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10155,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10155,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10155,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Capsule",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.2"
+      },
+      "m_spawn_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_SKL_MCE_ThunderPile_PU'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_MCE_ThunderPile_PU.0"
+        }
+      ],
+      "m_life_span": 1.0,
+      "m_wait_death_time": 0.1,
+      "m_is_destroy_spawn_effects_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 2.75,
+          "m_damage_attribute": "ESGDamageAttribute::Dark",
+          "attr": [
+            "EVGDamageAttr::Range",
+            "EVGDamageAttr::Skill",
+            "EVGDamageAttr::ForceReaction",
+            "EVGDamageAttr::ArmorBreakable"
+          ],
+          "m_status_ailment_request_info": {
+            "m_request_status_ailment_id": 3,
+            "m_status_ailment_probability": 30.0
+          },
+          "impact": "ESGDamageImpact::Blow",
+          "burst_damage": 3.0,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::FrontFace",
+            "velocity": {
+              "X": 1500.0,
+              "Y": 0.0,
+              "Z": 200.0
+            }
+          },
+          "damage_hate": 400.0,
+          "hit_hate": -40.0,
+          "reaction_value": 3.0
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__ImmovableDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 750.0,
+      "CapsuleRadius": 60.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.0"
+      },
+      "RelativeLocation": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPUCR005_2_SKL002_ThunderPile_9040105_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.5"
+      },
+      "VariableGuid": "E2DAB096-4794E9E9-4892BE99-2B2DD3E5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__ImmovableDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__ImmovableDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPUCR005_2_SKL002_ThunderPile_9040105_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__ImmovableDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.10"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR005_2_SKL002_ThunderPile_9040105_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR005/UCR005_2/SKL002/BPUCR005_2_SKL002_ThunderPile_9040105.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPUCR005_2_SKL002_ThunderPile_9040105_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__ImmovableDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableDamageProjectileCommon.11"
+    }
+  }
+]

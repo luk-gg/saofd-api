@@ -1,0 +1,63 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WSM_WG1_Fire_Skill",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FireSkill_to_BA",
+      "action_id": 304,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Fire"
+      ],
+      "layer_index": 2,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimSequence'AF_WG1_ATK_AIM_F_MID_ATTACK_S_WAS_SKILLFIRE'",
+          "ObjectPath": "/Game/Product/AnimSequence/Human/AF/WG1/AF_WG1_ATK_AIM_F_MID_ATTACK_S_WAS_SKILLFIRE.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSM_WG1_Fire_Skill:VGActionEvent_67'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSM/ACT_AF1_WSM_WG1_Fire_Skill.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_67",
+    "Outer": "ACT_AF1_WSM_WG1_Fire_Skill",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_WSM_WG1_Fire_Skill:VGActionEvent_67.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSM/ACT_AF1_WSM_WG1_Fire_Skill.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_67",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_SA_LV3_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_SA_LV3.0"
+      },
+      "inner_radius": 1.658381,
+      "outer_radius": 2.804712,
+      "is_local_user": true
+    }
+  }
+]

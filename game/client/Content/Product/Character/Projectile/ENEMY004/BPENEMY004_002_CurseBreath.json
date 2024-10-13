@@ -1,0 +1,283 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__MovableDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY004_002_CurseBreath_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY004_002_CurseBreath_C'Default__BPENEMY004_002_CurseBreath_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__MovableDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY004_002_CurseBreath_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY004_002_CurseBreath_C",
+    "Name": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.BPENEMY004_002_CurseBreath_C'",
+    "Template": {
+      "ObjectName": "MovableDamageProjectileCommon_C'Default__MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_speed": 0.0,
+      "m_acceleration": 300.0,
+      "m_limit_distance": 8000.0,
+      "m_refill_server_spawn_time": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY004_002_CurseBullet_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY004/efs_ENEMY004_002_CurseBullet_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY004_002_CurseBullet_Impact'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY004/efs_ENEMY004_002_CurseBullet_Impact.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 210,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY004_002_CurseBreath_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Sphere",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY004_002_CurseBreath_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY004_002_CurseBreath_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY004_002_CurseBreath_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.2"
+      },
+      "m_life_span": 5.0,
+      "m_wait_death_time": 0.2,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 0.8,
+          "m_damage_attribute": "ESGDamageAttribute::Dark",
+          "attr": [
+            "EVGDamageAttr::Range"
+          ],
+          "m_status_ailment_request_info": {
+            "m_request_status_ailment_id": 1
+          },
+          "impact": "ESGDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 800.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY004_002_CurseBreath_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY004_002_CurseBreath_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY004_002_CurseBreath_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__MovableDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY004_002_CurseBreath_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY004_002_CurseBreath_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.5"
+      },
+      "VariableGuid": "BEAB8A23-4A017612-043FA68C-BCC3286B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__MovableDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY004_002_CurseBreath_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__MovableDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY004_002_CurseBreath_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__MovableDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.10"
+    },
+    "Properties": {
+      "SphereRadius": 50.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY004_002_CurseBreath_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY004/BPENEMY004_002_CurseBreath.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY004_002_CurseBreath_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__MovableDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.11"
+    }
+  }
+]

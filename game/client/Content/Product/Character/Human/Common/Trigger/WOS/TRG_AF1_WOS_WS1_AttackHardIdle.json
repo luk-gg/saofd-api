@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_AF1_WOS_WS1_AttackHardIdle",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "AttackHardIdle",
+      "m_action_id": 550,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackY'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackY.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

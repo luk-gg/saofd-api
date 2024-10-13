@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_AF1_WSR_WG1_AimWalkBack",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "AimWalkBack_WG1",
+      "m_action_id": 21,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkBack'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkBack.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Aiming",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::CanAim",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

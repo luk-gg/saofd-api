@@ -1,0 +1,522 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__DisChargeProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'DisChargeProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__DisChargeProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 40.0,
+        "Y": 40.0,
+        "Z": 10.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      }
+    }
+  },
+  {
+    "Type": "BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Name": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C'",
+    "Template": {
+      "ObjectName": "DisChargeProjectileCommon_C'Default__DisChargeProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.4"
+    },
+    "Properties": {
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.8"
+      },
+      "m_speed": 15000.0,
+      "m_max_speed": 20000.0,
+      "m_limit_distance": 2500.0,
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Ice_s'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Ice_s.0"
+        }
+      ],
+      "m_hit_effects_water": [
+        {
+          "type": "EVGHitType::Block",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Ice_s'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Ice_s.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::COMPONENT_SE",
+            "CueId": 21463,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Ice_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Ice_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Ice_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Ice_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 53,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Ice_l'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Ice_l.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 52,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": [
+            {
+              "type": "EVGAINoiseType::Hearing",
+              "loudness": 4.0,
+              "radius": 550.0,
+              "tag": "None"
+            }
+          ]
+        },
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10150,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::Critical",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10150,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        },
+        {
+          "type": "EVGHitType::WeakPoint",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 10150,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.9"
+      },
+      "m_shape_type": "EHitBoxShapeType::Box",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.2"
+      },
+      "m_spawn_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_CMN_HolyMagic_Ice_Bullet_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_HolyMagic_Ice_Bullet_lo.0"
+        }
+      ],
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "m_damage_attribute": "ESGDamageAttribute::Water",
+          "attr": [
+            "EVGDamageAttr::Range"
+          ],
+          "m_status_ailment_request_info": {
+            "m_status_ailment_probability": 0.0
+          },
+          "impact": "ESGDamageImpact::Low",
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "velocity": {
+              "X": 500.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          },
+          "damage_hate": 300.0,
+          "hit_hate": -30.0,
+          "reaction_value": 3.0
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__DisChargeProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.3"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 55.0,
+      "CapsuleRadius": 30.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 90.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.5"
+      },
+      "VariableGuid": "488D80ED-4DB504F7-9ECA27B6-74E4B166",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__DisChargeProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.0"
+      }
+    }
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'",
+    "Template": {
+      "ObjectName": "SGSpawnProjectileComponent'Default__DisChargeProjectileCommon_C:SpawnProjectileComponet'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__DisChargeProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.9"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__DisChargeProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.11"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR014_4_ACT002/BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPUCR014_4_ACT002_HolyMagic_IceBullet_DisCharge_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__DisChargeProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/DisChargeProjectileCommon.12"
+    }
+  }
+]

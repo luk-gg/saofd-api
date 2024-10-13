@@ -1,0 +1,1569 @@
+[
+  {
+    "Type": "SGANJustActionReceptionStart",
+    "Name": "SGANJustActionReceptionStart_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANJustActionReceptionStart'",
+    "Properties": {
+      "m_notify_type": "ESGNotifyJustActionType::JustDodge",
+      "m_dodge_invisible_time": 0.35
+    }
+  },
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_23",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_CMN_Dodge_BLROnly'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/BranchSet/ABS_CMN_Dodge_BLROnly.0"
+      },
+      "early_frame": 5,
+      "early_time": 0.16666667
+    }
+  },
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_44",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_CMN_Dodge'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/BranchSet/ABS_CMN_Dodge.0"
+      },
+      "early_frame": 10,
+      "early_time": 0.33333334
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_20",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 4500.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 300.0,
+      "is_only_reach_cancel": true,
+      "is_camlock_only_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_47",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 1800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 150.0,
+      "is_only_reach_cancel": true,
+      "is_camlock_only_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 250.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 150.0,
+      "is_only_reach_cancel": true,
+      "is_camlock_only_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "position": {
+        "X": 0.0,
+        "Y": 30.0,
+        "Z": 100.0
+      },
+      "desc": {
+        "damage": 0.1,
+        "attr": [
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::EVGDamageAttr_MAX"
+        ],
+        "impact": "ESGDamageImpact::Low",
+        "burst_damage": 0.0,
+        "hit_stop": 0.03,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection"
+        },
+        "reaction_value": 3.0
+      },
+      "hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Blow_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Blow_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 3730,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "check_equip_special_effect_id": {
+        "row_name": "4060100"
+      },
+      "box_half_extent_x": 100.0,
+      "box_half_extent_y": 110.0,
+      "box_half_extent_z": 90.0
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "branch_priority": 110,
+      "early_frame": 13,
+      "early_time": 0.43333337
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DashStep_F_NC",
+      "action_id": 110,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_Step_F_Lleg'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/CMN/MNT_AU_Step_F_Lleg.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.42"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.30"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_37'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.31"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_20'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_47'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.37"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_38'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.32"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.40"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.33"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_27'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.26"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_30'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.29"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.24"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_23'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.22"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_44'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.34"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_21'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_45'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.35"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.44"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_46'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.36"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_48'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.38"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_49'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.39"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.11"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.45"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_29'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.27"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_24'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.25"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.43"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_50'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.41"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_DashStep_F:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.28"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DGR_DashStep_F:VGActionEvent_1.VGANSignalVfx_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.70"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANForceFeedback'ACT_DGR_DashStep_F:VGActionEvent_10.VGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.49"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DGR_DashStep_F:VGActionEvent_11.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.46"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "キャンセルダッシュジャンプ",
+      "start_frame": 7,
+      "num_frames": 18,
+      "start_time": 0.23333335,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_12.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.55"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャスト回避",
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "notify": {
+        "ObjectName": "SGANJustActionReceptionStart'ACT_DGR_DashStep_F:VGActionEvent_13.SGANJustActionReceptionStart_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_DashStep_F:VGActionEvent_14.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.50"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ長押しでピナチャージへ",
+      "num_frames": 16,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_15.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.56"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "特殊効果用攻撃キー",
+      "start_frame": 4,
+      "num_frames": 8,
+      "start_time": 0.13333334,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_DGR_DashStep_F:VGActionEvent_16.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 21,
+      "num_frames": 4,
+      "start_time": 0.70000005,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_17.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.57"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_DGR_DashStep_F:VGActionEvent_18.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Attack(X/Y)",
+      "start_frame": 5,
+      "num_frames": 13,
+      "start_time": 0.16666667,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_19.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.58"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_20",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 3,
+      "start_time": 0.033333335,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_DashStep_F:VGActionEvent_20.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_21",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Fall",
+      "start_frame": 9,
+      "num_frames": 16,
+      "start_time": 0.3,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_21.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.59"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_23",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回避セット（BLRのみ）",
+      "start_frame": 9,
+      "num_frames": 16,
+      "start_time": 0.3,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_DGR_DashStep_F:VGActionEvent_23.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_24",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地足音",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_DashStep_F:VGActionEvent_24.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.51"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "前ステ",
+      "start_frame": 9,
+      "num_frames": 16,
+      "start_time": 0.3,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_25.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.60"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 17,
+      "start_time": 0.5666667,
+      "end_time": 0.6000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_DashStep_F:VGActionEvent_26.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.52"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_27",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ短押しでピナチャージへ",
+      "start_frame": 16,
+      "num_frames": 9,
+      "start_time": 0.53333336,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_27.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.61"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_29",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地音",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_DashStep_F:VGActionEvent_29.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.53"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ煙",
+      "start_frame": 13,
+      "num_frames": 4,
+      "start_time": 0.43333337,
+      "end_time": 0.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_DGR_DashStep_F:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.73"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_30",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "interruptible",
+      "start_frame": 18,
+      "num_frames": 7,
+      "start_time": 0.6,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_DashStep_F:VGActionEvent_30.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.67"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "start_frame": 3,
+      "num_frames": 7,
+      "start_time": 0.10000001,
+      "end_time": 0.33333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_DashStep_F:VGActionEvent_36.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.68"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_37",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "num_frames": 9,
+      "start_time": 0.10000001,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_DGR_DashStep_F:VGActionEvent_37.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.65"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_38",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Acceleration_Set",
+      "start_frame": 2,
+      "num_frames": 11,
+      "start_time": 0.06666667,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_DGR_DashStep_F:VGActionEvent_38.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.66"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "硬直キャンセルDash",
+      "start_frame": 7,
+      "num_frames": 18,
+      "start_time": 0.23333335,
+      "end_time": 0.8333334,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.62"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_44",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "回避セット",
+      "start_frame": 7,
+      "num_frames": 18,
+      "start_time": 0.23333335,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_DGR_DashStep_F:VGActionEvent_44.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_45",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード",
+      "start_frame": 16,
+      "num_frames": 9,
+      "start_time": 0.53333336,
+      "end_time": 0.8333334,
+      "priority": 50,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_45.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.63"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_46",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DGR_DashStep_F:VGActionEvent_46.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.47"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_47",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 4,
+      "num_frames": 8,
+      "start_time": 0.13333334,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_DashStep_F:VGActionEvent_47.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_48",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DGR_DashStep_F:VGActionEvent_48.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.48"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_49",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "notify_state": {
+        "ObjectName": "VGANSRadialBlur'ACT_DGR_DashStep_F:VGActionEvent_49.VGANSRadialBlur_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.72"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 3,
+      "start_time": 0.43333337,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_DashStep_F:VGActionEvent_5.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_50",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ煙",
+      "start_frame": 3,
+      "num_frames": 2,
+      "start_time": 0.10000001,
+      "end_time": 0.16666669,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_DGR_DashStep_F:VGActionEvent_50.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.74"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_DashStep_F:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.69"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DGR_DashStep_F:VGActionEvent_7.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.71"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "キャンセルDash",
+      "start_frame": 15,
+      "num_frames": 10,
+      "start_time": 0.5,
+      "end_time": 0.8333334,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_DashStep_F:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.64"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_DGR_DashStep_F",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_DashStep_F:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_DGR_DashStep_F.54"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Light_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Light.0"
+      },
+      "outer_radius": 3.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_46",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Zoom_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Zoom.0"
+      },
+      "inner_radius": 0.1,
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_48",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Run_end_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Run_end.0"
+      },
+      "inner_radius": 0.1,
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANForceFeedback",
+    "Name": "VGANForceFeedback_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 0.75,
+      "duration": 0.2,
+      "affects_left_small": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10430,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_24",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10432,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_29",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10431,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 5700,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 107,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Jump'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Jump.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 7,
+      "early_time": 0.23333335
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 115,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_B_KeepDown'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_B_KeepDown.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": []
+        }
+      ],
+      "early_frame": 13,
+      "early_time": 0.43333337
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 440,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackX'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackX.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackY'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackY.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 5,
+      "early_time": 0.16666667
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_21",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 51,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Step'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Step.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkBack_Chr'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkBack_Chr.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkLeft_Chr'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkLeft_Chr.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkRight_Chr'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkRight_Chr.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_B_KeepDown'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_B_KeepDown.0"
+            }
+          ],
+          "states": []
+        }
+      ],
+      "early_frame": 5,
+      "early_time": 0.16666667
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_27",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "branch_priority": 110,
+      "action_id": 115,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Step_F'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Step_F.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 106,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_LS_Press'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_LS_Press.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 9,
+      "early_time": 0.3
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_45",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2500,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Guard'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Guard.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 106,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_37",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 150.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_38",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Attenuation",
+      "move_value": {
+        "X": 1.5,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_30",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        48
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        47
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        49
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_1",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "VFX_b_C_Base",
+      "location_offset": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Step_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Step_s.0"
+      },
+      "emit_node_name": "VFX_b_C_Base",
+      "location_offset": {
+        "X": 10.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSRadialBlur",
+    "Name": "VGANSRadialBlur_0",
+    "Outer": "VGActionEvent_49",
+    "Class": "UScriptClass'VGANSRadialBlur'",
+    "Properties": {
+      "is_local_user_only": true
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Dash_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Dash_s_lo.0"
+      },
+      "scale_offset": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_50",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Dash_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Dash_s_lo.0"
+      },
+      "scale_offset": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      }
+    }
+  }
+]

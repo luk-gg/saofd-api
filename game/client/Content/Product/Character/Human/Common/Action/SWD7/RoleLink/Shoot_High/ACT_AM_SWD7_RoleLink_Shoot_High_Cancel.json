@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_SWD7_RoleLink_Shoot_High_Cancel",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD7_RoleLink_Shoot_High_Cancel",
+      "action_id": 6302,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_SWD7_RoleLink_Shoot_Low_Cancel'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD7/MNT_AM_SWD7_RoleLink_Shoot_Low_Cancel.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD7_RoleLink_Shoot_High_Cancel:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_High/ACT_AM_SWD7_RoleLink_Shoot_High_Cancel.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AM_SWD7_RoleLink_Shoot_High_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 9,
+      "num_frames": 5,
+      "start_time": 0.3,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_SWD7_RoleLink_Shoot_High_Cancel:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_High/ACT_AM_SWD7_RoleLink_Shoot_High_Cancel.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

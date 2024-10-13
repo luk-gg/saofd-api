@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 0.4,
+      "duration": 0.12,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "desc": {
+        "damage": 0.0,
+        "m_use_damage_scale": false,
+        "attr": [
+          "EVGDamageAttr::ForceReaction",
+          "EVGDamageAttr::HideDamageValue",
+          "EVGDamageAttr::HideHitEffect",
+          "EVGDamageAttr::NoHitThroughWall"
+        ],
+        "m_status_ailment_request_info": {
+          "m_status_ailment_probability": 0.0
+        },
+        "damage_hate": 17.5,
+        "hit_hate": -1.75,
+        "reaction_value": 0.0
+      },
+      "shape_type": "ESGActionAttackShape::Sphere",
+      "sphere_radius": 500.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_DHG_FireAdditive_R",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FireAdditive_R",
+      "action_id": 302,
+      "layer_index": 2,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimSequence'AF_WG5_ATK_AIM_F_MID_ATTACK_S_R'",
+          "ObjectPath": "/Game/Product/AnimSequence/Human/AF/WG5/AF_WG5_ATK_AIM_F_MID_ATTACK_S_R.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_DHG_FireAdditive_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_0.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_DHG_FireAdditive_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_1.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF1_DHG_FireAdditive_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "銃声ヘイト判定",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_AF1_DHG_FireAdditive_R:VGActionEvent_3.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_FireAdditive_R.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_HG_Single_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_HG_Single.0"
+      },
+      "inner_radius": 1.5,
+      "outer_radius": 2.5,
+      "is_local_user": true
+    }
+  }
+]

@@ -1,0 +1,553 @@
+[
+  {
+    "Type": "SGANSActionCameraSetting",
+    "Name": "SGANSActionCameraSetting_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSActionCameraSetting'",
+    "Properties": {
+      "m_camera_fov_y": 40.0,
+      "m_camera_fov_y_lerp": 0.1
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_rotation_type": "ERotationType::Pitch",
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_target_rotate_pitch": 70.0,
+      "m_rotate_degree_second": 30.0
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_41",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 5.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_43",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 400.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "is_attack_hit_cancel": true,
+      "is_only_reach_cancel": true,
+      "is_distance_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSActionRotationHold",
+    "Name": "SGANSActionRotationHold_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSActionRotationHold'"
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideReticle"
+      ]
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 8,
+      "early_time": 0.26666668
+    }
+  },
+  {
+    "Type": "SGANSWeaponSkillEmissive",
+    "Name": "SGANSWeaponSkillEmissive_0",
+    "Outer": "VGActionEvent_46",
+    "Class": "UScriptClass'SGANSWeaponSkillEmissive'",
+    "Properties": {
+      "fade_time": 0.5
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_DGR_002_Air_Hit",
+      "action_id": 29213,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Skill",
+        "EVGActionState::Air"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_DGR_SKL_002_Air_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SKL/MNT_DGR_SKL_002_Air_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.22"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.24"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_43'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_41'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.21"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_46'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "突き攻撃",
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_0.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.32"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.29"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 10,
+      "start_time": 0.033333335,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionRotationHold'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_10.SGANSActionRotationHold_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_13.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 15,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_2.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 11,
+      "num_frames": 4,
+      "start_time": 0.36666667,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_25.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "姿勢制御用",
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_3.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_36.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.30"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 15,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.31"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_41",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "減衰",
+      "start_frame": 2,
+      "num_frames": 9,
+      "start_time": 0.06666667,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_41.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_43",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "前進",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_43.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_46",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponSkillEmissive'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_46.SGANSWeaponSkillEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラズーム40",
+      "num_frames": 15,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "SGANSActionCameraSetting'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_5.SGANSActionCameraSetting_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "レティクルを消す",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_6.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_7.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_DGR_SKL_002_Air_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移NC",
+      "start_frame": 13,
+      "num_frames": 2,
+      "start_time": 0.43333337,
+      "end_time": 0.50000006,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_002_Air_Hit:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_002_Air_Hit.28"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Middle.0"
+      },
+      "inner_radius": 1.0,
+      "outer_radius": 2.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Zoom_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Zoom.0"
+      },
+      "outer_radius": 2.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        33
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        32
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        34,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -65.0,
+        "Z": 100.0
+      },
+      "desc": {
+        "damage": 2.5,
+        "attr": [
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::ArmorBreakable",
+          "EVGDamageAttr::Penetrate"
+        ],
+        "impact": "ESGDamageImpact::Blow",
+        "burst_damage": 2.5,
+        "owner_hit_stop": 0.06,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 2000.0,
+            "Y": 0.0,
+            "Z": 200.0
+          }
+        },
+        "damage_hate": 150.0,
+        "hit_hate": -15.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 2,
+        "hit_force_feedback": 1
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Thrust_L",
+      "character_hit_decal": -1,
+      "slash_direction": 80.0,
+      "box_half_extent_x": 130.0,
+      "box_half_extent_y": 60.0,
+      "box_half_extent_z": 130.0
+    }
+  }
+]

@@ -1,0 +1,229 @@
+[
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_CMN_Dodge_AttackCancel'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/BranchSet/ABS_CMN_Dodge_AttackCancel.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DGR2_PIX_Move_Start",
+      "action_id": 400,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_DGR2_PIX_ATK_Weak01_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DGR2/MNT_AF_DGR2_PIX_ATK_Weak01_Start.0"
+        }
+      },
+      "is_ignore_change_action_reset": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_89'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃キャンセルセット",
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_1.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 46,
+      "end_time": 1.5333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_10.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "発動時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_17.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_89",
+    "Outer": "ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "炎の矢エフェクト",
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start:VGActionEvent_89.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ATK_Weak01_Move_Start.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6210,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 410
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 401
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_89",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_DGR2_Arrow_Set_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_DGR2_Arrow_Set_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 45.0,
+        "Z": 60.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

@@ -1,0 +1,293 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD5_AirCombo_Finish",
+      "action_id": 454,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Air",
+        "EVGActionState::Fall"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_SWD5_ATK_Air_WeakFinish_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD5/MNT_AM_SWD5_ATK_Air_WeakFinish_Loop.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 1,
+      "num_frames": 5,
+      "start_time": 0.033333335,
+      "end_time": 0.2,
+      "is_ignore_loop": true,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中コンボ4：フィニッシュ",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_11.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_13.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_18.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 15,
+      "end_time": 0.5,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ヒット分岐",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_ignore_loop": true,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP:VGActionEvent_7.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD5/ACT_AM_SWD5_ATK_Air_WeakFinish_LOOP.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 456
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::AttackHit",
+      "action_id": 455
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 10,
+      "activation_time": 2.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 2000.0,
+        "Y": 0.0,
+        "Z": -1500.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        32,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveLine_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveLine_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      },
+      "scale_offset": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -100.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 35.0
+      },
+      "desc": {
+        "damage": 1.13,
+        "attr": [
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::Melee"
+        ],
+        "impact": "ESGDamageImpact::Blow",
+        "burst_damage": 1.2,
+        "hit_stop": 0.06,
+        "owner_hit_stop": 0.1,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 2000.0,
+            "Y": 0.0,
+            "Z": 200.0
+          }
+        }
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Blow_S",
+      "character_hit_decal": -1,
+      "slash_direction": 180.0,
+      "shape_type": "EVGActionAttackShape::Capsule",
+      "capsule_radius": 70.0,
+      "capsule_half_height": 120.0
+    }
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Jump_Loop_WG1",
+      "action_id": 10,
+      "states": [
+        "EVGActionState::Air",
+        "EVGActionState::Fall"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_WAS_WG1_Jump_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAS/MNT_AF1_WAS_WG1_Jump_Loop.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_495'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Interruptible",
+      "num_frames": 164,
+      "end_time": 5.466667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "InputRotate",
+      "num_frames": 164,
+      "end_time": 5.466667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_1.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Landing",
+      "start_frame": 20,
+      "num_frames": 150,
+      "start_time": 0.6666667,
+      "end_time": 5.666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 105,
+      "num_frames": 60,
+      "start_time": 3.5000002,
+      "end_time": 5.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_3.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_495",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 170,
+      "end_time": 5.666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSClimbBranch'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_495.VGANSClimbBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF1_WAS_WG1_JumpLoop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Landing",
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WAS_WG1_JumpLoop:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_JumpLoop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 101
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 14,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::MovementFalling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 360.0
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 14,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  },
+  {
+    "Type": "VGANSClimbBranch",
+    "Name": "VGANSClimbBranch_0",
+    "Outer": "VGActionEvent_495",
+    "Class": "UScriptClass'VGANSClimbBranch'",
+    "Properties": {
+      "action_id": 121,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Lever8'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Lever8.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Aiming",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "wall_depth": 40.0,
+      "climb_depth": 150.0,
+      "climb_depth_height": 135.0
+    }
+  }
+]

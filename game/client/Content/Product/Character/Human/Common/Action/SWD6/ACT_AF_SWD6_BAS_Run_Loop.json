@@ -1,0 +1,245 @@
+[
+  {
+    "Type": "SGANSAutoDash",
+    "Name": "SGANSAutoDash_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSAutoDash'",
+    "Properties": {
+      "m_auto_dash_timer": 1.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Run_Loop1_SWD6",
+      "action_id": 6,
+      "states": [
+        "EVGActionState::Run"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD6_BAS_Run_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD6/MNT_AF_SWD6_BAS_Run_Loop.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スティック入れ戻しで中断されない対応（アドミニはRun_endへ）",
+      "num_frames": 102,
+      "end_time": 3.4,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "自動ダッシュ（オプション選択時のみ）",
+      "num_frames": 34,
+      "end_time": 1.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSAutoDash'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_1.SGANSAutoDash_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃分岐",
+      "num_frames": 102,
+      "end_time": 3.4,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_25.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "L3でダッシュに",
+      "num_frames": 112,
+      "end_time": 3.7333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_26.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_AF_SWD6_BAS_Run_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下",
+      "num_frames": 60,
+      "end_time": 2.0,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_BAS_Run_Loop:VGActionEvent_36.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_BAS_Run_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 8,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Neutral'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Neutral.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Running",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 400,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackX'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackX.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 106,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_L3_Press'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_L3_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

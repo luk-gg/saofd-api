@@ -1,0 +1,80 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WAS_WG1_KneelingIdle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "KneelingIdle",
+      "action_id": 23,
+      "states": [
+        "EVGActionState::Kneeling"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_WAS_WG1_KneelingIdle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAS/MNT_AF1_WAS_WG1_KneelingIdle.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_KneelingIdle:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_KneelingIdle.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WAS_WG1_KneelingIdle:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_KneelingIdle.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WAS_WG1_KneelingIdle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 66,
+      "end_time": 2.2,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WAS_WG1_KneelingIdle:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_KneelingIdle.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_AF1_WAS_WG1_KneelingIdle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 66,
+      "end_time": 2.2,
+      "is_loop_event": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 25,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Kneel'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Kneel.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD3_RoleLink_Rush_Cancel",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD3_RoleLink_Rush_Cancel",
+      "action_id": 6002,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD3_RoleLink_Rush_Cancel'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD3/MNT_AF_SWD3_RoleLink_Rush_Cancel.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_RoleLink_Rush_Cancel:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/RoleLink/Rush/ACT_AF_SWD3_RoleLink_Rush_Cancel.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_RoleLink_Rush_Cancel:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/RoleLink/Rush/ACT_AF_SWD3_RoleLink_Rush_Cancel.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD3_RoleLink_Rush_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 99,
+      "end_time": 3.3000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD3_RoleLink_Rush_Cancel:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/RoleLink/Rush/ACT_AF_SWD3_RoleLink_Rush_Cancel.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AF_SWD3_RoleLink_Rush_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 10,
+      "num_frames": 5,
+      "start_time": 0.33333334,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD3_RoleLink_Rush_Cancel:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/RoleLink/Rush/ACT_AF_SWD3_RoleLink_Rush_Cancel.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  }
+]

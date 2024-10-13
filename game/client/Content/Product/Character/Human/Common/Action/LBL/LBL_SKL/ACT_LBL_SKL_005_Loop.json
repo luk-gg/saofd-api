@@ -1,0 +1,150 @@
+[
+  {
+    "Type": "SGANSWeaponSkillEmissive",
+    "Name": "SGANSWeaponSkillEmissive_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'SGANSWeaponSkillEmissive'",
+    "Properties": {
+      "fade_time": 0.5
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_LBL_SKL_005_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_LBL_005_Loop",
+      "action_id": 10601,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::WeaponAction",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_LBL_SKL_005_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAC/MNT_LBL_SKL_005_LOOP.0"
+        },
+        "blend_time": 0.25
+      },
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_LBL_SKL_005_Loop:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_LBL_SKL_005_Loop:VGActionEvent_9970'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_LBL_SKL_005_Loop:VGActionEvent_1861'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_LBL_SKL_005_Loop:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_LBL_SKL_005_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 29,
+      "end_time": 0.9666667,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponSkillEmissive'ACT_LBL_SKL_005_Loop:VGActionEvent_12.SGANSWeaponSkillEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_LBL_SKL_005_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "interruptible",
+      "num_frames": 48,
+      "end_time": 1.6000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_LBL_SKL_005_Loop:VGActionEvent_13.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1861",
+    "Outer": "ACT_LBL_SKL_005_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 4,
+      "start_time": 0.43333337,
+      "end_time": 0.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_LBL_SKL_005_Loop:VGActionEvent_1861.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9970",
+    "Outer": "ACT_LBL_SKL_005_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_LBL_SKL_005_Loop:VGActionEvent_9970.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/LBL_SKL/ACT_LBL_SKL_005_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1861",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 10602
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_9970",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

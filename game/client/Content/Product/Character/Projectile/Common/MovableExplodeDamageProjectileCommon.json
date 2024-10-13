@@ -1,0 +1,197 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'MovableExplodeDamageProjectileCommon_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGMovableExplodeProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MovableExplodeDamageProjectileCommon_C'Default__MovableExplodeDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "MovableExplodeDamageProjectileCommon_C",
+    "Name": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.MovableExplodeDamageProjectileCommon_C'",
+    "Properties": {
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__MovableExplodeDamageProjectileCommon_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.8"
+      },
+      "m_speed": 100.0,
+      "m_max_speed": 1000.0,
+      "m_acceleration": 100.0,
+      "m_damage_enemy_flag": true,
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__MovableExplodeDamageProjectileCommon_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.9"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__MovableExplodeDamageProjectileCommon_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__MovableExplodeDamageProjectileCommon_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.3"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__MovableExplodeDamageProjectileCommon_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.2"
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__MovableExplodeDamageProjectileCommon_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__MovableExplodeDamageProjectileCommon_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'MovableExplodeDamageProjectileCommon_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.5"
+      },
+      "VariableGuid": "508DE739-4A1A2F96-BC7A619E-1859EFC2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'"
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'MovableExplodeDamageProjectileCommon_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__MovableExplodeDamageProjectileCommon_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

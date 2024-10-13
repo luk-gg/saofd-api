@@ -1,0 +1,253 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__MovableExplodeDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'MovableExplodeDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY502_000_CannonBallShot_Bullet_Near_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY502_000_CannonBallShot_Bullet_Near_C'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__MovableExplodeDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Name": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.BPENEMY502_000_CannonBallShot_Bullet_Near_C'",
+    "Template": {
+      "ObjectName": "MovableExplodeDamageProjectileCommon_C'Default__MovableExplodeDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.8"
+      },
+      "m_speed": 1000.0,
+      "m_acceleration": 1000.0,
+      "m_limit_distance": 50000.0,
+      "m_apply_gravity": true,
+      "m_gravity_scale": 36.0,
+      "m_damage_enemy_flag": false,
+      "m_hit_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY502_ExplosionBullet_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY502/efs_ENEMY502_ExplosionBullet_lo.0"
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.9"
+      },
+      "m_shape_type": "EHitBoxShapeType::Sphere",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.2"
+      },
+      "m_life_span": 5.0,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 0.0,
+          "m_use_damage_scale": false,
+          "m_damage_attribute": "ESGDamageAttribute::Fire",
+          "attr": [
+            "EVGDamageAttr::HideDamageValue",
+            "EVGDamageAttr::HideHitEffect"
+          ],
+          "impact": "ESGDamageImpact::High",
+          "guard_impact": "ESGGuardDamageImpact::High",
+          "hit_stop": 0.066,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::FrontFace",
+            "velocity": {
+              "X": 2000.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__MovableExplodeDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY502_000_CannonBallShot_Bullet_Near_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.5"
+      },
+      "VariableGuid": "A29EB29A-4CFA9DA5-8E541383-834D8AE9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__MovableExplodeDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.0"
+      }
+    }
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'",
+    "Template": {
+      "ObjectName": "SGSpawnProjectileComponent'Default__MovableExplodeDamageProjectileCommon_C:SpawnProjectileComponet'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__MovableExplodeDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.9"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY502_000_CannonBallShot_Bullet_Near_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__MovableExplodeDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.11"
+    },
+    "Properties": {
+      "SphereRadius": 40.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY502/BPENEMY502_000_CannonBallShot_Bullet_Near.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY502_000_CannonBallShot_Bullet_Near_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__MovableExplodeDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableExplodeDamageProjectileCommon.12"
+    }
+  }
+]

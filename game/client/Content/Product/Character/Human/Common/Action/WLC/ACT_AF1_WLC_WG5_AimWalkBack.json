@@ -1,0 +1,270 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AimWalkBack_WG6",
+      "action_id": 21,
+      "states": [
+        "EVGActionState::Walk",
+        "EVGActionState::Back"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace1D'BS_AF1_WAS_WG1_AimWalkBack'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAS/BS_AF1_WAS_WG1_AimWalkBack.0"
+        },
+        "is_loop": true,
+        "blend_space_param_x": "EVGBlendParam::BackToBackJog"
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_99'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_94'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 34,
+      "end_time": 1.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_94",
+    "Outer": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_94.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_99",
+    "Outer": "ACT_AF1_WLC_WG5_AimWalkBack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 12,
+      "start_time": 0.40000004,
+      "end_time": 0.43333337,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WLC_WG5_AimWalkBack:VGActionEvent_99.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_AimWalkBack.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_94",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_99",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 5,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Run'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Run.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_ADS'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_ADS.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::WireAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 22,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkBack_Jog'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkBack_Jog.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Jog'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Jog.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ADS",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  }
+]

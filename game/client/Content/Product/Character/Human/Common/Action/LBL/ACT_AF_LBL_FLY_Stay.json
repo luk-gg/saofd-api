@@ -1,0 +1,286 @@
+[
+  {
+    "Type": "SGANSActionRotationToCamera",
+    "Name": "SGANSActionRotationToCamera_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionRotationToCamera'",
+    "Properties": {
+      "m_override_rotation_yaw_degree": 1200.0,
+      "m_override_rotation_pitch_degree": 0.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Hovering_Idle",
+      "action_id": 990,
+      "states": [
+        "EVGActionState::Idle",
+        "EVGActionState::Hovering"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_LBL_FLY_Stay_UCR004'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/LBL/MNT_AF1_LBL_FLY_Stay_UCR004.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.15
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_LBL_FLY_Stay:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "飛行制限時間",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_LBL_FLY_Stay:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホバリング音",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_AF_LBL_FLY_Stay:VGActionEvent_1.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行制限時間（専用落下へ）",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_LBL_FLY_Stay:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回転(カメラ向き・速度あり)",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionRotationToCamera'ACT_AF_LBL_FLY_Stay:VGActionEvent_3.SGANSActionRotationToCamera_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "回転(カメラ向き)",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_LBL_FLY_Stay:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_LBL_FLY_Stay:VGActionEvent_7.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF_LBL_FLY_Stay",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行状態",
+      "num_frames": 100,
+      "end_time": 3.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_LBL_FLY_Stay:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/LBL/ACT_AF_LBL_FLY_Stay.13"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 12,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasStamina",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1038,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasStamina",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 11,
+      "floor_check_distance": 30.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20093,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  }
+]

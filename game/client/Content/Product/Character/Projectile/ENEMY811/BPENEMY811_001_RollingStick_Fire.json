@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__BPENEMY811_RollingStick_Base_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BPENEMY811_RollingStick_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY811_001_RollingStick_Fire_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY811_001_RollingStick_Fire_C'Default__BPENEMY811_001_RollingStick_Fire_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BPENEMY811_RollingStick_Base_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY811_001_RollingStick_Fire_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY811_001_RollingStick_Fire_C",
+    "Name": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.BPENEMY811_001_RollingStick_Fire_C'",
+    "Template": {
+      "ObjectName": "BPENEMY811_RollingStick_Base_C'Default__BPENEMY811_RollingStick_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.3"
+    },
+    "Properties": {
+      "m_half_height": 2000.0,
+      "m_next_hit_span": 1.0,
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPENEMY811_001_RollingStick_Fire_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.8"
+      },
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY811_00_CrossBeam01_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY811/efs_ENEMY811_00_CrossBeam01_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY811_00_CrossBeam01_End'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY811/efs_ENEMY811_00_CrossBeam01_End.0"
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY811_001_RollingStick_Fire_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.9"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY811_001_RollingStick_Fire_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY811_001_RollingStick_Fire_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY811_001_RollingStick_Fire_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.2"
+      },
+      "m_wait_death_time": 0.7,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 0.75,
+          "m_damage_attribute": "ESGDamageAttribute::Fire",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "rotation": "EVGKnockBackRotation::AutoFrontBack"
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY811_001_RollingStick_Fire_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY811_001_RollingStick_Fire_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY811_001_RollingStick_Fire_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BPENEMY811_RollingStick_Base_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.4"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 750.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY811_001_RollingStick_Fire_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY811_001_RollingStick_Fire_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.5"
+      },
+      "VariableGuid": "B672DE76-46D45012-4EF36DA0-AEE6DCD7",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY811_RollingStick_Base_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY811_001_RollingStick_Fire_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'",
+    "Template": {
+      "ObjectName": "SGProjectileMultiHitComponent'Default__BPENEMY811_RollingStick_Base_C:ProjectileMultiHitComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.8"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__BPENEMY811_RollingStick_Base_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.9"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY811_001_RollingStick_Fire_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BPENEMY811_RollingStick_Base_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.11"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY811_001_RollingStick_Fire_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_001_RollingStick_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY811_001_RollingStick_Fire_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__BPENEMY811_RollingStick_Base_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY811/BPENEMY811_RollingStick_Base.12"
+    }
+  }
+]

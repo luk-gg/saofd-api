@@ -1,0 +1,395 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_HG_SR_002_Air_Loop",
+      "action_id": 21361,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Attack",
+        "EVGActionState::Shift",
+        "EVGActionState::Air"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_SR_SKL_002_Air_Aim'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SKL/BS_SR_SKL_002_Air_Aim.0"
+        },
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_23'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_27'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_28'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_257'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止/空中制御不可",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_23",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エイムモード",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_23.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_257",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "ズーム音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_257.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_27",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "発射",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_27.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_28",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 48,
+      "num_frames": 2,
+      "start_time": 1.6000001,
+      "end_time": 1.6666669,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_28.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS解除",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 11,
+      "num_frames": 39,
+      "start_time": 0.36666667,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_HG_SR_SKL_002_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "微速降下",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_HG_SR_SKL_002_Air_Loop:VGActionEvent_9.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/SR_HG_SKL/ACT_HG_SR_SKL_002_Air_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_257",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21650,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_c_base",
+      "is_local_user_only": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_27",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 21362,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponFire'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponFire.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_28",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21362
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21362
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        30,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        28
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_23",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        29
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26
+      ]
+    }
+  }
+]

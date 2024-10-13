@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "VGSkillTriggerAsset",
+    "Name": "TRG_AF1_SKL_Slot3",
+    "Class": "UScriptClass'VGSkillTriggerAsset'",
+    "Properties": {
+      "m_uid": "SkillSlot3",
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_Slot3'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_Slot3.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillReadySlot3",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WireAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WeaponChanging",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_Slot3_Keyboard'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_Slot3_Keyboard.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillReadySlot3",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WireAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WeaponChanging",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

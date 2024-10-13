@@ -1,0 +1,164 @@
+[
+  {
+    "Type": "SGANCharacterUniqueAbilityActivate",
+    "Name": "SGANCharacterUniqueAbilityActivate_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANCharacterUniqueAbilityActivate'",
+    "Properties": {
+      "m_activate_unique_ability": "EUniqueAbility::TransPixie"
+    }
+  },
+  {
+    "Type": "SGANCharacterUniqueAbilityCancel",
+    "Name": "SGANCharacterUniqueAbilityCancel_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterUniqueAbilityCancel'"
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HidePrompt"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DGR2_ULT",
+      "action_id": 9005,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::StartAction"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_DGR2_PIX_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DGR2/MNT_AF_DGR2_PIX_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "SGANCharacterUniqueAbilityCancel'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_0.SGANCharacterUniqueAbilityCancel_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "インタラクト非表示",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_10.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "num_frames": 4,
+      "start_time": 0.06666667,
+      "end_time": 0.20000002,
+      "notify": {
+        "ObjectName": "SGANCharacterUniqueAbilityActivate'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_18.SGANCharacterUniqueAbilityActivate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 19,
+      "num_frames": 2,
+      "start_time": 0.6333334,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF_DGR2_PIX_ULT_SS001_Return",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 206,
+      "end_time": 6.866667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_DGR2_PIX_ULT_SS001_Return:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR2/PIX/ACT_AF_DGR2_PIX_ULT_SS001_Return.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13,
+        0
+      ]
+    }
+  }
+]

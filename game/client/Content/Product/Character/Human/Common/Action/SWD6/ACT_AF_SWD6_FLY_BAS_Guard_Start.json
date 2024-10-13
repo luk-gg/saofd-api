@@ -1,0 +1,383 @@
+[
+  {
+    "Type": "SGANJustActionReceptionStart",
+    "Name": "SGANJustActionReceptionStart_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANJustActionReceptionStart'",
+    "Properties": {
+      "m_notify_type": "ESGNotifyJustActionType::JustGuard"
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 3600.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD6_FLY_Guard_Start",
+      "action_id": 2600,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Hovering",
+        "EVGActionState::Guard"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD6_BAS_Guard_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD6/MNT_AF_SWD6_BAS_Guard_Start.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_488'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_87'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 2,
+      "num_frames": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャストガード判定",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "SGANJustActionReceptionStart'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_1.SGANJustActionReceptionStart_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード振り回し",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_2.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行状態",
+      "num_frames": 12,
+      "end_time": 0.40000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スティック向きへ",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_4.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_488",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Un Interruptible Sub",
+      "num_frames": 12,
+      "end_time": 0.40000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_488.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "ガード構え音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラロック時",
+      "num_frames": 5,
+      "end_time": 0.16666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_7.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行制限時間",
+      "num_frames": 26,
+      "end_time": 0.86666673,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_87",
+    "Outer": "ACT_AF_SWD6_FLY_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャストガード成功時遷移",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_FLY_BAS_Guard_Start:VGActionEvent_87.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/ACT_AF_SWD6_FLY_BAS_Guard_Start.16"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10490,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2601
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1038,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasStamina",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_87",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2550,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillCounterActionRequested",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 3600.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_488",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        28
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD6_RotaSword_Guard'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD6_RotaSword_Guard.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 30.0,
+        "Z": 130.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -10.0
+      },
+      "scale_offset": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  }
+]

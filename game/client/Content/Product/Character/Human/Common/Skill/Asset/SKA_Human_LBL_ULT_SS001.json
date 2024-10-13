@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "SGMagicSkillAsset",
+    "Name": "SKA_Human_LBL_ULT_SS001",
+    "Class": "UScriptClass'SGMagicSkillAsset'",
+    "Properties": {
+      "m_create_magic_projectile_id": 4290,
+      "m_guide_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_CMN_Magic_Setup_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Magic_Setup_lo.0"
+        }
+      ],
+      "m_max_range": 3000.0,
+      "m_ground_ray_length": 3000.0,
+      "header": {
+        "ObjectName": "VGSkillHeader'SKH_Human_LBL_ULT_SS001'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Skill/Header/SKH_Human_LBL_ULT_SS001.0"
+      },
+      "recast_time": 180.0,
+      "attr": [
+        16,
+        0
+      ],
+      "type": "ESGSkillType::ULT",
+      "action_id": 9000,
+      "action_offset": [
+        {
+          "state_rule": "EVGSkillOffsetState::Air",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 9050
+        },
+        {
+          "state_rule": "EVGSkillOffsetState::Fly",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 9050
+        }
+      ],
+      "add_vfx": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Heal'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Heal.0"
+      }
+    }
+  }
+]

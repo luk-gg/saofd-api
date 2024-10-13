@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "SGANSAssistActionBranch",
+    "Name": "SGANSAssistActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSAssistActionBranch'",
+    "Properties": {
+      "m_branch_priority": 200,
+      "m_action_id": 51
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_DGR_BAS_Idle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DGR_Idle",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_DGR_BAS_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DGR/MNT_AF_DGR_BAS_Wait.0"
+        },
+        "blend_time": 0.15
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR_BAS_Idle:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_AF_DGR_BAS_Idle.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGR_BAS_Idle:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_AF_DGR_BAS_Idle.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_DGR_BAS_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "アシストキャラのアクション分岐通知",
+      "start_frame": 213,
+      "num_frames": 2,
+      "start_time": 7.1000004,
+      "end_time": 7.166667,
+      "notify_state": {
+        "ObjectName": "SGANSAssistActionBranch'ACT_AF_DGR_BAS_Idle:VGActionEvent_3.SGANSAssistActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_AF_DGR_BAS_Idle.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_DGR_BAS_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 228,
+      "num_frames": 2,
+      "start_time": 7.6000004,
+      "end_time": 7.666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGR_BAS_Idle:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/ACT_AF_DGR_BAS_Idle.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1
+    }
+  }
+]

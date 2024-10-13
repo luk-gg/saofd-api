@@ -1,0 +1,267 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPRBOSS000_BigJump_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGTorusShockWaveProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPRBOSS000_BigJump_C'Default__BPRBOSS000_BigJump_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 32.0,
+        "Y": 32.0,
+        "Z": 32.0
+      },
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS000_BigJump_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.0"
+      }
+    }
+  },
+  {
+    "Type": "BPRBOSS000_BigJump_C",
+    "Name": "Default__BPRBOSS000_BigJump_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.BPRBOSS000_BigJump_C'",
+    "Properties": {
+      "m_max_radius": 2500.0,
+      "m_half_height": 50.0,
+      "m_torus_thickness": 100.0,
+      "m_torus_component": {
+        "ObjectName": "SGTorusComponent'Default__BPRBOSS000_BigJump_C:TorusComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.9"
+      },
+      "m_scale_curve": {
+        "ObjectName": "CurveFloat'Curve_BPProjectile_Scaling'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/Curve/Curve_BPProjectile_Scaling.0"
+      },
+      "m_max_scale_time": 0.8,
+      "m_need_hit_ground": true,
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_RBOSS001_00_Wave'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS001_00/efs_RBOSS001_00_Wave.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_ENE_Hit_Blow_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyHit/efs_ENE_Hit_Blow_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPRBOSS000_BigJump_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.8"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPRBOSS000_BigJump_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPRBOSS000_BigJump_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPRBOSS000_BigJump_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.2"
+      },
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 5.0,
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserToTarget",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 1000.0,
+              "Y": 0.0,
+              "Z": 200.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPRBOSS000_BigJump_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPRBOSS000_BigJump_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS000_BigJump_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS000_BigJump_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPRBOSS000_BigJump_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.5"
+      },
+      "VariableGuid": "6D566051-4E5F617E-13115A9C-512889BF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS000_BigJump_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SGTorusComponent",
+    "Name": "TorusComponet",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SGTorusComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPRBOSS000_BigJump_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS000_BigJump_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS000/RBOSS000_BigJump/BPRBOSS000_BigJump.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPRBOSS000_BigJump_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

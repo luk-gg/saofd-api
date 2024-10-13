@@ -1,0 +1,332 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPRBOSS003_RibShot_R03_Bullet_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGMissileProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPRBOSS003_RibShot_R03_Bullet_C'Default__BPRBOSS003_RibShot_R03_Bullet_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 150.0,
+        "Y": 150.0,
+        "Z": 20.0
+      },
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.0"
+      },
+      "RelativeScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "BPRBOSS003_RibShot_R03_Bullet_C",
+    "Name": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.BPRBOSS003_RibShot_R03_Bullet_C'",
+    "Properties": {
+      "m_radius_of_curvature": 300.0,
+      "m_curve_deceleration_rate": 0.2,
+      "m_projectile_homing_component": {
+        "ObjectName": "SGProjectileHomingComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:ProjectileHomingComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.8"
+      },
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.9"
+      },
+      "m_speed": 500.0,
+      "m_max_speed": 1000.0,
+      "m_acceleration": 100.0,
+      "m_is_use_range_over": false,
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS003_00_rib_R_03_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS003_00/efs_BOSS003_00_rib_R_03_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS003_00_Ribshot_explosion'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS003_00/efs_BOSS003_00_Ribshot_explosion.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Slash_Dark_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Slash_Dark_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 36,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_enable_dead_timing_sync": true,
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.10"
+      },
+      "m_shape_type": "EHitBoxShapeType::Cylinder",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.12"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.2"
+      },
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 28,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_dead_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 30,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_life_span": 15.0,
+      "m_wait_death_time": 2.0,
+      "m_is_destroy_spawn_se_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 5.0,
+          "m_damage_attribute": "ESGDamageAttribute::Light",
+          "m_attribute_damage_coeff": 25.0,
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 750.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.13"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 175.0,
+      "CapsuleRadius": 30.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPRBOSS003_RibShot_R03_Bullet_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.5"
+      },
+      "VariableGuid": "488D80ED-4DB504F7-9ECA27B6-74E4B166",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileHomingComponent",
+    "Name": "ProjectileHomingComponet",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SGProjectileHomingComponent'"
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'"
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPRBOSS003_RibShot_R03_Bullet_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 200.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS003_RibShot_R03_Bullet_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS003/RBOSS003_00_RibShot_Bullet/BPRBOSS003_RibShot_R03_Bullet.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPRBOSS003_RibShot_R03_Bullet_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

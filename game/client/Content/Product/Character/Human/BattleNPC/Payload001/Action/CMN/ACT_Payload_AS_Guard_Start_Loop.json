@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_Payload_AS_Guard_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Guard",
+      "action_id": 10,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_NPC_BAS_Stop_s_l'",
+          "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Payload001/Animation/Montage/MNT_NPC_BAS_Stop_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_Payload_AS_Guard_Start_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Payload001/Action/CMN/ACT_Payload_AS_Guard_Start_Loop.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_Payload_AS_Guard_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 41,
+      "end_time": 1.3666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_Payload_AS_Guard_Start_Loop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Payload001/Action/CMN/ACT_Payload_AS_Guard_Start_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        9
+      ]
+    }
+  }
+]

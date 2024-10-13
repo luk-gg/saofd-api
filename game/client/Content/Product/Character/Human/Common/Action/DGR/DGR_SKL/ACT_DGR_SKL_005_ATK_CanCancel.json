@@ -1,0 +1,488 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 300.0
+      }
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 5,
+      "early_time": 0.16666667
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_DGR_005_End_NoCancel",
+      "action_id": 12607,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::WeaponAction",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_DGR_SKL_005_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAC/MNT_DGR_SKL_005_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_34'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "上昇（減速あり）",
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_0.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下を速く",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_1.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回転音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "全方向減速",
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_14.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 11,
+      "num_frames": 10,
+      "start_time": 0.36666667,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中ステップ",
+      "num_frames": 8,
+      "end_time": 0.26666668,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_34",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャンプボタンでそのまま飛行状態へ",
+      "num_frames": 19,
+      "end_time": 0.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_34.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中コンボ派生",
+      "num_frames": 7,
+      "end_time": 0.23333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_36.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "重力無視（慣性殺す用）",
+      "start_frame": 6,
+      "num_frames": 2,
+      "start_time": 0.20000002,
+      "end_time": 0.26666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移（キャンセル不可）",
+      "start_frame": 19,
+      "num_frames": 2,
+      "start_time": 0.6333334,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_DGR_SKL_005_ATK_CanCancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_DGR_SKL_005_ATK_CanCancel:VGActionEvent_9.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGR/DGR_SKL/ACT_DGR_SKL_005_ATK_CanCancel.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20005,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 61,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Step'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Step.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 6,
+      "early_time": 0.20000002
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_34",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1031,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Jump_KeyDown'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Jump_KeyDown.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": []
+        }
+      ],
+      "early_frame": 10,
+      "early_time": 0.33333334
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::TriggerActionInterrupted",
+      "action_id": 450,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackX'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackX.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -500.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25
+      ]
+    }
+  }
+]

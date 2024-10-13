@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "MNT_AM_EMO_0004_B_s_l",
+    "Class": "UScriptClass'AnimMontage'",
+    "Properties": {
+      "BlendOutTriggerTime": 0.0,
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "Loop",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_AM_EMO_0004_B_s_l'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AM/MNT_AM_EMO_0004_B_s_l.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'AM_EMO_0004_B_START'",
+            "ObjectPath": "/Game/Product/AnimSequence/Human/AM/EMO/AM_EMO_0004_B_START.0"
+          }
+        },
+        {
+          "SectionName": "Loop",
+          "NextSectionName": "Loop",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_AM_EMO_0004_B_s_l'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AM/MNT_AM_EMO_0004_B_s_l.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 1.0,
+          "SegmentLength": 4.6666665,
+          "LinkValue": 1.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'AM_EMO_0004_B_LOOP'",
+            "ObjectPath": "/Game/Product/AnimSequence/Human/AM/EMO/AM_EMO_0004_B_LOOP.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'AM_EMO_0004_B_START'",
+                  "ObjectPath": "/Game/Product/AnimSequence/Human/AM/EMO/AM_EMO_0004_B_START.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.0,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'AM_EMO_0004_B_LOOP'",
+                  "ObjectPath": "/Game/Product/AnimSequence/Human/AM/EMO/AM_EMO_0004_B_LOOP.0"
+                },
+                "StartPos": 1.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 4.6666665,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "Notifies": [
+        {
+          "TriggerTimeOffset": 0.0,
+          "EndTriggerTimeOffset": 0.0,
+          "TriggerWeightThreshold": 1E-05,
+          "NotifyName": "VGANPlaySound",
+          "Notify": {
+            "ObjectName": "VGANPlaySound'MNT_AM_EMO_0004_B_s_l:VGANPlaySound_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AM/MNT_AM_EMO_0004_B_s_l.1"
+          },
+          "NotifyStateClass": null,
+          "Duration": 0.0,
+          "EndLink": {
+            "LinkedMontage": null,
+            "SlotIndex": 0,
+            "SegmentIndex": -1,
+            "LinkMethod": "EAnimLinkMethod::Absolute",
+            "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+            "SegmentBeginTime": 0.0,
+            "SegmentLength": 0.0,
+            "LinkValue": 0.0,
+            "LinkedSequence": null
+          },
+          "bConvertedFromBranchingPoint": false,
+          "MontageTickType": "EMontageNotifyTickType::Queued",
+          "NotifyTriggerChance": 1.0,
+          "NotifyFilterType": "ENotifyFilterType::NoFiltering",
+          "NotifyFilterLOD": 0,
+          "bTriggerOnDedicatedServer": true,
+          "bTriggerOnFollower": false,
+          "TrackIndex": 0,
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_AM_EMO_0004_B_s_l'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AM/MNT_AM_EMO_0004_B_s_l.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 0.68363637,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'AM_EMO_0004_B_START'",
+            "ObjectPath": "/Game/Product/AnimSequence/Human/AM/EMO/AM_EMO_0004_B_START.0"
+          }
+        }
+      ],
+      "SequenceLength": 5.6666665,
+      "Skeleton": {
+        "ObjectName": "Skeleton'SKL_Human_00'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Model/SKL_Human_00.29"
+      }
+    },
+    "SkeletonGuid": "3F755F6B-47B4D3CB-A3CFE2BE-17F1853C"
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "MNT_AM_EMO_0004_B_s_l",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 7048,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  }
+]

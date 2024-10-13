@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_EMO_0002_C",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "EMO_0002_C",
+      "action_id": 30042,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_EMO_0002_C'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AF/MNT_AF_EMO_0002_C.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_EMO_0002_C:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0002_C.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_EMO_0002_C:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0002_C.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_EMO_0002_C",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器非表示",
+      "num_frames": 64,
+      "end_time": 2.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_EMO_0002_C:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0002_C.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_EMO_0002_C",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 60,
+      "num_frames": 4,
+      "start_time": 2.0,
+      "end_time": 2.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_EMO_0002_C:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0002_C.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

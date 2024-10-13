@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WLC_WG5_Idle2",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Idle2_WG5",
+      "action_id": 100,
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_WLC_WG5_Idle2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WLC/MNT_AF1_WLC_WG5_Idle2.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.0
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WLC_WG5_Idle2:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_Idle2.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WLC_WG5_Idle2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 78,
+      "end_time": 2.6000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AF1_WLC_WG5_Idle2:VGActionEvent_0.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WLC/ACT_AF1_WLC_WG5_Idle2.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        12
+      ],
+      "ik_state": false,
+      "delayed_end": true
+    }
+  }
+]

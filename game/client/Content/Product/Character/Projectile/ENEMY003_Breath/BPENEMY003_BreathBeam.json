@@ -1,0 +1,288 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__BeamDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BeamDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY003_BreathBeam_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.10"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY003_BreathBeam_C'Default__BPENEMY003_BreathBeam_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__BeamDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY003_BreathBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY003_BreathBeam_C",
+    "Name": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.BPENEMY003_BreathBeam_C'",
+    "Template": {
+      "ObjectName": "BeamDamageProjectileCommon_C'Default__BeamDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "m_radius": 100.0,
+      "m_half_height": 700.0,
+      "m_max_hit_count": -1,
+      "m_next_hit_span": 0.5,
+      "m_is_update_transform": true,
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPENEMY003_BreathBeam_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.8"
+      },
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY003_BreathBeam'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY003/efs_ENEMY003_BreathBeam.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Blow_Dark_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Blow_Dark_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_enable_dead_timing_sync": true,
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY003_BreathBeam_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.9"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY003_BreathBeam_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY003_BreathBeam_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY003_BreathBeam_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.2"
+      },
+      "m_life_span": 3.0,
+      "m_wait_death_time": 2.0,
+      "m_is_destroy_spawn_effects_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 0.4,
+          "m_damage_attribute": "ESGDamageAttribute::Dark",
+          "attr": [
+            "EVGDamageAttr::Range",
+            "EVGDamageAttr::Skill"
+          ],
+          "impact": "ESGDamageImpact::Low",
+          "guard_impact": "ESGGuardDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "burst_damage": 0.1,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 500.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY003_BreathBeam_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY003_BreathBeam_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY003_BreathBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__BeamDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY003_BreathBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY003_BreathBeam_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.5"
+      },
+      "VariableGuid": "3A62EEC6-49D05136-C24A95BA-D1A17F90",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__BeamDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY003_BreathBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'",
+    "Template": {
+      "ObjectName": "SGProjectileMultiHitComponent'Default__BeamDamageProjectileCommon_C:ProjectileMultiHitComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__BeamDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.9"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY003_BreathBeam_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__BeamDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.11"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY003_BreathBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY003_Breath/BPENEMY003_BreathBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY003_BreathBeam_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__BeamDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BeamDamageProjectileCommon.12"
+    }
+  }
+]

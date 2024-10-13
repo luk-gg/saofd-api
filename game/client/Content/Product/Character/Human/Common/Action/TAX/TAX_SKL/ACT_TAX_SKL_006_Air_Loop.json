@@ -1,0 +1,652 @@
+[
+  {
+    "Type": "SGANSActionCameraSetting",
+    "Name": "SGANSActionCameraSetting_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSActionCameraSetting'",
+    "Properties": {
+      "m_camera_fov_y": 60.0,
+      "m_camera_fov_y_lerp": 0.15
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 800.0,
+      "m_target_rotate_yaw": 20.0,
+      "m_rotate_degree_second": 60.0
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_rotation_type": "ERotationType::YawPitch",
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_target_rotate_yaw": 60.0,
+      "m_target_rotate_pitch": 10.0,
+      "m_rotate_degree_second": 20.0
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_20",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 1500.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 100.0,
+      "is_attack_hit_cancel": true,
+      "is_distance_attenuation": true,
+      "is_check_distance_2d": true
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_34",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 1.5,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 100.0,
+      "is_only_reach_cancel": true,
+      "is_distance_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 2000.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 50.0,
+      "is_distance_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSCharaEffectRim",
+    "Name": "SGANSCharaEffectRim_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'SGANSCharaEffectRim'",
+    "Properties": {
+      "effect_rim_power": 20.0,
+      "effect_rim_color": {
+        "R": 64.0,
+        "G": 16.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "FFFF00"
+      },
+      "rim_fcurve_name": "Rim02",
+      "rim_color_fcurve_name": "Rim02",
+      "main_priority": "EVGMaterialPriority::Highest"
+    }
+  },
+  {
+    "Type": "SGANSWeaponSkillEmissive",
+    "Name": "SGANSWeaponSkillEmissive_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'SGANSWeaponSkillEmissive'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_TAX_006_Air_Loop",
+      "action_id": 11804,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::WeaponAction",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_TAX_SKL_006_Air_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAC/MNT_TAX_SKL_006_Air_LOOP.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_9970'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.25"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.22"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_20'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_34'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_27'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_24'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.24"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.28"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ヒットでフィニッシュへ（3フレディレイ）",
+      "start_frame": 8,
+      "num_frames": 15,
+      "start_time": 0.26666668,
+      "end_time": 0.76666665,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ヒットしなかったら落下に遷移",
+      "start_frame": 20,
+      "num_frames": 3,
+      "start_time": 0.6666667,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_11.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponSkillEmissive'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_12.SGANSWeaponSkillEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_14.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.31"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_16.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.32"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ノーロック時",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_2.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_20",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ後半（速度可変あり）",
+      "start_frame": 8,
+      "num_frames": 15,
+      "start_time": 0.26666668,
+      "end_time": 0.76666665,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_20.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_24",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "突進2（小ノックバック）",
+      "start_frame": 8,
+      "num_frames": 15,
+      "start_time": 0.26666668,
+      "end_time": 0.76666665,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_24.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.33"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマリム",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSCharaEffectRim'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_26.SGANSCharaEffectRim_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_27",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "突進1（大ノックバック）",
+      "num_frames": 8,
+      "end_time": 0.26666668,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_27.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.34"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.29"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_34",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "自然減速",
+      "start_frame": 13,
+      "num_frames": 10,
+      "start_time": 0.43333337,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_34.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 8,
+      "end_time": 0.26666668,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_36.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラロック時",
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_8.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラズーム60",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionCameraSetting'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_9.SGANSActionCameraSetting_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9970",
+    "Outer": "ACT_TAX_SKL_006_Air_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_TAX_SKL_006_Air_Loop:VGActionEvent_9970.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/TAX/TAX_SKL/ACT_TAX_SKL_006_Air_Loop.30"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::AttackHit",
+      "action_id": 11805,
+      "branch_delay_frame": 3,
+      "branch_delay_time": 0.10000001
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 11807
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        38
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        39,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_9970",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        37
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveWave_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveWave_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 70.0
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveLine_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveLine_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 60.0
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_24",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -90.0,
+        "Z": 80.0
+      },
+      "desc": {
+        "damage": 0.45,
+        "attr": [
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::Penetrate"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "guard_impact": "ESGGuardDamageImpact::High",
+        "burst_damage": 0.5,
+        "owner_hit_stop": 0.02,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 1500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 504.0,
+        "hit_hate": -504.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 4
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Blow_S",
+      "character_hit_decal": -1,
+      "slash_direction": 180.0,
+      "box_half_extent_x": 130.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 60.0
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_27",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -90.0,
+        "Z": 80.0
+      },
+      "desc": {
+        "damage": 0.5,
+        "attr": [
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::Penetrate"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "guard_impact": "ESGGuardDamageImpact::High",
+        "burst_damage": 0.5,
+        "hit_stop": 0.01,
+        "owner_hit_stop": 0.02,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 3500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 504.0,
+        "hit_hate": -504.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 4
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Blow_S",
+      "character_hit_decal": -1,
+      "slash_direction": 180.0,
+      "box_half_extent_x": 130.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 60.0
+    }
+  }
+]

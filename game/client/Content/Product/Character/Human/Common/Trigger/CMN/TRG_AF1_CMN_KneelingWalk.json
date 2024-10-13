@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_AF1_CMN_KneelingWalk",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "KneelingWalk",
+      "m_action_id": 24,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Kneel_End'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Kneel_End.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_AimRelease'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_AimRelease.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::KneelingWalkable",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WireAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

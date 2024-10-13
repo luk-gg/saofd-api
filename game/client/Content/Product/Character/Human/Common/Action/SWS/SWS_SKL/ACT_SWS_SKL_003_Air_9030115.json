@@ -1,0 +1,319 @@
+[
+  {
+    "Type": "SGANSCharaEffectRim",
+    "Name": "SGANSCharaEffectRim_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'SGANSCharaEffectRim'",
+    "Properties": {
+      "effect_rim_power": 10.0,
+      "effect_rim_color": {
+        "R": 256.0,
+        "G": 0.0,
+        "B": 2.0,
+        "A": 0.0,
+        "Hex": "FF00FF"
+      },
+      "rim_fcurve_name": "Rim01",
+      "main_priority": "EVGMaterialPriority::Highest"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_SWS_003_Air_Start_9030115",
+      "action_id": 25760,
+      "states": [
+        "EVGActionState::Fall",
+        "EVGActionState::Air",
+        "EVGActionState::Skill"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_SWS_SKL_003_Air'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWS/MNT_SWS_SKL_003_Air.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_275'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト(ループ)",
+      "num_frames": 18,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_11.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_12.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下加速",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_13.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Landing",
+      "start_frame": 2,
+      "num_frames": 38,
+      "start_time": 0.06666667,
+      "end_time": 1.3333335,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_14.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動リム",
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharaEffectRim'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_17.SGANSCharaEffectRim_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_18.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_275",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 180,
+      "end_time": 6.0000005,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_275.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_SWS_SKL_003_Air_9030115",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地できなかったら発動せず落下へ",
+      "start_frame": 38,
+      "num_frames": 2,
+      "start_time": 1.2666668,
+      "end_time": 1.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_SWS_SKL_003_Air_9030115:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/SWS_SKL/ACT_SWS_SKL_003_Air_9030115.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 25710,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": []
+        }
+      ],
+      "floor_check_distance": 50.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::MovementFalling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1500.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_SKL_st'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_SKL_st.0"
+      },
+      "scale_offset": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_275",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        23
+      ],
+      "ik_state": false
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_SKL_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_SKL_lo.0"
+      }
+    }
+  }
+]

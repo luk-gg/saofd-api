@@ -1,0 +1,365 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 240.0,
+      "m_target_rotate_yaw": 120.0,
+      "m_rotate_degree_second": 1800.0
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 3600.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "MCE_FLY_Guard_Hit",
+      "action_id": 2610,
+      "states": [
+        "EVGActionState::Guard",
+        "EVGActionState::Hovering"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_MCE_FLY_Guard_Hit'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/MCE/MNT_AU_MCE_FLY_Guard_Hit.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.12"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_2.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガードリム",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_3.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 16,
+      "num_frames": 2,
+      "start_time": 0.53333336,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "num_frames": 15,
+      "start_time": 0.10000001,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_36.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Un Interruptible Sub",
+      "num_frames": 18,
+      "end_time": 0.6,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 5,
+      "start_time": 0.033333335,
+      "end_time": 0.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_6.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 5,
+      "num_frames": 10,
+      "start_time": 0.16666667,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_7.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ノーロック時",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_8.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_AU_MCE_FLY_Guard_Hit",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラロック時",
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_AU_MCE_FLY_Guard_Hit:VGActionEvent_9.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_FLY_Guard_Hit.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20039,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2601
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -600.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Attenuation",
+      "move_value": {
+        "X": 10.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_multi": 3.0,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 64.0,
+        "G": 4.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "FFFF00"
+      },
+      "rim_fcurve_name": "Rim01"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Guard'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Guard.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        27
+      ],
+      "ik_state": false,
+      "lerp_time": 0.25
+    }
+  }
+]

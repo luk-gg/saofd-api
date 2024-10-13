@@ -1,0 +1,1153 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_10'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_NPC'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_Battle_UCR021:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.29"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_10",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_Random'SBT_NPC_Battle_UCR021:VGBTD_Random_15'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.37"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "AI Root",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_11",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_MoveTo'SBT_NPC_Battle_UCR021:BTTask_MoveTo_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.25"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_MoveTo'SBT_NPC_Battle_UCR021:BTTask_MoveTo_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.26"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_12",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_Battle_UCR021:BTTask_RunBehavior_12'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.31"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_17'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.12"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_Random'SBT_NPC_Battle_UCR021:VGBTD_Random_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.36"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "攻撃",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_15",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_Battle_UCR021:BTTask_RunBehavior_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.30"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SGBTD_CheckTriggerCondition'SBT_NPC_Battle_UCR021:SGBTD_CheckTriggerCondition_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.35"
+            },
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_22'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.17"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SGBTD_CheckTriggerCondition'SBT_NPC_Battle_UCR021:SGBTD_CheckTriggerCondition_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.34"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_10'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_17",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.18"
+            },
+            {
+              "ObjectName": "BTDecorator_TimeLimit'SBT_NPC_Battle_UCR021:BTDecorator_TimeLimit_0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.21"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.8"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_7'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.20"
+            },
+            {
+              "ObjectName": "BTDecorator_TimeLimit'SBT_NPC_Battle_UCR021:BTDecorator_TimeLimit_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.22"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_12'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_20'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.16"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_18",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.1"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_5'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.19"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_16'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.13"
+            },
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_19'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.15"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_MoveTo'SBT_NPC_Battle_UCR021:BTTask_MoveTo_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.27"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_MoveTo'SBT_NPC_Battle_UCR021:BTTask_MoveTo_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.23"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_6",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_Battle_UCR021:VGBTT_InputKey_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.41"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_Random'SBT_NPC_Battle_UCR021:VGBTD_Random_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.39"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_Battle_UCR021:VGBTT_InputKey_38'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.42"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_Random'SBT_NPC_Battle_UCR021:VGBTD_Random_3'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.38"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_Battle_UCR021:BTTask_RunBehavior_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.28"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "近距離での択",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_12",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_Battle_UCR021:VGBTT_InputKey_10'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.40"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_Battle_UCR021:BTDecorator_Blackboard_18'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.14"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_Battle_UCR021:BTTask_Wait_10'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.33"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.11"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_0",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_MoveTo'SBT_NPC_Battle_UCR021:BTTask_MoveTo_15'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.24"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_NPC_Battle_UCR021:BTComposite_Sequence_12'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.10"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.12"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_17",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_Battle_UCR021:BTTask_Wait_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.32"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.11"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.4"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_16",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "TargetActor is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetActor"
+      },
+      "NodeName": "敵を見つけている場合",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_18",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "IsTargetEnemyRayHit is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "IsTargetEnemyRayHit"
+      },
+      "NodeName": "レイ判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_Battle_UCR021:BTComposite_Sequence_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.10"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_19",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 400.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 400.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "攻撃判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_20",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "TargetActor is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetActor"
+      },
+      "NodeName": "敵を見つけている場合",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_22",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 10000.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 10000.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "ターゲットが遠すぎる場合は処理しない",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_4",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 1700.0,
+      "CachedDescription": "TargetDistance Is Greater Than Or Equal To 1700.000000",
+      "OperationType": 5,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "移動判定(ターゲットへ接近)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_5",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 300.0,
+      "CachedDescription": "TargetDistance Is Greater Than Or Equal To 300.000000",
+      "OperationType": 5,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "移動判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_18'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.7"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_7",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "IsTargetEnemyRayHit is Is Not Set",
+      "OperationType": 1,
+      "BlackboardKey": {
+        "SelectedKeyName": "IsTargetEnemyRayHit"
+      },
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "レイ判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_TimeLimit",
+    "Name": "BTDecorator_TimeLimit_0",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_TimeLimit'",
+    "Properties": {
+      "TimeLimit": 3.5,
+      "FlowAbortMode": "EBTFlowAbortMode::None",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_TimeLimit",
+    "Name": "BTDecorator_TimeLimit_2",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTDecorator_TimeLimit'",
+    "Properties": {
+      "TimeLimit": 2.0,
+      "FlowAbortMode": "EBTFlowAbortMode::None",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.6"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_MoveTo",
+    "Name": "BTTask_MoveTo_0",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_MoveTo'",
+    "Properties": {
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetLocation"
+      },
+      "NodeName": "ランダム移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.8"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_MoveTo",
+    "Name": "BTTask_MoveTo_15",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_MoveTo'",
+    "Properties": {
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetLocation"
+      },
+      "NodeName": "ランダム移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.11"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_MoveTo",
+    "Name": "BTTask_MoveTo_2",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_MoveTo'",
+    "Properties": {
+      "AcceptableRadius": 800.0,
+      "bReachTestIncludesAgentRadius": false,
+      "bReachTestIncludesGoalRadius": false,
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetActor"
+      },
+      "NodeName": "攻撃対象へ移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_MoveTo",
+    "Name": "BTTask_MoveTo_4",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_MoveTo'",
+    "Properties": {
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetLocation"
+      },
+      "NodeName": "ランダム移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_MoveTo",
+    "Name": "BTTask_MoveTo_5",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_MoveTo'",
+    "Properties": {
+      "AcceptableRadius": 800.0,
+      "bReachTestIncludesAgentRadius": false,
+      "bReachTestIncludesGoalRadius": false,
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetActor"
+      },
+      "NodeName": "攻撃対象へ移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.8"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_0",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_Skill_Common'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_Skill_Common.0"
+      },
+      "NodeName": "スキル入力",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_Move_Target'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_Move_Target.0"
+      },
+      "NodeName": "移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_11",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_LinkAttack'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_LinkAttack.0"
+      },
+      "NodeName": "連携攻撃",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_12",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_Skill_Common'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_Skill_Common.0"
+      },
+      "NodeName": "スキル入力",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.4"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 2.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_Battle_UCR021:BTComposite_SimpleParallel_17'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.12"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_10",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.5,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_Battle_UCR021:BTComposite_Sequence_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.10"
+      }
+    }
+  },
+  {
+    "Type": "SGBTD_CheckTriggerCondition",
+    "Name": "SGBTD_CheckTriggerCondition_2",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'SGBTD_CheckTriggerCondition'",
+    "Properties": {
+      "m_target_key": {},
+      "m_condition_type": "EVGTriggerStateCondition::IsStrengthenedMode",
+      "m_eval": "EVGTriggerStateConditionEval::b_False",
+      "NodeName": "固有能力発動していない",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "SGBTD_CheckTriggerCondition",
+    "Name": "SGBTD_CheckTriggerCondition_4",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'SGBTD_CheckTriggerCondition'",
+    "Properties": {
+      "m_target_key": {},
+      "m_condition_type": "EVGTriggerStateCondition::IsStrengthenedMode",
+      "NodeName": "固有能力発動中かどうか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_15'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_Random",
+    "Name": "VGBTD_Random_1",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTD_Random'",
+    "Properties": {
+      "m_probability": 55.0,
+      "NodeName": "55",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_Random",
+    "Name": "VGBTD_Random_15",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTD_Random'",
+    "Properties": {
+      "m_generate": true,
+      "bInverseCondition": true,
+      "NodeName": "乱数生成",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_10'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_Random",
+    "Name": "VGBTD_Random_3",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTD_Random'",
+    "Properties": {
+      "m_probability": 50.0,
+      "NodeName": "40%",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_Random",
+    "Name": "VGBTD_Random_4",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTD_Random'",
+    "Properties": {
+      "m_probability": 5.0,
+      "NodeName": "5%",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_10",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Left",
+      "m_press_time": 0.05,
+      "m_movement_location_key": {},
+      "NodeName": "攻撃(X)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_Battle_UCR021:BTComposite_Sequence_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.10"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_3",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Up",
+      "m_movement_location_key": {},
+      "NodeName": "武器アクション(B)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_38",
+    "Outer": "SBT_NPC_Battle_UCR021",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Left",
+      "m_press_time": 0.05,
+      "m_movement_location_key": {},
+      "NodeName": "攻撃(X)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR021'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_Battle_UCR021:BTComposite_Selector_6'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR021.9"
+      }
+    }
+  }
+]

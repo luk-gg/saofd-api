@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "SGMagicSkillAsset",
+    "Name": "SKA_Human_SWD7_SS002",
+    "Class": "UScriptClass'SGMagicSkillAsset'",
+    "Properties": {
+      "m_create_magic_projectile_id": 19040,
+      "m_equip_special_effect_magic_projectile_id": [
+        {
+          "m_equip_special_effect_id": {
+            "row_name": "9040119"
+          },
+          "m_create_magic_projectile_id": 19042
+        },
+        {
+          "m_equip_special_effect_id": {
+            "row_name": "9020119"
+          },
+          "m_create_magic_projectile_id": 19044
+        }
+      ],
+      "m_guide_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_CMN_Magic_Setup_20m_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Magic_Setup_20m_lo.0"
+        }
+      ],
+      "m_max_range": 3000.0,
+      "m_ground_ray_length": 3000.0,
+      "header": {
+        "ObjectName": "VGSkillHeader'SKH_Human_SWD7_SS002'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Skill/Header/SKH_Human_SWD7_SS002.0"
+      },
+      "recast_time": 25.0,
+      "attr": [
+        17
+      ],
+      "type": "ESGSkillType::Attack",
+      "action_id": 26600,
+      "action_offset": [
+        {
+          "state_rule": "EVGSkillOffsetState::Air",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 26620
+        },
+        {
+          "state_rule": "EVGSkillOffsetState::Fly",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 26610
+        }
+      ],
+      "add_vfx": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Heal'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Heal.0"
+      }
+    }
+  }
+]

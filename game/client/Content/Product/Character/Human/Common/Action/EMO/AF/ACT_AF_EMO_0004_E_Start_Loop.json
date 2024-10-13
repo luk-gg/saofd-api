@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "SGANSWeaponChangeTemporary",
+    "Name": "SGANSWeaponChangeTemporary_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSWeaponChangeTemporary'",
+    "Properties": {
+      "m_weapon_index": 1,
+      "m_is_visible_only": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_EMO_0004_E_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "EMO_0004_E_Start_Loop",
+      "action_id": 30084,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_EMO_0004_E_s_l'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EMO/AF/MNT_AF_EMO_0004_E_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_EMO_0004_E_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0004_E_Start_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_EMO_0004_E_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 172,
+      "end_time": 5.7333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponChangeTemporary'ACT_AF_EMO_0004_E_Start_Loop:VGActionEvent_1.SGANSWeaponChangeTemporary_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/EMO/AF/ACT_AF_EMO_0004_E_Start_Loop.0"
+      }
+    }
+  }
+]

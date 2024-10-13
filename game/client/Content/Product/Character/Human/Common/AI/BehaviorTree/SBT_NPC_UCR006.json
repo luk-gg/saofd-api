@@ -1,0 +1,837 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_49'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.4"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_NPC'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.8"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckPlayerSkillSelect_C'SBT_NPC_UCR006:SBTDecorator_CheckPlayerSkillSelect_C_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.20"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckFieldBattle_C'SBT_NPC_UCR006:SBTDecorator_CheckFieldBattle_C_0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.17"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_UCR006:BTTask_RunBehavior_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.11"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckFieldBattle_C'SBT_NPC_UCR006:SBTDecorator_CheckFieldBattle_C_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.18"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_UCR006:BTTask_RunBehavior_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "SGBTS_UpdateNpcSetTarget'SBT_NPC_UCR006:SGBTS_UpdateNpcSetTarget_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.23"
+        },
+        {
+          "ObjectName": "SGBTS_UpdateNpcAction'SBT_NPC_UCR006:SGBTS_UpdateNpcAction_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.21"
+        },
+        {
+          "ObjectName": "SGBTS_UpdateNpcRoleLink'SBT_NPC_UCR006:SGBTS_UpdateNpcRoleLink_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.22"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_12",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishWithResult'SBT_NPC_UCR006:BTTask_FinishWithResult_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.10"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_NPC_UCR006:VGBTD_CheckActionState_0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.24"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_49'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_2",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'SBT_NPC_UCR006:SBTDecorator_CheckNPCFieldBattleState_C_0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.19"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.7"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckHealth'SBT_NPC_UCR006:VGBTD_CheckHealth_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.26"
+            },
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_UCR006:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.9"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_49",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_12'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckHealth'SBT_NPC_UCR006:VGBTD_CheckHealth_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.27"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "AI Root",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_NPC_UCR006:VGBTD_CheckActionState_17'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.25"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_UCR006:BTTask_RunBehavior_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_UCR006:VGBTT_InputKey_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.29"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_UCR006:BTTask_Wait_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_UCR006:VGBTT_InputKey_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.28"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_UCR006:BTTask_Wait_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.15"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_UCR006:VGBTT_InputKey_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.30"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_UCR006:BTTask_Wait_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "IsPlatoonLeader is Is Not Set",
+      "OperationType": 1,
+      "BlackboardKey": {
+        "SelectedKeyName": "IsPlatoonLeader"
+      },
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "隊長ではない場合",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishWithResult",
+    "Name": "BTTask_FinishWithResult_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_FinishWithResult'",
+    "Properties": {
+      "NodeName": "ロール連携が終わるまで遷移しない様に強制成功",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      },
+      "NodeName": "対ボス行動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_2",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FieldBattleBase'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattleBase.0"
+      },
+      "NodeName": "フィールドバトル",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.5"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_4",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_Battle_UCR005'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Battle/SBT_NPC_Battle_UCR005.0"
+      },
+      "NodeName": "戦闘AI",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.5,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.6"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_1",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.5,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.7"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_4",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.1,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.8"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckFieldBattle_C",
+    "Name": "SBTDecorator_CheckFieldBattle_C_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckFieldBattle.SBTDecorator_CheckFieldBattle_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckFieldBattle_C'Default__SBTDecorator_CheckFieldBattle_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckFieldBattle.2"
+    },
+    "Properties": {
+      "NodeName": "フィールドバトルか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckFieldBattle_C",
+    "Name": "SBTDecorator_CheckFieldBattle_C_1",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckFieldBattle.SBTDecorator_CheckFieldBattle_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckFieldBattle_C'Default__SBTDecorator_CheckFieldBattle_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckFieldBattle.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "レイドボスバトルか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckNPCFieldBattleState_C",
+    "Name": "SBTDecorator_CheckNPCFieldBattleState_C_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.SBTDecorator_CheckNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'Default__SBTDecorator_CheckNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.2"
+    },
+    "Properties": {
+      "CheckEnum": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "bShowPropertyDetails": false,
+      "bInverseCondition": true,
+      "NodeName": "戦闘以外なら",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckPlayerSkillSelect_C",
+    "Name": "SBTDecorator_CheckPlayerSkillSelect_C_4",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckPlayerSkillSelect.SBTDecorator_CheckPlayerSkillSelect_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckPlayerSkillSelect_C'Default__SBTDecorator_CheckPlayerSkillSelect_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBTDecorator_CheckPlayerSkillSelect.2"
+    },
+    "Properties": {
+      "CheckSkill": "ESGAIPlayerSkillSelectableSlot::Skill1",
+      "NodeName": "Slot 1",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTS_UpdateNpcAction",
+    "Name": "SGBTS_UpdateNpcAction_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'SGBTS_UpdateNpcAction'",
+    "Properties": {
+      "Interval": 0.2,
+      "NodeName": "アクション更新",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTS_UpdateNpcRoleLink",
+    "Name": "SGBTS_UpdateNpcRoleLink_1",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'SGBTS_UpdateNpcRoleLink'",
+    "Properties": {
+      "m_target_actor_key": {
+        "SelectedKeyName": "TargetBoss"
+      },
+      "m_is_rolelink_entry_key": {
+        "SelectedKeyName": "IsRoleLinkEntry"
+      },
+      "m_is_rolelink_warp_key": {
+        "SelectedKeyName": "IsWarpToRoleLinkPosition"
+      },
+      "m_rolelink_target_circle_index": {
+        "SelectedKeyName": "RoleLinkCircleIndex"
+      },
+      "m_rolelink_target_location_key": {
+        "SelectedKeyName": "TargetRoleLinkLocation"
+      },
+      "Interval": 0.15,
+      "RandomDeviation": 0.05,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTS_UpdateNpcSetTarget",
+    "Name": "SGBTS_UpdateNpcSetTarget_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'SGBTS_UpdateNpcSetTarget'",
+    "Properties": {
+      "m_target_key": {
+        "SelectedKeyName": "TargetActor"
+      },
+      "m_target_focus_location_key": {
+        "SelectedKeyName": "TargetFocusLocation"
+      },
+      "m_is_chara_heal_skill_key": {
+        "SelectedKeyName": "IsCharaHealTaget"
+      },
+      "m_fly_enemy_prioritize_range": 4000.0,
+      "m_boss_battle_range": 5000.0,
+      "NodeName": "ターゲット更新",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::RoleLink"
+      ],
+      "FlowAbortMode": "EBTFlowAbortMode::LowerPriority",
+      "NodeName": "ロール連携参加中",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_12'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_17",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Accel",
+        "EVGActionState::Hovering",
+        "EVGActionState::HoveringMove"
+      ],
+      "NodeName": "飛行中であれば",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckHealth",
+    "Name": "VGBTD_CheckHealth_1",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTD_CheckHealth'",
+    "Properties": {
+      "m_target": "EVGBTActorTargetBB::BlackBoard",
+      "m_target_key": {
+        "SelectedKeyName": "TargetChasePlayer"
+      },
+      "m_comparision": "EVGBTComparision::LessEqual",
+      "NodeName": "プレイヤーが死亡していても",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_2'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckHealth",
+    "Name": "VGBTD_CheckHealth_2",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTD_CheckHealth'",
+    "Properties": {
+      "m_target": "EVGBTActorTargetBB::Self",
+      "m_target_key": {},
+      "m_comparision": "EVGBTComparision::GreaterThan",
+      "NodeName": "生存判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_UCR006:BTComposite_Selector_49'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_0",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Down",
+      "m_press_time": 0.01,
+      "m_movement_location_key": {},
+      "NodeName": "降りる",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.7"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_11",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Down",
+      "m_movement_location_key": {},
+      "NodeName": "降りる",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_2",
+    "Outer": "SBT_NPC_UCR006",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::DR_Right",
+      "m_option": "EVGInputKeyOption::Skill",
+      "m_movement_location_key": {},
+      "NodeName": "スキル(B)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_UCR006'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_NPC_UCR006:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBT_NPC_UCR006.8"
+      }
+    }
+  }
+]

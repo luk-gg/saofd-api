@@ -1,0 +1,286 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'ImmovableMultiHitInhaleProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPUCR019_2_SKL001_GravitationCircle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.11"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPUCR019_2_SKL001_GravitationCircle_C'Default__BPUCR019_2_SKL001_GravitationCircle_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 1000.0,
+        "Y": 1000.0,
+        "Z": 500.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.0"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 500.0
+      }
+    }
+  },
+  {
+    "Type": "BPUCR019_2_SKL001_GravitationCircle_C",
+    "Name": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.BPUCR019_2_SKL001_GravitationCircle_C'",
+    "Template": {
+      "ObjectName": "ImmovableMultiHitInhaleProjectileCommon_C'Default__ImmovableMultiHitInhaleProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.4"
+    },
+    "Properties": {
+      "m_inhale_range": 1100.0,
+      "m_inhale_rate": 500.0,
+      "m_max_hit_count": -1,
+      "m_next_hit_span": 1.0,
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.9"
+      },
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.8"
+      },
+      "m_max_length_to_ground": 10000.0,
+      "m_damage_enemy_flag": true,
+      "m_buff_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD7_GravitationCircle'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD7_GravitationCircle.0"
+        }
+      ],
+      "m_status_buff_id": 45,
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.10"
+      },
+      "m_shape_type": "EHitBoxShapeType::Cylinder",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.12"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.2"
+      },
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21962,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_life_span": 10.0,
+      "m_is_destroy_spawn_se_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 0.2,
+          "attr": [
+            "EVGDamageAttr::Range",
+            "EVGDamageAttr::Skill"
+          ],
+          "burst_damage": 0.5,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection"
+          },
+          "damage_hate": 70.0,
+          "hit_hate": -7.0
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.13"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPUCR019_2_SKL001_GravitationCircle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.5"
+      },
+      "VariableGuid": "47B4E873-4A9B4732-E273CBA7-5BD8805F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'",
+    "Template": {
+      "ObjectName": "SGProjectileMultiHitComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:ProjectileMultiHitComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'",
+    "Template": {
+      "ObjectName": "SGSpawnProjectileComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:SpawnProjectileComponet'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.9"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.10"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPUCR019_2_SKL001_GravitationCircle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.12"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR019_2_SKL001_GravitationCircle_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR019_2_SKL001/BPUCR019_2_SKL001_GravitationCircle.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPUCR019_2_SKL001_GravitationCircle_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__ImmovableMultiHitInhaleProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/ImmovableMultiHitInhaleProjectileCommon.13"
+    }
+  }
+]

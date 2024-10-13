@@ -1,0 +1,381 @@
+[
+  {
+    "Type": "SGANCowardiceTeleport",
+    "Name": "SGANCowardiceTeleport_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANCowardiceTeleport'",
+    "Properties": {
+      "m_is_warp_point_setting": false
+    }
+  },
+  {
+    "Type": "SGANSEquipSpecialEffectActionBranch",
+    "Name": "SGANSEquipSpecialEffectActionBranch_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSEquipSpecialEffectActionBranch'",
+    "Properties": {
+      "equip_special_effect_id": {
+        "row_name": "9030119"
+      },
+      "action_id": 26752
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_SWD7_003_Air_End",
+      "action_id": 26721,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Attack",
+        "EVGActionState::EndAction",
+        "EVGActionState::Air"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_SWD7_SKL_003_Air_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD7/MNT_SWD7_SKL_003_Air_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_21'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_SWD7_SKL_003_Air_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "画面用ワープエフェクト",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_SWD7_SKL_003_Air_End:VGActionEvent_0.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "num_frames": 2,
+      "start_time": 0.33333334,
+      "end_time": 0.4,
+      "notify": {
+        "ObjectName": "SGANCowardiceTeleport'ACT_SWD7_SKL_003_Air_End:VGActionEvent_1.SGANCowardiceTeleport_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "構え音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_SWD7_SKL_003_Air_End:VGActionEvent_11.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 29,
+      "end_time": 0.9666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_SWD7_SKL_003_Air_End:VGActionEvent_12.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 37,
+      "end_time": 1.2333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_SWD7_SKL_003_Air_End:VGActionEvent_15.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動時ボイス",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_SWD7_SKL_003_Air_End:VGActionEvent_17.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 28,
+      "end_time": 0.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_SWD7_SKL_003_Air_End:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_21",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Warpout_Airへ",
+      "start_frame": 11,
+      "num_frames": 26,
+      "start_time": 0.36666667,
+      "end_time": 1.2333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_SWD7_SKL_003_Air_End:VGActionEvent_21.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ワープ音",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_SWD7_SKL_003_Air_End:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_SWD7_SKL_003_Air_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "特殊効果用遷移_9030119",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSEquipSpecialEffectActionBranch'ACT_SWD7_SKL_003_Air_End:VGActionEvent_9.SGANSEquipSpecialEffectActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/SWD7_SKL/ACT_SWD7_SKL_003_Air_End.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10820,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6270,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21981,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_21",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 26722
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD7_CowardiceTeleport_Camera'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD7_CowardiceTeleport_Camera.0"
+      }
+    }
+  }
+]

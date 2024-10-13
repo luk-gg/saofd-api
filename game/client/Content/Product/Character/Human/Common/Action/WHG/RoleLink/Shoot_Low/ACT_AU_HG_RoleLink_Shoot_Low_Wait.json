@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "SGANSRoleLinkActionBranch",
+    "Name": "SGANSRoleLinkActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSRoleLinkActionBranch'",
+    "Properties": {
+      "branch_type": "ESGRoleLinkActionBranchType::WaitTimerFirst",
+      "action_id": 6114
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_HG_RoleLink_Shoot_Low_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "HG_SR_RoleLink_Shoot_Low_Wait",
+      "action_id": 6113,
+      "states": [
+        "EVGActionState::RoleLink"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_SR_RoleLink_Shoot_Low_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/MNT_AU_SR_RoleLink_Shoot_Low_Wait.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_HG_RoleLink_Shoot_Low_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 100,
+      "end_time": 3.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_HG_RoleLink_Shoot_Low_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 99,
+      "end_time": 3.3000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_HG_RoleLink_Shoot_Low_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機1",
+      "num_frames": 100,
+      "end_time": 3.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSRoleLinkActionBranch'ACT_AU_HG_RoleLink_Shoot_Low_Wait:VGActionEvent_6.SGANSRoleLinkActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/RoleLink/Shoot_Low/ACT_AU_HG_RoleLink_Shoot_Low_Wait.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        14
+      ]
+    }
+  }
+]

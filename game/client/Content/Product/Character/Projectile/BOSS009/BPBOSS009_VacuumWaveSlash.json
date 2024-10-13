@@ -1,0 +1,282 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__MovableDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPBOSS009_VacuumWaveSlash_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPBOSS009_VacuumWaveSlash_C'Default__BPBOSS009_VacuumWaveSlash_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__MovableDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS009_VacuumWaveSlash_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.0"
+      }
+    }
+  },
+  {
+    "Type": "BPBOSS009_VacuumWaveSlash_C",
+    "Name": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.BPBOSS009_VacuumWaveSlash_C'",
+    "Template": {
+      "ObjectName": "MovableDamageProjectileCommon_C'Default__MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_speed": 2500.0,
+      "m_max_speed": 2500.0,
+      "m_acceleration": 0.0,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS009_00_Bullet_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS009_00/efs_BOSS009_00_Bullet_lo.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Slash_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Slash_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPBOSS009_VacuumWaveSlash_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Capsule",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPBOSS009_VacuumWaveSlash_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPBOSS009_VacuumWaveSlash_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPBOSS009_VacuumWaveSlash_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.2"
+      },
+      "m_is_destroy_spawn_se_same_time_collion": true,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "attr": [
+            "EVGDamageAttr::Range",
+            "EVGDamageAttr::ForceReaction",
+            "EVGDamageAttr::Penetrate"
+          ],
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::Break",
+          "guard_damage_cut_rate": 0.75,
+          "hit_stop": 0.066,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::FrontFace",
+            "velocity": {
+              "X": 2000.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          },
+          "hit_cam_shake": 1
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPBOSS009_VacuumWaveSlash_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPBOSS009_VacuumWaveSlash_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS009_VacuumWaveSlash_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__MovableDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "CapsuleHalfHeight": 500.0,
+      "CapsuleRadius": 50.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS009_VacuumWaveSlash_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.0"
+      },
+      "RelativeLocation": {
+        "X": -120.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPBOSS009_VacuumWaveSlash_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.5"
+      },
+      "VariableGuid": "263E7FE0-4AC54370-5F6FB598-BB9F6094",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__MovableDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS009_VacuumWaveSlash_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__MovableDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPBOSS009_VacuumWaveSlash_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__MovableDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.10"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS009_VacuumWaveSlash_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS009/BPBOSS009_VacuumWaveSlash.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPBOSS009_VacuumWaveSlash_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__MovableDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.11"
+    }
+  }
+]

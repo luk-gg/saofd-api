@@ -1,0 +1,293 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY011_100_AcidWave_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGTorusShockWaveProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY011_100_AcidWave_C'Default__BPENEMY011_100_AcidWave_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY011_100_AcidWave_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY011_100_AcidWave_C",
+    "Name": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.BPENEMY011_100_AcidWave_C'",
+    "Properties": {
+      "m_max_radius": 275.0,
+      "m_half_height": 30.0,
+      "m_torus_thickness": 50.0,
+      "m_torus_component": {
+        "ObjectName": "SGTorusComponent'Default__BPENEMY011_100_AcidWave_C:TorusComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.9"
+      },
+      "m_scale_curve": {
+        "ObjectName": "CurveFloat'Curve_BPProjectile_Scaling'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/Curve/Curve_BPProjectile_Scaling.0"
+      },
+      "m_max_scale_time": 0.5,
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_000_Wave_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_000_Wave_lo.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY011_100_AcidWave_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.8"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY011_100_AcidWave_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY011_100_AcidWave_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY011_100_AcidWave_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.2"
+      },
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_dead_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 11,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_wait_death_time": 1.0,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 1.06,
+          "m_status_ailment_request_info": {
+            "m_request_status_ailment_id": 7
+          },
+          "impact": "ESGDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserToTarget",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 1000.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY011_100_AcidWave_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY011_100_AcidWave_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY011_100_AcidWave_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY011_100_AcidWave_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY011_100_AcidWave_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.5"
+      },
+      "VariableGuid": "37AAB3E0-488AA55D-C027B08F-2B14945D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY011_100_AcidWave_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SGTorusComponent",
+    "Name": "TorusComponet",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SGTorusComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY011_100_AcidWave_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY011_100_AcidWave_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY011/BPENEMY011_100_AcidWave.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY011_100_AcidWave_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

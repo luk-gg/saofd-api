@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "SGANStatusBuff",
+    "Name": "SGANStatusBuff_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'SGANStatusBuff'",
+    "Properties": {
+      "buff_id": 58
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_SWD7_RoleLink_Shoot_Low_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD7_RoleLink_Shoot_Low_End",
+      "action_id": 6105,
+      "states": [
+        "EVGActionState::RoleLink",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_SWD7_RoleLink_Shoot_Low_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD7/MNT_AM_SWD7_RoleLink_Shoot_Low_End.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AM_SWD7_RoleLink_Shoot_Low_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AM_SWD7_RoleLink_Shoot_Low_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵バフ",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "SGANStatusBuff'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_11.SGANStatusBuff_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AM_SWD7_RoleLink_Shoot_Low_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 14,
+      "num_frames": 9,
+      "start_time": 0.4666667,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_SWD7_RoleLink_Shoot_Low_End:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD7/RoleLink/Shoot_Low/ACT_AM_SWD7_RoleLink_Shoot_Low_End.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  }
+]

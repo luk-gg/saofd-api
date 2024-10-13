@@ -1,0 +1,567 @@
+[
+  {
+    "Type": "SGANCameraRecoil",
+    "Name": "SGANCameraRecoil_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANCameraRecoil'",
+    "Properties": {
+      "m_request_recoil_type": "ESGRequestRecoilType::ForceADS"
+    }
+  },
+  {
+    "Type": "SGANCharacterUniqueAbilityActivate",
+    "Name": "SGANCharacterUniqueAbilityActivate_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANCharacterUniqueAbilityActivate'",
+    "Properties": {
+      "m_activate_unique_ability": "EUniqueAbility::ConcentratePosition"
+    }
+  },
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.25,
+      "affects_left_large": true,
+      "affects_left_small": true,
+      "affects_right_large": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANSActionAimLimitChange",
+    "Name": "SGANSActionAimLimitChange_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSActionAimLimitChange'",
+    "Properties": {
+      "m_aim_limit_yaw": 45.0
+    }
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideSkillPallet"
+      ]
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "desc": {
+        "damage": 0.0,
+        "m_use_damage_scale": false,
+        "attr": [
+          "EVGDamageAttr::ForceReaction",
+          "EVGDamageAttr::HideDamageValue",
+          "EVGDamageAttr::HideHitEffect",
+          "EVGDamageAttr::NoHitThroughWall"
+        ],
+        "m_status_ailment_request_info": {
+          "m_status_ailment_probability": 0.0
+        },
+        "damage_hate": 17.5,
+        "hit_hate": -1.75,
+        "reaction_value": 0.0
+      },
+      "shape_type": "ESGActionAttackShape::Sphere",
+      "sphere_radius": 500.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 3150,
+      "position": {
+        "X": 300.0,
+        "Y": 0.0,
+        "Z": 120.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Aim"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "HG_SR_Unique_Fire",
+      "action_id": 1512,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Aim"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_AU_SR_UniqueAbility_Fire'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/BS_AU_SR_UniqueAbility_Fire.0"
+        },
+        "blend_time": 0.0,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.12"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.22"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "Interruptible",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.29"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 18,
+      "num_frames": 41,
+      "start_time": 0.6,
+      "end_time": 1.9666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "銃声ヘイト判定",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_10.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.30"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキルパレット非表示",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_12.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_14.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.32"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "パッド振動",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_15.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_16.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionAimLimitChange'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_2.SGANSActionAimLimitChange_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCharacterUniqueAbilityActivate'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_3.SGANCharacterUniqueAbilityActivate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 17,
+      "num_frames": 41,
+      "start_time": 0.5666667,
+      "end_time": 1.9333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.28"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCameraRecoil'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_5.SGANCameraRecoil_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "構え時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ScopeMode",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.31"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発射音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Fire",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_AU_HG_SR_UniqueAbility_Fire:VGActionEvent_9.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Fire.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_SR_Unique_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_SR_Unique.0"
+      },
+      "inner_radius": 1.658381,
+      "outer_radius": 2.804712,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6510,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20066,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1513
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1514,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsCanUniqueAbilityActivate",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        47
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        45
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        46
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_SR_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_SR_Muzzle.0"
+      },
+      "emit_owner_type": "EVGANVfxOwnerType::Weapon",
+      "emit_node_name": "VFX_Muzzle"
+    }
+  }
+]

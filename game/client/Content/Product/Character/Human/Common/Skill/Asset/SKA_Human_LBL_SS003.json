@@ -1,0 +1,78 @@
+[
+  {
+    "Type": "SGMagicSkillAsset",
+    "Name": "SKA_Human_LBL_SS003",
+    "Class": "UScriptClass'SGMagicSkillAsset'",
+    "Properties": {
+      "m_guide_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_CMN_Magic_Setup_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Magic_Setup_lo.0"
+        }
+      ],
+      "m_max_range": 6000.0,
+      "header": {
+        "ObjectName": "VGSkillHeader'SKH_Human_LBL_SS003'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Skill/Header/SKH_Human_LBL_SS003.0"
+      },
+      "recast_time": 80.0,
+      "attr": [
+        18
+      ],
+      "type": "ESGSkillType::Heal",
+      "action_id": 21000,
+      "action_offset": [
+        {
+          "state_rule": "EVGSkillOffsetState::Air",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 21006
+        },
+        {
+          "state_rule": "EVGSkillOffsetState::Fly",
+          "input_rule": "EVGSkillOffsetInput::NoCheck",
+          "weapon_rule": "EVGSkillOffsetWeapon::All",
+          "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+          "unique_rule": "ESGSkillOffsetUnique::All",
+          "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+          "action_id": 21003
+        }
+      ],
+      "equip_special_effect_action_offset": [
+        {
+          "equip_special_effect_id": {
+            "row_name": "9030104"
+          },
+          "action_id": 21000,
+          "action_offset": [
+            {
+              "state_rule": "EVGSkillOffsetState::Air",
+              "input_rule": "EVGSkillOffsetInput::NoCheck",
+              "weapon_rule": "EVGSkillOffsetWeapon::All",
+              "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+              "unique_rule": "ESGSkillOffsetUnique::All",
+              "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+              "action_id": 21006
+            },
+            {
+              "state_rule": "EVGSkillOffsetState::Fly",
+              "input_rule": "EVGSkillOffsetInput::NoCheck",
+              "weapon_rule": "EVGSkillOffsetWeapon::All",
+              "lock_on_rule": "ESGSkillOffsetCameraLock::All",
+              "unique_rule": "ESGSkillOffsetUnique::All",
+              "unique_ability_rule": "ESGSkillOffsetUniqueAbility::All",
+              "action_id": 21003
+            }
+          ]
+        }
+      ],
+      "add_vfx": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_LBL_Heal'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_LBL_Heal.0"
+      }
+    }
+  }
+]

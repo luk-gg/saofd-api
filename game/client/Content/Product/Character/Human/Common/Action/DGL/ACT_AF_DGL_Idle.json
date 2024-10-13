@@ -1,0 +1,826 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Idle_DGL",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_DGL_Idle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DGL/MNT_AF_DGL_Idle.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_DGL_Idle:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 471,
+      "num_frames": 20,
+      "start_time": 15.700001,
+      "end_time": 16.366667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エクストラスキル使用で姿勢を戻す用（スロット3）",
+      "start_frame": 330,
+      "num_frames": 306,
+      "start_time": 11.000001,
+      "end_time": 21.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGL_Idle:VGActionEvent_1.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 392,
+      "num_frames": 20,
+      "start_time": 13.066668,
+      "end_time": 13.733335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_10.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エクストラスキル使用で姿勢を戻す用（スロット2）",
+      "start_frame": 330,
+      "num_frames": 306,
+      "start_time": 11.000001,
+      "end_time": 21.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGL_Idle:VGActionEvent_11.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 618,
+      "num_frames": 20,
+      "start_time": 20.6,
+      "end_time": 21.266666,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_14.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 508,
+      "num_frames": 20,
+      "start_time": 16.933334,
+      "end_time": 17.6,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_15.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 597,
+      "num_frames": 20,
+      "start_time": 19.900002,
+      "end_time": 20.566668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_16.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "リロードで姿勢を戻す用",
+      "start_frame": 330,
+      "num_frames": 306,
+      "start_time": 11.000001,
+      "end_time": 21.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGL_Idle:VGActionEvent_2.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.28"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エクストラスキル使用で姿勢を戻す用（スロット0）",
+      "start_frame": 330,
+      "num_frames": 306,
+      "start_time": 11.000001,
+      "end_time": 21.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGL_Idle:VGActionEvent_3.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.29"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 398,
+      "num_frames": 20,
+      "start_time": 13.266667,
+      "end_time": 13.933334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エクストラスキル使用で姿勢を戻す用（スロット1）",
+      "start_frame": 330,
+      "num_frames": 306,
+      "start_time": 11.000001,
+      "end_time": 21.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_DGL_Idle:VGActionEvent_5.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.30"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 417,
+      "num_frames": 20,
+      "start_time": 13.900001,
+      "end_time": 14.566668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 451,
+      "num_frames": 20,
+      "start_time": 15.033334,
+      "end_time": 15.700001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 630,
+      "num_frames": 20,
+      "start_time": 21.000002,
+      "end_time": 21.666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_AF_DGL_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 582,
+      "num_frames": 20,
+      "start_time": 19.400002,
+      "end_time": 20.066668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_DGL_Idle:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DGL/ACT_AF_DGL_Idle.25"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20000,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21280,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21242,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21271,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20003,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20000,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21271,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21280,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueSkill_Slot3'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueSkill_Slot3.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueSkill_Slot2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueSkill_Slot2.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Reload'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Reload.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOff'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOff.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::CanReload",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueSkill_Slot0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueSkill_Slot0.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueSkill_Slot1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueSkill_Slot1.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

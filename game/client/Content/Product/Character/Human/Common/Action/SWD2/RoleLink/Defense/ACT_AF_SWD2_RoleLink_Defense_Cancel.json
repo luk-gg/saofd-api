@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD2_RoleLink_Defense_Cancel",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD2_RoleLink_Defense_Cancel",
+      "action_id": 6202,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD2_RoleLink_Defense_Cancel'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD2/MNT_AF_SWD2_RoleLink_Defense_Cancel.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD2_RoleLink_Defense_Cancel:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD2/RoleLink/Defense/ACT_AF_SWD2_RoleLink_Defense_Cancel.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AF_SWD2_RoleLink_Defense_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 10,
+      "num_frames": 3,
+      "start_time": 0.33333334,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD2_RoleLink_Defense_Cancel:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD2/RoleLink/Defense/ACT_AF_SWD2_RoleLink_Defense_Cancel.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

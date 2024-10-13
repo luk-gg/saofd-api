@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "SGANSRoleLinkActionBranch",
+    "Name": "SGANSRoleLinkActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSRoleLinkActionBranch'",
+    "Properties": {
+      "branch_type": "ESGRoleLinkActionBranchType::WaitTimerFirst",
+      "action_id": 6204
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_SWS_RoleLink_Defense_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWS_RoleLink_Defense_Wait",
+      "action_id": 6203,
+      "states": [
+        "EVGActionState::RoleLink"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_SWS_RoleLink_Defense_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWS/MNT_AM_SWS_RoleLink_Defense_Wait.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWS_RoleLink_Defense_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/RoleLink/Defense/ACT_AM_SWS_RoleLink_Defense_Wait.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SWS_RoleLink_Defense_Wait:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/RoleLink/Defense/ACT_AM_SWS_RoleLink_Defense_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AM_SWS_RoleLink_Defense_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機1",
+      "num_frames": 42,
+      "end_time": 1.4000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSRoleLinkActionBranch'ACT_AM_SWS_RoleLink_Defense_Wait:VGActionEvent_0.SGANSRoleLinkActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/RoleLink/Defense/ACT_AM_SWS_RoleLink_Defense_Wait.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AM_SWS_RoleLink_Defense_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_SWS_RoleLink_Defense_Wait:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWS/RoleLink/Defense/ACT_AM_SWS_RoleLink_Defense_Wait.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  }
+]

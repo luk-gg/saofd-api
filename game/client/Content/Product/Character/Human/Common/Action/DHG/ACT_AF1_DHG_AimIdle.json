@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_DHG_AimIdle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AimIdle",
+      "action_id": 19,
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_AF1_DHG_AimIdle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DHG/BS_AF1_DHG_AimIdle.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.15,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_AimIdle:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_AimIdle.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_DHG_AimIdle:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_AimIdle.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_DHG_AimIdle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 60,
+      "end_time": 2.0,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_DHG_AimIdle:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_AimIdle.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_DHG_AimIdle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 60,
+      "end_time": 2.0,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_DHG_AimIdle:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DHG/ACT_AF1_DHG_AimIdle.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 18,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::CanAim",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Aiming",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

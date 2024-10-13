@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_32",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HidePrompt"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WSR_SwitchChain_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AimIdle",
+      "action_id": 8601,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::LinkSkill"
+      ],
+      "layer_index": 1,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_SR_RoleLink_Shooting_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/MNT_AU_SR_RoleLink_Shooting_Loop.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_32'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_22'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WSR_SwitchChain_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 15,
+      "num_frames": 25,
+      "start_time": 0.5,
+      "end_time": 1.3333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_22",
+    "Outer": "ACT_AF1_WSR_SwitchChain_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSCameraCutIn'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_22.VGANSCameraCutIn_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_32",
+    "Outer": "ACT_AF1_WSR_SwitchChain_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "インタラクト非表示",
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_32.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF1_WSR_SwitchChain_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_WSR_SwitchChain_Loop:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_SwitchChain_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 8602
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCameraCutIn",
+    "Name": "VGANSCameraCutIn_0",
+    "Outer": "VGActionEvent_22",
+    "Class": "UScriptClass'VGANSCameraCutIn'",
+    "Properties": {
+      "is_node_tracking": true,
+      "start": {
+        "distance": 400.0,
+        "offset": {
+          "X": -50.0,
+          "Y": -100.0,
+          "Z": 150.0
+        },
+        "rotation": {
+          "Pitch": 2.0,
+          "Yaw": 81.0,
+          "Roll": 0.0
+        },
+        "fov": 50.0,
+        "blend": {
+          "BlendTime": 1.0
+        }
+      },
+      "end": {
+        "distance": 400.0,
+        "offset": {
+          "X": -50.0,
+          "Y": 0.0,
+          "Z": 110.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": 80.0,
+          "Roll": 0.0
+        },
+        "fov": 50.0
+      },
+      "is_hidden_friend": true,
+      "is_end_match_camera": true
+    }
+  }
+]

@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "SGANSRoleLinkActionBranch",
+    "Name": "SGANSRoleLinkActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSRoleLinkActionBranch'",
+    "Properties": {
+      "branch_type": "ESGRoleLinkActionBranchType::WaitTimerFirst",
+      "action_id": 6004
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SMG_RoleLink_Rush_Wait",
+      "action_id": 6003,
+      "states": [
+        "EVGActionState::RoleLink"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SMG_RoleLink_Rush_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SMG/MNT_AF_SMG_RoleLink_Rush_Wait.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_78'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.6"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器非表示",
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ナイフ表示",
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 99,
+      "end_time": 3.3000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機1",
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSRoleLinkActionBranch'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_6.SGANSRoleLinkActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_78",
+    "Outer": "ACT_AF_SMG_RoleLink_Rush_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 42,
+      "end_time": 1.4000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AF_SMG_RoleLink_Rush_Wait:VGActionEvent_78.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/RoleLink/ACT_AF_SMG_RoleLink_Rush_Wait.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        15
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_78",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        19
+      ],
+      "ik_state": false
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Dagger'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Dagger.0"
+      },
+      "emit_node_name": "w_R_Attach"
+    }
+  }
+]

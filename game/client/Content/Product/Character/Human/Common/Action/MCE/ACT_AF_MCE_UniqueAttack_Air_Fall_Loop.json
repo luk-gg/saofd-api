@@ -1,0 +1,418 @@
+[
+  {
+    "Type": "SGANSWeaponEmissive",
+    "Name": "SGANSWeaponEmissive_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSWeaponEmissive'",
+    "Properties": {
+      "enable_fade_out": false,
+      "emissive_intensity": 25.0,
+      "emissive_color": {
+        "R": 2.5,
+        "G": 1.5,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FFFF00"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "MCE_UniqueAttack_Air_Fall_Loop",
+      "action_id": 1561,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Skill",
+        "EVGActionState::Air",
+        "EVGActionState::Fall"
+      ],
+      "priority": 101,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_MCE_SKL_001_Air_Fall_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SKL/MNT_MCE_SKL_001_Air_Fall_Loop.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.25
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_28'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_38'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_16.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_17.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_18.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "移動線",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_19.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_28",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_28.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_38",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器雷",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_38.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器発光",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponEmissive'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_5.SGANSWeaponEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF_MCE_UniqueAttack_Air_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "叩きつけ",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_AF_MCE_UniqueAttack_Air_Fall_Loop:VGActionEvent_7.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AF_MCE_UniqueAttack_Air_Fall_Loop.20"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1562,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsGroundedRay",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 10,
+      "activation_time": 2.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1750.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        32
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        34
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_28",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        33
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveLine_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveLine_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 30.0,
+        "Z": 40.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_38",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_MCE_WepThunder02_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_MCE_WepThunder02_lo.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -60.0,
+        "Z": 80.0
+      },
+      "desc": {
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::ArmorBreakable"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "hit_stop": 0.06,
+        "owner_hit_stop": 0.06,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "velocity": {
+            "X": 800.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 504.0,
+        "hit_hate": -504.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 4,
+        "hit_force_feedback": 1
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Blow_M",
+      "box_half_extent_x": 50.0,
+      "box_half_extent_y": 110.0,
+      "box_half_extent_z": 110.0
+    }
+  }
+]

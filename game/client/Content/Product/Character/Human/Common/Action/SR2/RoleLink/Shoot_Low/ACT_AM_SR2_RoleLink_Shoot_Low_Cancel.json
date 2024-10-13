@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_SR2_RoleLink_Shoot_Low_Cancel",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SR2_RoleLink_Shoot_Low_Cancel",
+      "action_id": 6102,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_SR2_RoleLink_Shoot_Low_Cancel'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR2/MNT_AM_SR2_RoleLink_Shoot_Low_Cancel.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SR2_RoleLink_Shoot_Low_Cancel:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR2/RoleLink/Shoot_Low/ACT_AM_SR2_RoleLink_Shoot_Low_Cancel.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_SR2_RoleLink_Shoot_Low_Cancel:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR2/RoleLink/Shoot_Low/ACT_AM_SR2_RoleLink_Shoot_Low_Cancel.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AM_SR2_RoleLink_Shoot_Low_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 28,
+      "end_time": 0.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_SR2_RoleLink_Shoot_Low_Cancel:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR2/RoleLink/Shoot_Low/ACT_AM_SR2_RoleLink_Shoot_Low_Cancel.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AM_SR2_RoleLink_Shoot_Low_Cancel",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 26,
+      "num_frames": 5,
+      "start_time": 0.86666673,
+      "end_time": 1.0333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_SR2_RoleLink_Shoot_Low_Cancel:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR2/RoleLink/Shoot_Low/ACT_AM_SR2_RoleLink_Shoot_Low_Cancel.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  }
+]

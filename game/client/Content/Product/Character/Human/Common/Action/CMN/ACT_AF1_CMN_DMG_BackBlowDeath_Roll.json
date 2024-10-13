@@ -1,0 +1,378 @@
+[
+  {
+    "Type": "SGANSExpression",
+    "Name": "SGANSExpression_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSExpression'",
+    "Properties": {
+      "m_expression_pattern": "EVGFacialExpressionPattern::Down"
+    }
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideUniqueSkill",
+        "ESGHudDisplayType::HideSkillPallet",
+        "ESGHudDisplayType::HideReticle"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DMG_BackBlowDeath_Roll",
+      "action_id": 246,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_CMN_DMG_BackBlow_Death_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/CMN/MNT_AF1_CMN_DMG_BackBlow_Death_Loop.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_60'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_122'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.13"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Death_End",
+      "start_frame": 11,
+      "num_frames": 12,
+      "start_time": 0.36666667,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_1.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS解除",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_122",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_122.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "num_frames": 21,
+      "start_time": 0.06666667,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 7,
+      "start_time": 0.23333335,
+      "end_time": 0.26666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ヒットなし",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキル・固有・レティクルを消す",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_6.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_60",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "武器消し（しない）",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_60.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF1_CMN_DMG_BackBlowDeath_Roll",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "フェイシャル（ダウン顔）",
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "SGANSExpression'ACT_AF1_CMN_DMG_BackBlowDeath_Roll:VGActionEvent_8.SGANSExpression_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BackBlowDeath_Roll.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 247
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_122",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 750.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        28,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_60",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26
+      ]
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        32
+      ],
+      "ik_state": false
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Brake_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Brake_s_lo.0"
+      },
+      "scale_offset": {
+        "X": 1.3,
+        "Y": 1.3,
+        "Z": 1.3
+      }
+    }
+  }
+]

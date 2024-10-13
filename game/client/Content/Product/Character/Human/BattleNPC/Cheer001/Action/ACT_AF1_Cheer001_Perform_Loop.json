@@ -1,0 +1,90 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_Cheer001_Perform_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Idle",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_MIC_BAS_Perform_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/MIC/MNT_AF_MIC_BAS_Perform_Loop.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.25
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_Cheer001_Perform_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Cheer001/Action/ACT_AF1_Cheer001_Perform_Loop.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_Cheer001_Perform_Loop:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Cheer001/Action/ACT_AF1_Cheer001_Perform_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_Cheer001_Perform_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "確認用",
+      "start_frame": 78,
+      "num_frames": 16,
+      "start_time": 2.6000001,
+      "end_time": 3.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_Cheer001_Perform_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Cheer001/Action/ACT_AF1_Cheer001_Perform_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AF1_Cheer001_Perform_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "ここで生成するなら各所でキャンセルキーが必要",
+      "num_frames": 81,
+      "end_time": 2.7,
+      "is_loop_event": true,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF1_Cheer001_Perform_Loop:VGActionEvent_11.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/BattleNPC/Cheer001/Action/ACT_AF1_Cheer001_Perform_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 50
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_EVN_MIC_Aura01_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_EVN_MIC_Aura01_lo.0"
+      }
+    }
+  }
+]

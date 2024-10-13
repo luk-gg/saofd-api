@@ -1,0 +1,1288 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_NPC'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_13'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDistByKey'SBT_NPC_FBL_Conquest:VGBTD_CheckDistByKey_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.41"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.12"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "ワープ地点へ移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.10"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDistByKey'SBT_NPC_FBL_Conquest:VGBTD_CheckDistByKey_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.40"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.31"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_5'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.21"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.12"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_11",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_14'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_18'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.16"
+            },
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_22'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.18"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_10'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.33"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_14'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.15"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.9"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.20"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.1"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.14"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_13",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_FBL_Conquest:VGBTT_InputKey_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.43"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_FBL_Conquest:BTTask_Wait_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.26"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_14",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.34"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_23",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_26'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.7"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_54'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.24"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_27'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.8"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_3'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.19"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_26",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_14'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.36"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_52'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.23"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_23'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_27",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_13'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.35"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_50'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.22"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_23'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_3",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.13"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "敵のスポーン地点へ移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_4",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_InputKey'SBT_NPC_FBL_Conquest:VGBTT_InputKey_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.42"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_FBL_Conquest:BTTask_Wait_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.25"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_8",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.32"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTDecorator_CheckNPCFieldBattleState_C_4'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.29"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.37"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTDecorator_CheckNPCFieldBattleState_C_3'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.28"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTDecorator_CheckNPCFieldBattleState_C_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.27"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_23'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTDecorator_CheckNPCFieldBattleState_C_9'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.30"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "SGBTS_UpdateNPCConquestExplore'SBT_NPC_FBL_Conquest:SGBTS_UpdateNPCConquestExplore_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.39"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_MoveToKey'SBT_NPC_FBL_Conquest:VGBTT_MoveToKey_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.44"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_MoveToKey'SBT_NPC_FBL_Conquest:VGBTT_MoveToKey_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.45"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_SetNPCFieldBattleState_C'SBT_NPC_FBL_Conquest:SBTTask_SetNPCFieldBattleState_C_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.38"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_FBL_Conquest:BTDecorator_Blackboard_2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.17"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.9"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "TargetWarpObject is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetWarpObject"
+      },
+      "NodeName": "ワープ地点が設定されていれば",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_14",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 2500.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 2500.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "敵が近ければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_18",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "IsLookTargetBoss is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "IsLookTargetBoss"
+      },
+      "NodeName": "ボスが存在していたら",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_2",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 2500.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 2500.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "敵が近ければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.13"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_22",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 30000.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 30000.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "距離判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_3",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "TargetBoss is Is Not Set",
+      "OperationType": 1,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetBoss"
+      },
+      "NodeName": "ボスが存在せず",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_23'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.6"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_4",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "TargetEnemySpawnArea is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetEnemySpawnArea"
+      },
+      "NodeName": "敵が設定されていれば",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_5",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 2500.0,
+      "CachedDescription": "TargetDistance Is Less Than Or Equal To 2500.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "敵が近ければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.2"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_50",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 3500.0,
+      "CachedDescription": "TargetDistance Is Greater Than Or Equal To 3500.000000",
+      "OperationType": 5,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "敵が遠いか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_27'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.8"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_52",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "FloatValue": 30000.0,
+      "CachedDescription": "TargetDistance Is Greater Than Or Equal To 30000.000000",
+      "OperationType": 5,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetDistance"
+      },
+      "NodeName": "距離判定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_26'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.7"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_54",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "IsLookTargetBoss is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "IsLookTargetBoss"
+      },
+      "NodeName": "ボスが存在していたら",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_23'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.6"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.1,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_4'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.10"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.1,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_13'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckNPCFieldBattleState_C",
+    "Name": "SBTDecorator_CheckNPCFieldBattleState_C_2",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.SBTDecorator_CheckNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'Default__SBTDecorator_CheckNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.2"
+    },
+    "Properties": {
+      "CheckEnum": "SEnum_NPC_FieldBattleState::NewEnumerator3",
+      "FlowAbortMode": "EBTFlowAbortMode::Self",
+      "NodeName": "探索中か",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckNPCFieldBattleState_C",
+    "Name": "SBTDecorator_CheckNPCFieldBattleState_C_3",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.SBTDecorator_CheckNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'Default__SBTDecorator_CheckNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.2"
+    },
+    "Properties": {
+      "CheckEnum": "SEnum_NPC_FieldBattleState::NewEnumerator2",
+      "NodeName": "タワーアクセスか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckNPCFieldBattleState_C",
+    "Name": "SBTDecorator_CheckNPCFieldBattleState_C_4",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.SBTDecorator_CheckNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'Default__SBTDecorator_CheckNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.2"
+    },
+    "Properties": {
+      "NodeName": "プレイヤー追跡か",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_CheckNPCFieldBattleState_C",
+    "Name": "SBTDecorator_CheckNPCFieldBattleState_C_9",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.SBTDecorator_CheckNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_CheckNPCFieldBattleState_C'Default__SBTDecorator_CheckNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTDecorator_CheckNPCFieldBattleState.2"
+    },
+    "Properties": {
+      "CheckEnum": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "NodeName": "戦闘ステートか",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "bShowPropertyDetails": false,
+      "NodeName": "戦闘へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator3",
+      "NodeName": "ここに来る場合はターゲットを探すのに戻る",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_10",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "bShowPropertyDetails": false,
+      "NodeName": "戦闘へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_11",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "bShowPropertyDetails": false,
+      "NodeName": "戦闘へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_14'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.5"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_13",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator3",
+      "NodeName": "敵が遠いときは探索へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_27'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.8"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_14",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator3",
+      "NodeName": "敵が遠いときは探索へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_26'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.7"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_4",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator3",
+      "NodeName": "ここに来る場合はターゲットを探すのに戻る",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_SetNPCFieldBattleState_C",
+    "Name": "SBTTask_SetNPCFieldBattleState_C_5",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.SBTTask_SetNPCFieldBattleState_C'",
+    "Template": {
+      "ObjectName": "SBTTask_SetNPCFieldBattleState_C'Default__SBTTask_SetNPCFieldBattleState_C'",
+      "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBTTask_SetNPCFieldBattleState.3"
+    },
+    "Properties": {
+      "SetState": "SEnum_NPC_FieldBattleState::NewEnumerator1",
+      "bShowPropertyDetails": false,
+      "NodeName": "戦闘へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.13"
+      }
+    }
+  },
+  {
+    "Type": "SGBTS_UpdateNPCConquestExplore",
+    "Name": "SGBTS_UpdateNPCConquestExplore_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'SGBTS_UpdateNPCConquestExplore'",
+    "Properties": {
+      "m_warp_point_actor_key": {
+        "SelectedKeyName": "TargetWarpObject"
+      },
+      "m_search_dist_for_warp_point": 15000.0,
+      "m_spawn_enemy_actor_key": {
+        "SelectedKeyName": "TargetEnemySpawnArea"
+      },
+      "m_search_dist_for_enemy_spawn_area": 30000.0,
+      "m_dist_to_active_timer": 1500.0,
+      "m_time_to_next_area": 20.0,
+      "Interval": 0.2,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.11"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDistByKey",
+    "Name": "VGBTD_CheckDistByKey_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTD_CheckDistByKey'",
+    "Properties": {
+      "m_mode": "EVGBTD_CheckDistMode::All",
+      "m_eval": "EVGBTEval::LessEqual",
+      "m_value": 200.0,
+      "CachedDescription": "TargetWarpObject is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetWarpObject"
+      },
+      "NodeName": "ワープ地点が近ければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDistByKey",
+    "Name": "VGBTD_CheckDistByKey_2",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTD_CheckDistByKey'",
+    "Properties": {
+      "m_mode": "EVGBTD_CheckDistMode::All",
+      "m_eval": "EVGBTEval::LessEqual",
+      "m_value": 200.0,
+      "CachedDescription": "TargetWarpObject is Is Set",
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetWarpObject"
+      },
+      "NodeName": "ワープ地点が近ければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_1",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::R1",
+      "m_movement_location_key": {},
+      "m_input_priority": 5000,
+      "NodeName": "アクセス",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_4'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.10"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_InputKey",
+    "Name": "VGBTT_InputKey_2",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTT_InputKey'",
+    "Properties": {
+      "m_key": "EVGPadKey::R1",
+      "m_movement_location_key": {},
+      "m_input_priority": 5000,
+      "NodeName": "アクセス",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FBL_Conquest:BTComposite_Selector_13'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_MoveToKey",
+    "Name": "VGBTT_MoveToKey_0",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTT_MoveToKey'",
+    "Properties": {
+      "m_is_abort_damage_reaction": false,
+      "m_abort_bb_key_name": {
+        "SelectedKeyName": "IsDevelopDRLeftSkillOff"
+      },
+      "m_exec_time": 10.0,
+      "AcceptableRadius": 25.0,
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetWarpObject"
+      },
+      "NodeName": "ワープ地点へ移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.12"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_MoveToKey",
+    "Name": "VGBTT_MoveToKey_3",
+    "Outer": "SBT_NPC_FBL_Conquest",
+    "Class": "UScriptClass'VGBTT_MoveToKey'",
+    "Properties": {
+      "m_is_abort_damage_reaction": false,
+      "m_abort_bb_key_name": {
+        "SelectedKeyName": "IsDevelopDRLeftSkillOff"
+      },
+      "m_exec_time": 10.0,
+      "AcceptableRadius": 25.0,
+      "bStopOnOverlapNeedsUpdate": false,
+      "BlackboardKey": {
+        "SelectedKeyName": "TargetEnemySpawnArea"
+      },
+      "NodeName": "敵のスポーン位置に移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_NPC_FBL_Conquest:BTComposite_SimpleParallel_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.13"
+      }
+    }
+  }
+]

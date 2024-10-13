@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSSkillActionBranch'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DBGL_ATK_Air_Hard01_End",
+      "action_id": 601,
+      "states": [
+        "EVGActionState::EndAction",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_DBL_ATK_Aerial_Hard01_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DBL/MNT_AM_DBL_ATK_Aerial_Hard01_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_1703'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_0.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1703",
+    "Outer": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_1703.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 4,
+      "num_frames": 9,
+      "start_time": 0.13333334,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_18.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_AM_DBL_ATK_Air_Hard01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移NC",
+      "start_frame": 11,
+      "num_frames": 2,
+      "start_time": 0.36666667,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_DBL_ATK_Air_Hard01_End:VGActionEvent_19.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/ACT_AM_DBL_ATK_Air_Hard01_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        14,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1703",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  }
+]

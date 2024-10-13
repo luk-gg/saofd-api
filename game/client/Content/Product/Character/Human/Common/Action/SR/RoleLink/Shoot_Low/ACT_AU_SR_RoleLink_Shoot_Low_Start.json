@@ -1,0 +1,242 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SR_RoleLink_Shoot_Low_Start",
+      "action_id": 6100,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::RoleLink"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_SR_RoleLink_Shoot_Low_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/MNT_AU_SR_RoleLink_Shoot_Low_Start.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 41,
+      "num_frames": 3,
+      "start_time": 1.3666668,
+      "end_time": 1.4666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ハンドガン装備時専用遷移",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_15.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_19.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_AU_SR_RoleLink_Shoot_Low_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_SR_RoleLink_Shoot_Low_Start:VGActionEvent_26.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/RoleLink/Shoot_Low/ACT_AU_SR_RoleLink_Shoot_Low_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20080,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6720,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 6101
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 6110,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::WeaponChangeWG2",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_Role_st'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_Role_st.0"
+      }
+    }
+  }
+]

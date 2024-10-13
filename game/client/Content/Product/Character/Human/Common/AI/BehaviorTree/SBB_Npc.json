@@ -1,0 +1,605 @@
+[
+  {
+    "Type": "BlackboardData",
+    "Name": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardData'",
+    "Properties": {
+      "Keys": [
+        {
+          "EntryName": "TargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.25"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetDistance",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'SBB_NPC:BlackboardKeyType_Float_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.17"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "Random",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'SBB_NPC:BlackboardKeyType_Float_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.18"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "PlayerType",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'SBB_NPC:BlackboardKeyType_Int_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.20"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.34"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsDevelopDRLeftSkillOff",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.1"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsUseLinkSkill",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.2"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MeteorSafePosition",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.33"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetEnemyState",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Name'SBB_NPC:BlackboardKeyType_Name_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.24"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsMeteorWait",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.7"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "RangeStateType",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'SBB_NPC:BlackboardKeyType_Int_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.21"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelfActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.26"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ChangeRangeStateTimer",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'SBB_NPC:BlackboardKeyType_Float_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.19"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FlyInputDirection",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.35"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "NpcAIState",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'SBB_NPC:BlackboardKeyType_Int_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.22"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetChasePlayer",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.27"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FieldBattleState",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Enum'SBB_NPC:BlackboardKeyType_Enum_0'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.15"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsFieldBattle",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.10"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsPlatoonLeader",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.8"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetTower",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_8'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.32"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetTowerLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.36"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetEnemySpawnArea",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.28"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetWarpObject",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.30"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsUseMassiveLinkArts",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.9"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetChasePlayerLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.37"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsRoleLinkEntry",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_6'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.11"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetRoleLinkLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_5'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.38"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetBoss",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_6'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.31"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelectSkill",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Enum'SBB_NPC:BlackboardKeyType_Enum_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.16"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsTargetEnemyRayHit",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_7'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.12"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsWarpToRoleLinkPosition",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_8'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.13"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "RoleLinkCircleIndex",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'SBB_NPC:BlackboardKeyType_Int_3'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.23"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetRescueePlayer",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'SBB_NPC:BlackboardKeyType_Object_4'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.29"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "TargetFocusLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'SBB_NPC:BlackboardKeyType_Vector_6'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.39"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsTargetFocusLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_9'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.14"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsChangeTargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_10'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.3"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsCharaHealTaget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_11'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.4"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsMultiBattle",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_12'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.5"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "IsLookTargetBoss",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'SBB_NPC:BlackboardKeyType_Bool_13'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.6"
+          },
+          "bInstanceSynced": false
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_10",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_11",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_12",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_13",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_2",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_3",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_4",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_5",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_6",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_7",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_8",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_9",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Enum",
+    "Name": "BlackboardKeyType_Enum_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Enum'",
+    "Properties": {
+      "EnumType": {
+        "ObjectName": "UserDefinedEnum'SEnum_NPC_FieldBattleState'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SEnum_NPC_FieldBattleState.0"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Enum",
+    "Name": "BlackboardKeyType_Enum_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Enum'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_2",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_2",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_3",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Name",
+    "Name": "BlackboardKeyType_Name_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Name'"
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'Actor'",
+        "ObjectPath": "/Script/Engine"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_2",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGPlayer'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_3",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'Actor'",
+        "ObjectPath": "/Script/Engine"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_4",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGPlayer'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_5",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'Actor'",
+        "ObjectPath": "/Script/Engine"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_6",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_8",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Object'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_0",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_1",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_2",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_3",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_4",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_5",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_6",
+    "Outer": "SBB_NPC",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  }
+]

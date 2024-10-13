@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPUCR020_4_UNQ001_DurabilityRayBeam_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGUCR020DurabilityRayBeam'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPUCR020_4_UNQ001_DurabilityRayBeam_C'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Name": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.BPUCR020_4_UNQ001_DurabilityRayBeam_C'",
+    "Properties": {
+      "m_mul_damage_coeff": 0.2,
+      "m_default_impact": "ESGDamageImpact::High",
+      "m_last_hit_default_impact": "ESGDamageImpact::Blow",
+      "m_beam_shape": "ESGBeamShape::Cylinder",
+      "m_radius": 100.0,
+      "m_half_height": 750.0,
+      "m_max_hit_count": 5,
+      "m_next_hit_span": 0.2,
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.8"
+      },
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD6_Beam01_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD6_Beam01_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD6_Beam01_en'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD6_Beam01_en.0"
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.9"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.11"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.2"
+      },
+      "m_life_span": 1.0,
+      "m_wait_death_time": 0.3,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "attr": [
+            "EVGDamageAttr::IgnoreAddUniqueAbilityGauge"
+          ],
+          "hit_stop": 0.01,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+            "rotation": "EVGKnockBackRotation::FrontFace"
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.12"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPUCR020_4_UNQ001_DurabilityRayBeam_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.5"
+      },
+      "VariableGuid": "C131A4EF-45BE4616-7D480291-711F6521",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'"
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPUCR020_4_UNQ001_DurabilityRayBeam_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/UCR020/UCR020_4/UNQ001/BPUCR020_4_UNQ001_DurabilityRayBeam.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPUCR020_4_UNQ001_DurabilityRayBeam_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

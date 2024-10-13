@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_KTN_ATK_Air_Hard02_Start2",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "KTN_AirHard_02",
+      "action_id": 611,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_KTN_ATK_Air_Hard02_Start2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/KTN/MNT_AM_KTN_ATK_Air_Hard02_Start2.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_1703'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_611'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AM_KTN_ATK_Air_Hard02_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1703",
+    "Outer": "ACT_AM_KTN_ATK_Air_Hard02_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "is_ignore_loop": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_1703.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AM_KTN_ATK_Air_Hard02_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 6,
+      "start_time": 0.20000002,
+      "end_time": 0.23333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_6.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_611",
+    "Outer": "ACT_AM_KTN_ATK_Air_Hard02_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 7,
+      "num_frames": 2,
+      "start_time": 0.23333335,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AM_KTN_ATK_Air_Hard02_Start2:VGActionEvent_611.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/ACT_AM_KTN_ATK_Air_Hard02_Start2.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_611",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 612
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1500.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1703",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

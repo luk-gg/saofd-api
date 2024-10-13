@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_AF1_WLC_WG1_Bullet_Change_Up",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "DGLBulletChange_Up",
+      "m_action_id": 352,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueAbility_HoldOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueAbility_HoldOn.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_UniqueSkill_Slot0'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_UniqueSkill_Slot0.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillExtraBullet",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Firing",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FireLagAfterElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionFinished",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

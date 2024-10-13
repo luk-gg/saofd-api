@@ -1,0 +1,339 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Jump_Start",
+      "action_id": 9,
+      "states": [
+        "EVGActionState::Air",
+        "EVGActionState::Jump"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_CMN_Jump_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/CMN/MNT_AF1_CMN_Jump_Start.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_447'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_1880'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_238'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_43'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_JumpStart:VGActionEvent_719'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Interruptible",
+      "start_frame": 2,
+      "num_frames": 36,
+      "start_time": 0.06666667,
+      "end_time": 1.2666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_JumpStart:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "InputRotate",
+      "num_frames": 38,
+      "end_time": 1.2666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_AF1_CMN_JumpStart:VGActionEvent_1.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1880",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AF1_CMN_JumpStart:VGActionEvent_1880.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_238",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_CMN_JumpStart:VGActionEvent_238.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Jump_Loop",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_CMN_JumpStart:VGActionEvent_4.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_43",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャンプ音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_CMN_JumpStart:VGActionEvent_43.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_447",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Landing",
+      "start_frame": 4,
+      "num_frames": 34,
+      "start_time": 0.13333334,
+      "end_time": 1.2666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_CMN_JumpStart:VGActionEvent_447.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF1_CMN_JumpStart:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_719",
+    "Outer": "ACT_AF1_CMN_JumpStart",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャンプ時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_CMN_JumpStart:VGActionEvent_719.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_JumpStart.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_238",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 4,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_43",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10400,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_719",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 5720,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 13
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_447",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 360.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_1880",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1450.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Step_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Step_s.0"
+      },
+      "scale_offset": {
+        "X": 1.3,
+        "Y": 1.3,
+        "Z": 1.3
+      }
+    }
+  }
+]

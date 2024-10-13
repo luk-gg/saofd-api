@@ -1,0 +1,242 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD6_RoleLink_Shoot_High_Attack",
+      "action_id": 6304,
+      "states": [
+        "EVGActionState::RoleLink",
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD6_RoleLink_Shoot_High_Attack'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD6/MNT_AF_SWD6_RoleLink_Shoot_High_Attack.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.6"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロールビーム",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_0.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器非表示",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_19.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_26.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_High_Attack",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 22,
+      "num_frames": 9,
+      "start_time": 0.73333335,
+      "end_time": 1.0333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_RoleLink_Shoot_High_Attack:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_High/ACT_AF_SWD6_RoleLink_Shoot_High_Attack.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20080,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6200,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 6105
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        20
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_ICERole_Laser'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_ICERole_Laser.0"
+      },
+      "location_offset": {
+        "X": 20.0,
+        "Y": 50.0,
+        "Z": 120.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -32.0
+      }
+    }
+  }
+]

@@ -1,0 +1,721 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "ALDT_AF1_WSR",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'ActionLibrary_TableRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "1": {
+        "action_id": 0,
+        "name": "Idle_WG1",
+        "states": [
+          "EVGActionState::Idle"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_Idle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_Idle.1"
+        }
+      },
+      "2": {
+        "action_id": 5,
+        "name": "Run_Start_SMG",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Run_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Run_Start.2"
+        }
+      },
+      "3": {
+        "action_id": 6,
+        "name": "SMG_Run_Loop",
+        "states": [
+          "EVGActionState::Run"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Run_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Run_Loop.1"
+        }
+      },
+      "4": {
+        "action_id": 7,
+        "name": "Dash_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Dash_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Dash_End.2"
+        }
+      },
+      "5": {
+        "action_id": 8,
+        "name": "Run_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Run_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Run_End.3"
+        }
+      },
+      "6": {
+        "action_id": 9,
+        "name": "Jump_SMG",
+        "states": [
+          "EVGActionState::Air",
+          "EVGActionState::Jump"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_Jump'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_Jump.2"
+        }
+      },
+      "7": {
+        "action_id": 10,
+        "name": "Jump_Loop_SMG",
+        "states": [
+          "EVGActionState::Fall",
+          "EVGActionState::Air"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_JumpLoop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_JumpLoop.1"
+        }
+      },
+      "8": {
+        "action_id": 11,
+        "name": "Jump_End_SMG",
+        "states": [
+          "EVGActionState::Land"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_JumpEnd'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_JumpEnd.3"
+        }
+      },
+      "9": {
+        "action_id": 12,
+        "name": "Jump_Loop2_SMG",
+        "states": [
+          "EVGActionState::Fall",
+          "EVGActionState::Air"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_JumpLoop2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_JumpLoop2.1"
+        }
+      },
+      "10": {
+        "action_id": 13,
+        "name": "Jump_End2_SMG",
+        "states": [
+          "EVGActionState::Land"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_JumpEnd2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_JumpEnd2.3"
+        }
+      },
+      "11": {
+        "action_id": 17,
+        "name": "Aim",
+        "states": [
+          "EVGActionState::Aim"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_Aim'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_Aim.0"
+        }
+      },
+      "12": {
+        "action_id": 18,
+        "name": "AimEnd_WG1",
+        "states": [],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_AimEnd'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_AimEnd.0"
+        }
+      },
+      "13": {
+        "action_id": 19,
+        "name": "AimIdle",
+        "states": [
+          "EVGActionState::Idle"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_AimIdle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_AimIdle.0"
+        }
+      },
+      "14": {
+        "action_id": 20,
+        "name": "AimWalk_SMG",
+        "states": [
+          "EVGActionState::Walk"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_AimWalk'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_AimWalk.0"
+        }
+      },
+      "15": {
+        "action_id": 21,
+        "name": "AimWalkBack_SMG",
+        "states": [
+          "EVGActionState::Walk",
+          "EVGActionState::Back"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_AimWalkBack'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_AimWalkBack.0"
+        }
+      },
+      "16": {
+        "action_id": 22,
+        "name": "AimWalkBack_SMG",
+        "states": [
+          "EVGActionState::Walk",
+          "EVGActionState::Back"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_AimWalkBack_Jog'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_AimWalkBack_Jog.0"
+        }
+      },
+      "17": {
+        "action_id": 23,
+        "name": "AimWalk_Jog_SMG",
+        "states": [
+          "EVGActionState::Walk"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_AimWalk_Jog'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_AImWalk_Jog.0"
+        }
+      },
+      "18": {
+        "action_id": 26,
+        "name": "AimJump_SMG",
+        "states": [
+          "EVGActionState::Aim"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_AimJump'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_AimJump.0"
+        }
+      },
+      "19": {
+        "action_id": 40,
+        "name": "Reload_SMG",
+        "states": [
+          "EVGActionState::Reload"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_Reload'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSM/ACT_AF_SMG_Reload.2"
+        }
+      },
+      "20": {
+        "action_id": 51,
+        "name": "Step_F_NC_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_F'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_F.6"
+        }
+      },
+      "21": {
+        "action_id": 52,
+        "name": "Step_B_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_B'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_B.7"
+        }
+      },
+      "22": {
+        "action_id": 53,
+        "name": "Step_L_SMG",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_L'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_L.6"
+        }
+      },
+      "23": {
+        "action_id": 54,
+        "name": "Step_R_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_R'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_R.6"
+        }
+      },
+      "24": {
+        "action_id": 55,
+        "name": "Step_F_NC_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_F_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_F_End.3"
+        }
+      },
+      "25": {
+        "action_id": 61,
+        "name": "Step_Air_SR",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_CMN_Step_Air_SR'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AU_CMN_Step_Air_SR.5"
+        }
+      },
+      "26": {
+        "action_id": 62,
+        "name": "DashStep_Air_SR",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Air"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_CMN_DashStep_Air_SR'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AU_CMN_DashStep_Air_SR.5"
+        }
+      },
+      "27": {
+        "action_id": 71,
+        "name": "Step_F_NC_UA_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_F_UA'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_F_UA.6"
+        }
+      },
+      "28": {
+        "action_id": 72,
+        "name": "Step_B_UA_SMG",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_B_UA'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_B_UA.6"
+        }
+      },
+      "29": {
+        "action_id": 73,
+        "name": "Step_L_UA_SMG",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_L_UA'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_L_UA.6"
+        }
+      },
+      "30": {
+        "action_id": 74,
+        "name": "Step_R_UA_SMG",
+        "states": [
+          "EVGActionState::StartAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_R_UA'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_R_UA.6"
+        }
+      },
+      "31": {
+        "action_id": 75,
+        "name": "Step_F_NC_UA_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Step_F_UA_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Step_F_UA_End.4"
+        }
+      },
+      "32": {
+        "action_id": 99,
+        "name": "Sub_Cancel",
+        "states": [],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_CMN_SubCancel'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_SubCancel.0"
+        }
+      },
+      "33": {
+        "action_id": 101,
+        "name": "Jump_End_Heavy_SMG",
+        "states": [
+          "EVGActionState::Land"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_JumpEnd_Heavy'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_JumpEnd_Heavy.2"
+        }
+      },
+      "34": {
+        "action_id": 102,
+        "name": "Jump_End_Heavy_Roll_SR",
+        "states": [
+          "EVGActionState::Land",
+          "EVGActionState::Kneeling"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_Jump_End_Heavy_Roll_SR'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AU_Jump_End_Heavy_Roll_SR.1"
+        }
+      },
+      "35": {
+        "action_id": 106,
+        "name": "Run_Loop2_SMG",
+        "states": [
+          "EVGActionState::RunSecond"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_Run_Loop2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_Run_Loop2.0"
+        }
+      },
+      "36": {
+        "action_id": 107,
+        "name": "DashJump_Start_SMG",
+        "states": [
+          "EVGActionState::Air",
+          "EVGActionState::Jump",
+          "EVGActionState::RunSecond"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_DashJumpStart'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_DashJumpStart.2"
+        }
+      },
+      "37": {
+        "action_id": 108,
+        "name": "DashJump_Loop_SMG",
+        "states": [
+          "EVGActionState::Fall",
+          "EVGActionState::Air",
+          "EVGActionState::RunSecond"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_DashJumpLoop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_DashJumpLoop.1"
+        }
+      },
+      "38": {
+        "action_id": 109,
+        "name": "DashJump_End_SMG",
+        "states": [
+          "EVGActionState::Land",
+          "EVGActionState::RunSecond"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_DashJumpEnd'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_DashJumpEnd.2"
+        }
+      },
+      "39": {
+        "action_id": 110,
+        "name": "DashStep_F_NC_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_DashStep_F'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_DashStep_F.3"
+        }
+      },
+      "40": {
+        "action_id": 111,
+        "name": "DashStep_F_NC_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_DashStep_F_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_DashStep_F_End.3"
+        }
+      },
+      "41": {
+        "action_id": 120,
+        "name": "DashStep_F_UA_SMG",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Step"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_DashStep_F_UA'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_DashStep_F_UA.4"
+        }
+      },
+      "42": {
+        "action_id": 121,
+        "name": "DashStep_F_NC_UA_End_SMG",
+        "states": [
+          "EVGActionState::EndAction"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_BAS_DashStep_F_UA_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_BAS_DashStep_F_UA_End.4"
+        }
+      },
+      "43": {
+        "action_id": 223,
+        "name": "DMG_Low",
+        "states": [
+          "EVGActionState::Damage"
+        ],
+        "priority": 10000,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_DMG_Low'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_DMG_Low.0"
+        }
+      },
+      "44": {
+        "action_id": 224,
+        "name": "DMG_LowBlend",
+        "states": [
+          "EVGActionState::Damage"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_DMG_LowBlend'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_DMG_LowBlend.0"
+        }
+      },
+      "45": {
+        "action_id": 225,
+        "name": "DMG_High",
+        "states": [
+          "EVGActionState::Damage"
+        ],
+        "priority": 10000,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_DMG_High'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_DMG_High.0"
+        }
+      },
+      "46": {
+        "action_id": 300,
+        "name": "Fire_WG1",
+        "states": [
+          "EVGActionState::Fire"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WAS_WG1_Fire'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WAS/ACT_AF1_WAS_WG1_Fire.0"
+        }
+      },
+      "47": {
+        "action_id": 301,
+        "name": "FireAdditive_WSR",
+        "states": [],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WSM_WG1_FireAdditive'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSM/ACT_AF1_WSM_WG1_FireAdditive.12"
+        }
+      },
+      "48": {
+        "action_id": 304,
+        "name": "FireSkill_to_BA",
+        "states": [
+          "EVGActionState::Skill",
+          "EVGActionState::Fire"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF1_WSM_WG1_Fire_Skill'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSM/ACT_AF1_WSM_WG1_Fire_Skill.0"
+        }
+      },
+      "49": {
+        "action_id": 1500,
+        "name": "SMG_UniqueAbility",
+        "states": [
+          "EVGActionState::Skill",
+          "EVGActionState::StartAction"
+        ],
+        "priority": 10001,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AF_SMG_UniqueAbility'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AF_SMG_UniqueAbility.5"
+        }
+      },
+      "50": {
+        "action_id": 2361,
+        "name": "DMG_Bend_Air_Lleg",
+        "states": [
+          "EVGActionState::Damage"
+        ],
+        "priority": 10000,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_CMN_DMG_Weak_Air_Lleg'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AU_CMN_DMG_Weak_Air_Lleg.6"
+        }
+      },
+      "51": {
+        "action_id": 8500,
+        "name": "SMG_MLA_Wait",
+        "states": [
+          "EVGActionState::LinkSkill",
+          "EVGActionState::StartAction",
+          "EVGActionState::Attack"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_MassiveLinkArts_Wait'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_MassiveLinkArts_Wait.3"
+        }
+      },
+      "52": {
+        "action_id": 8501,
+        "name": "SMG_MLA_Attack",
+        "states": [
+          "EVGActionState::Attack",
+          "EVGActionState::LinkSkill"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_MassiveLinkArts_Attack'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_MassiveLinkArts_Attack.4"
+        }
+      },
+      "53": {
+        "action_id": 8502,
+        "name": "SMG_MLA_End",
+        "states": [
+          "EVGActionState::EndAction",
+          "EVGActionState::Attack",
+          "EVGActionState::LinkSkill"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_MassiveLinkArts_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_MassiveLinkArts_End.9"
+        }
+      },
+      "54": {
+        "action_id": 8600,
+        "name": "SMG_SC_Start",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Attack"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_SwitchChain_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_SwitchChain_Start.2"
+        }
+      },
+      "55": {
+        "action_id": 8601,
+        "name": "SMG_SC_Attack",
+        "states": [
+          "EVGActionState::Attack"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_SwitchChain_Attack'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_SwitchChain_Attack.4"
+        }
+      },
+      "56": {
+        "action_id": 8602,
+        "name": "SMG_SC_End",
+        "states": [
+          "EVGActionState::EndAction",
+          "EVGActionState::Attack"
+        ],
+        "priority": 100,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_AU_SMG_SwitchChain_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/ACT_AU_SMG_SwitchChain_End.8"
+        }
+      },
+      "57": {
+        "action_id": 9500,
+        "name": "SMG_SKL_HealItem",
+        "states": [
+          "EVGActionState::StartAction",
+          "EVGActionState::Skill"
+        ],
+        "priority": 10001,
+        "m_action_asset": {
+          "ObjectName": "VGActionAsset'ACT_SMG_SKL_HealItem'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SMG/SMG_DHG_SKL/ACT_SMG_SKL_HealItem.5"
+        }
+      }
+    }
+  }
+]

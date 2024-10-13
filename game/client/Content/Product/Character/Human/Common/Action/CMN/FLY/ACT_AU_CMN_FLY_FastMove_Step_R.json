@@ -1,0 +1,875 @@
+[
+  {
+    "Type": "SGANJustActionReceptionStart",
+    "Name": "SGANJustActionReceptionStart_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANJustActionReceptionStart'",
+    "Properties": {
+      "m_notify_type": "ESGNotifyJustActionType::JustDodge",
+      "m_dodge_invisible_time": 0.35
+    }
+  },
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_CMN_FLY_AccelDodge'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/BranchSet/ABS_CMN_FLY_AccelDodge.0"
+      },
+      "early_frame": 2,
+      "early_time": 0.06666667
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "position": {
+        "X": 0.0,
+        "Y": 30.0,
+        "Z": 100.0
+      },
+      "desc": {
+        "damage": 0.1,
+        "attr": [
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::EVGDamageAttr_MAX"
+        ],
+        "impact": "ESGDamageImpact::Low",
+        "burst_damage": 0.0,
+        "hit_stop": 0.03,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection"
+        },
+        "reaction_value": 3.0
+      },
+      "hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Blow_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Blow_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 3730,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "check_equip_special_effect_id": {
+        "row_name": "4060100"
+      },
+      "box_half_extent_x": 100.0,
+      "box_half_extent_y": 110.0,
+      "box_half_extent_z": 90.0
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_44",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 11,
+      "early_time": 0.36666667
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Accel_Step_R",
+      "action_id": 1014,
+      "states": [
+        "EVGActionState::Hovering",
+        "EVGActionState::Step"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_CMN_FLY_FastMove_Step_r'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/CMN/MNT_AF1_CMN_FLY_FastMove_Step_r.0"
+        }
+      },
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.25"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.24"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.26"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_44'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.22"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_20'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャスト回避",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "notify": {
+        "ObjectName": "SGANJustActionReceptionStart'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_0.SGANJustActionReceptionStart_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行状態",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.39"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_10.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.33"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 21,
+      "start_time": 0.70000005,
+      "end_time": 0.7333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_11.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.34"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 22,
+      "start_time": 0.73333335,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_12.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.35"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "減速",
+      "start_frame": 23,
+      "num_frames": 4,
+      "start_time": 0.7666667,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.29"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロックオン不可",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_14.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.40"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "アクセルキャンセルステップ",
+      "start_frame": 21,
+      "num_frames": 6,
+      "start_time": 0.70000005,
+      "end_time": 0.9000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_15.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_16.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 4,
+      "start_time": 0.7666667,
+      "end_time": 0.90000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_17.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.30"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ステップ音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_19.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.28"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回転(カメラ向き)",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.41"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_20",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "高速移動音",
+      "num_frames": 75,
+      "end_time": 2.5000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_20.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.43"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行制限時間",
+      "start_frame": 21,
+      "num_frames": 6,
+      "start_time": 0.70000005,
+      "end_time": 0.9000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.31"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "特殊効果用攻撃キー",
+      "start_frame": 4,
+      "num_frames": 8,
+      "start_time": 0.13333334,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_36.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_4.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.44"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_44",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキルキャンセル",
+      "start_frame": 4,
+      "num_frames": 23,
+      "start_time": 0.13333334,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_44.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_5.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.36"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.42"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_7.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.37"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "加速",
+      "start_frame": 23,
+      "num_frames": 4,
+      "start_time": 0.7666667,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.32"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_AU_CMN_FLY_FastMove_Step_R",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "num_frames": 18,
+      "start_time": 0.10000001,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AU_CMN_FLY_FastMove_Step_R:VGActionEvent_9.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/FLY/ACT_AU_CMN_FLY_FastMove_Step_R.38"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 5710,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10430,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1040,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_LS_Down'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_LS_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1000
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1018,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasStamina",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1041,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_LS_Up'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_LS_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": -400.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": -600.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": -800.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": 1200.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": 600.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        39,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        41
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        43
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        44
+      ]
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_20",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 20096,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Fly'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Fly.0"
+      }
+    }
+  }
+]

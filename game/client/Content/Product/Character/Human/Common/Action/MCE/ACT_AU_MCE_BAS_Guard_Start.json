@@ -1,0 +1,401 @@
+[
+  {
+    "Type": "SGANJustActionReceptionStart",
+    "Name": "SGANJustActionReceptionStart_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANJustActionReceptionStart'",
+    "Properties": {
+      "m_notify_type": "ESGNotifyJustActionType::JustGuard"
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 3600.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "MCE_Guard_Start",
+      "action_id": 2500,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Guard"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AU_MCE_BAS_Guard_Start'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/MCE/MNT_AU_MCE_BAS_Guard_Start.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_24'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_36'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.9"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_152'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "end",
+      "start_frame": 4,
+      "num_frames": 5,
+      "start_time": 0.13333334,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャストガード成功時遷移",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_152",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード構え音",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_152.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_24",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スティック向きへ",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_24.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_36",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_36.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "カメラリセット：キャラカメラに合わせて数値を微調整してるのでいじっちゃダメ",
+      "num_frames": 5,
+      "end_time": 0.16666667,
+      "notify_state": {
+        "ObjectName": "VGANSCameraCutIn'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_4.VGANSCameraCutIn_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ジャストガード判定",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "SGANJustActionReceptionStart'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_5.SGANJustActionReceptionStart_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AU_MCE_BAS_Guard_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラロック時",
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_AU_MCE_BAS_Guard_Start:VGActionEvent_8.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/MCE/ACT_AU_MCE_BAS_Guard_Start.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_152",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10490,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2501
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2540,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillCounterActionRequested",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_24",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 3600.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        29
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCameraCutIn",
+    "Name": "VGANSCameraCutIn_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSCameraCutIn'",
+    "Properties": {
+      "is_node_tracking": true,
+      "start": {
+        "distance": 386.0,
+        "offset": {
+          "X": -53.0,
+          "Y": 0.0,
+          "Z": 120.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": 90.0,
+          "Roll": 0.0
+        },
+        "fov": 70.0,
+        "blend": {
+          "BlendTime": 1.0,
+          "BlendFunction": "VTBlend_EaseOut",
+          "bLockOutgoing": true
+        }
+      },
+      "end": {
+        "distance": 520.0,
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": 90.0,
+          "Roll": 0.0
+        },
+        "fov": 70.0,
+        "blend": {
+          "BlendTime": 0.03
+        }
+      },
+      "is_end_match_camera": true
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_36",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        32
+      ],
+      "ik_state": false,
+      "lerp_time": 0.25
+    }
+  }
+]

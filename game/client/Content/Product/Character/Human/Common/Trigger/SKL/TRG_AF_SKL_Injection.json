@@ -1,0 +1,33 @@
+[
+  {
+    "Type": "VGSkillTriggerAsset",
+    "Name": "TRG_AF_SKL_Injection",
+    "Class": "UScriptClass'VGSkillTriggerAsset'",
+    "Properties": {
+      "m_uid": "Injection",
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackR2'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackR2.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SkillInjectionReady",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "Type": "SGANSActionCameraSetting",
+    "Name": "SGANSActionCameraSetting_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANSActionCameraSetting'",
+    "Properties": {
+      "m_camera_fov_y": 60.0,
+      "m_camera_fov_y_lerp": 0.15
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 12,
+      "early_time": 0.40000004
+    }
+  },
+  {
+    "Type": "SGANSWeaponSkillEmissive",
+    "Name": "SGANSWeaponSkillEmissive_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'SGANSWeaponSkillEmissive'",
+    "Properties": {
+      "fade_time": 0.5
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_KTN_006_AttackHitBranch",
+      "action_id": 12302,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::WeaponAction",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_KTN_SKL_006_AttackHitBranch'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WAC/MNT_KTN_SKL_006_AttackHitBranch.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移NC",
+      "start_frame": 14,
+      "num_frames": 2,
+      "start_time": 0.4666667,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "キャンセル空中コンボ",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponSkillEmissive'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_12.SGANSWeaponSkillEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラズーム60",
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "notify_state": {
+        "ObjectName": "SGANSActionCameraSetting'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_13.SGANSActionCameraSetting_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 12,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 16,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_5.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "着地遷移なし",
+      "start_frame": 16,
+      "num_frames": 3,
+      "start_time": 0.53333336,
+      "end_time": 0.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_6.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_KTN_SKL_006_AttackHitBranch",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 16,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_KTN_SKL_006_AttackHitBranch:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/KTN/KTN_SKL/ACT_KTN_SKL_006_AttackHitBranch.18"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 450,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponAttackX'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponAttackX.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+            }
+          ],
+          "states": []
+        }
+      ],
+      "early_frame": 9,
+      "early_time": 0.3
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Attenuation",
+      "move_value": {
+        "X": 30.0,
+        "Y": 30.0,
+        "Z": 30.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18,
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "Type": "SGANSExpression",
+    "Name": "SGANSExpression_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSExpression'",
+    "Properties": {
+      "m_expression_pattern": "EVGFacialExpressionPattern::Down"
+    }
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideUniqueSkill",
+        "ESGHudDisplayType::HideSkillPallet",
+        "ESGHudDisplayType::HideReticle"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DMG_BlowUpDeath_Loop",
+      "action_id": 254,
+      "states": [
+        "EVGActionState::Dead",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_CMN_DMG_BlowUp_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/CMN/MNT_AF1_CMN_DMG_BlowUp_Loop.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_0.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_BlowUp_End",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキル・固有・レティクルを消す",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_2.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "武器消し（しない）",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_4.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS解除",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_7.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF1_CMN_DMG_BlowUpDeath_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "フェイシャル（ダウン顔）",
+      "num_frames": 10,
+      "end_time": 0.33333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSExpression'ACT_AF1_CMN_DMG_BlowUpDeath_Loop:VGActionEvent_8.SGANSExpression_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/CMN/ACT_AF1_CMN_DMG_BlowUpDeath_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 255
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 255,
+      "activation_time": 4.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1000.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        29
+      ],
+      "ik_state": false
+    }
+  }
+]

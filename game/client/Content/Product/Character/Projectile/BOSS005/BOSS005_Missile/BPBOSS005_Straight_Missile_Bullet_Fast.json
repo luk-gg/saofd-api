@@ -1,0 +1,279 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPBOSS005_Straight_Missile_Bullet_Fast_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGBOSS005StraightMissile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPBOSS005_Straight_Missile_Bullet_Fast_C'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.0"
+      }
+    }
+  },
+  {
+    "Type": "BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Name": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.BPBOSS005_Straight_Missile_Bullet_Fast_C'",
+    "Properties": {
+      "m_falling_time": 1.0,
+      "m_horizontal_move_speed": 1000.0,
+      "m_horizontal_move_max_speed": 1500.0,
+      "m_horizontal_move_acceleration": 250.0,
+      "m_speed": 1200.0,
+      "m_limit_distance": 10000.0,
+      "m_apply_gravity": true,
+      "m_gravity_scale": 40.0,
+      "m_refill_server_spawn_time": true,
+      "m_damage_enemy_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS005_00_MissileB_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS005_00/efs_BOSS005_00_MissileB_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS005_00_MissileB_delete'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS005_00/efs_BOSS005_00_MissileB_delete.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_ENE_Hit_Magic_Water_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyHit/efs_ENE_Hit_Magic_Water_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 0.75,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Sphere",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.2"
+      },
+      "m_wait_time_se": [
+        {
+          "m_sound_cue_info": {
+            "SoundType": "EVGSoundType::COMPONENT_SE",
+            "CueId": 12,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "m_wait_time": 1.0
+        }
+      ],
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 2.0,
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::High",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 1500.0,
+              "Y": 0.0,
+              "Z": 100.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPBOSS005_Straight_Missile_Bullet_Fast_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.5"
+      },
+      "VariableGuid": "F164FEDC-4E9DF31B-F20B6795-43CB6B99",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPBOSS005_Straight_Missile_Bullet_Fast_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 80.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS005_Straight_Missile_Bullet_Fast_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS005/BOSS005_Missile/BPBOSS005_Straight_Missile_Bullet_Fast.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPBOSS005_Straight_Missile_Bullet_Fast_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "Type": "SGANSRoleLinkActionBranch",
+    "Name": "SGANSRoleLinkActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSRoleLinkActionBranch'",
+    "Properties": {
+      "branch_type": "ESGRoleLinkActionBranchType::Trigger",
+      "action_id": 6103,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::SuccessRoleLink",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD6_RoleLink_Shoot_Low_Loop",
+      "action_id": 6101,
+      "states": [
+        "EVGActionState::RoleLink"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD6_RoleLink_Shoot_Low_Loop'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD6/MNT_AF_SWD6_RoleLink_Shoot_Low_Loop.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_319'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロール連携待機キャンセル",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロール連携終了",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵(リム付き)",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器非表示",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_319",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "サークルエリア外",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_319.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF_SWD6_RoleLink_Shoot_Low_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロール連携成功",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSRoleLinkActionBranch'ACT_AF_SWD6_RoleLink_Shoot_Low_Loop:VGActionEvent_6.SGANSRoleLinkActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD6/RoleLink/Shoot_Low/ACT_AF_SWD6_RoleLink_Shoot_Low_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 6102,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsCancelRoleLinking",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 6102,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsRoleLinkReception",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SuccessRoleLink",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_319",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2502,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::InsideRoleCircle",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  }
+]

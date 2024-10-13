@@ -1,0 +1,616 @@
+[
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 9,
+      "early_time": 0.3
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Jump_End_Heavy_HG",
+      "action_id": 101,
+      "states": [
+        "EVGActionState::Land"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_HG_Jump_End_Heavy'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WHG/MNT_AF_HG_Jump_End_Heavy.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_569'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_117'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_163'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_217'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_1661'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_460'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.14"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_0.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Run",
+      "start_frame": 14,
+      "num_frames": 93,
+      "start_time": 0.4666667,
+      "end_time": 3.5666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_117",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Branch_Rolling",
+      "num_frames": 28,
+      "end_time": 0.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_117.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スナイパー武器切り替え",
+      "start_frame": 4,
+      "num_frames": 67,
+      "start_time": 0.13333334,
+      "end_time": 2.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_12.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_163",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "jump",
+      "start_frame": 4,
+      "num_frames": 94,
+      "start_time": 0.13333334,
+      "end_time": 3.266667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_163.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1661",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_1661.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_2.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_217",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "グレネード武器切り替え",
+      "start_frame": 4,
+      "num_frames": 67,
+      "start_time": 0.13333334,
+      "end_time": 2.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_217.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "interruptible",
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_460",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_460.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スティック前入れでRollへ（3フレディレイ）",
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_569",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 19,
+      "num_frames": 2,
+      "start_time": 0.6333334,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_569.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AF_HG_JumpEnd_Heavy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF_HG_JumpEnd_Heavy:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF_HG_JumpEnd_Heavy.17"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_1661",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "inner_radius": 1.0,
+      "outer_radius": 2.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_460",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::STAGE_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": true,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 5400,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 6,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_117",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 51,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Step'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Step.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOff'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOff.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ],
+      "early_frame": 3,
+      "early_time": 0.10000001
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 131,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponChange'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponChange.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::CanWeaponChange",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WeaponChangeWG1",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_163",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 9,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Jump'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Jump.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOff'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOff.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 5,
+      "early_time": 0.16666667
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_217",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 135,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponChange'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponChange.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::CanWeaponChange",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::WeaponChangeWG5",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillAction",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Reloading",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::RPMLagElapsed",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 102,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Walk'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Walk.0"
+            }
+          ],
+          "not_commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WalkBack_Chr'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WalkBack_Chr.0"
+            }
+          ],
+          "states": []
+        }
+      ],
+      "early_frame": 3,
+      "early_time": 0.10000001
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_569",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 1.25,
+        "Y": 1.25,
+        "Z": 1.25
+      }
+    }
+  }
+]

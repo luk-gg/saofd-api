@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AM_EVE_ClaarIdle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "EVE_ClearIdle",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AM_EVE_ClearIdle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/EVE/MNT_AM_EVE_ClearIdle.0"
+        },
+        "blend_time": 0.25
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AM_EVE_ClaarIdle:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/EVE/ACT_AM_EVE_ClaarIdle.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AM_EVE_ClaarIdle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 164,
+      "end_time": 5.466667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AM_EVE_ClaarIdle:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/EVE/ACT_AM_EVE_ClaarIdle.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

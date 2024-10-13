@@ -1,0 +1,464 @@
+[
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_23",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.1,
+      "affects_left_small": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANSActionAimLimitChange",
+    "Name": "SGANSActionAimLimitChange_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSActionAimLimitChange'",
+    "Properties": {
+      "m_aim_limit_yaw": 45.0
+    }
+  },
+  {
+    "Type": "SGANSHudHide",
+    "Name": "SGANSHudHide_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSHudHide'",
+    "Properties": {
+      "m_hud_display_type": [
+        "ESGHudDisplayType::HideSkillPallet"
+      ]
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "HG_SR_Unique_Cocking",
+      "action_id": 1513,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Aim"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_AU_SR_UniqueAbility_Cocking'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SR/BS_AU_SR_UniqueAbility_Cocking.0"
+        },
+        "blend_time": 0.0,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_23'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_94'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Interruptible",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 33,
+      "num_frames": 41,
+      "start_time": 1.1,
+      "end_time": 2.4666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ADS",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionAimLimitChange'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_2.SGANSActionAimLimitChange_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_23",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "パッド振動",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_23.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキルパレット非表示",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHudHide'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_3.SGANSHudHide_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "排莢",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_4.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "操作解除",
+      "start_frame": 20,
+      "num_frames": 40,
+      "start_time": 0.6666667,
+      "end_time": 2.0,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "排莢音",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ScopeMode",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_8.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_94",
+    "Outer": "ACT_AU_HG_SR_UniqueAbility_Cocking",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "コッキング音",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AU_HG_SR_UniqueAbility_Cocking:VGActionEvent_94.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SR/ACT_AU_HG_SR_UniqueAbility_Cocking.18"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "inner_radius": 1.0,
+      "outer_radius": 2.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 4051,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_94",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::WEAPON_SE",
+          "CueId": 20074,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1511
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1514,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Jump'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Jump.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_L1_Press'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_L1_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Step'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Step.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        31
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        29
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        30
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_DHG_Cartridge'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_DHG_Cartridge.0"
+      },
+      "emit_owner_type": "EVGANVfxOwnerType::Weapon"
+    }
+  }
+]

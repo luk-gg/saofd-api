@@ -1,0 +1,241 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPENEMY806_000_FireWall_Collision_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.11"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGFireWallCollisionProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPENEMY806_000_FireWall_Collision_C'Default__BPENEMY806_000_FireWall_Collision_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY806_000_FireWall_Collision_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.0"
+      }
+    }
+  },
+  {
+    "Type": "BPENEMY806_000_FireWall_Collision_C",
+    "Name": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.BPENEMY806_000_FireWall_Collision_C'",
+    "Properties": {
+      "m_collision_width": 25.0,
+      "m_collision_height": 100.0,
+      "m_max_hit_count": -1,
+      "m_next_hit_span": 2.0,
+      "m_spawn_projectile_component": {
+        "ObjectName": "SGSpawnProjectileComponent'Default__BPENEMY806_000_FireWall_Collision_C:SpawnProjectileComponet'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.9"
+      },
+      "m_projectile_multi_hit_component": {
+        "ObjectName": "SGProjectileMultiHitComponent'Default__BPENEMY806_000_FireWall_Collision_C:ProjectileMultiHitComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.8"
+      },
+      "m_need_hit_ground": true,
+      "m_damage_enemy_flag": true,
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": null,
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::COMPONENT_SE",
+            "CueId": -1,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPENEMY806_000_FireWall_Collision_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.10"
+      },
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPENEMY806_000_FireWall_Collision_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.12"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPENEMY806_000_FireWall_Collision_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPENEMY806_000_FireWall_Collision_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.2"
+      },
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "attr": [
+            "EVGDamageAttr::GuardPenetrate",
+            "EVGDamageAttr::CounterPenetrate",
+            "EVGDamageAttr::IgnoreJustDodge"
+          ],
+          "impact": "ESGDamageImpact::Low",
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack"
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPENEMY806_000_FireWall_Collision_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.13"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPENEMY806_000_FireWall_Collision_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY806_000_FireWall_Collision_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY806_000_FireWall_Collision_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPENEMY806_000_FireWall_Collision_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.5"
+      },
+      "VariableGuid": "EA94B226-499D20EA-F8EAC4A4-AC3A7018",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY806_000_FireWall_Collision_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.0"
+      }
+    }
+  },
+  {
+    "Type": "SGProjectileMultiHitComponent",
+    "Name": "ProjectileMultiHitComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SGProjectileMultiHitComponent'"
+  },
+  {
+    "Type": "SGSpawnProjectileComponent",
+    "Name": "SpawnProjectileComponet",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SGSpawnProjectileComponent'"
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPENEMY806_000_FireWall_Collision_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPENEMY806_000_FireWall_Collision_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/ENEMY806/BPENEMY806_000_FireWall_Collision.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPENEMY806_000_FireWall_Collision_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

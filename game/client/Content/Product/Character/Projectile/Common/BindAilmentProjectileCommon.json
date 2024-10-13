@@ -1,0 +1,199 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BindAilmentProjectileCommon_C",
+    "Name": "Default__BindAilmentProjectileCommon_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.BindAilmentProjectileCommon_C'",
+    "Properties": {
+      "m_received_damage_friend_flag": true,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_GIM_Bind_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Gimmick/efs_GIM_Bind_lo.0"
+        }
+      ],
+      "m_use_hit_points": true,
+      "m_enable_dead_timing_sync": true,
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BindAilmentProjectileCommon_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.8"
+      },
+      "m_enable_simulated_proxy_owner": true,
+      "m_shape_type": "EHitBoxShapeType::Box",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BindAilmentProjectileCommon_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BindAilmentProjectileCommon_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BindAilmentProjectileCommon_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.3"
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BindAilmentProjectileCommon_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BindAilmentProjectileCommon_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BindAilmentProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BindAilmentProjectileCommon_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.9"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGBindAilmentProjectile'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BindAilmentProjectileCommon_C'Default__BindAilmentProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 32.0
+      },
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BindAilmentProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BindAilmentProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BindAilmentProjectileCommon_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.5"
+      },
+      "VariableGuid": "8342A936-40BDE12F-FB42888E-73439943",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BindAilmentProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BindAilmentProjectileCommon_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BindAilmentProjectileCommon_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/Common/BindAilmentProjectileCommon.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BindAilmentProjectileCommon_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'ArrowComponent'"
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPRBOSS002_Role1_Impact_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.11"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BPRBOSS002_Role1_Impact_C:ExecuteUbergraph_BPRBOSS002_Role1_Impact'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGRBOSS002BreastLaserImpact'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BPRBOSS002_Role1_Impact_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.6"
+      },
+      {
+        "ObjectName": "Function'BPRBOSS002_Role1_Impact_C:ExecuteUbergraph_BPRBOSS002_Role1_Impact'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BPRBOSS002_Role1_Impact": {
+        "ObjectName": "Function'BPRBOSS002_Role1_Impact_C:ExecuteUbergraph_BPRBOSS002_Role1_Impact'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BPRBOSS002_Role1_Impact_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.6"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPRBOSS002_Role1_Impact_C'Default__BPRBOSS002_Role1_Impact_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS002_Role1_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "BPRBOSS002_Role1_Impact_C",
+    "Name": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.BPRBOSS002_Role1_Impact_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_damage_enemy_flag": true,
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Magic_Thunder_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Magic_Thunder_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 80,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPRBOSS002_Role1_Impact_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.10"
+      },
+      "m_shape_type": "EHitBoxShapeType::Sphere",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPRBOSS002_Role1_Impact_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.12"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPRBOSS002_Role1_Impact_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPRBOSS002_Role1_Impact_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.2"
+      },
+      "m_spawn_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_BeamL_Exp'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_BeamL_Exp.0"
+        }
+      ],
+      "m_spawn_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 47,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_life_span": 0.75,
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 12.0,
+          "m_damage_attribute": "ESGDamageAttribute::Thunder",
+          "m_attribute_damage_coeff": 25.0,
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::Break",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 1800.0,
+              "Y": 0.0,
+              "Z": 600.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPRBOSS002_Role1_Impact_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.13"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPRBOSS002_Role1_Impact_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.9"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS002_Role1_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS002_Role1_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BPRBOSS002_Role1_Impact",
+    "Outer": "BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBPI_Enemy_BC",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_BC_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_BC.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_BPI_GetStageCenterLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPRBOSS002_Role1_Impact_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.7"
+      },
+      "VariableGuid": "5D1462FD-43F9A865-0E9A5E9F-BD6B73A9",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS002_Role1_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPRBOSS002_Role1_Impact_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 4900.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPRBOSS002_Role1_Impact_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/RBOSS002/RBOSS002_00_Role1_BreastLaser/BPRBOSS002_Role1_Impact.0"
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPRBOSS002_Role1_Impact_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

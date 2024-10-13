@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WOS_WS1_Idle",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Idle_WS1",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_WOS_WS1_Idle'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WOS/MNT_AF1_WOS_WS1_Idle.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.15
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WOS_WS1_Idle:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WOS/ACT_AF1_WOS_WS1_Idle.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WOS_WS1_Idle",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 54,
+      "start_time": 1.8000001,
+      "end_time": 1.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WOS_WS1_Idle:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WOS/ACT_AF1_WOS_WS1_Idle.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 100
+    }
+  }
+]

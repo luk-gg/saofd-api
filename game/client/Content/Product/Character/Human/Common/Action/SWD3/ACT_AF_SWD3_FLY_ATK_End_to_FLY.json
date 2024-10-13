@@ -1,0 +1,220 @@
+[
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_CMN_Dodge'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/BranchSet/ABS_CMN_Dodge.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SWD3_FLY_ATK_End_toFLY",
+      "action_id": 1050,
+      "states": [
+        "EVGActionState::Hovering",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF_SWD3_ATK_FLY_ATK_end_toFly'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/SWD3/MNT_AF_SWD3_ATK_FLY_ATK_end_toFly.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_43'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回避セット",
+      "num_frames": 14,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_0.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "start_frame": 1,
+      "num_frames": 13,
+      "start_time": 0.033333335,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 14,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "キャンセルガード",
+      "num_frames": 14,
+      "end_time": 0.4666667,
+      "priority": 50,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_14.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_43",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 12,
+      "num_frames": 2,
+      "start_time": 0.40000004,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_43.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF_SWD3_FLY_ATK_End_to_FLY",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行状態",
+      "num_frames": 14,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_AF_SWD3_FLY_ATK_End_to_FLY:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/SWD3/ACT_AF_SWD3_FLY_ATK_End_to_FLY.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2600,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Guard'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Guard.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_43",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 990
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        14,
+        0,
+        0
+      ]
+    }
+  }
+]

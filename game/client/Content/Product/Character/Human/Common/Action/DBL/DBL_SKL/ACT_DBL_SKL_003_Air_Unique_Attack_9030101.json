@@ -1,0 +1,2026 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only": true,
+      "m_is_camlock_only_not_homing": false,
+      "m_target_range": 300.0,
+      "m_target_rotate_yaw": 135.0,
+      "m_rotate_degree_second": 10.0
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 600.0,
+      "m_target_rotate_yaw": 15.0,
+      "m_rotate_degree_second": 10.0,
+      "m_end_range": 100.0
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 500.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "cancel_move_distance": 200.0
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_16",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "cancel_move_distance": 200.0
+    }
+  },
+  {
+    "Type": "SGANSSkillActionBranch",
+    "Name": "SGANSSkillActionBranch_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'SGANSSkillActionBranch'",
+    "Properties": {
+      "early_frame": 8,
+      "early_time": 0.26666668
+    }
+  },
+  {
+    "Type": "SGANSWeaponEmissive",
+    "Name": "SGANSWeaponEmissive_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSWeaponEmissive'",
+    "Properties": {
+      "is_left_side_weapon": true,
+      "fade_in_time": 0.2,
+      "emissive_intensity": 25.0,
+      "emissive_color": {
+        "R": 0.0,
+        "G": 1.0,
+        "B": 2.2,
+        "A": 1.0,
+        "Hex": "00FFFF"
+      }
+    }
+  },
+  {
+    "Type": "SGANSWeaponEmissive",
+    "Name": "SGANSWeaponEmissive_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSWeaponEmissive'",
+    "Properties": {
+      "fade_in_time": 0.2,
+      "emissive_intensity": 25.0,
+      "emissive_color": {
+        "R": 0.0,
+        "G": 1.0,
+        "B": 2.2,
+        "A": 1.0,
+        "Hex": "00FFFF"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_003_Air_Unique_Attack",
+      "action_id": 20661,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::EndAction",
+        "EVGActionState::Attack",
+        "EVGActionState::Air"
+      ],
+      "priority": 10001,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_DBL_SKL_003_Air_End'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/DBL/SKL/MNT_DBL_SKL_003_Air_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.26"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.31"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.38"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.47"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.43"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_86'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.51"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.22"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_23'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_21'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_28'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.24"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_27'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.23"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_24'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_33'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.28"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_29'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.25"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_68'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.41"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_40'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.30"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_31'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.27"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_70'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.44"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_71'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.45"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_69'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.42"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_83'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.48"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.53"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_16'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.16"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_51'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.32"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_52'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.33"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_77'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.46"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_53'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.34"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_54'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.35"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_55'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.36"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_56'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.37"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_84'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.49"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_85'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.50"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_87'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.52"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_91'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.55"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_90'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.54"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_61'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.39"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_62'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.40"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.29"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "左手武器発光",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponEmissive'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_0.SGANSWeaponEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風切り音(光剣用)",
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.68"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホリゾンタルスクエア：1段目Air_Parry_9030101",
+      "start_frame": 5,
+      "num_frames": 2,
+      "start_time": 0.16666667,
+      "end_time": 0.23333335,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_10.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.92"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移NC",
+      "start_frame": 44,
+      "num_frames": 5,
+      "start_time": 1.4666667,
+      "end_time": 1.6333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_11.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.78"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風切り音(光剣用)",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.69"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風切り音(光剣用)",
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_13.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.70"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "カメラロック時",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_14.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_15.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_16",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "全方位減衰",
+      "start_frame": 4,
+      "num_frames": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.26666668,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_16.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "num_frames": 23,
+      "start_time": 0.86666673,
+      "end_time": 1.6333334,
+      "notify_state": {
+        "ObjectName": "SGANSSkillActionBranch'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_19.SGANSSkillActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_21",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホリゾンタルスクエア：2段目Air_Parry_9030101",
+      "start_frame": 10,
+      "num_frames": 2,
+      "start_time": 0.33333334,
+      "end_time": 0.4,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_21.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.93"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_23",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_23.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.56"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_24",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホリゾンタルスクエア：3段目Air_Parry_9030101",
+      "start_frame": 15,
+      "num_frames": 2,
+      "start_time": 0.5,
+      "end_time": 0.56666666,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_24.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.94"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホリゾンタルスクエア：4段目Air_Parry_9030101",
+      "start_frame": 21,
+      "num_frames": 2,
+      "start_time": 0.70000005,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_25.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.95"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_26.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.57"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_27",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_27.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.58"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_28",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_28.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.59"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_29",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_29.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.60"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断禁止/空中制御不可",
+      "num_frames": 49,
+      "end_time": 1.6333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.80"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_31",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホリゾンタルスクエア：衝撃波Air_Parry_9030101",
+      "start_frame": 32,
+      "num_frames": 6,
+      "start_time": 1.0666667,
+      "end_time": 1.2666668,
+      "notify_state": {
+        "ObjectName": "VGANSWeaponAttack'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_31.VGANSWeaponAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.96"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_33",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_33.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.61"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "右手武器発光",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponEmissive'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_4.SGANSWeaponEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_40",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 21,
+      "start_time": 0.70000005,
+      "end_time": 0.7333334,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_40.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.62"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 37,
+      "end_time": 1.2333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.81"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_51",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "斬撃音",
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_51.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.71"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_52",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "斬撃音",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_52.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.72"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_53",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "斬撃回転音",
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_53.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.73"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_54",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "斬撃音",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_54.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.74"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_55",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時ボイス",
+      "start_frame": 21,
+      "start_time": 0.70000005,
+      "end_time": 0.7333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_55.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.75"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_56",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エフェクト音",
+      "start_frame": 37,
+      "start_time": 1.2333333,
+      "end_time": 1.2666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_56.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.76"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 38,
+      "end_time": 1.2666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.82"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_61",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_61.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.84"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_62",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "start_time": 0.86666673,
+      "end_time": 0.9000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_62.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.85"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_68",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_68.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.63"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_69",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_69.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.64"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 38,
+      "num_frames": 11,
+      "start_time": 1.2666668,
+      "end_time": 1.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_7.VGANSActionBranch_1'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.79"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_70",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "start_time": 0.86666673,
+      "end_time": 0.9000001,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_70.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.65"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_71",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 29,
+      "start_time": 0.9666667,
+      "end_time": 1.0,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_71.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.66"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_77",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "斬撃音",
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_77.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.77"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ノーロック時",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_8.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_83",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 34,
+      "start_time": 1.1333334,
+      "end_time": 1.1666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_83.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.67"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_84",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "剣線：左前",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_84.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.86"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_85",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "剣線：右後",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_85.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.87"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_86",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSRadialBlur'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_86.VGANSRadialBlur_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.91"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_87",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "剣線：左後",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_87.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.88"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 5,
+      "num_frames": 21,
+      "start_time": 0.16666667,
+      "end_time": 0.86666673,
+      "notify_state": {
+        "ObjectName": "VGANSCameraCutIn'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_9.VGANSCameraCutIn_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.83"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_90",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "剣線:右前",
+      "start_frame": 22,
+      "start_time": 0.73333335,
+      "end_time": 0.7666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_90.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.89"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_91",
+    "Outer": "ACT_DBL_SKL_003_Air_Unique_Attack_9030101",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "剣線:右前",
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_DBL_SKL_003_Air_Unique_Attack_9030101:VGActionEvent_91.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/DBL/DBL_SKL/ACT_DBL_SKL_003_Air_Unique_Attack_9030101.90"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_23",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_SideSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_SideSwing.0"
+      },
+      "inner_radius": 1.0,
+      "outer_radius": 2.0,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_27",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_SideSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_SideSwing.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_28",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_29",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_SideSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_SideSwing.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_33",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_40",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "outer_radius": 0.1,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_68",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_SideSwing2_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_SideSwing2.0"
+      },
+      "outer_radius": 0.1,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_69",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Middle.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_70",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_71",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Middle.0"
+      },
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_83",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "inner_radius": 0.1,
+      "outer_radius": 0.2,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::WEAPON_SE",
+          "CueId": 102,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::WEAPON_SE",
+          "CueId": 102,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::WEAPON_SE",
+          "CueId": 102,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_51",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20151,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_52",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20151,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_53",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20152,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_54",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20153,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_55",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 6100,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_56",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20154,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_77",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20151,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_1",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        52,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        50
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        51
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCameraCutIn",
+    "Name": "VGANSCameraCutIn_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSCameraCutIn'",
+    "Properties": {
+      "start": {
+        "distance": 260.0,
+        "offset": {
+          "X": -20.0,
+          "Y": 0.0,
+          "Z": 80.0
+        },
+        "rotation": {
+          "Pitch": -4.0,
+          "Yaw": 90.0,
+          "Roll": 0.0
+        },
+        "blend": {
+          "BlendTime": 0.08,
+          "BlendFunction": "VTBlend_Linear"
+        }
+      },
+      "end": {
+        "distance": 265.0,
+        "offset": {
+          "X": -20.0,
+          "Y": 0.0,
+          "Z": 80.0
+        },
+        "rotation": {
+          "Pitch": -6.0,
+          "Yaw": 90.0,
+          "Roll": 0.0
+        },
+        "blend": {
+          "BlendTime": 0.1,
+          "BlendFunction": "VTBlend_Linear"
+        }
+      },
+      "is_end_match_camera": true,
+      "face_camera_cancel_angle": 60.0
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_61",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Flash01_yl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Flash01_yl.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 316.0,
+        "Z": 70.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_62",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_SWD_Horizontal_Model_yl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_SWD_Horizontal_Model_yl.0"
+      },
+      "location_offset": {
+        "X": 1.0,
+        "Y": 316.0,
+        "Z": 100.0
+      },
+      "scale_offset": {
+        "X": 0.87,
+        "Y": 0.87,
+        "Z": 0.87
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_84",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_WEP_Locus_Slash02_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_WEP_Locus_Slash02_bl.0"
+      },
+      "location_offset": {
+        "X": 20.0,
+        "Y": 30.0,
+        "Z": 150.0
+      },
+      "rotation_offset": {
+        "Pitch": 110.0,
+        "Yaw": -30.0,
+        "Roll": 45.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_85",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_WEP_Locus_Slash02_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_WEP_Locus_Slash02_bl.0"
+      },
+      "location_offset": {
+        "X": -20.0,
+        "Y": -20.0,
+        "Z": 150.0
+      },
+      "rotation_offset": {
+        "Pitch": -110.0,
+        "Yaw": 30.0,
+        "Roll": 150.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_87",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_WEP_Locus_Slash02_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_WEP_Locus_Slash02_bl.0"
+      },
+      "location_offset": {
+        "X": 20.0,
+        "Y": -20.0,
+        "Z": 160.0
+      },
+      "rotation_offset": {
+        "Pitch": -80.0,
+        "Yaw": 0.0,
+        "Roll": 225.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_90",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_WEP_Locus_Slash02_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_WEP_Locus_Slash02_bl.0"
+      },
+      "location_offset": {
+        "X": -20.0,
+        "Y": 30.0,
+        "Z": 140.0
+      },
+      "rotation_offset": {
+        "Pitch": -120.0,
+        "Yaw": 30.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_91",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_WEP_Locus_Slash02_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_WEP_Locus_Slash02_bl.0"
+      },
+      "location_offset": {
+        "X": -20.0,
+        "Y": 30.0,
+        "Z": 140.0
+      },
+      "rotation_offset": {
+        "Pitch": -120.0,
+        "Yaw": 30.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSRadialBlur",
+    "Name": "VGANSRadialBlur_0",
+    "Outer": "VGActionEvent_86",
+    "Class": "UScriptClass'VGANSRadialBlur'",
+    "Properties": {
+      "amount_fcurve_name": "Amount01",
+      "radius_fcurve_name": "Radius01",
+      "exponent_fcurve_name": "Exponent01",
+      "is_local_user_only": true
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -65.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 20.0,
+        "Roll": 0.0
+      },
+      "desc": {
+        "damage": 0.6,
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::ArmorBreakable"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "burst_damage": 0.5,
+        "hit_stop": 0.03,
+        "owner_hit_stop": 0.01,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "velocity": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 54.0,
+        "hit_hate": -54.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 2,
+        "hit_force_feedback": 1
+      },
+      "slash_direction": 110.0,
+      "box_half_extent_x": 250.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 250.0
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_21",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -60.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 15.0,
+        "Roll": 0.0
+      },
+      "group_id": 1,
+      "desc": {
+        "damage": 0.6,
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::ArmorBreakable"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "burst_damage": 0.5,
+        "hit_stop": 0.03,
+        "owner_hit_stop": 0.01,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "velocity": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 59.4,
+        "hit_hate": -59.4,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 2,
+        "hit_force_feedback": 1
+      },
+      "slash_direction": 100.0,
+      "box_half_extent_x": 250.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 250.0,
+      "capsule_radius": 45.0,
+      "capsule_half_height": 120.0
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_24",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -80.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": -10.0,
+        "Roll": 0.0
+      },
+      "group_id": 2,
+      "desc": {
+        "damage": 0.62,
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::ArmorBreakable"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "burst_damage": 0.5,
+        "hit_stop": 0.03,
+        "owner_hit_stop": 0.01,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "velocity": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 64.8,
+        "hit_hate": -64.8,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 2,
+        "hit_force_feedback": 1
+      },
+      "slash_direction": 105.0,
+      "box_half_extent_x": 250.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 250.0,
+      "capsule_radius": 45.0,
+      "capsule_half_height": 120.0
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_base",
+      "position": {
+        "X": 0.0,
+        "Y": -80.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 10.0,
+        "Roll": 0.0
+      },
+      "group_id": 3,
+      "desc": {
+        "damage": 0.65,
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::ArmorBreakable"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "burst_damage": 0.5,
+        "hit_stop": 0.03,
+        "owner_hit_stop": 0.01,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "velocity": {
+            "X": 50.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 81.0,
+        "hit_hate": -81.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 2,
+        "hit_force_feedback": 1
+      },
+      "slash_direction": 110.0,
+      "box_half_extent_x": 260.0,
+      "box_half_extent_y": 100.0,
+      "box_half_extent_z": 260.0
+    }
+  },
+  {
+    "Type": "VGANSWeaponAttack",
+    "Name": "VGANSWeaponAttack_0",
+    "Outer": "VGActionEvent_31",
+    "Class": "UScriptClass'VGANSWeaponAttack'",
+    "Properties": {
+      "node": "b_C_Base",
+      "position": {
+        "X": 0.0,
+        "Y": -50.0,
+        "Z": 240.0
+      },
+      "rotation": {
+        "Pitch": 45.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "group_id": 4,
+      "desc": {
+        "damage": 2.75,
+        "attr": [
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::Skill",
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::NoBlockingStatic",
+          "EVGDamageAttr::ArmorBreakable",
+          "EVGDamageAttr::Penetrate"
+        ],
+        "m_status_ailment_request_info": {
+          "m_request_status_ailment_id": 3,
+          "m_status_ailment_probability": 40.0
+        },
+        "impact": "ESGDamageImpact::Blow",
+        "burst_damage": 3.0,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 1000.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "damage_hate": 400.0,
+        "hit_hate": -40.0,
+        "reaction_value": 3.0,
+        "hit_cam_shake": 3,
+        "hit_force_feedback": 2
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Slash_M",
+      "character_hit_decal": -1,
+      "slash_direction": 90.0,
+      "box_half_extent_x": 480.0,
+      "box_half_extent_y": 120.0,
+      "box_half_extent_z": 480.0
+    }
+  }
+]

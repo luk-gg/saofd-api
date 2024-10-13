@@ -1,0 +1,309 @@
+[
+  {
+    "Type": "ArrowComponent",
+    "Name": "Root",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Template": {
+      "ObjectName": "ArrowComponent'Default__MovableDamageProjectileCommon_C:Root'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.0"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BPBOSS001_RockFall_SmallRock_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.9"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BPBOSS001_RockFall_SmallRock_C'Default__BPBOSS001_RockFall_SmallRock_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "HitBoxComponent",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Template": {
+      "ObjectName": "BoxComponent'Default__MovableDamageProjectileCommon_C:HitBoxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.2"
+    },
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 300.0,
+        "Z": 160.0
+      },
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS001_RockFall_SmallRock_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.0"
+      },
+      "RelativeLocation": {
+        "X": -200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "BPBOSS001_RockFall_SmallRock_C",
+    "Name": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.BPBOSS001_RockFall_SmallRock_C'",
+    "Template": {
+      "ObjectName": "MovableDamageProjectileCommon_C'Default__MovableDamageProjectileCommon_C'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.4"
+    },
+    "Properties": {
+      "m_speed": 1500.0,
+      "m_max_speed": 1500.0,
+      "m_acceleration": 0.0,
+      "m_limit_distance": 300000.0,
+      "m_loop_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS001_00_RockFall_Bullet_s_lo'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS001_00/efs_BOSS001_00_RockFall_Bullet_s_lo.0"
+        }
+      ],
+      "m_dead_effects": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_BOSS001_00_RockFall_Bullet_s_end'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS001_00/efs_BOSS001_00_RockFall_Bullet_s_end.0"
+        }
+      ],
+      "m_hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_ENE_Hit_Blow_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyHit/efs_ENE_Hit_Blow_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 70,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BPBOSS001_RockFall_SmallRock_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.8"
+      },
+      "m_shape_type": "EHitBoxShapeType::Cylinder",
+      "m_sphere_component": {
+        "ObjectName": "SphereComponent'Default__BPBOSS001_RockFall_SmallRock_C:HitSphereComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.10"
+      },
+      "m_capsule_component": {
+        "ObjectName": "CapsuleComponent'Default__BPBOSS001_RockFall_SmallRock_C:HitCapsuleComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.4"
+      },
+      "m_box_component": {
+        "ObjectName": "BoxComponent'Default__BPBOSS001_RockFall_SmallRock_C:HitBoxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.2"
+      },
+      "m_dead_se": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 19,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "m_damage_causer_info": {
+        "m_damage_desc": {
+          "damage": 2.0,
+          "m_damage_attribute": "ESGDamageAttribute::Dark",
+          "m_attribute_damage_coeff": 25.0,
+          "impact": "ESGDamageImpact::Blow",
+          "guard_impact": "ESGGuardDamageImpact::Break",
+          "guard_damage_cut_rate": 0.75,
+          "knock_back": {
+            "factor": "EVGKnockBackFactor::CauserDirection",
+            "rotation": "EVGKnockBackRotation::AutoFrontBack",
+            "velocity": {
+              "X": 1000.0,
+              "Y": 0.0,
+              "Z": 0.0
+            }
+          }
+        }
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BPBOSS001_RockFall_SmallRock_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.11"
+      },
+      "m_se_component": {
+        "ObjectName": "SGHitBoxSEComponent'Default__BPBOSS001_RockFall_SmallRock_C:SE Component'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS001_RockFall_SmallRock_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.0"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCapsuleComponent",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Template": {
+      "ObjectName": "CapsuleComponent'Default__MovableDamageProjectileCommon_C:HitCapsuleComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.3"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS001_RockFall_SmallRock_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.0"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BPBOSS001_RockFall_SmallRock_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.5"
+      },
+      "VariableGuid": "95ED3EF9-485C239E-F917D1BB-C04D9417",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SGHitBoxSEComponent",
+    "Name": "SE Component",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'SGHitBoxSEComponent'",
+    "Template": {
+      "ObjectName": "SGHitBoxSEComponent'Default__MovableDamageProjectileCommon_C:SE Component'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.7"
+    },
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS001_RockFall_SmallRock_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.0"
+      }
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__MovableDamageProjectileCommon_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.8"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BPBOSS001_RockFall_SmallRock_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "HitSphereComponent",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Template": {
+      "ObjectName": "SphereComponent'Default__MovableDamageProjectileCommon_C:HitSphereComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.10"
+    },
+    "Properties": {
+      "SphereRadius": 300.0,
+      "AttachParent": {
+        "ObjectName": "ArrowComponent'Default__BPBOSS001_RockFall_SmallRock_C:Root'",
+        "ObjectPath": "/Game/Product/Character/Projectile/BOSS001/BOSS001_RockFall/BPBOSS001_RockFall_SmallRock.0"
+      },
+      "RelativeLocation": {
+        "X": -250.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BPBOSS001_RockFall_SmallRock_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__MovableDamageProjectileCommon_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Projectile/Common/MovableDamageProjectileCommon.11"
+    }
+  }
+]

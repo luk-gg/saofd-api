@@ -1,0 +1,132 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_VS_BOSS:BTComposite_Selector_4'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_NPC'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_4",
+    "Outer": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_NPC_VS_BOSS:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_NPC_VS_BOSS:BTDecorator_Blackboard_1'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.3"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        null
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBBool'SBT_NPC_VS_BOSS:VGBTT_SetBBBool_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.5"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_NPC_VS_BOSS:BTTask_Wait_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.4"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_1",
+    "Outer": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Meteor",
+      "CachedDescription": "IsMeteorWait is Is Set",
+      "NotifyObserver": "EBTBlackboardRestart::ValueChange",
+      "BlackboardKey": {
+        "SelectedKeyName": "IsMeteorWait"
+      },
+      "NodeName": "メテオ終了検知",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_VS_BOSS:BTComposite_Selector_4'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_2",
+    "Outer": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 4.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBBool",
+    "Name": "VGBTT_SetBBBool_2",
+    "Outer": "SBT_NPC_VS_BOSS",
+    "Class": "UScriptClass'VGBTT_SetBBBool'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "IsMeteorWait"
+      },
+      "NodeName": "メテオ終了検知",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_VS_BOSS'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/VS_BOSS/SBT_NPC_VS_BOSS.0"
+      }
+    }
+  }
+]

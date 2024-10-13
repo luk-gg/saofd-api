@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_21",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.11,
+      "affects_left_small": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.11,
+      "affects_left_small": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANForceFeedback",
+    "Name": "SGANForceFeedback_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'SGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.11,
+      "affects_left_small": true,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "desc": {
+        "damage": 0.0,
+        "m_use_damage_scale": false,
+        "attr": [
+          "EVGDamageAttr::ForceReaction",
+          "EVGDamageAttr::HideDamageValue",
+          "EVGDamageAttr::HideHitEffect",
+          "EVGDamageAttr::NoHitThroughWall"
+        ],
+        "m_status_ailment_request_info": {
+          "m_status_ailment_probability": 0.0
+        },
+        "damage_hate": 17.5,
+        "hit_hate": -1.75,
+        "reaction_value": 0.0
+      },
+      "shape_type": "ESGActionAttackShape::Sphere",
+      "sphere_radius": 500.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FireAdditive",
+      "action_id": 301,
+      "layer_index": 2,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimSequence'AF_WG2_ATK_AIM_F_MID_ATTACK'",
+          "ObjectPath": "/Game/Product/AnimSequence/Human/AF/WG2/AF_WG2_ATK_AIM_F_MID_ATTACK.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_21'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_29'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_30'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_22'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "銃声ヘイト判定",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_1.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_21",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_21.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_22",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_22.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_25.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "SGANForceFeedback'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_26.SGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_29",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_29.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_30",
+    "Outer": "ACT_AF1_WHG_WG2_FireAdditive",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_AF1_WHG_WG2_FireAdditive:VGActionEvent_30.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WHG/ACT_AF1_WHG_WG2_FireAdditive.14"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_22",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_HG_FullAuto_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_HG_FullAuto.0"
+      },
+      "inner_radius": 1.658381,
+      "outer_radius": 2.804712,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_29",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_HG_Single_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_HG_Single.0"
+      },
+      "inner_radius": 1.658381,
+      "outer_radius": 2.804712,
+      "is_local_user": true
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_30",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_WeaponFireShake_HG_FullAuto_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_WeaponFireShake_HG_FullAuto.0"
+      },
+      "inner_radius": 1.658381,
+      "outer_radius": 2.804712,
+      "is_local_user": true
+    }
+  }
+]

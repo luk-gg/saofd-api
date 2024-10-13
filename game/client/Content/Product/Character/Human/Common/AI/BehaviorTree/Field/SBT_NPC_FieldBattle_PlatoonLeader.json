@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_NPC_FieldBattle_PlatoonLeader",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FieldBattle_PlatoonLeader:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattle_PlatoonLeader.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_NPC'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/SBB_Npc.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_8",
+    "Outer": "SBT_NPC_FieldBattle_PlatoonLeader",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_NPC_FieldBattle_PlatoonLeader:BTTask_RunBehavior_2'",
+            "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattle_PlatoonLeader.2"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FieldBattle_PlatoonLeader'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattle_PlatoonLeader.0"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_2",
+    "Outer": "SBT_NPC_FieldBattle_PlatoonLeader",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FBL_Conquest'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FBL_Conquest.0"
+      },
+      "NodeName": "コンクエスト処理",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_NPC_FieldBattle_PlatoonLeader'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattle_PlatoonLeader.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_NPC_FieldBattle_PlatoonLeader:BTComposite_Selector_8'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/AI/BehaviorTree/Field/SBT_NPC_FieldBattle_PlatoonLeader.1"
+      }
+    }
+  }
+]

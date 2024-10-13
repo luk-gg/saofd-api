@@ -1,0 +1,308 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Reload_After_BA",
+      "action_id": 42,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "layer_index": 1,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_AF1_WSR_WG1_BoltAction'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Animation/Montage/WSR/MNT_AF1_WSR_WG1_BoltAction.0"
+        }
+      },
+      "is_inherit_motion_vel_x": true,
+      "is_inherit_motion_vel_y": true,
+      "is_inherit_motion_vel_z": true,
+      "is_inherit_motion_acc_x": true,
+      "is_inherit_motion_acc_y": true,
+      "is_inherit_motion_acc_z": true,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_94'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_0.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANForceFeedback'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_2.VGANForceFeedback_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 19,
+      "num_frames": 28,
+      "start_time": 0.6333334,
+      "end_time": 1.5666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_94",
+    "Outer": "ACT_AF1_WSR_WG1_BoltAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_AF1_WSR_WG1_BoltAction:VGActionEvent_94.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Human/Common/Action/WSR/ACT_AF1_WSR_WG1_BoltAction.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANForceFeedback",
+    "Name": "VGANForceFeedback_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANForceFeedback'",
+    "Properties": {
+      "priority": 2,
+      "intensity": 1.0,
+      "duration": 0.166667,
+      "affects_right_small": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 4051,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_94",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 4050,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 40,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponFire'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponFire.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasAmmo",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::CanReload",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillExtraBullet",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Reload'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Reload.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::CanReload",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::SkillExtraBullet",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 300,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_WeaponFire'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_WeaponFire.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::HasAmmo",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 13,
+      "early_time": 0.43333334
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_DHG_Cartridge'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_DHG_Cartridge.0"
+      },
+      "emit_owner_type": "EVGANVfxOwnerType::Weapon"
+    }
+  }
+]

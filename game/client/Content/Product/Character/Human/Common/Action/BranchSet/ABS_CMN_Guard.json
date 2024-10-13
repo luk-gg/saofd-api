@@ -1,0 +1,82 @@
+[
+  {
+    "Type": "SGActionBranchDataAsset",
+    "Name": "ABS_CMN_Guard",
+    "Class": "UScriptClass'SGActionBranchDataAsset'",
+    "Properties": {
+      "key_array": [
+        {
+          "type": "EVGActionBranch::Trigger",
+          "action_id": 2500,
+          "trigger_conditions": [
+            {
+              "commands": [
+                {
+                  "ObjectName": "VGCommandAsset'CMD_Human_Guard'",
+                  "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Guard.0"
+                }
+              ],
+              "not_commands": [
+                {
+                  "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+                  "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+                }
+              ],
+              "states": [
+                {
+                  "type": "EVGTriggerStateCondition::Ground",
+                  "eval": "EVGTriggerStateConditionEval::b_True",
+                  "value": 0.0
+                },
+                {
+                  "type": "EVGTriggerStateCondition::HasRangeWeapon",
+                  "eval": "EVGTriggerStateConditionEval::b_False",
+                  "value": 0.0
+                }
+              ]
+            }
+          ],
+          "wall_check_distance": 0.0,
+          "wall_check_exclude_characters": false,
+          "floor_check_distance": 0.0,
+          "floor_check_height_offset": 0.0,
+          "reflect_scale_in_distance_check": false,
+          "probability": 0.0
+        },
+        {
+          "type": "EVGActionBranch::Trigger",
+          "action_id": 2600,
+          "trigger_conditions": [
+            {
+              "commands": [
+                {
+                  "ObjectName": "VGCommandAsset'CMD_Human_Guard'",
+                  "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Guard.0"
+                }
+              ],
+              "not_commands": [
+                {
+                  "ObjectName": "VGCommandAsset'CMD_Human_Skill_SwitchOn'",
+                  "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Skill_SwitchOn.0"
+                }
+              ],
+              "states": [
+                {
+                  "type": "EVGTriggerStateCondition::Hovering",
+                  "eval": "EVGTriggerStateConditionEval::b_True",
+                  "value": 0.0
+                }
+              ]
+            }
+          ],
+          "wall_check_distance": 0.0,
+          "wall_check_exclude_characters": false,
+          "floor_check_distance": 0.0,
+          "floor_check_height_offset": 0.0,
+          "reflect_scale_in_distance_check": false,
+          "probability": 0.0
+        }
+      ]
+    }
+  }
+]
