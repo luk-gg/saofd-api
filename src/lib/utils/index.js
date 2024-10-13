@@ -34,9 +34,10 @@ export function getBriefArr(arr) {
         })
 }
 
+// Ensure case-insensitivity as svelte's routing (or the browser?) transforms links like /Characters/UCR001 to /characters/ucr001. 
 export function writeJson(dir, fileName, data) {
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(`${dir}/${fileName}.json`, JSON.stringify(data))
+    fs.writeFileSync(`${dir}/${fileName.toLowerCase()}.json`, JSON.stringify(data))
 }

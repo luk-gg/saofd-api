@@ -4,7 +4,7 @@ import DT_WeaponBaseData from "../../game/client/Content/Product/DataTable/Inven
 import DT_WeaponGenerateLotData from "../../game/client/Content/Product/DataTable/Inventory/DT_WeaponGenerateLotData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import { getBriefArr, imgPath } from "./utils";
-import WEAPON_ATTACK from "./weaponAttack"
+import WEAPON_ATTACK from "./weapon_attack"
 
 // TODO: Line rates
 

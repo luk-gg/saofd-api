@@ -4,7 +4,7 @@ import DT_OrnamentData from "../../game/client/Content/Product/DataTable/Invento
 import DT_OrnamentGenerateLotData from "../../game/client/Content/Product/DataTable/Inventory/DT_OrnamentGenerateLotData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import { getBriefArr, imgPath } from "./utils";
-import ACCESSORY_HEALTH from "./accessoryHealth"
+import ACCESSORY_HEALTH from "./accessory_health"
 
 const entries = Object.entries(DT_OrnamentData[0].Rows)
     .map(([accId, accessory]) => {

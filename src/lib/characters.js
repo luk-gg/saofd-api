@@ -1,9 +1,9 @@
 import DT_BattleCharacterConstStatusData from "../../game/client/Content/Product/DataTable/DT_BattleCharacterConstStatusData.json";
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import CHARACTER_ADVANCED_SKILLS from "./characterAdvancedSkills.js"
-import CHARACTER_PASSIVE_SKILLS from "./characterPassiveSkills.js"
-import CHARACTER_RANK_REWARDS from "./characterRankRewards.js"
-import CHARACTER_AWAKENING_STATS from "./characterAwakeningStats.js"
+import CHARACTER_ADVANCED_SKILLS from "./character_advanced_skills.js"
+import CHARACTER_PASSIVE_SKILLS from "./character_passive_skills.js"
+import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
+import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
 import { getBriefArr } from "./utils/index.js";
 
 // TODO: images
