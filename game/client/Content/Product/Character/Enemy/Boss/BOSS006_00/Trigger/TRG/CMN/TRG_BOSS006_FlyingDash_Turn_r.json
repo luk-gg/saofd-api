@@ -1,0 +1,29 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_BOSS006_FlyingDash_Turn_r",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "FlyingDash_Turn_Right",
+      "m_action_id": 61,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Right_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Right_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Flying",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 1000.0,
+      "m_target_rotate_yaw": 180.0,
+      "m_target_rotate_pitch": 180.0,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_Attack01_Weak01_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01_Weak01_End",
+      "action_id": 101,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_Attack01_Weak01_End'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/MNT_ENEMY508_Attack01_Weak01_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_Attack01_Weak01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 28,
+      "num_frames": 5,
+      "start_time": 0.9333334,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY508_Attack01_Weak01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 19,
+      "num_frames": 22,
+      "start_time": 0.6333334,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_10.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY508_Attack01_Weak01_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "start_frame": 28,
+      "num_frames": 39,
+      "start_time": 0.9333334,
+      "end_time": 2.2333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_Attack01_Weak01_End:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack01_Weak01_End.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

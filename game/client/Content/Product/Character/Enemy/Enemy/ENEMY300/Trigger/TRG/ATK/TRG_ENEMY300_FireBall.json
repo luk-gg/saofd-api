@@ -1,0 +1,29 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_ENEMY300_FireBall",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "FireBall",
+      "m_action_id": 102,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_B_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_B_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

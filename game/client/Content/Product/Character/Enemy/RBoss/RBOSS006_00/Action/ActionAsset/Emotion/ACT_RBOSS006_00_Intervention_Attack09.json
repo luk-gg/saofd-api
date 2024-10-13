@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS006_00_Intervention_Attack09",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Emotion_Attack09",
+      "action_id": 1590,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS006_00_Emotion_Attack09'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/Animation/Montage/MNT_RBOSS006_00_Emotion_Attack09.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_00_Intervention_Attack09:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/Action/ActionAsset/Emotion/ACT_RBOSS006_00_Intervention_Attack09.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS006_00_Intervention_Attack09",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機へ",
+      "start_frame": 154,
+      "num_frames": 7,
+      "start_time": 5.1333337,
+      "end_time": 5.366667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS006_00_Intervention_Attack09:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/Action/ActionAsset/Emotion/ACT_RBOSS006_00_Intervention_Attack09.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

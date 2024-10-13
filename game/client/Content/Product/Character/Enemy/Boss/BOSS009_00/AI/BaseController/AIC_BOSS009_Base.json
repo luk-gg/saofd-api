@@ -1,0 +1,573 @@
+[
+  {
+    "Type": "AIC_BOSS009_Base_C",
+    "Name": "Default__AIC_BOSS009_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.AIC_BOSS009_Base_C'",
+    "Template": {
+      "ObjectName": "AIC_ENEMY_Base_C'Default__AIC_ENEMY_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.0"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_bb_component": {
+        "ObjectName": "BlackboardComponent'Default__AIC_BOSS009_Base_C:BlackboardComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.1"
+      },
+      "m_ai_unit_component": {
+        "ObjectName": "VGAIUnitComponent'Default__AIC_BOSS009_Base_C:VGAIUnitComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.19"
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "VGPathFollowingComponent'Default__AIC_BOSS009_Base_C:PathFollowingComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.20"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__AIC_BOSS009_Base_C:ActionsComp'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.13"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__AIC_BOSS009_Base_C:TransformComponent0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.15"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__AIC_BOSS009_Base_C:TransformComponent0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.15"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardComponent",
+    "Name": "BlackboardComponent",
+    "Outer": "Default__AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'BlackboardComponent'",
+    "Template": {
+      "ObjectName": "BlackboardComponent'Default__AIC_ENEMY_Base_C:BlackboardComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.3"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'AIC_ENEMY_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.4"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'AIC_BOSS009_Base_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.18"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'AIC_BOSS009_Base_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ExecuteUbergraph_AIC_BOSS009_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.4"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:IsBattleStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.7"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:GetCurBattleWaitTimer'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.6"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:GetBattleWaitTime'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.5"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:UpdateBattleWaitTimer'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.11"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ResetParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.10"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.9"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ReceivePossess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.8"
+      },
+      {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ExecuteUbergraph_AIC_BOSS009_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.4"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyAiComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_BOSS009_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/EAIC_BOSS009.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CurrentBattleWaitTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_AIC_BOSS009_Base": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ExecuteUbergraph_AIC_BOSS009_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.4"
+      },
+      "ReceivePossess": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ReceivePossess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.8"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.9"
+      },
+      "ResetParam": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:ResetParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.10"
+      },
+      "UpdateBattleWaitTimer": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:UpdateBattleWaitTimer'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.11"
+      },
+      "GetBattleWaitTime": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:GetBattleWaitTime'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.5"
+      },
+      "GetCurBattleWaitTimer": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:GetCurBattleWaitTimer'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.6"
+      },
+      "IsBattleStart": {
+        "ObjectName": "Function'AIC_BOSS009_Base_C:IsBattleStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "AIC_BOSS009_Base_C'Default__AIC_BOSS009_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "EAIC_BOSS009_C",
+    "Name": "EnemyAiComponent_GEN_VARIABLE",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/EAIC_BOSS009.EAIC_BOSS009_C'",
+    "Template": {
+      "ObjectName": "EAIC_BOSS009_C'Default__EAIC_BOSS009_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/EAIC_BOSS009.1"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_AIC_BOSS009_Base",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateBattleWaitTimer_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetBattleWaitTime",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCurrentPhaseId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPhaseUniqueParam_UniquePhaseParam",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_BOSS009_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/Param/Phase/Struct/SGStruct_BOSS009_PhaseUniqueParamRow.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetPhaseUniqueParam_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_FunctionResult_Time_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurBattleWaitTimer",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Timer",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsBattleStart",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Result",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetBattleWaitTime_Time",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_GetCurBattleWaitTimer_Timer",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyNumFromType_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyNumFromType_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivePossess",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Controller:ReceivePossess'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'AIC_ENEMY_Base_C:ReceiveTick'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetParam",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateBattleWaitTimer",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'PawnActionsComponent'",
+    "Template": {
+      "ObjectName": "PawnActionsComponent'Default__AIC_ENEMY_Base_C:ActionsComp'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.11"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__AIC_ENEMY_Base_C:TransformComponent0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.13"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AIC_BOSS009_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.14"
+      },
+      "VariableGuid": "DCF402DD-4E53D085-36733893-821EB6EB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'EAIC_BOSS009_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/EAIC_BOSS009.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "EAIC_BOSS009_C'AIC_BOSS009_Base_C:EnemyAiComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.3"
+      },
+      "ParentComponentOrVariableName": "TransformComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "6843D4E6-441C778A-73A4D38E-B3F7832D",
+      "InternalVariableName": "EnemyAiComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'AIC_BOSS009_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.17"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'AIC_BOSS009_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.17"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'AIC_BOSS009_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/AI/BaseController/AIC_BOSS009_Base.16"
+      }
+    }
+  },
+  {
+    "Type": "VGAIUnitComponent",
+    "Name": "VGAIUnitComponent",
+    "Outer": "Default__AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'VGAIUnitComponent'",
+    "Template": {
+      "ObjectName": "VGAIUnitComponent'Default__AIC_ENEMY_Base_C:VGAIUnitComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.17"
+    }
+  },
+  {
+    "Type": "VGPathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__AIC_BOSS009_Base_C",
+    "Class": "UScriptClass'VGPathFollowingComponent'",
+    "Template": {
+      "ObjectName": "VGPathFollowingComponent'Default__AIC_ENEMY_Base_C:PathFollowingComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.18"
+    }
+  }
+]

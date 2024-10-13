@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Patrol_Turn:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS007_00_Patrol_Turn:BTComposite_Sequence_10'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_BOSS007_00_Patrol_Turn:VGBTD_CheckActionState_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.5"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Patrol_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_10",
+    "Outer": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_SetMoveForward_C'SBT_BOSS007_00_Patrol_Turn:SBTTask_Enemy_Move_SetMoveForward_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.4"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_BOSS007_Turn_C'SBT_BOSS007_00_Patrol_Turn:SBTTask_BOSS007_Turn_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.3"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Patrol_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Patrol_Turn:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_BOSS007_Turn_C",
+    "Name": "SBTTask_BOSS007_Turn_C_0",
+    "Outer": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/TaskBP/SBTTask_BOSS007_Turn.SBTTask_BOSS007_Turn_C'",
+    "Template": {
+      "ObjectName": "SBTTask_BOSS007_Turn_C'Default__SBTTask_BOSS007_Turn_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/TaskBP/SBTTask_BOSS007_Turn.6"
+    },
+    "Properties": {
+      "BB_TargetKey": {
+        "SelectedKeyName": "MoveTargetForward"
+      },
+      "LeftTurnOverInputKey": [
+        22,
+        0
+      ],
+      "RightTurnOverInputKey": [
+        22,
+        0
+      ],
+      "LeftTurnInputKey": [
+        21
+      ],
+      "RightTurnInputKey": [
+        23
+      ],
+      "NodeName": "ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Patrol_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS007_00_Patrol_Turn:BTComposite_Sequence_10'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_SetMoveForward_C",
+    "Name": "SBTTask_Enemy_Move_SetMoveForward_C_0",
+    "Outer": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_SetMoveForward.SBTTask_Enemy_Move_SetMoveForward_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_SetMoveForward_C'Default__SBTTask_Enemy_Move_SetMoveForward_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_SetMoveForward.4"
+    },
+    "Properties": {
+      "NodeName": "攻撃対象の方を向く判定を行って正面方向を設定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Patrol_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS007_00_Patrol_Turn:BTComposite_Sequence_10'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_1",
+    "Outer": "SBT_BOSS007_00_Patrol_Turn",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Damage",
+        "EVGActionState::Down",
+        "EVGActionState::Air",
+        "EVGActionState::Land",
+        "EVGActionState::Dead"
+      ],
+      "bInverseCondition": true,
+      "NodeName": "攻撃中、ダメージ中、ダウン中、空中、着地、死亡、以外",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Patrol_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Patrol_Turn:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Patrol_Turn.1"
+      }
+    }
+  }
+]

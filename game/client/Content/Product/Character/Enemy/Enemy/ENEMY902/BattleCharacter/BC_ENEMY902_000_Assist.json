@@ -1,0 +1,943 @@
+[
+  {
+    "Type": "ASC_ENEMY902_C",
+    "Name": "AssistSupportComponent_GEN_VARIABLE",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY902/AI/BehaviorTree/ASC_ENEMY902.ASC_ENEMY902_C'",
+    "Template": {
+      "ObjectName": "ASC_ENEMY902_C'Default__ASC_ENEMY902_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/AI/BehaviorTree/ASC_ENEMY902.0"
+    }
+  },
+  {
+    "Type": "BC_ENEMY902_000_Assist_C",
+    "Name": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.BC_ENEMY902_000_Assist_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WingVfxAsset": [
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY005_WingDown_lo_l'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY005/efs_ENEMY005_WingDown_lo_l.0"
+        },
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY005_WingDown_lo_r'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY005/efs_ENEMY005_WingDown_lo_r.0"
+        },
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY005_WingUp_lo_l'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY005/efs_ENEMY005_WingUp_lo_l.0"
+        },
+        {
+          "ObjectName": "VGVfxSignalAsset'efs_ENEMY005_WingUp_lo_r'",
+          "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY005/efs_ENEMY005_WingUp_lo_r.0"
+        }
+      ],
+      "m_avatar_customize_component": {
+        "ObjectName": "VGAvatarCustomizeComponent'Default__BC_ENEMY902_000_Assist_C:AvatarCustomize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.28"
+      },
+      "m_hud_status_component": {
+        "ObjectName": "VG3DHudStatusComponent'Default__BC_ENEMY902_000_Assist_C:3DHudStatusComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.26"
+      },
+      "m_hud_dead_icon_component": {
+        "ObjectName": "VG3DHudDeadIconComponent'Default__BC_ENEMY902_000_Assist_C:3DHudDeadIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.25"
+      },
+      "m_hitstop_component": {
+        "ObjectName": "VGHitStopComponent'Default__BC_ENEMY902_000_Assist_C:HitStopComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.34"
+      },
+      "m_status_ailment_component": {
+        "ObjectName": "SGStatusAilmentComponent'Default__BC_ENEMY902_000_Assist_C:StatusAilmentComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.22"
+      },
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BC_ENEMY902_000_Assist_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.23"
+      },
+      "m_hero_point_components": {
+        "ObjectName": "SGHeroPointComponent'Default__BC_ENEMY902_000_Assist_C:HeroPointComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.19"
+      },
+      "m_hero_order_component": null,
+      "m_level_component": {
+        "ObjectName": "SGCharacterLevelComponent'Default__BC_ENEMY902_000_Assist_C:CharacterLevelComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.17"
+      },
+      "m_action_armor_component": {
+        "ObjectName": "SGActionArmorComponent'Default__BC_ENEMY902_000_Assist_C:ActionArmorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.14"
+      },
+      "m_character_build_component": {
+        "ObjectName": "SGCharacterBuildComponent'Default__BC_ENEMY902_000_Assist_C:CharacterBuildComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.16"
+      },
+      "m_hit_effect_stash_component": {
+        "ObjectName": "SGHitEffectStashComponent'Default__BC_ENEMY902_000_Assist_C:HitEffectStashComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.20"
+      },
+      "m_action_invincible_component": {
+        "ObjectName": "SGActionInvincibleComponent'Default__BC_ENEMY902_000_Assist_C:ActionInvincibleComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.15"
+      },
+      "m_debug_character_information_compoent": {
+        "ObjectName": "SGDebugCharacterInformationComponent'Default__BC_ENEMY902_000_Assist_C:DebugCharacterInformationComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.18"
+      },
+      "m_state_machine_class": {
+        "ObjectName": "BlueprintGeneratedClass'SM_Enemy_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/SM_Enemy_00.0"
+      },
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_common_action_library": {
+        "ObjectName": "VGActionLibrary'AL_ENEMY902'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/Action/AL_ENEMY902.0"
+      },
+      "m_common_triger_library": {
+        "ObjectName": "VGTriggerLibrary'TL_ENEMY902'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/Trigger/TL_ENEMY902.0"
+      },
+      "m_chara_type": "EVGCharaType::Monster",
+      "m_team_id": "EVGCharaTeam::Blue",
+      "m_chara_voice": {
+        "ObjectName": "SoundAtomCueSheet'UCR019'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Human/UCR019.0"
+      },
+      "m_chara_se": {
+        "ObjectName": "SoundAtomCueSheet'EN005'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Enemy/ENEMY/EN005.0"
+      },
+      "m_behavior_component": {
+        "ObjectName": "VGBehaviorComponent'Default__BC_ENEMY902_000_Assist_C:BehaviorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.29"
+      },
+      "m_action_component": {
+        "ObjectName": "VGActionComponent'Default__BC_ENEMY902_000_Assist_C:ActionComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.27"
+      },
+      "m_trigger_component": {
+        "ObjectName": "VGTriggerComponent'Default__BC_ENEMY902_000_Assist_C:TriggerComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.42"
+      },
+      "m_camera_component": {
+        "ObjectName": "VGCameraComponent'Default__BC_ENEMY902_000_Assist_C:CameraComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.30"
+      },
+      "m_map_icon_component": {
+        "ObjectName": "VGMapIconComponent'Default__BC_ENEMY902_000_Assist_C:MapIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.36"
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BC_ENEMY902_000_Assist_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.43"
+      },
+      "m_sound_component": {
+        "ObjectName": "VGSoundComponent'Default__BC_ENEMY902_000_Assist_C:SoundComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.41"
+      },
+      "m_skeletal_mesh_components": [
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_ENEMY902_000_Assist_C:CharacterMesh0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.40"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_ENEMY902_000_Assist_C:AvatarCustomize.HairMesh'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.39"
+        },
+        {
+          "ObjectName": "VGFacialMeshComponent'Default__BC_ENEMY902_000_Assist_C:AvatarCustomize.FaceMesh'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.33"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_ENEMY902_000_Assist_C:AvatarCustomize.AccessoryMesh0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.37"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_ENEMY902_000_Assist_C:AvatarCustomize.AccessoryMesh1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.38"
+        }
+      ],
+      "Mesh": {
+        "ObjectName": "VGSkeletalMeshComponent'Default__BC_ENEMY902_000_Assist_C:CharacterMesh0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.40"
+      },
+      "CharacterMovement": {
+        "ObjectName": "VGCharacterMovementComponent'Default__BC_ENEMY902_000_Assist_C:CharMoveComp'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.32"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_ENEMY902_000_Assist_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.31"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'AIC_Assist_Base_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/Assist/AIC_Assist_Base.2"
+      },
+      "RootComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_ENEMY902_000_Assist_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.31"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.24"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ExecuteUbergraph_BC_ENEMY902_000_Assist'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.5"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGAssistBattleCharacter'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:CreateWingVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.3"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:DeleteWingVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.4"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.9"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:OnPostFirstSpawnEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.6"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.7"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.8"
+      },
+      {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ExecuteUbergraph_BC_ENEMY902_000_Assist'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGProjectileDataHolder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGProjectileDataHolderComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AssistSupportComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'ASC_ENEMY902_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/AI/BehaviorTree/ASC_ENEMY902.1"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WingVfxAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "WingVfxAsset",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'VGVfxSignalAsset'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BC_ENEMY902_000_Assist": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ExecuteUbergraph_BC_ENEMY902_000_Assist'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.5"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.8"
+      },
+      "OnReceivedMessageEvent": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.7"
+      },
+      "OnPostFirstSpawnEvent": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:OnPostFirstSpawnEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.6"
+      },
+      "ReceivedMessage": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.9"
+      },
+      "DeleteWingVfx": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:DeleteWingVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.4"
+      },
+      "CreateWingVfx": {
+        "ObjectName": "Function'BC_ENEMY902_000_Assist_C:CreateWingVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.3"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BC_ENEMY902_000_Assist_C'Default__BC_ENEMY902_000_Assist_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CreateWingVfx",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorScale3D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGVfxSignalAsset'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_VGVfxSignalDesc",
+        "Flags": "RF_Public",
+        "ElementSize": 184,
+        "PropertyFlags": "ContainsInstancedReference",
+        "Struct": {
+          "ObjectName": "Class'VGVfxSignalDesc'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DeleteWingVfx",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGVfxSignalAsset'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BC_ENEMY902_000_Assist",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Event_message",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnPostFirstSpawnEvent",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGCharacter:OnPostFirstSpawnEvent'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReceivedMessageEvent",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGCharacter:OnReceivedMessageEvent'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivedMessage",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "Message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BC_ENEMY902_000_Assist_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.10"
+      },
+      "VariableGuid": "3C8FFB8B-4E24D853-89A1B59C-F8490EC4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'ASC_ENEMY902_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/AI/BehaviorTree/ASC_ENEMY902.1"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ASC_ENEMY902_C'BC_ENEMY902_000_Assist_C:AssistSupportComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.0"
+      },
+      "VariableGuid": "035517A7-482C00A8-9D0124B1-07C242D8",
+      "InternalVariableName": "AssistSupportComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGProjectileDataHolderComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGProjectileDataHolderComponent'BC_ENEMY902_000_Assist_C:SGProjectileDataHolder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.21"
+      },
+      "VariableGuid": "A2650539-40B688C1-C7837C98-AFCC6626",
+      "InternalVariableName": "SGProjectileDataHolder"
+    }
+  },
+  {
+    "Type": "SGActionArmorComponent",
+    "Name": "ActionArmorComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGActionArmorComponent'"
+  },
+  {
+    "Type": "SGActionInvincibleComponent",
+    "Name": "ActionInvincibleComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGActionInvincibleComponent'"
+  },
+  {
+    "Type": "SGCharacterBuildComponent",
+    "Name": "CharacterBuildComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGCharacterBuildComponent'"
+  },
+  {
+    "Type": "SGCharacterLevelComponent",
+    "Name": "CharacterLevelComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGCharacterLevelComponent'"
+  },
+  {
+    "Type": "SGDebugCharacterInformationComponent",
+    "Name": "DebugCharacterInformationComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGDebugCharacterInformationComponent'"
+  },
+  {
+    "Type": "SGHeroPointComponent",
+    "Name": "HeroPointComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGHeroPointComponent'"
+  },
+  {
+    "Type": "SGHitEffectStashComponent",
+    "Name": "HitEffectStashComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGHitEffectStashComponent'"
+  },
+  {
+    "Type": "SGProjectileDataHolderComponent",
+    "Name": "SGProjectileDataHolder_GEN_VARIABLE",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGProjectileDataHolderComponent'",
+    "Properties": {
+      "m_projectile_data_asset_array": [
+        {
+          "ObjectName": "DataTable'DT_ProjectileData_ENEMY902'",
+          "ObjectPath": "/Game/Product/DataTable/Projectile/DT_ProjectileData_ENEMY902.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SGStatusAilmentComponent",
+    "Name": "StatusAilmentComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGStatusAilmentComponent'"
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'"
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.13"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.12"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.13"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BC_ENEMY902_000_Assist_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.11"
+      }
+    }
+  },
+  {
+    "Type": "VG3DHudDeadIconComponent",
+    "Name": "3DHudDeadIconComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VG3DHudDeadIconComponent'"
+  },
+  {
+    "Type": "VG3DHudStatusComponent",
+    "Name": "3DHudStatusComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VG3DHudStatusComponent'"
+  },
+  {
+    "Type": "VGActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGActionComponent'"
+  },
+  {
+    "Type": "VGAvatarCustomizeComponent",
+    "Name": "AvatarCustomize",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGAvatarCustomizeComponent'"
+  },
+  {
+    "Type": "VGBehaviorComponent",
+    "Name": "BehaviorComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGBehaviorComponent'"
+  },
+  {
+    "Type": "VGCameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGCameraComponent'"
+  },
+  {
+    "Type": "VGCharaBodyComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGCharaBodyComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 0.0,
+      "CapsuleRadius": 0.0,
+      "AreaClassOverride": {
+        "ObjectName": "Class'NavArea_Obstacle'",
+        "ObjectPath": "/Script/NavigationSystem"
+      },
+      "bUseSystemDefaultObstacleAreaClass": false,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel2",
+        "CollisionProfileName": "CharaBody",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaHit",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "VGCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGCharacterMovementComponent'",
+    "Properties": {
+      "DefaultLandMovementMode": "MOVE_Flying"
+    }
+  },
+  {
+    "Type": "VGFacialMeshComponent",
+    "Name": "FaceMesh",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGFacialMeshComponent'"
+  },
+  {
+    "Type": "VGHitStopComponent",
+    "Name": "HitStopComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGHitStopComponent'"
+  },
+  {
+    "Type": "VGLookAtComponent",
+    "Name": "LookAt",
+    "Outer": "FaceMesh",
+    "Class": "UScriptClass'VGLookAtComponent'"
+  },
+  {
+    "Type": "VGMapIconComponent",
+    "Name": "MapIconComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGMapIconComponent'"
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "AccessoryMesh0",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'"
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "AccessoryMesh1",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'"
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "HairMesh",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'"
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_ENEMY902_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/Animation/Blueprint/ABP_ENEMY902.1"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SKM_ENEMY902_000'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/Model/Mesh/SKM_ENEMY902_000.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SKM_ENEMY902_000'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/Model/Mesh/SKM_ENEMY902_000.0"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_ENEMY902_000_Assist_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY902/BattleCharacter/BC_ENEMY902_000_Assist.31"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -130.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGSoundComponent",
+    "Name": "SoundComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGSoundComponent'"
+  },
+  {
+    "Type": "VGTriggerComponent",
+    "Name": "TriggerComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGTriggerComponent'"
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BC_ENEMY902_000_Assist_C",
+    "Class": "UScriptClass'VGVfxComponent'"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_Falling_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Falling_End",
+      "action_id": 15,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_Falling_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_Falling_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Falling_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Falling_End.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_Falling_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 36,
+      "start_time": 0.26666668,
+      "end_time": 1.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_Falling_End:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Falling_End.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

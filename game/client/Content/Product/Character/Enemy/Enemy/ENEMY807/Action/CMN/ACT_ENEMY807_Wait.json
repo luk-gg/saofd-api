@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY807_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY807_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Animation/Montage/MNT_ENEMY807_Wait.0"
+        },
+        "is_loop": true
+      },
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY807_Wait:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Wait.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY807_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 102,
+      "end_time": 3.4,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY807_Wait:VGActionEvent_0.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Wait.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS006_00_ElectricCore'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS006_00/efs_BOSS006_00_ElectricCore.0"
+      }
+    }
+  }
+]

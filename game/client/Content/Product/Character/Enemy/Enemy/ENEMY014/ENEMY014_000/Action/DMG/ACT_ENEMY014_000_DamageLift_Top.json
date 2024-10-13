@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY014_000_DamageLift_Top",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLift_Top",
+      "action_id": 209,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY014_DamageLift_top'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Animation/Montage/MNT_ENEMY014_DamageLift_top.0"
+        }
+      },
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY014_000_DamageLift_Top",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 8,
+      "end_time": 0.26666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY014_000_DamageLift_Top",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 8,
+      "start_time": 0.43333337,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY014_000_DamageLift_Top",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可",
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY014_000_DamageLift_Top:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/DMG/ACT_ENEMY014_000_DamageLift_Top.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 210
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.3"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateGoalPointTurn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.4"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateGotoTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.5"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:GetMovePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.1"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.6"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "AttackInput",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "AttackInput",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGPadKey'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InterruptActionId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ProcessNameAfterToAttack",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "UpdateProcess": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.6"
+      },
+      "GetMovePoint": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:GetMovePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.1"
+      },
+      "UpdateGotoTarget": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateGotoTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.5"
+      },
+      "UpdateGoalPointTurn": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateGoalPointTurn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.4"
+      },
+      "UpdateAttack": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.3"
+      },
+      "StartAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C'Default__SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.7"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMovePoint",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C:GetMovePoint'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Owner",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS005_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.1"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "MovePoint",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "MovePoint",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_MovePoint'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGStruct_RBOSS005_MovePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DistanceSQ",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CurrentMovePoint",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "OutputMovePoint",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "OutputMovePoint",
+          "Flags": "RF_Public",
+          "ElementSize": 56,
+          "Struct": {
+            "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_MovePoint'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGStruct_RBOSS005_MovePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "TempMovePoint",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "TempMovePoint",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SGStruct_RBOSS005_MovePoint",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_MovePoint'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGStruct_RBOSS005_MovePoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_DistanceSquared_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAction",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C:StartAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_StartAction_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateAttack",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateAttack'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayingActionId_Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateGoalPointTurn",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C:UpdateGoalPointTurn'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateGoalPointTurn_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateGotoTarget",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C:UpdateGotoTarget'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.8"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateGotoTarget_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateProcess",
+    "Outer": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C:UpdateProcess'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateAttack_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateGoalPointTurn_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateGotoTarget_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateLanding_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateTakeOff_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Name": "Default__SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_LaneAttack.SGBP_SkillAction_RBOSS005_Flying_LaneAttack_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C'Default__SGBP_SkillAction_RBOSS005_Flying_GotoPoint_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_GotoPoint.12"
+    },
+    "Properties": {
+      "InterruptActionId": -1,
+      "ProcessNameAfterToAttack": "Landing",
+      "MovePointGroupName": "AttackLane",
+      "UseTargetActor": false
+    }
+  }
+]

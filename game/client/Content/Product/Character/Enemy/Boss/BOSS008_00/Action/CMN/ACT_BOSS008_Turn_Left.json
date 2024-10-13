@@ -1,0 +1,94 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS008_Turn_Left",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Left",
+      "action_id": 30,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS008_Turn_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS008_00/Animation/Montage/MNT_BOSS008_Turn_l.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS008_Turn_Left:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS008_00/Action/CMN/ACT_BOSS008_Turn_Left.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS008_Turn_Left:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS008_00/Action/CMN/ACT_BOSS008_Turn_Left.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS008_Turn_Left",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "num_frames": 11,
+      "start_time": 0.86666673,
+      "end_time": 1.2333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS008_Turn_Left:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS008_00/Action/CMN/ACT_BOSS008_Turn_Left.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_BOSS008_Turn_Left",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "羽ばたき音",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS008_Turn_Left:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS008_00/Action/CMN/ACT_BOSS008_Turn_Left.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

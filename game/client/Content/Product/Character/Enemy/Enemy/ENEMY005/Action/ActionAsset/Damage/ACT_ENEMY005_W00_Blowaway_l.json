@@ -1,0 +1,308 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W00_Blowaway_l",
+      "action_id": 2201,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W00_Blowaway_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/MNT_ENEMY005_W00_Blowaway_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 48,
+      "end_time": 1.6000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 48,
+      "end_time": 1.6000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "飛びすぎ防止減速(強め）",
+      "num_frames": 33,
+      "end_time": 1.1,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_11.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "落下",
+      "num_frames": 34,
+      "end_time": 1.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_12.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "接地したらLiftEnd",
+      "num_frames": 31,
+      "end_time": 1.0333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_18.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 22,
+      "end_time": 0.73333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_2.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 33,
+      "end_time": 1.1,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY005_W00_Blowaway_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中で停止した場合の救済",
+      "num_frames": 25,
+      "end_time": 0.8333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_ENEMY005_W00_Blowaway_l:VGActionEvent_6.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_Blowaway_l.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2205,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "floor_check_distance": 20.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 2205,
+      "floor_check_distance": 5.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2205,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 207,
+      "activation_time": 2.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Attenuation",
+      "move_value": {
+        "X": 8.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -800.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18,
+        0
+      ]
+    }
+  }
+]

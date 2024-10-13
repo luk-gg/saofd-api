@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_ParryDamage",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "ParryDamage",
+      "action_id": 220,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_ParryDamage'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Animation/Montage/MNT_ENEMY510_ParryDamage.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_ParryDamage:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_ParryDamage.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY510_ParryDamage",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 38,
+      "num_frames": 8,
+      "start_time": 1.2666668,
+      "end_time": 1.5333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_ParryDamage:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_ParryDamage.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

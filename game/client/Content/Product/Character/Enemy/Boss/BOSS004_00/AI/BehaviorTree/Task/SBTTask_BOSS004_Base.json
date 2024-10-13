@@ -1,0 +1,201 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SBTTask_BOSS004_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SBTTask_BOSS004_Base_C:GetCurrentSkillName'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.1"
+      },
+      {
+        "ObjectName": "Function'SBTTask_BOSS004_Base_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "BattleCharacter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_BOSS004_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/BattleCharacter/Base/BC_BOSS004_00_Base.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AiController",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_BOSS004_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BaseController/AIC_BOSS004_Base.2"
+        }
+      }
+    ],
+    "FuncMap": {
+      "Initialize": {
+        "ObjectName": "Function'SBTTask_BOSS004_Base_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.2"
+      },
+      "GetCurrentSkillName": {
+        "ObjectName": "Function'SBTTask_BOSS004_Base_C:GetCurrentSkillName'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SBTTask_BOSS004_Base_C'Default__SBTTask_BOSS004_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentSkillName",
+    "Outer": "SBTTask_BOSS004_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "SkillName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGEnemyCharacterComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Initialize",
+    "Outer": "SBTTask_BOSS004_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AiController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Pawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_BOSS004_00_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_BOSS004_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/BattleCharacter/Base/BC_BOSS004_00_Base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_BOSS004_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_BOSS004_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BaseController/AIC_BOSS004_Base.2"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SBTTask_BOSS004_Base_C",
+    "Name": "Default__SBTTask_BOSS004_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_Base.SBTTask_BOSS004_Base_C'"
+  }
+]

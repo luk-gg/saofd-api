@@ -1,0 +1,34 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_RBOSS006_00_TurnOver_l",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "TurnOver_l",
+      "m_action_id": 170,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Angle_BackLeft'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Angle_BackLeft.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsEmotion",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Attacking",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

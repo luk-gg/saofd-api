@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 281100000
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY811_000_Attack00_a",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack00_Cylinder_attack",
+      "action_id": 101,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY811_000_Attack00_attack'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Animation/Montage/MNT_ENEMY811_000_Attack00_attack.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Attack00_a:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack00_a.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Attack00_a:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack00_a.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY811_000_Attack00_a",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "円柱範囲攻撃",
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY811_000_Attack00_a:VGActionEvent_0.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack00_a.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY811_000_Attack00_a",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 209,
+      "num_frames": 9,
+      "start_time": 6.966667,
+      "end_time": 7.2666674,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY811_000_Attack00_a:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack00_a.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

@@ -1,0 +1,193 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Blowaway_Loop",
+      "action_id": 206,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY015_Blow_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Animation/Montage/MNT_ENEMY015_Blow_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中で停止した場合の救済",
+      "num_frames": 28,
+      "end_time": 0.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_0.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 16,
+      "end_time": 0.53333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_13.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY015_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "着地分岐",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY015_Blowaway_Loop:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_Blowaway_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 207,
+      "floor_check_distance": 5.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 207,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 207
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 207,
+      "activation_time": 2.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -900.0,
+        "Y": 0.0,
+        "Z": -850.0
+      },
+      "is_reset": false
+    }
+  }
+]

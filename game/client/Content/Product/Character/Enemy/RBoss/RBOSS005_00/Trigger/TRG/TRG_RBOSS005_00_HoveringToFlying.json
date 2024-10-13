@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_RBOSS005_00_HoveringToFlying",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "HoveringToFlying",
+      "m_action_id": 510,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Any'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Any.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L3_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L3_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::FlyingIdle",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingMove",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::IsTurn",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingTurn",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Falling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

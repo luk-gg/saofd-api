@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "SGANSAssistProjectileShot",
+    "Name": "SGANSAssistProjectileShot_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSAssistProjectileShot'",
+    "Properties": {
+      "projectile_id": 6002,
+      "position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::CamLockTargetOwner",
+      "use_injection_limit_angle": true,
+      "injection_limit_angle": 60.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_SS002_Loop_9020106",
+      "action_id": 134,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_ENEMY900_DGR_SKL_SS003_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/BS_ENEMY900_DGR_SKL_SS003_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "anim_assets": {
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "バブルブレス",
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSAssistProjectileShot'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_0.SGANSAssistProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 20,
+      "num_frames": 20,
+      "start_time": 0.6666667,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106:VGActionEvent_2.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS002_Loop_9020106.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 132
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 132,
+      "check_autonomous": false
+    }
+  }
+]

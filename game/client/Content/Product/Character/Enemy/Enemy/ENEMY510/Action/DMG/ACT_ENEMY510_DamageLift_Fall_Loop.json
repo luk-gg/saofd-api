@@ -1,0 +1,255 @@
+[
+  {
+    "Type": "SGANSExpression",
+    "Name": "SGANSExpression_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSExpression'",
+    "Properties": {
+      "m_expression_pattern": "EVGFacialExpressionPattern::Damage"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLift_Fall_Loop",
+      "action_id": 210,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Air",
+        "EVGActionState::Fall"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_DamageLift_fall_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Animation/Montage/MNT_ENEMY510_DamageLift_fall_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_0.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "フェイシャル（ダメージ顔）",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSExpression'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_10.SGANSExpression_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_11.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_7.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY510_DamageLift_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_DamageLift_Fall_Loop:VGActionEvent_9.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/Action/DMG/ACT_ENEMY510_DamageLift_Fall_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 211,
+      "floor_check_distance": 30.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 211
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 211,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -300.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        25
+      ],
+      "ik_state": false
+    }
+  }
+]

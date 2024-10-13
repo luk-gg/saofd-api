@@ -1,0 +1,295 @@
+[
+  {
+    "Type": "SGANCreateTargetedCircleEffect",
+    "Name": "SGANCreateTargetedCircleEffect_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANCreateTargetedCircleEffect'",
+    "Properties": {
+      "m_homing_target_id": 0,
+      "m_general_effect_id": 0,
+      "m_min_life_span": 1.0
+    }
+  },
+  {
+    "Type": "SGANHomingTargetSetting",
+    "Name": "SGANHomingTargetSetting_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANHomingTargetSetting'",
+    "Properties": {
+      "m_decide_method": "ESGHomingTargetDecideMethod::ENEMY506_Missile",
+      "m_homing_target_id": 0,
+      "m_target_num": 1,
+      "m_target_get_type": "ESGTargetGetTypeByIndexOver::In_Order"
+    }
+  },
+  {
+    "Type": "SGANSActionRotationHold",
+    "Name": "SGANSActionRotationHold_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionRotationHold'"
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 506000,
+      "node": "VFX_BeamCannon_Muzzle01",
+      "target_direction": "ESGActionProjectileShotTargetDirection::Node",
+      "node_axis_type": "ESGActionProjectileShotNodeAxisType::Z",
+      "homing_target_info": {
+        "m_homing_target_setting_id": 0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack03_ThirdShot",
+      "action_id": 106,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Fire"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_ENEMY506_Attack03'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Animation/Montage/BS_ENEMY506_Attack03.0"
+        },
+        "blend_time": 0.3,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.12"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 71,
+      "end_time": 2.3666668,
+      "notify_state": {
+        "ObjectName": "SGANSActionRotationHold'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_1.SGANSActionRotationHold_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ミサイル発射",
+      "start_frame": 15,
+      "start_time": 0.5,
+      "end_time": 0.53333336,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_18.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "SGANHomingTargetSetting'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_2.SGANHomingTargetSetting_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "誘導ミサイル",
+      "start_frame": 15,
+      "start_time": 0.5,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_4.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 30,
+      "num_frames": 41,
+      "start_time": 1.0,
+      "end_time": 2.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "SGANCreateTargetedCircleEffect'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_6.SGANCreateTargetedCircleEffect_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 15,
+      "start_time": 0.5,
+      "end_time": 0.53333336,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_7.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY506_Attack03_ThirdShot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 15,
+      "start_time": 0.5,
+      "end_time": 0.53333336,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY506_Attack03_ThirdShot:VGActionEvent_8.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack03_ThirdShot.13"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Middle.0"
+      },
+      "outer_radius": 4000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 9,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        30
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY506_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY506/efs_ENEMY506_Muzzle.0"
+      },
+      "emit_node_name": "VFX_BeamCannon_Muzzle01",
+      "scale_offset": {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      }
+    }
+  }
+]

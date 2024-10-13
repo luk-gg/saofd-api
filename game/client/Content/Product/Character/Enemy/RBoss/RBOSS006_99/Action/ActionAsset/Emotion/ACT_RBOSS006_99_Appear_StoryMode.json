@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "SGANNoticeSpawned",
+    "Name": "SGANNoticeSpawned_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANNoticeSpawned'"
+  },
+  {
+    "Type": "SGANSHackCameraCut",
+    "Name": "SGANSHackCameraCut_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSHackCameraCut'",
+    "Properties": {
+      "start": {
+        "distance": 900.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 300.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": -90.0,
+          "Roll": 0.0
+        },
+        "fov": 40.0
+      },
+      "end": {
+        "distance": 700.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 200.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": -90.0,
+          "Roll": 0.0
+        },
+        "fov": 50.0,
+        "blend": {
+          "BlendTime": 0.2
+        }
+      },
+      "is_hidden_friend": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS006_99_Appear_StoryMode",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Appear_StoryMode",
+      "action_id": 5100,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "priority": 1000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS006_99_Appear_StroryMode'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Animation/Montage/MNT_RBOSS006_99_Appear_StroryMode.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS006_99_Appear_StoryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 336,
+      "end_time": 11.200001,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_RBOSS006_99_Appear_StoryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現通知",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANNoticeSpawned'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_18.SGANNoticeSpawned_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS006_99_Appear_StoryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機へ",
+      "start_frame": 85,
+      "num_frames": 7,
+      "start_time": 2.8333335,
+      "end_time": 3.0666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS006_99_Appear_StoryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 60,
+      "end_time": 2.0,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSHackCameraCut'ACT_RBOSS006_99_Appear_StoryMode:VGActionEvent_3.SGANSHackCameraCut_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Emotion/ACT_RBOSS006_99_Appear_StoryMode.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        15
+      ]
+    }
+  }
+]

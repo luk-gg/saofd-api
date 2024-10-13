@@ -1,0 +1,325 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 180.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 250110000,
+      "position": {
+        "X": 50.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::CurrentAITarget",
+      "use_injection_limit_angle": true,
+      "injection_limit_angle": 45.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01",
+      "action_id": 100,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "priority": 101,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY501_Attack01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Animation/Montage/MNT_ENEMY501_Attack01.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 53,
+      "num_frames": 3,
+      "start_time": 1.7666668,
+      "end_time": 1.8666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エレキショット",
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_1.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃リム(全身発光処理)",
+      "num_frames": 35,
+      "end_time": 1.1666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_13.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 18,
+      "start_time": 0.6,
+      "end_time": 0.6333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_2.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_3.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発射音",
+      "start_frame": 18,
+      "start_time": 0.6,
+      "end_time": 0.6333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "稼働音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY501_Attack01_Thunder",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時スーパーアーマー",
+      "start_frame": 14,
+      "num_frames": 6,
+      "start_time": 0.4666667,
+      "end_time": 0.66666675,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY501_Attack01_Thunder:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/ATK/ACT_ENEMY501_Attack01_Thunder.14"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 6,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 100.4686,
+        "G": 128.0,
+        "B": 39.616997,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 4.0,
+        "G": 3.401597,
+        "B": 0.930776,
+        "A": 0.0,
+        "Hex": "FFFFF8"
+      },
+      "dark_color": {
+        "R": 42.779926,
+        "G": 64.0,
+        "B": 1.089127,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY501_ELMuzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY501/efs_ENEMY501_ELMuzzle.0"
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

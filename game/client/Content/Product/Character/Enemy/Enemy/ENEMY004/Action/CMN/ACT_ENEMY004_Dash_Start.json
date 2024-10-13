@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY004_Dash_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dash_Start",
+      "action_id": 20,
+      "states": [
+        "EVGActionState::Run",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY004_Dash_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Animation/Montage/MNT_ENEMY004_Dash_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dash_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/CMN/ACT_ENEMY004_Dash_Start.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dash_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/CMN/ACT_ENEMY004_Dash_Start.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY004_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 21,
+      "num_frames": 2,
+      "start_time": 0.70000005,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY004_Dash_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/CMN/ACT_ENEMY004_Dash_Start.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY004_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "滑空始動音",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY004_Dash_Start:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/CMN/ACT_ENEMY004_Dash_Start.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21
+    }
+  }
+]

@@ -1,0 +1,307 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageRight",
+      "action_id": 204,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY500_DamageRight'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Animation/Montage/MNT_ENEMY500_DamageRight.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.6"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_DamageRight:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ中はスーパーアーマー",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY500_DamageRight:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_DamageRight:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY500_DamageRight:VGActionEvent_11.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_DamageRight:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY500_DamageRight:VGActionEvent_6.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 49,
+      "num_frames": 9,
+      "start_time": 1.6333334,
+      "end_time": 1.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY500_DamageRight:VGActionEvent_7.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY500_DamageRight:VGActionEvent_8.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY500_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_DamageRight:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_DamageRight.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 8,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "VFX_b_L_Toe",
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "VFX_b_L_Toe",
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

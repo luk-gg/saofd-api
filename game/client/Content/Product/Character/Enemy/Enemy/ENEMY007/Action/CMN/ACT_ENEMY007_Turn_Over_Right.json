@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY007_Turn_Over_Right",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Over_Right",
+      "action_id": 33,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY007_Turn_Over_Right'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Animation/Montage/MNT_ENEMY007_Turn_Over_Right.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Turn_Over_Right:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Turn_Over_Right.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Turn_Over_Right:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Turn_Over_Right.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY007_Turn_Over_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 38,
+      "num_frames": 5,
+      "start_time": 1.2666668,
+      "end_time": 1.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY007_Turn_Over_Right:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Turn_Over_Right.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY007_Turn_Over_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "旋回声",
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY007_Turn_Over_Right:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Turn_Over_Right.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

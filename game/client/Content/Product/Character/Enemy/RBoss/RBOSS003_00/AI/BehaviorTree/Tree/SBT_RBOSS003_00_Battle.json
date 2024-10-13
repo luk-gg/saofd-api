@@ -1,0 +1,925 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.6"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_RBOSS003_00_Battle:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.14"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAnger_C'SBT_RBOSS003_00_Battle:SBTDecorator_Enemy_CheckAnger_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.16"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'SBT_RBOSS003_00_Battle:SBTDecorator_Enemy_CheckDuringSwitchChain_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.18"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAttackName_C'SBT_RBOSS003_00_Battle:SBTDecorator_Enemy_CheckAttackName_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.17"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckUseSkill_C'SBT_RBOSS003_00_Battle:SBTDecorator_Enemy_CheckUseSkill_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.20"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "VGBTS_UpdateAim'SBT_RBOSS003_00_Battle:VGBTS_UpdateAim_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.30"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_RBOSS003_00_Battle:VGBTD_CheckActionState_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.28"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishWithResult'SBT_RBOSS003_00_Battle:BTTask_FinishWithResult_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_3",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_RBOSS003_00_Battle:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.7"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_UseComboSkill_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.24"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_RBOSS003_00_Battle:BTDecorator_Blackboard_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.8"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_UseComboSkill_C_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.25"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_RBOSS003_00_Battle:BTDecorator_Blackboard_2'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.9"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_UseComboSkill_C_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.26"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_RBOSS003_00_Battle:BTDecorator_Blackboard_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.10"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_UseComboSkill_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.23"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_RBOSS003_CheckSummonRequest_C'SBT_RBOSS003_00_Battle:SBTDecorator_RBOSS003_CheckSummonRequest_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.21"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseSkill_SetTarget_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_UseSkill_SetTarget_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.27"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'SBT_RBOSS003_00_Battle:SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.19"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_RBOSS003_00_Battle:BTTask_RunBehavior_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.15"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_RBOSS003_00_Battle:VGBTD_CheckActionState_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.29"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_ActionPhaseActionSelection_C'SBT_RBOSS003_00_Battle:SBTTask_Enemy_ActionPhaseActionSelection_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.22"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.6"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_2",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_ForceSuccess'SBT_RBOSS003_00_Battle:BTDecorator_ForceSuccess_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.11"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_RBOSS003_00_Battle:BTTask_RunBehavior_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "行動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Attack",
+      "CachedDescription": "SelectedActionName Is Equal To [Attack]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "攻撃",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Left",
+      "CachedDescription": "SelectedActionName Is Equal To [Left]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "左",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_2",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Right",
+      "CachedDescription": "SelectedActionName Is Equal To [Right]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "右",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_3",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Back",
+      "CachedDescription": "SelectedActionName Is Equal To [Back]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "後ろ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_ForceSuccess",
+    "Name": "BTDecorator_ForceSuccess_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTDecorator_ForceSuccess'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.6"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishWithResult",
+    "Name": "BTTask_FinishWithResult_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTTask_FinishWithResult'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_UpdateSkillAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_UpdateSkillAction.0"
+      },
+      "NodeName": "スキル実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.6"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_SpecialSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_SpecialSkill.0"
+      },
+      "NodeName": "特殊技",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_2",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_TurningFaceToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/SBT_Enemy_TurningFaceToTarget.0"
+      },
+      "NodeName": "アイドル中に顔を向けるターゲットの選択",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAnger_C",
+    "Name": "SBTDecorator_Enemy_CheckAnger_C_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTDecorator_Enemy_CheckAnger.SBTDecorator_Enemy_CheckAnger_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAnger_C'Default__SBTDecorator_Enemy_CheckAnger_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTDecorator_Enemy_CheckAnger.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "怒り中でなければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAttackName_C",
+    "Name": "SBTDecorator_Enemy_CheckAttackName_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAttackName.SBTDecorator_Enemy_CheckAttackName_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAttackName_C'Default__SBTDecorator_Enemy_CheckAttackName_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAttackName.2"
+    },
+    "Properties": {
+      "bShowPropertyDetails": false,
+      "bInverseCondition": true,
+      "NodeName": "攻撃指定無し",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckDuringSwitchChain_C",
+    "Name": "SBTDecorator_Enemy_CheckDuringSwitchChain_C_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'Default__SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "スイッチチェイン中でなければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C",
+    "Name": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint.SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'Default__SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint.2"
+    },
+    "Properties": {
+      "NodeName": "通常技発動可能",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckUseSkill_C",
+    "Name": "SBTDecorator_Enemy_CheckUseSkill_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckUseSkill.SBTDecorator_Enemy_CheckUseSkill_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckUseSkill_C'Default__SBTDecorator_Enemy_CheckUseSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckUseSkill.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "スキルを実行していない",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_RBOSS003_CheckSummonRequest_C",
+    "Name": "SBTDecorator_RBOSS003_CheckSummonRequest_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/TaskBP/SBTDecorator_RBOSS003_CheckSummonRequest.SBTDecorator_RBOSS003_CheckSummonRequest_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_RBOSS003_CheckSummonRequest_C'Default__SBTDecorator_RBOSS003_CheckSummonRequest_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/TaskBP/SBTDecorator_RBOSS003_CheckSummonRequest.2"
+    },
+    "Properties": {
+      "NodeName": "再召喚リクエストチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_ActionPhaseActionSelection_C",
+    "Name": "SBTTask_Enemy_ActionPhaseActionSelection_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_ActionPhaseActionSelection.SBTTask_Enemy_ActionPhaseActionSelection_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_ActionPhaseActionSelection_C'Default__SBTTask_Enemy_ActionPhaseActionSelection_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_ActionPhaseActionSelection.3"
+    },
+    "Properties": {
+      "BB_SelctedActionName": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "アクションフェーズを選択(待機or行動)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS003_00_Battle:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.5"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "S",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Summon",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "召喚ゲートの再召喚",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Move_L",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Move_L",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "左移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_3",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Move_R",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Move_R",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "右移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_4",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Move_B",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Move_B",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "後移動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseSkill_SetTarget_C",
+    "Name": "SBTTask_Enemy_UseSkill_SetTarget_C_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseSkill_SetTarget.SBTTask_Enemy_UseSkill_SetTarget_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseSkill_SetTarget_C'Default__SBTTask_Enemy_UseSkill_SetTarget_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseSkill_SetTarget.20"
+    },
+    "Properties": {
+      "ResetHateBBKey": {
+        "SelectedKeyName": "ResetHate"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_0",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Idle"
+      ],
+      "NodeName": "アイドル状態なら実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Idle"
+      ],
+      "NodeName": "アイドル中",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTS_UpdateAim",
+    "Name": "VGBTS_UpdateAim_1",
+    "Outer": "SBT_RBOSS003_00_Battle",
+    "Class": "UScriptClass'VGBTS_UpdateAim'",
+    "Properties": {
+      "m_target_key": {
+        "SelectedKeyName": "AttackTargetActor"
+      },
+      "m_aim_mode": "EVGAIAimMode::Node",
+      "m_aim_node_key": {
+        "SelectedKeyName": "TargetingAimNode"
+      },
+      "m_homing_rate": 100.0,
+      "m_result_aim_node_key": {},
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_upper_angle_key": {},
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS003_00_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS003_00_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/AI/BehaviorTree/Tree/SBT_RBOSS003_00_Battle.1"
+      }
+    }
+  }
+]

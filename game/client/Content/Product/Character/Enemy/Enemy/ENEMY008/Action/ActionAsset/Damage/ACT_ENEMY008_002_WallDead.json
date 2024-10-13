@@ -1,0 +1,378 @@
+[
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WallDead",
+      "action_id": 2000,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 10000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY008_002_WallDead'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Animation/Montage/MNT_ENEMY008_002_WallDead.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.11"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_002_WallDead:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 40,
+      "num_frames": 84,
+      "start_time": 1.3333334,
+      "end_time": 4.1333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY008_002_WallDead:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY008_002_WallDead:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 40,
+      "start_time": 1.3333334,
+      "end_time": 1.3666667,
+      "notify": {
+        "ObjectName": "VGANItemDrop'ACT_ENEMY008_002_WallDead:VGActionEvent_13.VGANItemDrop_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 40,
+      "start_time": 1.3333334,
+      "end_time": 1.3666667,
+      "notify": {
+        "ObjectName": "VGANIgnoreBody'ACT_ENEMY008_002_WallDead:VGActionEvent_2.VGANIgnoreBody_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "自身を破棄（必ず最後に実行される様に配置）",
+      "start_frame": 42,
+      "start_time": 1.4000001,
+      "end_time": 1.4333334,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_ENEMY008_002_WallDead:VGActionEvent_3.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 268,
+      "end_time": 8.933333,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY008_002_WallDead:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡リム(全身発光処理)",
+      "num_frames": 120,
+      "end_time": 4.0,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY008_002_WallDead:VGActionEvent_5.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 39,
+      "start_time": 1.3000001,
+      "end_time": 1.3333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY008_002_WallDead:VGActionEvent_6.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "爆散音",
+      "start_frame": 39,
+      "start_time": 1.3000001,
+      "end_time": 1.3333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY008_002_WallDead:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY008_002_WallDead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 39,
+      "start_time": 1.3000001,
+      "end_time": 1.3333334,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY008_002_WallDead:VGActionEvent_9.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Damage/ACT_ENEMY008_002_WallDead.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_VerticalSwing_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_VerticalSwing.0"
+      },
+      "outer_radius": 2000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANIgnoreBody",
+    "Name": "VGANIgnoreBody_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANIgnoreBody'"
+  },
+  {
+    "Type": "VGANItemDrop",
+    "Name": "VGANItemDrop_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANItemDrop'",
+    "Properties": {
+      "is_manual": true,
+      "offset_yaw": 45.0,
+      "distance_min": 500.0,
+      "distance_max": 800.0,
+      "height": 1000.0
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 900,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 0.6,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        25,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.0,
+        "G": 64.0,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 0.5,
+        "G": 1.0,
+        "B": 2.0,
+        "A": 0.0,
+        "Hex": "BCFFFF"
+      },
+      "dark_color": {
+        "R": 0.0,
+        "G": 11.999997,
+        "B": 36.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY008_Dead'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY008/efs_ENEMY008_Dead.0"
+      }
+    }
+  }
+]

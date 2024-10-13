@@ -1,0 +1,29 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_BOSS006_FlyingDash_TurnOver_r",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "FlyingDash_TurnOver_Right",
+      "m_action_id": 63,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Down_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Down_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Flying",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

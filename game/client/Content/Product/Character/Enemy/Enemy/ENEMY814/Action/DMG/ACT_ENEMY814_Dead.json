@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY814_Dead",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dead",
+      "action_id": 50,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 10000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY814_000_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Animation/Montage/MNT_ENEMY814_000_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_Dead:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Dead.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY814_Dead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_ENEMY814_Dead:VGActionEvent_0.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Dead.0"
+      }
+    }
+  }
+]

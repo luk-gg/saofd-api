@@ -1,0 +1,249 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_RBOSS005_00_DeathTransition_base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGDeathTransitionDeterminationUnit'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_RBOSS005_00_DeathTransition_base_C:IsTransitionable'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/Base/SGBP_RBOSS005_00_DeathTransition_base.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "EventName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CheckAir",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsAir",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "IsTransitionable": {
+        "ObjectName": "Function'SGBP_RBOSS005_00_DeathTransition_base_C:IsTransitionable'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/Base/SGBP_RBOSS005_00_DeathTransition_base.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_RBOSS005_00_DeathTransition_base_C'Default__SGBP_RBOSS005_00_DeathTransition_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/Base/SGBP_RBOSS005_00_DeathTransition_base.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "IsTransitionable",
+    "Outer": "SGBP_RBOSS005_00_DeathTransition_base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGDeathTransitionDeterminationUnit:IsTransitionable'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "owner",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGBattleCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "FieldSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyAiComponent",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/EAIC_RBOSS005_00.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AiController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/AIC_RBOSS005_00.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAir_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_RBOSS005_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/AIC_RBOSS005_00.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/EAIC_RBOSS005_00.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_BoolBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetDeadEventType_EventType",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_NameName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "SGBP_RBOSS005_00_DeathTransition_base_C",
+    "Name": "Default__SGBP_RBOSS005_00_DeathTransition_base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/Base/SGBP_RBOSS005_00_DeathTransition_base.SGBP_RBOSS005_00_DeathTransition_base_C'",
+    "Properties": {
+      "CheckAir": true
+    }
+  }
+]

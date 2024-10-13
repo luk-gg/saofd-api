@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Diving_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Diving_e",
+      "action_id": 15,
+      "states": [
+        "EVGActionState::Emotion",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Diving_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Diving_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_e:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_e.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_e:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_e.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS001_00_Diving_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 46,
+      "end_time": 1.5333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS001_00_Diving_e:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_e.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS001_00_Diving_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "潜行待機アイドルへ",
+      "start_frame": 39,
+      "num_frames": 5,
+      "start_time": 1.3000001,
+      "end_time": 1.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Diving_e:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_e.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 16
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

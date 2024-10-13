@@ -1,0 +1,255 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DownB_Loop",
+      "action_id": 1102,
+      "states": [
+        "EVGActionState::BurstDown",
+        "EVGActionState::Down",
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY013_DownB_Fall_End_Loop'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Animation/Montage/MNT_ENEMY013_DownB_Fall_End_Loop.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 98,
+      "end_time": 3.266667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 11,
+      "start_time": 0.36666667,
+      "end_time": 0.4,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_1.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "num_frames": 161,
+      "start_time": 1.1666667,
+      "end_time": 6.533334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_4.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY013_DownB_Fall_End_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "土煙",
+      "start_frame": 3,
+      "num_frames": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.20000002,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY013_DownB_Fall_End_Loop:VGActionEvent_7.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/DMG/ACT_ENEMY013_DownB_Fall_End_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Light_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Light.0"
+      },
+      "outer_radius": 2000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "outer_radius": 2000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 1103,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::BurstGaugeRatio",
+              "eval": "EVGTriggerStateConditionEval::Equal",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 700.0
+      },
+      "scale_offset": {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      },
+      "is_affected_mesh_scale": false
+    }
+  }
+]

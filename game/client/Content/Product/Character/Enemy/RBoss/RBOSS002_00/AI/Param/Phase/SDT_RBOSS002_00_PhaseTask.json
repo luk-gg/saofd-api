@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "SDT_RBOSS002_00_PhaseTask",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'SGEnemyPhaseTaskRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "Phase1": {
+        "m_phase_name": "Phase1",
+        "m_phase_id": 0,
+        "m_angry_type": "ESGEnemyAngryType::Standard",
+        "m_anger_time": 25.0,
+        "m_animation_speed_when_anger": 1.2,
+        "m_pattern_param_in_phase": [
+          {
+            "m_use_action_select_param_name": "Default",
+            "m_use_skill_param_name": "Phase1_1",
+            "m_use_skill_param_name_while_angry": "Phase1_1_Angry",
+            "m_normal_skill_param": {
+              "m_normal_skill_trigger_point_limit": 3.0,
+              "m_normal_skill_trigger_point_from_damage": 0.1,
+              "m_normal_skill_trigger_point_per_second": 1.0
+            },
+            "m_special_skill_param": {
+              "m_special_skill_trigger_point_limit": 180.0,
+              "m_special_skill_trigger_point_from_damage": 0.1,
+              "m_special_skill_trigger_point_per_second": 1.0,
+              "m_is_reset_the_special_skill_trigger_point_for_next_phase": false,
+              "m_special_skill_name": [
+                "Anger",
+                "SBCBomb_1"
+              ],
+              "m_special_skill_prior_inspection_unit": []
+            },
+            "m_pattern_switching_time": 120.0
+          }
+        ],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_Phase1_TaskUnit_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/AI/Phase/SGBP_RBOSS002_00_Phase1_TaskUnit.0"
+        }
+      },
+      "Phase2A": {
+        "m_phase_name": "Phase2A",
+        "m_phase_id": 1,
+        "m_angry_type": "ESGEnemyAngryType::Standard",
+        "m_anger_time": 25.0,
+        "m_animation_speed_when_anger": 1.2,
+        "m_pattern_param_in_phase": [
+          {
+            "m_use_action_select_param_name": "Default",
+            "m_use_skill_param_name": "Phase2A_1",
+            "m_use_skill_param_name_while_angry": "Phase2A_1_Angry",
+            "m_normal_skill_param": {
+              "m_normal_skill_trigger_point_limit": 2.0,
+              "m_normal_skill_trigger_point_from_damage": 0.1,
+              "m_normal_skill_trigger_point_per_second": 1.0
+            },
+            "m_special_skill_param": {
+              "m_special_skill_trigger_point_limit": 60.0,
+              "m_special_skill_trigger_point_from_damage": 0.1,
+              "m_special_skill_trigger_point_per_second": 1.0,
+              "m_is_reset_the_special_skill_trigger_point_for_next_phase": false,
+              "m_special_skill_name": [
+                "Anger",
+                "Special01_BLASERDown",
+                "AutoLASER_Pattern_Table"
+              ],
+              "m_special_skill_prior_inspection_unit": []
+            },
+            "m_pattern_switching_time": 120.0
+          }
+        ],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_Phase2_TaskUnit_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/AI/Phase/SGBP_RBOSS002_00_Phase2_TaskUnit.0"
+        }
+      },
+      "Phase3A": {
+        "m_phase_name": "Phase3A",
+        "m_phase_id": 2,
+        "m_angry_type": "ESGEnemyAngryType::Standard",
+        "m_anger_time": 25.0,
+        "m_animation_speed_when_anger": 1.2,
+        "m_pattern_param_in_phase": [
+          {
+            "m_use_action_select_param_name": "Default",
+            "m_use_skill_param_name": "Phase3A_1",
+            "m_use_skill_param_name_while_angry": "Phase3A_1_Angry",
+            "m_normal_skill_param": {
+              "m_normal_skill_trigger_point_limit": 1.0,
+              "m_normal_skill_trigger_point_from_damage": 0.1,
+              "m_normal_skill_trigger_point_per_second": 1.0
+            },
+            "m_special_skill_param": {
+              "m_special_skill_trigger_point_limit": 60.0,
+              "m_special_skill_trigger_point_from_damage": 0.1,
+              "m_special_skill_trigger_point_per_second": 1.0,
+              "m_is_reset_the_special_skill_trigger_point_for_next_phase": false,
+              "m_special_skill_name": [
+                "Anger",
+                "Special02_FullOpen",
+                "SBCBomb_3"
+              ],
+              "m_special_skill_prior_inspection_unit": []
+            },
+            "m_pattern_switching_time": 120.0
+          }
+        ],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_Phase3_TaskUnit_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/AI/Phase/SGBP_RBOSS002_00_Phase3_TaskUnit.0"
+        }
+      }
+    }
+  }
+]

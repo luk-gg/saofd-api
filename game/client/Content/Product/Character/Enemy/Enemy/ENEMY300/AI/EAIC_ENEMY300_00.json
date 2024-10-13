@@ -1,0 +1,577 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'EAIC_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/EAIC_Base.0"
+    },
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ExecuteUbergraph_EAIC_ENEMY300_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.2"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:LocalEndOfPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.7"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetCurrentPhaseUniqueParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.3"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:LocalSetPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.8"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetLastPhaseId'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.4"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetPhaseUniqueParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.5"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.10"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.11"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:SetPhaseTaskIndex'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.12"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:OnEndOfPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.9"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.6"
+      },
+      {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ExecuteUbergraph_EAIC_ENEMY300_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TempBattleCharacter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_ENEMY300_000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/BC_ENEMY300_000.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TempAiController",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_ENEMY300_000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/AIC_ENEMY300_000.2"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "EventId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentPhaseUniqueParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY300_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SGStruct_ENEMY300_PhaseUniqueParamRow.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_EAIC_ENEMY300_00": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ExecuteUbergraph_EAIC_ENEMY300_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.2"
+      },
+      "Initialize": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.6"
+      },
+      "OnEndOfPhase": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:OnEndOfPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.9"
+      },
+      "SetPhaseTaskIndex": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:SetPhaseTaskIndex'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.12"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.11"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.10"
+      },
+      "GetPhaseUniqueParam": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetPhaseUniqueParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.5"
+      },
+      "GetLastPhaseId": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetLastPhaseId'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.4"
+      },
+      "LocalSetPhase": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:LocalSetPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.8"
+      },
+      "GetCurrentPhaseUniqueParam": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:GetCurrentPhaseUniqueParam'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.3"
+      },
+      "LocalEndOfPhase": {
+        "ObjectName": "Function'EAIC_ENEMY300_00_C:LocalEndOfPhase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.7"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_DefaultToInstanced | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "EAIC_ENEMY300_00_C'Default__EAIC_ENEMY300_00_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "EAIC_ENEMY300_00_C",
+    "Name": "Default__EAIC_ENEMY300_00_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/EAIC_ENEMY300_00.EAIC_ENEMY300_00_C'",
+    "Template": {
+      "ObjectName": "EAIC_Base_C'Default__EAIC_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/EAIC_Base.1"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "EventId": -1,
+      "CurrentPhaseUniqueParam": {
+        "MoveWaitTime_10_F80E1C6746229E845D8131BF21524A68": 0.0
+      },
+      "m_phase_task_datatable": {
+        "ObjectName": "DataTable'SDT_ENEMY300_PhaseTask'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SDT_ENEMY300_PhaseTask.0"
+      },
+      "m_phase_unique_param_datatable": {
+        "ObjectName": "DataTable'SDT_ENEMY300_PhaseTask_UniqueParam2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SDT_ENEMY300_PhaseTask_UniqueParam2.0"
+      },
+      "m_disable_count_up_special_skill_trigger_point_from_action_state": []
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_EAIC_ENEMY300_00",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_ENEMY300_000",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_ENEMY300_000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/AIC_ENEMY300_000.2"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "K2Node_Event_phaseTaskIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_ENEMY300_000",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_ENEMY300_000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/BC_ENEMY300_000.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentPhaseUniqueParam",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UniqueParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY300_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SGStruct_ENEMY300_PhaseUniqueParamRow.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetLastPhaseId",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGEnemyAIComponent:GetLastPhaseId'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm | ReturnParm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetPhaseUniqueParam",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "PhaseTaskIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "UniquePhaseParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY300_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SGStruct_ENEMY300_PhaseUniqueParamRow.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPhaseTaskDataTable_outPhaseTaskRow",
+        "Flags": "RF_Public",
+        "ElementSize": 72,
+        "Struct": {
+          "ObjectName": "Class'SGEnemyPhaseTaskRow'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetPhaseTaskDataTable_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPhaseTaskUniqueParamDataTable_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DataTable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetPhaseTaskUniqueParamDataTable_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'DataTable'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY300_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SGStruct_ENEMY300_PhaseUniqueParamRow.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "Initialize",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGEnemyAIComponent:Initialize'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "LocalEndOfPhase",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "LocalSetPhase",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'EAIC_Base_C:LocalSetPhase'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/EAIC_Base.18"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCurrentPhaseTaskIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetPhaseUniqueParam_UniquePhaseParam",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY300_PhaseUniqueParamRow'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/Param/Phase/SGStruct_ENEMY300_PhaseUniqueParamRow.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetPhaseUniqueParam_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEndOfPhase",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGEnemyAIComponent:OnEndOfPhase'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'EAIC_Base_C:ReceiveBeginPlay'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/EAIC_Base.19"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'EAIC_Base_C:ReceiveTick'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/EAIC_Base.20"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetPhaseTaskIndex",
+    "Outer": "EAIC_ENEMY300_00_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'SGEnemyAIComponent:SetPhaseTaskIndex'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "phaseTaskIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "VBT_ENEMY502_CurrentTarget",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_ENEMY502_CurrentTarget:BTComposite_Sequence_30'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/AI/BehaviorTree/_Old/VBT_ENEMY502_CurrentTarget.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'VBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_30",
+    "Outer": "VBT_ENEMY502_CurrentTarget",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetCurrentTarget'VBT_ENEMY502_CurrentTarget:VGBTT_SetCurrentTarget_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/AI/BehaviorTree/_Old/VBT_ENEMY502_CurrentTarget.2"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "ターゲット設定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY502_CurrentTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/AI/BehaviorTree/_Old/VBT_ENEMY502_CurrentTarget.0"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetCurrentTarget",
+    "Name": "VGBTT_SetCurrentTarget_0",
+    "Outer": "VBT_ENEMY502_CurrentTarget",
+    "Class": "UScriptClass'VGBTT_SetCurrentTarget'",
+    "Properties": {
+      "m_target_select_type": "EVGBTTargetSelectType::Condition",
+      "m_target_key": {},
+      "m_target_status": [
+        "EVGBTTargetMask::Alive"
+      ],
+      "m_target_rule": "EVGBTTargetRule::FarestLinear",
+      "m_output_key": {
+        "SelectedKeyName": "SelfActor"
+      },
+      "NodeName": "カレントターゲット初期化",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY502_CurrentTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/AI/BehaviorTree/_Old/VBT_ENEMY502_CurrentTarget.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_ENEMY502_CurrentTarget:BTComposite_Sequence_30'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/AI/BehaviorTree/_Old/VBT_ENEMY502_CurrentTarget.1"
+      }
+    }
+  }
+]

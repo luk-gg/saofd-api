@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY001_WaitB_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WaitB_Start",
+      "action_id": 1,
+      "states": [
+        "EVGActionState::Idle",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY001_WaitB_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Animation/Montage/MNT_ENEMY001_WaitB_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_WaitB_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/CMN/ACT_ENEMY001_WaitB_Start.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY001_WaitB_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 2,
+      "start_time": 0.43333337,
+      "end_time": 0.50000006,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY001_WaitB_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/CMN/ACT_ENEMY001_WaitB_Start.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

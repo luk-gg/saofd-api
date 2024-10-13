@@ -1,0 +1,362 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_target_range": 100.0,
+      "m_target_rotate_yaw": 120.0,
+      "m_rotate_degree_second": 180.0
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "position": {
+        "X": 20.0,
+        "Y": 80.0,
+        "Z": 105.0
+      },
+      "rotation": {
+        "Pitch": -10.0,
+        "Yaw": 0.0,
+        "Roll": 108.0
+      },
+      "desc": {
+        "attr": [
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::EVGDamageAttr_MAX",
+          "EVGDamageAttr::NoBlockingStatic"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "guard_damage_cut_rate": 0.75,
+        "hit_stop": 0.06,
+        "owner_hit_stop": 0.06,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "rotation": "EVGKnockBackRotation::AutoFrontBack",
+          "velocity": {
+            "X": 1800.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        }
+      },
+      "hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Blow_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Blow_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 50,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "shape_type": "ESGActionAttackShape::Capsule",
+      "capsule_radius": 30.0,
+      "capsule_half_height": 70.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack02",
+      "action_id": 103,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY505_W02_Attack02'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Animation/Montage/MNT_ENEMY505_W02_Attack02.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W02_Attack02:VGActionEvent_28'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "銃構え",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY505_W02_Attack02:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "num_frames": 2,
+      "start_time": 1.1666667,
+      "end_time": 1.2333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY505_W02_Attack02:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_28",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 16,
+      "start_time": 0.53333336,
+      "end_time": 0.5666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY505_W02_Attack02:VGActionEvent_28.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 16,
+      "num_frames": 2,
+      "start_time": 0.53333336,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_ENEMY505_W02_Attack02:VGActionEvent_4.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionHoming'ACT_ENEMY505_W02_Attack02:VGActionEvent_5.VGANSActionHoming_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "振り音",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY505_W02_Attack02:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時スーパーアーマー",
+      "start_frame": 9,
+      "num_frames": 7,
+      "start_time": 0.3,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY505_W02_Attack02:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY505_W02_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY505_W02_Attack02:VGActionEvent_8.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W02/Action/ATK/ACT_ENEMY505_W02_Attack02.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 4,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 16,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionHoming",
+    "Name": "VGANSActionHoming_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionHoming'",
+    "Properties": {
+      "target_rotate": 180.0,
+      "rotate_per_sec": 180.0,
+      "end_range": 0.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        28
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_28",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  }
+]

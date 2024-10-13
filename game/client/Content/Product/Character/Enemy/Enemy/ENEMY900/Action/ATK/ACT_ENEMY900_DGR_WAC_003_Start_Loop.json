@@ -1,0 +1,198 @@
+[
+  {
+    "Type": "SGANAssistFollowCancel",
+    "Name": "SGANAssistFollowCancel_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANAssistFollowCancel'",
+    "Properties": {
+      "m_cancel_flag": false
+    }
+  },
+  {
+    "Type": "SGANAssistFollowSocketChange",
+    "Name": "SGANAssistFollowSocketChange_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANAssistFollowSocketChange'",
+    "Properties": {
+      "m_change_socket_name": "h_L_HandRoot",
+      "m_is_not_follow_lerp": true
+    }
+  },
+  {
+    "Type": "SGANAssistFollowSocketChange",
+    "Name": "SGANAssistFollowSocketChange_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANAssistFollowSocketChange'",
+    "Properties": {
+      "m_change_socket_name": "h_L_HandRoot",
+      "m_is_not_follow_lerp": true
+    }
+  },
+  {
+    "Type": "SGANSCharacterSnapshot",
+    "Name": "SGANSCharacterSnapshot_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'SGANSCharacterSnapshot'",
+    "Properties": {
+      "CharacterSnapshotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CharacterSnapShot_UCR18_SKL01_C'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/CharacterSnapshot/BP_CharacterSnapShot_UCR18_SKL01.0"
+      },
+      "SpawnInterval": 2
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WAC_003_Start_Loop",
+      "action_id": 105,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Attack"
+      ],
+      "priority": 150,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_DGR_WAC_003_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_DGR_WAC_003_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "追従ソケット変更,補間追従オフ",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "SGANAssistFollowSocketChange'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_0.SGANAssistFollowSocketChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従ソケット変更,補間追従オフ",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowSocketChange'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_1.SGANAssistFollowSocketChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "残像BP",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterSnapshot'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_17.SGANSCharacterSnapshot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従させる",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowCancel'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_2.SGANAssistFollowCancel_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY900_DGR_WAC_003_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション分岐",
+      "num_frames": 119,
+      "end_time": 3.966667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_DGR_WAC_003_Start_Loop:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_WAC_003_Start_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 106,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::AssistDamageReaction",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        },
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::AssistDeadReaction",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

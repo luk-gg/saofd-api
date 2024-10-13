@@ -1,0 +1,99 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::CharacterMovement",
+      "capsule_radius": 200.0,
+      "capsule_half_height": 400.0,
+      "character_movement_add_size": 50.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BO000_PowerStrike_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "PowerStrike_Loop",
+      "action_id": 151,
+      "states": [
+        "EVGActionState::Air",
+        "EVGActionState::Jump"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_WallKick_Jump_Loop'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_WallKick_Jump_Loop.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_PowerStrike_Loop:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_PowerStrike_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_PowerStrike_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_PowerStrike_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BO000_PowerStrike_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BO000_PowerStrike_Loop:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_PowerStrike_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_BO000_PowerStrike_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 13,
+      "end_time": 0.43333337,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_BO000_PowerStrike_Loop:VGActionEvent_18.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_PowerStrike_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17,
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "SGANChangeMovementMode",
+    "Name": "SGANChangeMovementMode_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANChangeMovementMode'",
+    "Properties": {
+      "m_change_mode": "ESGCharacterMovementMode::Walking"
+    }
+  },
+  {
+    "Type": "SGANNoticeSpawned",
+    "Name": "SGANNoticeSpawned_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANNoticeSpawned'"
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 100.0,
+      "m_rotate_degree_second": 20.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY010_WaitB_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WaitB_Loop",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY010_WaitB_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Animation/Montage/MNT_ENEMY010_WaitB_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_WaitB_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_WaitB_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_WaitB_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_WaitB_Loop:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY010_WaitB_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANChangeMovementMode'ACT_ENEMY010_WaitB_Loop:VGActionEvent_0.SGANChangeMovementMode_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY010_WaitB_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 90,
+      "end_time": 3.0000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY010_WaitB_Loop:VGActionEvent_1.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY010_WaitB_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "息使い",
+      "start_frame": 7,
+      "num_frames": 2,
+      "start_time": 0.23333335,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY010_WaitB_Loop:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY010_WaitB_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANNoticeSpawned'ACT_ENEMY010_WaitB_Loop:VGActionEvent_3.SGANNoticeSpawned_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_WaitB_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  }
+]

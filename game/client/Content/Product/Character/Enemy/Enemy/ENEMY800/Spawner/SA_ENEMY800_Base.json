@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SA_ENEMY800_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SA_Spawner_C'",
+      "ObjectPath": "/Game/Product/AI/Spawner/SA_Spawner.0"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'SA_ENEMY800_Base_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'SA_ENEMY800_Base_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.1"
+      }
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "StaticMesh",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SA_ENEMY800_Base_C'Default__SA_ENEMY800_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "SA_ENEMY800_Base_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SA_ENEMY800_Base_C",
+    "Name": "Default__SA_ENEMY800_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.SA_ENEMY800_Base_C'",
+    "Template": {
+      "ObjectName": "SA_Spawner_C'Default__SA_Spawner_C'",
+      "ObjectPath": "/Game/Product/AI/Spawner/SA_Spawner.19"
+    },
+    "Properties": {
+      "PawnClass": {
+        "ObjectName": "BlueprintGeneratedClass'BC_ENEMY800_000_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/BC_ENEMY800_000.1"
+      },
+      "DeleteDistance": 50000.0,
+      "m_unit_class": {
+        "ObjectName": "Class'VGAIUnit'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "bHidden": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SA_ENEMY800_Base_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'SA_ENEMY800_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.3"
+      },
+      "VariableGuid": "BBA62FBA-49883563-829A6DAF-7EC21E57",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'SA_ENEMY800_Base_C:StaticMesh_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.7"
+      },
+      "ParentComponentOrVariableName": "DefaultSceneRoot",
+      "ParentComponentOwnerClassName": "SA_Spawner_C",
+      "VariableGuid": "59E1B9D6-4EBD8690-F87759BC-33EFB5A6",
+      "InternalVariableName": "StaticMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SA_ENEMY800_Base_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'SA_ENEMY800_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'SA_ENEMY800_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'SA_ENEMY800_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY800/Spawner/SA_ENEMY800_Base.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh_GEN_VARIABLE",
+    "Outer": "SA_ENEMY800_Base_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'transfer_gate_a00'",
+        "ObjectPath": "/Game/Product/Stage/SAO/SAO_field01_001/Asset/transfer_gate_a00.2"
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_WorldStatic",
+        "CollisionProfileName": "BlockAll"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 0.5,
+        "Y": 0.5,
+        "Z": 0.5
+      }
+    }
+  }
+]

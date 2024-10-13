@@ -1,0 +1,921 @@
+[
+  {
+    "Type": "BlackboardData",
+    "Name": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardData'",
+    "Properties": {
+      "Keys": [
+        {
+          "EntryName": "SelfActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.27"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelfRadius",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.17"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelfLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.53"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "Command",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Enum'VBB_Enemy:BlackboardKeyType_Enum_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.2"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "CommandTargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.35"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "CommandTargetRadius",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.18"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "CommandTargetLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.54"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "CommandTargetForward",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.55"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MoveTargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.36"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MoveTargetRadius",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.19"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MoveTargetLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_7'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.56"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MoveTargetForward",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_8'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.57"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "AttackTargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.37"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "AttackTargetRadius",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_7'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.20"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "AttackTargetLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_9'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.58"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "AttackTargetForward",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_10'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.44"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "LeaderLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_11'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.45"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "LeaderForward",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_12'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.46"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "HomeLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_13'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.47"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MovementRule",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Enum'VBB_Enemy:BlackboardKeyType_Enum_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.3"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MovementLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_15'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.49"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelfForward",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.42"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MovementTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.28"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "LeaderActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.34"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "LeaderRadius",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.4"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "HomeLoctionRandom",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.43"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FirstHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.38"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FirstHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.5"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SecondHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_7'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.39"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SecondHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.15"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ThirdHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_8'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.40"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ThirdHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.16"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ForthHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_9'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.41"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ForthHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_8'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.21"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "AI Type",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'VBB_Enemy:BlackboardKeyType_Int_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.23"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ActionSequence",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'VBB_Enemy:BlackboardKeyType_Int_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.24"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "Random",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_9'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.22"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "RollMoveHeight",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_10'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.6"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "WeaponEffectiveRange",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_11'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.7"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "EQSLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_14'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.48"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "RoutePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'VBB_Enemy:BlackboardKeyType_Int_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.25"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "OtherWeaponEffectiveRange",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_12'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.8"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ActionSequence2",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Int'VBB_Enemy:BlackboardKeyType_Int_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.26"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ConditionTargetActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_10'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.29"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "ConditionTargetLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.51"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "RandomMoveLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.52"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "PerceptionFlag",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Bool'VBB_Enemy:BlackboardKeyType_Bool_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.1"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MoveTaskLocation",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Vector'VBB_Enemy:BlackboardKeyType_Vector_16'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.50"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MovementAngle",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_13'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.9"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "MovementDistance",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_14'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.10"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FifthHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_11'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.30"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "FifthHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_15'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.11"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SixthHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_12'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.31"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SixthHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_16'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.12"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SeventhHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_13'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.32"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SeventhHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_17'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.13"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "EighthHateTarget",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'VBB_Enemy:BlackboardKeyType_Object_14'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.33"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "EighthHatePoint",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'VBB_Enemy:BlackboardKeyType_Float_18'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.14"
+          },
+          "bInstanceSynced": false
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Bool",
+    "Name": "BlackboardKeyType_Bool_0",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Bool'"
+  },
+  {
+    "Type": "BlackboardKeyType_Enum",
+    "Name": "BlackboardKeyType_Enum_1",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Enum'",
+    "Properties": {
+      "EnumName": "EUnitCommand",
+      "bIsEnumNameValid": true
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Enum",
+    "Name": "BlackboardKeyType_Enum_2",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Enum'",
+    "Properties": {
+      "EnumName": "EVGBTS_AIMovementRule",
+      "bIsEnumNameValid": true
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_0",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_1",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_10",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_11",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_12",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_13",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_14",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_15",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_16",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_17",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_18",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_2",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_3",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_4",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_5",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_6",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_7",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_8",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_9",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_0",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_1",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_2",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Int",
+    "Name": "BlackboardKeyType_Int_3",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Int'"
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_0",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_1",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_10",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_11",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_12",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_13",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_14",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_2",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_3",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_4",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_5",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_6",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_7",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_8",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_9",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'VGBattleCharacter'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_0",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_1",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_10",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_11",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_12",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_13",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_14",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_15",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_16",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_2",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_3",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_4",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_5",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_6",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_7",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_8",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  },
+  {
+    "Type": "BlackboardKeyType_Vector",
+    "Name": "BlackboardKeyType_Vector_9",
+    "Outer": "VBB_Enemy",
+    "Class": "UScriptClass'BlackboardKeyType_Vector'"
+  }
+]

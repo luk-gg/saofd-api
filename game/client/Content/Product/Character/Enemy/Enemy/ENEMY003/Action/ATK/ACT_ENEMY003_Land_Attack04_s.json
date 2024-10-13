@@ -1,0 +1,310 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 720.0,
+      "m_disable_change_of_movement_mode": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Land_Attack04_s",
+      "action_id": 113,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY003_Land_Attack04_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Animation/Montage/MNT_ENEMY003_Land_Attack04_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "回転",
+      "start_frame": 25,
+      "num_frames": 10,
+      "start_time": 0.8333334,
+      "end_time": 1.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_0.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 29,
+      "num_frames": 10,
+      "start_time": 0.9666667,
+      "end_time": 1.3000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 25,
+      "num_frames": 10,
+      "start_time": 0.8333334,
+      "end_time": 1.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_2.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "突進衝撃波",
+      "start_frame": 24,
+      "start_time": 0.8000001,
+      "end_time": 0.83333343,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "num_frames": 124,
+      "end_time": 4.1333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_7.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY003_Land_Attack04_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Rolling",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY003_Land_Attack04_s:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/ATK/ACT_ENEMY003_Land_Attack04_s.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 16,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 114
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 1500.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveWave_s_st'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveWave_s_st.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 30.0,
+        "Z": 50.0
+      },
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY003_BodyBlow_Wind_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY003/efs_ENEMY003_BodyBlow_Wind_lo.0"
+      }
+    }
+  }
+]

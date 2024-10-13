@@ -1,0 +1,338 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 2000.0,
+      "m_rotate_degree_second": 720.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_R_Loop",
+      "action_id": 12,
+      "states": [
+        "EVGActionState::Walk",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_100_WalkRight_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Animation/Montage/MNT_ENE000_100_WalkRight_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "後",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "前",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "左",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットの方へ向きを向かせる",
+      "num_frames": 205,
+      "end_time": 6.8333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_3.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 42,
+      "end_time": 1.4000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "終了",
+      "num_frames": 59,
+      "end_time": 1.9666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_7.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY000_W00_Walk_R_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY000_W00_Walk_R_Loop:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/Action/CMN/ACT_ENEMY000_W00_Walk_R_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 15,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Back'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Back.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 5,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Forward'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Forward.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 8,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Left'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Left.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 13,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Neutral'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Neutral.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  }
+]

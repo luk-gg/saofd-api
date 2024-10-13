@@ -1,0 +1,72 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY015_DamageRight",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageRight",
+      "action_id": 204,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY015_DamageRight'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Animation/Montage/MNT_ENEMY015_DamageRight.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_DamageRight:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_DamageRight.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY015_DamageRight:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_DamageRight.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY015_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY015_DamageRight:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_DamageRight.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY015_DamageRight",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 17,
+      "num_frames": 3,
+      "start_time": 0.5666667,
+      "end_time": 0.66666675,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY015_DamageRight:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY015/Action/DMG/ACT_ENEMY015_DamageRight.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 4.0,
+        "Y": 0.0,
+        "Z": 6.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 2000.0,
+        "Y": 0.0,
+        "Z": 1500.0
+      },
+      "is_reset": false,
+      "cancel_move_distance": 400.0,
+      "is_distance_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSWeaponEmissive",
+    "Name": "SGANSWeaponEmissive_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANSWeaponEmissive'",
+    "Properties": {
+      "fade_in_time": 0.0,
+      "enable_fade_out": false,
+      "emissive_intensity": 20.0,
+      "emissive_color": {
+        "R": 0.0,
+        "G": 0.805002,
+        "B": 4.0,
+        "A": 1.0,
+        "Hex": "00E8FF"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack05_Jump_Loop",
+      "action_id": 113,
+      "states": [
+        "EVGActionState::Skill",
+        "EVGActionState::Jump",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_Attack05_Jump_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/MNT_ENEMY508_Attack05_Jump_l.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_31'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可、重力無視",
+      "num_frames": 70,
+      "end_time": 2.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 71,
+      "end_time": 2.3666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponEmissive'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_18.SGANSWeaponEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 5,
+      "start_time": 0.033333335,
+      "end_time": 0.2,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_2.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛んでなかったので暫定",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_3.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_31",
+    "Outer": "ACT_ENEMY508_Attack05_Jump_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時スーパーアーマー",
+      "num_frames": 47,
+      "end_time": 1.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_Attack05_Jump_Loop:VGActionEvent_31.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Jump_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 114
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        15,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_31",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  }
+]

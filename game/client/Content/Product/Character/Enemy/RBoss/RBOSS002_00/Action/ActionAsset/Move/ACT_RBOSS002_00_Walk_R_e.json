@@ -1,0 +1,129 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS002_00_Walk_R_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_R_e",
+      "action_id": 135,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS002_00_Walk_R_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Animation/Montage/MNT_RBOSS002_00_Walk_R_e.0"
+        }
+      },
+      "custom_speed_rate": 1.5,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS002_00_Walk_R_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 39,
+      "num_frames": 8,
+      "start_time": 1.3000001,
+      "end_time": 1.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_RBOSS002_00_Walk_R_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_10.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS002_00_Walk_R_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "start_frame": 3,
+      "num_frames": 91,
+      "start_time": 0.10000001,
+      "end_time": 3.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS002_00_Walk_R_e:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Move/ACT_RBOSS002_00_Walk_R_e.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  }
+]

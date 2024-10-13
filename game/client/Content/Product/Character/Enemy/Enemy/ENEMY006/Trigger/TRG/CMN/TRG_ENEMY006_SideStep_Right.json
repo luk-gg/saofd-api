@@ -1,0 +1,33 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_ENEMY006_SideStep_Right",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Dodge_Right",
+      "m_action_id": 502,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R1_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R1_Down.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R2_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R2_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsPatroling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

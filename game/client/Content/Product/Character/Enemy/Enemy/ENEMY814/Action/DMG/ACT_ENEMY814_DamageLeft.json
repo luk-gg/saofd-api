@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY814_DamageLeft",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLeft",
+      "action_id": 12,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY814_000_DamageRight'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Animation/Montage/MNT_ENEMY814_000_DamageRight.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageLeft:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLeft.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY814_DamageLeft",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 17,
+      "num_frames": 7,
+      "start_time": 0.5666667,
+      "end_time": 0.8000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_DamageLeft:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLeft.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

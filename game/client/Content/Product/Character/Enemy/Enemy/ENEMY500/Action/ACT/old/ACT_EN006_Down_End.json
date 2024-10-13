@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DownEnd",
+      "action_id": 231,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_52'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_EN006_Down_End:VGActionEvent_113'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "num_frames": 10,
+      "start_time": 0.8000001,
+      "end_time": 1.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_EN006_Down_End:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_113",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "start_time": 0.8000001,
+      "end_time": 0.83333343,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_EN006_Down_End:VGActionEvent_113.VGANPlaySound_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 53,
+      "num_frames": 12,
+      "start_time": 1.7666668,
+      "end_time": 2.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionHoming'ACT_EN006_Down_End:VGActionEvent_25.VGANSActionHoming_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 79,
+      "end_time": 2.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_EN006_Down_End:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_52",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_EN006_Down_End:VGActionEvent_52.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_EN006_Down_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_EN006_Down_End:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ACT/Old/ACT_EN006_Down_End.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_1",
+    "Outer": "VGActionEvent_113",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_52",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 18,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionHoming",
+    "Name": "VGANSActionHoming_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANSActionHoming'",
+    "Properties": {
+      "target_rotate": 45.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -100.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        14
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        15
+      ]
+    }
+  }
+]

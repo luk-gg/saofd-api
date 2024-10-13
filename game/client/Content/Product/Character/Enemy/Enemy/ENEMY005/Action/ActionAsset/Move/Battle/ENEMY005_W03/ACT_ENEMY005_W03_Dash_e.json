@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W03_Dash_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W03_Dash_e",
+      "action_id": 75,
+      "states": [
+        "EVGActionState::EndAction",
+        "EVGActionState::Run"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W03_Dash_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/ENEMY005_W03/MNT_ENEMY005_W03_Dash_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W03_Dash_e:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_Dash_e.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY005_W03_Dash_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 11,
+      "num_frames": 8,
+      "start_time": 0.36666667,
+      "end_time": 0.6333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W03_Dash_e:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_Dash_e.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

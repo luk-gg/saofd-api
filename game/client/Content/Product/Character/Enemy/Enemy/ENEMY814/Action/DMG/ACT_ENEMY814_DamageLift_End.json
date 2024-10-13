@@ -1,0 +1,143 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY814_DamageLift_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLift_End",
+      "action_id": 29,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::EndAction",
+        "EVGActionState::Land"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY814_000_DamageLift_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Animation/Montage/MNT_ENEMY814_000_DamageLift_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageLift_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageLift_End:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageLift_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageLift_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY814_DamageLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_DamageLift_End:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY814_DamageLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 24,
+      "end_time": 0.8000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_DamageLift_End:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY814_DamageLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウンに遷移",
+      "start_frame": 23,
+      "num_frames": 11,
+      "start_time": 0.7666667,
+      "end_time": 1.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_DamageLift_End:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY814_DamageLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視（ヘンなバウンド防止用）",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_DamageLift_End:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageLift_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 30
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

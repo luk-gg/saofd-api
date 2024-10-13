@@ -1,0 +1,29 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_ENEMY007_Teleport",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Teleport",
+      "m_action_id": 503,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L3_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L3_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsPatroling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

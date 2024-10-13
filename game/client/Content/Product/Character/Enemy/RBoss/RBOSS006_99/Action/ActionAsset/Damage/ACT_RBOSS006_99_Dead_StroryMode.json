@@ -1,0 +1,228 @@
+[
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "BossDead"
+    }
+  },
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "AllEnemyKill"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dead_StoryMode",
+      "action_id": 2000,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 10000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS006_00_Dead'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/Animation/Montage/MNT_RBOSS006_00_Dead.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "RTD実行を通知",
+      "start_frame": 66,
+      "start_time": 2.2,
+      "end_time": 2.2333333,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_0.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ザコ全滅",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_2.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵＆ヒット無視",
+      "num_frames": 277,
+      "end_time": 9.233334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "自身を破棄（必ず最後に実行される様に配置）",
+      "start_frame": 94,
+      "start_time": 3.1333334,
+      "end_time": 3.1666667,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_4.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_RBOSS006_99_Dead_StroryMode",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "怒り時ボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS006_99_Dead_StroryMode:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_99/Action/ActionAsset/Damage/ACT_RBOSS006_99_Dead_StroryMode.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 8,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 1013,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        20,
+        0
+      ]
+    }
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "Type": "AIC_ENEMY801_C",
+    "Name": "Default__AIC_ENEMY801_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.AIC_ENEMY801_C'",
+    "Template": {
+      "ObjectName": "AIC_ENEMY_Base_C'Default__AIC_ENEMY_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.0"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "m_bb_component": {
+        "ObjectName": "BlackboardComponent'Default__AIC_ENEMY801_C:BlackboardComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.4"
+      },
+      "m_ai_unit_component": {
+        "ObjectName": "VGAIUnitComponent'Default__AIC_ENEMY801_C:VGAIUnitComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.16"
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "VGPathFollowingComponent'Default__AIC_ENEMY801_C:PathFollowingComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.17"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__AIC_ENEMY801_C:ActionsComp'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.10"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__AIC_ENEMY801_C:TransformComponent0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.12"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__AIC_ENEMY801_C:TransformComponent0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.12"
+      }
+    }
+  },
+  {
+    "Type": "AIPerceptionComponent",
+    "Name": "AIPerception_GEN_VARIABLE",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'AIPerceptionComponent'",
+    "Template": {
+      "ObjectName": "AIPerceptionComponent'AIC_ENEMY_Base_C:AIPerception_GEN_VARIABLE'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.1"
+    },
+    "Properties": {
+      "SensesConfig": [
+        {
+          "ObjectName": "AISenseConfig_Sight'AIC_ENEMY801_C:AIPerception_GEN_VARIABLE.AISenseConfig_Sight_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.2"
+        },
+        {
+          "ObjectName": "AISenseConfig_Sight'AIC_ENEMY801_C:AIPerception_GEN_VARIABLE.AISenseConfig_Sight_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AISenseConfig_Sight",
+    "Name": "AISenseConfig_Sight_0",
+    "Outer": "AIPerception_GEN_VARIABLE",
+    "Class": "UScriptClass'AISenseConfig_Sight'",
+    "Template": {
+      "ObjectName": "AISenseConfig_Sight'AIC_ENEMY_Base_C:AIPerception_GEN_VARIABLE.AISenseConfig_Sight_0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.2"
+    },
+    "Properties": {
+      "SightRadius": 5000.0,
+      "LoseSightRadius": 6000.0,
+      "PeripheralVisionAngleDegrees": 90.0
+    }
+  },
+  {
+    "Type": "AISenseConfig_Sight",
+    "Name": "AISenseConfig_Sight_2",
+    "Outer": "AIPerception_GEN_VARIABLE",
+    "Class": "UScriptClass'AISenseConfig_Sight'"
+  },
+  {
+    "Type": "BlackboardComponent",
+    "Name": "BlackboardComponent",
+    "Outer": "Default__AIC_ENEMY801_C",
+    "Class": "UScriptClass'BlackboardComponent'",
+    "Template": {
+      "ObjectName": "BlackboardComponent'Default__AIC_ENEMY_Base_C:BlackboardComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.3"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'AIC_ENEMY_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.4"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'AIC_ENEMY801_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.15"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'AIC_ENEMY801_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'AIC_ENEMY801_C:ExecuteUbergraph_AIC_ENEMY801'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.7"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'AIC_ENEMY801_C:ReceivePossess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.8"
+      },
+      {
+        "ObjectName": "Function'AIC_ENEMY801_C:ExecuteUbergraph_AIC_ENEMY801'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.7"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "EnemyAiComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_ENEMY801_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/EAIC_ENEMY801.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_AIC_ENEMY801": {
+        "ObjectName": "Function'AIC_ENEMY801_C:ExecuteUbergraph_AIC_ENEMY801'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.7"
+      },
+      "ReceivePossess": {
+        "ObjectName": "Function'AIC_ENEMY801_C:ReceivePossess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.8"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_NotPlaceable | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "AIC_ENEMY801_C'Default__AIC_ENEMY801_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "EAIC_ENEMY801_C",
+    "Name": "EnemyAiComponent_GEN_VARIABLE",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/EAIC_ENEMY801.EAIC_ENEMY801_C'",
+    "Template": {
+      "ObjectName": "EAIC_ENEMY801_C'Default__EAIC_ENEMY801_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/EAIC_ENEMY801.1"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_AIC_ENEMY801",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivePossess",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Controller:ReceivePossess'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "PossessedPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'AIPerceptionComponent'",
+            "ObjectPath": "/Script/AIModule"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "AIPerceptionComponent'AIC_ENEMY801_C:AIPerception_GEN_VARIABLE'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.1"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'AIC_Battle_C'",
+              "ObjectPath": "/Game/Product/AI/Controller/AIC_Battle.5"
+            },
+            "SCSVariableName": "AIPerception",
+            "AssociatedGuid": "0D8DF826-4496A1EA-DC1197A7-40EC9065"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__AIC_ENEMY801_C",
+    "Class": "UScriptClass'PawnActionsComponent'",
+    "Template": {
+      "ObjectName": "PawnActionsComponent'Default__AIC_ENEMY_Base_C:ActionsComp'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.11"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__AIC_ENEMY801_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Template": {
+      "ObjectName": "SceneComponent'Default__AIC_ENEMY_Base_C:TransformComponent0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.13"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AIC_ENEMY801_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.11"
+      },
+      "VariableGuid": "74B0FE85-4C83CE6B-0B404FBA-25BCB5E4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'EAIC_ENEMY801_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/EAIC_ENEMY801.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "EAIC_ENEMY801_C'AIC_ENEMY801_C:EnemyAiComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.6"
+      },
+      "ParentComponentOrVariableName": "TransformComponent0",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "34C895C7-494DC707-B329BB80-90B704BE",
+      "InternalVariableName": "EnemyAiComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AIC_ENEMY801_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'AIC_ENEMY801_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'AIC_ENEMY801_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.14"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'AIC_ENEMY801_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY801/AI/AIC_ENEMY801.13"
+      }
+    }
+  },
+  {
+    "Type": "VGAIUnitComponent",
+    "Name": "VGAIUnitComponent",
+    "Outer": "Default__AIC_ENEMY801_C",
+    "Class": "UScriptClass'VGAIUnitComponent'",
+    "Template": {
+      "ObjectName": "VGAIUnitComponent'Default__AIC_ENEMY_Base_C:VGAIUnitComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.17"
+    }
+  },
+  {
+    "Type": "VGPathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__AIC_ENEMY801_C",
+    "Class": "UScriptClass'VGPathFollowingComponent'",
+    "Template": {
+      "ObjectName": "VGPathFollowingComponent'Default__AIC_ENEMY_Base_C:PathFollowingComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/AIC_ENEMY_Base.18"
+    }
+  }
+]

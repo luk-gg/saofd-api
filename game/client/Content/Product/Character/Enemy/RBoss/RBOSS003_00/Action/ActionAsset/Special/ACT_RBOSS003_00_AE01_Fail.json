@@ -1,0 +1,226 @@
+[
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "BarrierShieldEnd",
+      "m_is_local_control_only": false
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AE01_Fail",
+      "action_id": 3530,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS003_00_AE01_Fail'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Animation/Montage/MNT_RBOSS003_00_AE01_Fail.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中＆空中制御不可",
+      "num_frames": 95,
+      "end_time": 3.1666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力OFF",
+      "num_frames": 139,
+      "end_time": 4.6333337,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "バリア終了",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_11.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_18.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下へ",
+      "start_frame": 24,
+      "num_frames": 14,
+      "start_time": 0.8000001,
+      "end_time": 1.2666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS003_00_AE01_Fail",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 127,
+      "end_time": 4.2333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS003_00_AE01_Fail:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Special/ACT_RBOSS003_00_AE01_Fail.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 6,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 3540
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  }
+]

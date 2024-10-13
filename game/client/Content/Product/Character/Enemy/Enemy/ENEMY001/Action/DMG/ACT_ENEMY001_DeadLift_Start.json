@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DeadLift_Start",
+      "action_id": 2004,
+      "states": [
+        "EVGActionState::Dead",
+        "EVGActionState::StartAction",
+        "EVGActionState::Air"
+      ],
+      "priority": 1000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY001_DeadLift_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Animation/Montage/MNT_ENEMY001_DeadLift_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DeadLift_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DeadLift_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DeadLift_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DeadLift_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DeadLift_Start:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY001_DeadLift_Start:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 30,
+      "num_frames": 8,
+      "start_time": 1.0,
+      "end_time": 1.2666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY001_DeadLift_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "断末魔",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY001_DeadLift_Start:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 84,
+      "end_time": 2.8000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY001_DeadLift_Start:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY001_DeadLift_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡リム(全身発光処理)",
+      "start_frame": 15,
+      "num_frames": 26,
+      "start_time": 0.5,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY001_DeadLift_Start:VGActionEvent_6.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DeadLift_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 20,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2005
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.0,
+        "G": 63.99997,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 1.0,
+        "G": 2.0,
+        "B": 4.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "dark_color": {
+        "R": 0.0,
+        "G": 23.99997,
+        "B": 64.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

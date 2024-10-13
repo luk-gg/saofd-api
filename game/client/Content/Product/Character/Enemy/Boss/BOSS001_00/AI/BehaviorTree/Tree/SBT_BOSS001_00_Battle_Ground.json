@@ -1,0 +1,904 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.4"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_BOSS001_00_Battle_Ground:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.7"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_BOSS001_00_Battle_Ground:SBTTask_Enemy_UseComboSkill_C_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.23"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_BOSS001_00_Battle_Ground:BTDecorator_Blackboard_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.8"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_BOSS001_00_Battle_Ground:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.11"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAnger_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_Enemy_CheckAnger_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.15"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_Enemy_CheckDuringSwitchChain_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.17"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.1"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAttackName_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_Enemy_CheckAttackName_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.16"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckUseSkill_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_Enemy_CheckUseSkill_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.19"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "VGBTS_UpdateAim'SBT_BOSS001_00_Battle_Ground:VGBTS_UpdateAim_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.28"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_BOSS001_00_Battle_Ground:SBTTask_Enemy_UseComboSkill_C_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.22"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_BOSS001_CheckRequestAddFire_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_BOSS001_CheckRequestAddFire_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.14"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseSkill_SetTarget_C'SBT_BOSS001_00_Battle_Ground:SBTTask_Enemy_UseSkill_SetTarget_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.24"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'SBT_BOSS001_00_Battle_Ground:SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.18"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_BOSS001_00_Battle_Ground:BTDecorator_Blackboard_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.9"
+            },
+            {
+              "ObjectName": "VGBTD_Random'SBT_BOSS001_00_Battle_Ground:VGBTD_Random_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.27"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_BOSS001_00_Battle_Ground:BTTask_RunBehavior_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.12"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_BOSS001_00_Battle_Ground:VGBTD_CheckActionState_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.25"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_ForceSuccess'SBT_BOSS001_00_Battle_Ground:BTDecorator_ForceSuccess_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.10"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_BOSS001_00_Battle_Ground:BTTask_RunBehavior_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "行動",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_ActionPhaseActionSelection_C'SBT_BOSS001_00_Battle_Ground:SBTTask_Enemy_ActionPhaseActionSelection_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.20"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_BOSS001_00_Battle_Ground:VGBTD_CheckActionState_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.26"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_6",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_BOSS001_00_Battle_Ground:SBTTask_Enemy_UseComboSkill_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.21"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBFloat'SBT_BOSS001_00_Battle_Ground:VGBTT_SetBBFloat_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.30"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBFloat'SBT_BOSS001_00_Battle_Ground:VGBTT_SetBBFloat_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.29"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Emotion Test",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Attack",
+      "CachedDescription": "SelectedActionName Is Equal To [Attack]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "攻撃",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Back",
+      "CachedDescription": "SelectedActionName Is Equal To [Back]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "後ろ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_3",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "CoolTime Is Less Than Or Equal To 0.000000",
+      "OperationType": 3,
+      "BlackboardKey": {
+        "SelectedKeyName": "CoolTime"
+      },
+      "NodeName": "タイマーが０",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_ForceSuccess",
+    "Name": "BTDecorator_ForceSuccess_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTDecorator_ForceSuccess'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.4"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_SpecialSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_SpecialSkill.0"
+      },
+      "NodeName": "特殊技",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_2",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_TurningFaceToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/SBT_Enemy_TurningFaceToTarget.0"
+      },
+      "NodeName": "アイドル中に顔を向けるターゲットの選択",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_3",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_UpdateSkillAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_UpdateSkillAction.0"
+      },
+      "NodeName": "スキル実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_BOSS001_CheckRequestAddFire_C",
+    "Name": "SBTDecorator_BOSS001_CheckRequestAddFire_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_BOSS001_CheckRequestAddFire.SBTDecorator_BOSS001_CheckRequestAddFire_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_BOSS001_CheckRequestAddFire_C'Default__SBTDecorator_BOSS001_CheckRequestAddFire_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_BOSS001_CheckRequestAddFire.2"
+    },
+    "Properties": {
+      "NodeName": "燭台増加リクエスト",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAnger_C",
+    "Name": "SBTDecorator_Enemy_CheckAnger_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTDecorator_Enemy_CheckAnger.SBTDecorator_Enemy_CheckAnger_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAnger_C'Default__SBTDecorator_Enemy_CheckAnger_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTDecorator_Enemy_CheckAnger.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "怒り中でなければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAttackName_C",
+    "Name": "SBTDecorator_Enemy_CheckAttackName_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAttackName.SBTDecorator_Enemy_CheckAttackName_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAttackName_C'Default__SBTDecorator_Enemy_CheckAttackName_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAttackName.2"
+    },
+    "Properties": {
+      "bShowPropertyDetails": false,
+      "bInverseCondition": true,
+      "NodeName": "攻撃指定無し",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckDuringSwitchChain_C",
+    "Name": "SBTDecorator_Enemy_CheckDuringSwitchChain_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'Default__SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "スイッチチェイン中でなければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C",
+    "Name": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint.SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'Default__SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckLimitOfNormalSkillTriggerPoint.2"
+    },
+    "Properties": {
+      "NodeName": "通常技発動可能",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckUseSkill_C",
+    "Name": "SBTDecorator_Enemy_CheckUseSkill_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckUseSkill.SBTDecorator_Enemy_CheckUseSkill_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckUseSkill_C'Default__SBTDecorator_Enemy_CheckUseSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckUseSkill.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "スキルを実行していない",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_ActionPhaseActionSelection_C",
+    "Name": "SBTTask_Enemy_ActionPhaseActionSelection_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_ActionPhaseActionSelection.SBTTask_Enemy_ActionPhaseActionSelection_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_ActionPhaseActionSelection_C'Default__SBTTask_Enemy_ActionPhaseActionSelection_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_ActionPhaseActionSelection.3"
+    },
+    "Properties": {
+      "BB_SelctedActionName": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "アクションフェーズを選択(待機or行動)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.5"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Test",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Anger",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "Emotion Test",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.6"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_2",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "AddFire",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Roar",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "燭台増加",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_4",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "BackStep",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "BackStep",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "バックステップ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseSkill_SetTarget_C",
+    "Name": "SBTTask_Enemy_UseSkill_SetTarget_C_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseSkill_SetTarget.SBTTask_Enemy_UseSkill_SetTarget_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseSkill_SetTarget_C'Default__SBTTask_Enemy_UseSkill_SetTarget_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseSkill_SetTarget.20"
+    },
+    "Properties": {
+      "ResetHateBBKey": {
+        "SelectedKeyName": "SelfActor"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Idle"
+      ],
+      "NodeName": "アイドル中",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Idle"
+      ],
+      "NodeName": "アイドル状態なら実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_Random",
+    "Name": "VGBTD_Random_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTD_Random'",
+    "Properties": {
+      "m_probability": 5.0,
+      "m_generate": true,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTS_UpdateAim",
+    "Name": "VGBTS_UpdateAim_3",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTS_UpdateAim'",
+    "Properties": {
+      "m_target_key": {
+        "SelectedKeyName": "AttackTargetActor"
+      },
+      "m_aim_mode": "EVGAIAimMode::Node",
+      "m_aim_node_key": {
+        "SelectedKeyName": "TargetingAimNode"
+      },
+      "m_homing_rate": 100.0,
+      "m_result_aim_node_key": {},
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_upper_angle_key": {},
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS001_00_Battle_Ground:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBFloat",
+    "Name": "VGBTT_SetBBFloat_0",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTT_SetBBFloat'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "RetargetTimer"
+      },
+      "NodeName": "ターゲッティングタイマーリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBFloat",
+    "Name": "VGBTT_SetBBFloat_1",
+    "Outer": "SBT_BOSS001_00_Battle_Ground",
+    "Class": "UScriptClass'VGBTT_SetBBFloat'",
+    "Properties": {
+      "m_value": 3.0,
+      "m_destination_key": {
+        "SelectedKeyName": "CoolTime"
+      },
+      "NodeName": "タイマー設定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS001_00_Battle_Ground'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS001_00_Battle_Ground:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/AI/BehaviorTree/Tree/SBT_BOSS001_00_Battle_Ground.6"
+      }
+    }
+  }
+]

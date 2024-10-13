@@ -1,0 +1,69 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BO000_Guard_Weapon_Move_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Guard_Weapon_Move_End",
+      "action_id": 65,
+      "states": [
+        "EVGActionState::EndAction",
+        "EVGActionState::Guard"
+      ],
+      "layer_index": 1,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_Guard_Weapon_Move_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_Guard_Weapon_Move_e.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_Guard_Weapon_Move_End:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_End.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BO000_Guard_Weapon_Move_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "武器構え終了音",
+      "start_frame": 6,
+      "start_time": 0.20000002,
+      "end_time": 0.23333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BO000_Guard_Weapon_Move_End:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_End.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 37,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  }
+]

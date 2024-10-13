@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "RequestTentacleSummon"
+    }
+  },
+  {
+    "Type": "SGANSCharacterPush",
+    "Name": "SGANSCharacterPush_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSCharacterPush'",
+    "Properties": {
+      "node": "b_C_Root",
+      "location": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1700.0
+      },
+      "push_speed": 3000.0,
+      "is_horizontal": true,
+      "shape_type": "ESGCharacterPushShape::Capsule",
+      "capsule_radius": 1500.0,
+      "capsule_half_height": 2500.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Tentacle_Summon_B",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Tentacle_Summon_B",
+      "action_id": 4110,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Tentacle_Summon_B'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Tentacle_Summon_B.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS001_00_Tentacle_Summon_B",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "触手の召喚を要求",
+      "start_frame": 66,
+      "start_time": 2.2,
+      "end_time": 2.2333333,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_0.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS001_00_Tentacle_Summon_B",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 131,
+      "end_time": 4.366667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterPush'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_1.SGANSCharacterPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_RBOSS001_00_Tentacle_Summon_B",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 89,
+      "num_frames": 15,
+      "start_time": 2.966667,
+      "end_time": 3.466667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Tentacle_Summon_B:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Emotion/ACT_RBOSS001_00_Tentacle_Summon_B.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

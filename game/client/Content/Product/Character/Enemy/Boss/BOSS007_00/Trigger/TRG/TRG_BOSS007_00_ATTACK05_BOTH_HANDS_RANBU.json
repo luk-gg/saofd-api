@@ -1,0 +1,33 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_BOSS007_00_ATTACK05_BOTH_HANDS_RANBU",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Attack05_BothHandsRanbu",
+      "m_action_id": 320,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Up_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Up_Down.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_X_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_X_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

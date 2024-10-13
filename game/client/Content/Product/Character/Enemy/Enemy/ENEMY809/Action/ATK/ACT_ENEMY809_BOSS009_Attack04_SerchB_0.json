@@ -1,0 +1,192 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "BOSS008_Attack04_serchB_0",
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY809_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Animation/Montage/MNT_ENEMY809_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 60,
+      "num_frames": 500,
+      "start_time": 2.0,
+      "end_time": 18.666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ビット2",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ビット1",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_6.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ビット3",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_7.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY809_BOSS009_Attack04_SerchB_0",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ビット4",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY809_BOSS009_Attack04_SerchB_0:VGActionEvent_9.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/ATK/ACT_ENEMY809_BOSS009_Attack04_SerchB_0.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS008_00_SeachLaser_Charge_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS008_00/efs_BOSS008_00_SeachLaser_Charge_lo.0"
+      },
+      "location_offset": {
+        "X": -100.0,
+        "Y": 0.0,
+        "Z": 500.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS008_00_SeachLaser_Charge_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS008_00/efs_BOSS008_00_SeachLaser_Charge_lo.0"
+      },
+      "location_offset": {
+        "X": -200.0,
+        "Y": 0.0,
+        "Z": 400.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS008_00_SeachLaser_Charge_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS008_00/efs_BOSS008_00_SeachLaser_Charge_lo.0"
+      },
+      "location_offset": {
+        "X": 100.0,
+        "Y": 0.0,
+        "Z": 500.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS008_00_SeachLaser_Charge_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS008_00/efs_BOSS008_00_SeachLaser_Charge_lo.0"
+      },
+      "location_offset": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 400.0
+      }
+    }
+  }
+]

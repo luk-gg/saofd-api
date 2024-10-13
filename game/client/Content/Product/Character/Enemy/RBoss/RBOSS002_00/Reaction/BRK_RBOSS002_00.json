@@ -1,0 +1,490 @@
+[
+  {
+    "Type": "VGDamageReactionBreakAsset",
+    "Name": "BRK_RBOSS002_00",
+    "Class": "UScriptClass'VGDamageReactionBreakAsset'",
+    "Properties": {
+      "m_damage_reaction_break_params": [
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_LaserCannon'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_LaserCannon.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_Canon_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_Canon_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_02'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_02.0"
+              },
+              "vfx_node_name": "b_C_Cannon",
+              "sound_cue_infos": []
+            }
+          ],
+          "reaction": {
+            "names": [
+              "Cannon_Cover"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": null,
+            "id": 2100,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "Cannon_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ChestBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_LeftArm1_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_LeftArm1_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_L_Arm_Lens1",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "L_LensWeak1"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "L_LensWeak1_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_LeftArm2_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_LeftArm2_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_L_Arm_Lens2",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "L_LensWeak2"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "L_LensWeak2_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_LeftArm3_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_LeftArm3_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_L_Arm_Lens3",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "L_LensWeak3"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "L_LensWeak3_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_RightArm1_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_RightArm1_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_R_Arm_Lens1",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "R_LensWeak1"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "R_LensWeak1_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_RightArm2_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_RightArm2_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_R_Arm_Lens2",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "R_LensWeak2"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "R_LensWeak2_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS002_00_Break_ArmLens'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/PTS_RBOSS002_00_Break_ArmLens.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS002_00_Break_RightArm3_01",
+              "hide_material_slot_name": "M_RBOSS002_00_Break_RightArm3_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_RBOSS002_00_Explosive_01'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS002_00/efs_RBOSS002_00_Explosive_01.0"
+              },
+              "vfx_node_name": "VFX_R_Arm_Lens3",
+              "sound_cue_infos": [
+                {
+                  "SoundType": "EVGSoundType::COMPONENT_SE",
+                  "CueId": 32,
+                  "CueName": "",
+                  "BlockIndex": 0,
+                  "Volume": 1.0,
+                  "Pitch": 0.0,
+                  "AisacParam": [],
+                  "IsStopForChangedAction": false,
+                  "IsReportPlayEnd": false,
+                  "IsPhysicalSurface": false,
+                  "IsPitchChangeByScale": false,
+                  "CueSheetIndex": 0
+                }
+              ]
+            }
+          ],
+          "reaction": {
+            "names": [
+              "R_LensWeak3"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS002_00_DMR_BU_ArmLens_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Reaction/SGBP_RBOSS002_00_DMR_BU_ArmLens.0"
+            },
+            "id": -1,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "R_LensWeak3_Destruction",
+          "quest_event_name": [
+            "RBOSS002_00_ArmBreak"
+          ]
+        }
+      ]
+    }
+  }
+]

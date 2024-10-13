@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY811_000_Attack02_RS_c",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack02_RStickF_charge",
+      "action_id": 120,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY811_000_Attack_charge'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Animation/Montage/MNT_ENEMY811_000_Attack_charge.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY811_000_Attack02_RS_c",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "チャージ音",
+      "num_frames": 126,
+      "end_time": 4.2000003,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_0.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY811_000_Attack02_RS_c",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発光",
+      "num_frames": 126,
+      "end_time": 4.2000003,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_1.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY811_000_Attack02_RS_c",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "時間経過で終了へ",
+      "num_frames": 126,
+      "end_time": 4.2000003,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_ENEMY811_000_Attack02_RS_c:VGActionEvent_5.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Attack02_RS_c.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 121,
+      "activation_time": 3.0,
+      "check_autonomous": false,
+      "is_local_control_only": true
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 11,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY811_00_CrossBeamFlash01_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY811/efs_ENEMY811_00_CrossBeamFlash01_lo.0"
+      },
+      "scale_offset": {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      }
+    }
+  }
+]

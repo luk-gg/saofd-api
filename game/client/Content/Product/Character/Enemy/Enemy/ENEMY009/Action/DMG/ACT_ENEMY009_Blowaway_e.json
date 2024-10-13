@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Blowaway_e",
+      "action_id": 209,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY009_Blowaway_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Animation/Montage/MNT_ENEMY009_Blowaway_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Blowaway_e:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Blowaway_e:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Blowaway_e:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Blowaway_e:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Blowaway_e:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "倒れ",
+      "start_frame": 10,
+      "start_time": 0.33333334,
+      "end_time": 0.36666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY009_Blowaway_e:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 15,
+      "num_frames": 8,
+      "start_time": 0.5,
+      "end_time": 0.76666665,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY009_Blowaway_e:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY009_Blowaway_e:VGActionEvent_2.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "倒れ",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY009_Blowaway_e:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY009_Blowaway_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY009_Blowaway_e:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Blowaway_e.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 11,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 0.6,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 0.6,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 206
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  }
+]

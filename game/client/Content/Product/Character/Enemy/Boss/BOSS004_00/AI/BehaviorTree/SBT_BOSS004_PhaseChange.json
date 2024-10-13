@@ -1,0 +1,611 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckPhaseChange_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckPhaseChange_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.13"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckDuringPhaseChange_C'SBT_BOSS004_PhaseChange:SBTDecorator_RBOSS004_CheckDuringPhaseChange_C_2'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.9"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckPhaseChangeRequest_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.14"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckPhaseChangeRequest_C_2'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.15"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckDuringSwitchChain_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.10"
+            },
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckNextPhase_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckNextPhase_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.12"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckNextPhase_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckNextPhase_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.11"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C'SBT_BOSS004_PhaseChange:SBTTask_BOSS004_PhaseChange_SetNextPhase_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckCurrentPhase_C'SBT_BOSS004_PhaseChange:SBTDecorator_Enemy_CheckCurrentPhase_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.8"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C'SBT_BOSS004_PhaseChange:SBTTask_BOSS004_PhaseChange_SetNextPhase_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.17"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_5",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_SetPhaseChangeRequest_C'SBT_BOSS004_PhaseChange:SBTTask_Enemy_SetPhaseChangeRequest_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.18"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_6",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_BOSS004_PhaseChange:VGBTT_SetBBName_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.21"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_BOSS004_PhaseChange:VGBTT_SetBBName_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.20"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_SkillUse_C'SBT_BOSS004_PhaseChange:SBTTask_Enemy_SkillUse_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.19"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAvailableSkills_C'SBT_BOSS004_PhaseChange:SBTDecorator_RBOSS004_CheckAvailableSkills_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.7"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_BOSS004_PhaseChange:VGBTT_SetBBName_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.22"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAvailableSkills_C",
+    "Name": "SBTDecorator_RBOSS004_CheckAvailableSkills_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAvailableSkills.SBTDecorator_Enemy_CheckAvailableSkills_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAvailableSkills_C'Default__SBTDecorator_Enemy_CheckAvailableSkills_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAvailableSkills.2"
+    },
+    "Properties": {
+      "NodeName": "スキルが登録されているかチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckCurrentPhase_C",
+    "Name": "SBTDecorator_Enemy_CheckCurrentPhase_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckCurrentPhase.SBTDecorator_Enemy_CheckCurrentPhase_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckCurrentPhase_C'Default__SBTDecorator_Enemy_CheckCurrentPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckCurrentPhase.2"
+    },
+    "Properties": {
+      "PhaseId": 2,
+      "NodeName": "最終フェーズ時",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckDuringPhaseChange_C",
+    "Name": "SBTDecorator_RBOSS004_CheckDuringPhaseChange_C_2",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckDuringPhaseChange.SBTDecorator_Enemy_CheckDuringPhaseChange_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckDuringPhaseChange_C'Default__SBTDecorator_Enemy_CheckDuringPhaseChange_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckDuringPhaseChange.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "フェーズ切り替え中かチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckDuringSwitchChain_C",
+    "Name": "SBTDecorator_Enemy_CheckDuringSwitchChain_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckDuringSwitchChain_C'Default__SBTDecorator_Enemy_CheckDuringSwitchChain_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTDecorator_Enemy_CheckDuringSwitchChain.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "スイッチチェイン中でなければ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckNextPhase_C",
+    "Name": "SBTDecorator_Enemy_CheckNextPhase_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckNextPhase.SBTDecorator_Enemy_CheckNextPhase_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckNextPhase_C'Default__SBTDecorator_Enemy_CheckNextPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckNextPhase.2"
+    },
+    "Properties": {
+      "PhaseId": 1,
+      "NodeName": "フェーズ2",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckNextPhase_C",
+    "Name": "SBTDecorator_Enemy_CheckNextPhase_C_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckNextPhase.SBTDecorator_Enemy_CheckNextPhase_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckNextPhase_C'Default__SBTDecorator_Enemy_CheckNextPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckNextPhase.2"
+    },
+    "Properties": {
+      "PhaseId": 2,
+      "NodeName": "最終フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckPhaseChange_C",
+    "Name": "SBTDecorator_Enemy_CheckPhaseChange_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChange.SBTDecorator_Enemy_CheckPhaseChange_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckPhaseChange_C'Default__SBTDecorator_Enemy_CheckPhaseChange_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChange.2"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え可能かチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C",
+    "Name": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChangeRequest.SBTDecorator_Enemy_CheckPhaseChangeRequest_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C'Default__SBTDecorator_Enemy_CheckPhaseChangeRequest_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChangeRequest.2"
+    },
+    "Properties": {
+      "bInverseCondition": true,
+      "NodeName": "フェーズ切り替え要求無し",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C",
+    "Name": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C_2",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChangeRequest.SBTDecorator_Enemy_CheckPhaseChangeRequest_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckPhaseChangeRequest_C'Default__SBTDecorator_Enemy_CheckPhaseChangeRequest_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckPhaseChangeRequest.2"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え要求中",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS004_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C",
+    "Name": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_PhaseChange_SetNextPhase.SBTTask_BOSS004_PhaseChange_SetNextPhase_C'",
+    "Template": {
+      "ObjectName": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C'Default__SBTTask_BOSS004_PhaseChange_SetNextPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_PhaseChange_SetNextPhase.4"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C",
+    "Name": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_PhaseChange_SetNextPhase.SBTTask_BOSS004_PhaseChange_SetNextPhase_C'",
+    "Template": {
+      "ObjectName": "SBTTask_BOSS004_PhaseChange_SetNextPhase_C'Default__SBTTask_BOSS004_PhaseChange_SetNextPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/Task/SBTTask_BOSS004_PhaseChange_SetNextPhase.4"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_SetPhaseChangeRequest_C",
+    "Name": "SBTTask_Enemy_SetPhaseChangeRequest_C_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTTask_Enemy_SetPhaseChangeRequest.SBTTask_Enemy_SetPhaseChangeRequest_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_SetPhaseChangeRequest_C'Default__SBTTask_Enemy_SetPhaseChangeRequest_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTTask_Enemy_SetPhaseChangeRequest.3"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え要求",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.5"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_SkillUse_C",
+    "Name": "SBTTask_Enemy_SkillUse_C_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_SkillUse.SBTTask_Enemy_SkillUse_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_SkillUse_C'Default__SBTTask_Enemy_SkillUse_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_SkillUse.9"
+    },
+    "Properties": {
+      "NodeName": "スキルの実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_0",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_value": "PhaseChange_Last",
+      "m_destination_key": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "フェーズ切り替えアクション",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_1",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "アクション選択をリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_2",
+    "Outer": "SBT_BOSS004_PhaseChange",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "スキル名リセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_PhaseChange:BTComposite_Sequence_6'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_PhaseChange.6"
+      }
+    }
+  }
+]

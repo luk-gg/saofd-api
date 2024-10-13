@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 180.0,
+      "m_limit_rotate": 200.0,
+      "m_disable_change_of_movement_mode": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W00_Guard_l",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W00_Guard_l",
+      "action_id": 200,
+      "states": [
+        "EVGActionState::Guard"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_Guard_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/MNT_ENEMY005_Guard_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_l:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_l:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_l:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY005_W00_Guard_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード(判定生成用)",
+      "num_frames": 103,
+      "end_time": 3.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY005_W00_Guard_l:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY005_W00_Guard_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード解除",
+      "num_frames": 103,
+      "end_time": 3.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Guard_l:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY005_W00_Guard_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 103,
+      "end_time": 3.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY005_W00_Guard_l:VGActionEvent_4.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_l.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 205,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L1_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L1_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  }
+]

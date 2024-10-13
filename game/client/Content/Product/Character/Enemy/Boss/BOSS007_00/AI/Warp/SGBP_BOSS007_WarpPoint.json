@@ -1,0 +1,469 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_BOSS007_WarpPoint_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.10"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'SGUniqueActor'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_BOSS007_WarpPoint_C:SetDebug'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.1"
+      },
+      {
+        "ObjectName": "Function'SGBP_BOSS007_WarpPoint_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Arrow",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'ArrowComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Spline",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SplineComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Sphere",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'StaticMeshComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "TextRender",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'TextRenderComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "DefaultSceneRoot",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SceneComponent'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "LinkPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS007_LinkPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_LinkPoint.1"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "WarpPointType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "WarpPointType",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "UserDefinedEnum'SGBP_BOSS007_WarpPointType'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPointType.0"
+          }
+        }
+      },
+      {
+        "Type": "SoftObjectProperty",
+        "Name": "CharacterRoleCoraborativeUnit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS007_Special02_CharacterRoleCoraborativeUnit_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/CharacterRoleCoraboration/SGBP_BOSS007_Special02_CharacterRoleCoraborativeUnit.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'SGBP_BOSS007_WarpPoint_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.2"
+      },
+      "SetDebug": {
+        "ObjectName": "Function'SGBP_BOSS007_WarpPoint_C:SetDebug'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.1"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_BOSS007_WarpPoint_C'Default__SGBP_BOSS007_WarpPoint_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.9"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDebug",
+    "Outer": "SGBP_BOSS007_WarpPoint_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StrProperty",
+        "Name": "DisplayMessage",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsSGBP_BOSS007_Link_Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS007_LinkPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_LinkPoint.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_StringToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "StrProperty",
+        "Name": "CallFunc_Concat_StrStr_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 16
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'SGBP_BOSS007_WarpPointType'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPointType.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "SGBP_BOSS007_WarpPoint_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SGBP_BOSS007_WarpPoint_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bHiddenInGame": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'SGBP_BOSS007_WarpPoint_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.3"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.5"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.6"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.7"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.8"
+        }
+      ],
+      "VariableGuid": "C07ED711-48CB7286-CE045F96-0F895736",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'TextRenderComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "A14E23FC-4CF2C828-97A5B18E-4D88CE7B",
+      "InternalVariableName": "TextRender"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "DF386DBC-47B4E408-D1C40DAF-13967DBF",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SplineComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "B123DBA0-46252D7D-2DF64795-986991D5",
+      "InternalVariableName": "Spline"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ArrowComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": null,
+      "VariableGuid": "7C4C704C-423F5250-52C2F087-3126F075",
+      "InternalVariableName": "Arrow"
+    }
+  },
+  {
+    "Type": "SGBP_BOSS007_WarpPoint_C",
+    "Name": "Default__SGBP_BOSS007_WarpPoint_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.SGBP_BOSS007_WarpPoint_C'",
+    "Properties": {
+      "bHidden": true
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SGBP_BOSS007_WarpPoint_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.4"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.4"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.5"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.6"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.7"
+        },
+        {
+          "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.8"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'SGBP_BOSS007_WarpPoint_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/Warp/SGBP_BOSS007_WarpPoint.4"
+      }
+    }
+  }
+]

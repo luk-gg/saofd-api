@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W00_Turn_Over_l",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W00_Turn_Over_l",
+      "action_id": 50,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W00_Turn_Over_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/MNT_ENEMY005_W00_Turn_Over_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Turn_Over_l:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ACT_ENEMY005_W00_Turn_Over_l.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Turn_Over_l:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ACT_ENEMY005_W00_Turn_Over_l.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY005_W00_Turn_Over_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "振り向き音",
+      "start_frame": 18,
+      "start_time": 0.6,
+      "end_time": 0.6333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY005_W00_Turn_Over_l:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ACT_ENEMY005_W00_Turn_Over_l.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY005_W00_Turn_Over_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機へ",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Turn_Over_l:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ACT_ENEMY005_W00_Turn_Over_l.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Left_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Left_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  }
+]

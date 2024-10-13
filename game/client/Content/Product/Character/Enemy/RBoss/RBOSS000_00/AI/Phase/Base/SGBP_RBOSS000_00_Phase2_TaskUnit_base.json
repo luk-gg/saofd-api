@@ -1,0 +1,259 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_RBOSS000_00_Phase2_TaskUnit_base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS000_00_PhaseTaskUnit_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_PhaseTaskUnit_base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_RBOSS000_00_Phase2_TaskUnit_base_C:UpdateLoop'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_RBOSS000_00_Phase2_TaskUnit_base_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "TempReturnTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ReturnTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "RemainEnemy",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnemyRemainCheck",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "Initialize": {
+        "ObjectName": "Function'SGBP_RBOSS000_00_Phase2_TaskUnit_base_C:Initialize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.1"
+      },
+      "UpdateLoop": {
+        "ObjectName": "Function'SGBP_RBOSS000_00_Phase2_TaskUnit_base_C:UpdateLoop'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_RBOSS000_00_Phase2_TaskUnit_base_C'Default__SGBP_RBOSS000_00_Phase2_TaskUnit_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Initialize",
+    "Outer": "SGBP_RBOSS000_00_Phase2_TaskUnit_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_RBOSS000_00_PhaseTaskUnit_base_C:Initialize'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_PhaseTaskUnit_base.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "owner",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGBattleCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Initialize_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateLoop",
+    "Outer": "SGBP_RBOSS000_00_Phase2_TaskUnit_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_RBOSS000_00_PhaseTaskUnit_base_C:UpdateLoop'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_PhaseTaskUnit_base.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyNum_Num",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyNum_Num_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_RBOSS000_00_Phase2_TaskUnit_base_C",
+    "Name": "Default__SGBP_RBOSS000_00_Phase2_TaskUnit_base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_Phase2_TaskUnit_base.SGBP_RBOSS000_00_Phase2_TaskUnit_base_C'",
+    "Template": {
+      "ObjectName": "SGBP_RBOSS000_00_PhaseTaskUnit_base_C'Default__SGBP_RBOSS000_00_PhaseTaskUnit_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/Phase/Base/SGBP_RBOSS000_00_PhaseTaskUnit_base.9"
+    },
+    "Properties": {
+      "RemainEnemy": 10,
+      "Health": 5700000.0,
+      "NextPhaseName": [
+        "Phase3A",
+        "Phase3B"
+      ],
+      "NextPhaseHealthBarIndex": 4,
+      "NextPhaseHealthBarPercentage": 100.0
+    }
+  }
+]

@@ -1,0 +1,1270 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:GetJumpParameter'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.3"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateDangerDecal'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.7"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:CreateDangerDecal'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:ChangeCollisionProfile'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.1"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:SetEnd'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.4"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateEnd'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.8"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateMove'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.9"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.10"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:StopAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.6"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.5"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "AttackProcess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JumpModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsCollisionProfileChanged",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JumpParamAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_JumpParameter_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CollisionHitChannel",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "CollisionHitChannel",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'ECollisionChannel'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DefaultCollisionDistance",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "EventName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "DengerDecald",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsDengerDecalCreated",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DengerDecalTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DangerDecalRadius",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DangerDecalProjectionHeight",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "DangerDecalTime",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseOwnerJumpModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "StartAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.5"
+      },
+      "StopAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:StopAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.6"
+      },
+      "UpdateProcess": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.10"
+      },
+      "UpdateMove": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateMove'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.9"
+      },
+      "UpdateEnd": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateEnd'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.8"
+      },
+      "SetEnd": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:SetEnd'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.4"
+      },
+      "ChangeCollisionProfile": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:ChangeCollisionProfile'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.1"
+      },
+      "CreateDangerDecal": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:CreateDangerDecal'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.2"
+      },
+      "UpdateDangerDecal": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:UpdateDangerDecal'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.7"
+      },
+      "GetJumpParameter": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS000_OnStage_base_C:GetJumpParameter'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.3"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_RBOSS000_OnStage_base_C'Default__SGBP_SkillAction_RBOSS000_OnStage_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.11"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ChangeCollisionProfile",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsFlying",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": {
+          "ObjectName": "Class'ECollisionChannel'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsVGChara_Body_Component",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharaBodyComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "CreateDangerDecal",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Scale",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_NotEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetComponentScale_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Vector_Forward_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_Vector2DFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "Struct": {
+          "ObjectName": "Class'Vector2D'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetLandingLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GreaterGreater_VectorRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_CreateDangerDecal_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_CreateDangerDecal_ProjectionHeight_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_CreateDangerDecal_CircleRadius_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetJumpParameter",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TempParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SGStruct_SkillAction_JumpParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetParameter_JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEnd",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_RBOSS000_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS000_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/AIC_RBOSS000_00.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAction",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:StartAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.19"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Owner",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS000_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/BattleCharacter/Base/BC_RBOSS000_00_Base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_StartAction_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_RBOSS000_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS000_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/AI/AIC_RBOSS000_00.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_RBOSS000_00_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS000_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/BattleCharacter/Base/BC_RBOSS000_00_Base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBPI_Enemy_Jump",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_Jump_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterRotation_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BPI_GetJumpModule_Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_RBOSS000_00_Base_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS000_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/BattleCharacter/Base/BC_RBOSS000_00_Base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopAction",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:StopAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.21"
+    },
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateDangerDecal",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateEnd",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasActionState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMove",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBPI_Enemy_Jump",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_Jump_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Vector_Distance2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsFalling_Fall",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsRising_Rising",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetJumpParameter_JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsJumpEnd_End",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateJump_IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateProcess",
+    "Outer": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateProcess'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.25"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateEnd_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateMove_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Name": "Default__SGBP_SkillAction_RBOSS000_OnStage_base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/Base/SGBP_SkillAction_RBOSS000_OnStage_base.SGBP_SkillAction_RBOSS000_OnStage_base_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_Base_C'Default__SGBP_SkillAction_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.28"
+    },
+    "Properties": {
+      "TargetLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TargetRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "JumpParamAsset": {
+        "ObjectName": "SGBP_SkillAction_JumpParameter_C'SGDT_SkillAction_RBOSS000_On_JP'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Skill/SGDT_SkillAction_RBOSS000_On_JP.0"
+      },
+      "CollisionHitChannel": [
+        73
+      ],
+      "DefaultCollisionDistance": 3000.0,
+      "EventName": "RBOSS000_00_Enemy_EndSummon",
+      "DengerDecald": -1,
+      "DangerDecalRadius": 1000.0,
+      "DangerDecalProjectionHeight": 1000.0,
+      "DangerDecalTime": 0.5,
+      "DamageReaction": false
+    }
+  }
+]

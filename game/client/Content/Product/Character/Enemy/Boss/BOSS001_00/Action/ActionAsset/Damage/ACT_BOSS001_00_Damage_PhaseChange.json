@@ -1,0 +1,316 @@
+[
+  {
+    "Type": "SGANSHackCameraCut",
+    "Name": "SGANSHackCameraCut_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSHackCameraCut'",
+    "Properties": {
+      "start": {
+        "distance": 1500.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 300.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": -90.0,
+          "Roll": 0.0
+        },
+        "fov": 40.0
+      },
+      "end": {
+        "distance": 2000.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 200.0
+        },
+        "rotation": {
+          "Pitch": 0.0,
+          "Yaw": -90.0,
+          "Roll": 0.0
+        },
+        "fov": 15.0,
+        "blend": {
+          "BlendTime": 0.2
+        }
+      },
+      "is_hidden_friend": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Damage_PhaseChange_Normal",
+      "action_id": 1200,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS001_00_Damage'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Animation/Montage/MNT_BOSS001_00_Damage.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 97,
+      "end_time": 3.2333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 56,
+      "num_frames": 29,
+      "start_time": 1.8666668,
+      "end_time": 2.8333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウン中：部位破壊無効",
+      "num_frames": 170,
+      "end_time": 5.666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 7,
+      "start_time": 0.23333335,
+      "end_time": 0.26666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_BOSS001_00_Damage_PhaseChange",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 43,
+      "num_frames": 63,
+      "start_time": 1.4333334,
+      "end_time": 3.5333335,
+      "notify_state": {
+        "ObjectName": "SGANSHackCameraCut'ACT_BOSS001_00_Damage_PhaseChange:VGActionEvent_5.SGANSHackCameraCut_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_Damage_PhaseChange.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 25,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2300
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  }
+]

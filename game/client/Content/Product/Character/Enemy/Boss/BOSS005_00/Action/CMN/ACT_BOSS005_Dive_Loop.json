@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS005_Dive_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dive_Loop",
+      "action_id": 41,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS005_Dive_Loop'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Animation/Montage/MNT_BOSS005_Dive_Loop.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Dive_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Dive_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Dive_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Dive_Loop.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS005_Dive_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロックオン不可",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS005_Dive_Loop:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Dive_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS005_Dive_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS005_Dive_Loop:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Dive_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

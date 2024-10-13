@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_RBOSS002_00_Attack13A",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Attack13A",
+      "m_action_id": 430,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Left_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Left_Down.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R2_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R2_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::ActionInterruptible",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::IsEmotion",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_ENEMY002_000_Turn_r",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Turn_r",
+      "m_action_id": 1040,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R1_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R1_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsPatroling",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::IsEmotion",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

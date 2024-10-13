@@ -1,0 +1,199 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_target_range": 500.0,
+      "m_target_rotate_yaw": 180.0,
+      "m_target_rotate_pitch": 180.0,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Getup",
+      "action_id": 207,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_000_Getup'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/ENEMY508_000/MNT_ENEMY508_000_Getup.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Getup:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Getup:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Getup:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Getup:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Getup:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "起き上がり",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_000_Getup:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 10,
+      "start_time": 0.7666667,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_000_Getup:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 15,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_000_Getup:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "起き上がりボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_000_Getup:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY508_000_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 12,
+      "num_frames": 21,
+      "start_time": 0.40000004,
+      "end_time": 1.1000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY508_000_Getup:VGActionEvent_7.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Getup.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10442,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5000,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  }
+]

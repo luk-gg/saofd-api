@@ -1,0 +1,4103 @@
+[
+  {
+    "Type": "BC_BOSS000_00_BaseBP_C",
+    "Name": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.BC_BOSS000_00_BaseBP_C'",
+    "Template": {
+      "ObjectName": "BC_SGRBoss_AttachArmed_Base_C'Default__BC_SGRBoss_AttachArmed_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.0"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "WarpAttackStartPosition": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WarpAttackEndPosition": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "ShieldHitCollisionName": "Shield",
+      "m_is_ignore_weapon_asset": true,
+      "m_is_ignore_skill_asset": true,
+      "m_is_always_shield_hit": true,
+      "m_avatar_customize_component": {
+        "ObjectName": "VGAvatarCustomizeComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.73"
+      },
+      "m_is_ignore_avatar_customize_component": true,
+      "m_weapon_classes": [
+        {
+          "AssetPathName": "/Game/Product/Weapon/Enemy/BOSS000/WPA_BOSS000_W00.WPA_BOSS000_W00_C",
+          "SubPathString": ""
+        }
+      ],
+      "m_weapon_hand_type": "EVGWeaponHandType::Left",
+      "m_facial_mesh": {
+        "ObjectName": "VGFacialMeshComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize.FaceMesh'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.78"
+      },
+      "m_status_table": {
+        "ObjectName": "DataTable'STT_BOSS000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Status/STT_BOSS000_00.0"
+      },
+      "m_calc_component_class": {
+        "ObjectName": "BlueprintGeneratedClass'CCC_BOSS000_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Calculator/CCC_BOSS000_00.0"
+      },
+      "m_battle_character_const_status_id": 1,
+      "m_character_hit": {
+        "ObjectName": "VGCharacterHit'CH_BOSS000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Hit/CH_BOSS000_00.0"
+      },
+      "m_damage_reaction_class": {
+        "AssetPathName": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Reaction/DMR_BOSS000_00.DMR_BOSS000_00_C",
+        "SubPathString": ""
+      },
+      "m_damage_reaction_breaks": [
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_BOSS000_W00'",
+            "ObjectPath": "/Game/Product/Weapon/Enemy/BOSS000/PTS_BOSS000_W00.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": true,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Dead'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Dead.0"
+              },
+              "vfx_node_name": "w_L_HandAttachRoot",
+              "sound_cue_infos": []
+            }
+          ],
+          "reaction": {
+            "names": [
+              "Shield"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": null,
+            "id": 1100,
+            "change_ids": [],
+            "attr": [],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "None",
+          "quest_event_name": [
+            "BOSS_PartsBreak"
+          ],
+          "m_accum_damage": 0.0,
+          "m_is_breaked": false,
+          "m_destruction_count": 0
+        }
+      ],
+      "m_dead_reaction_class": {
+        "AssetPathName": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Reaction/DDR_BOSS000_00.DDR_BOSS000_00_C",
+        "SubPathString": ""
+      },
+      "m_guard_reaction_class": {
+        "AssetPathName": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Reaction/DGR_BOSS000_00.DGR_BOSS000_00_C",
+        "SubPathString": ""
+      },
+      "m_is_disable_hit_stop": true,
+      "m_hud_status_component": {
+        "ObjectName": "VG3DHudStatusComponent'Default__BC_BOSS000_00_BaseBP_C:3DHudStatusComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.71"
+      },
+      "m_hud_dead_icon_component": {
+        "ObjectName": "VG3DHudDeadIconComponent'Default__BC_BOSS000_00_BaseBP_C:3DHudDeadIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.70"
+      },
+      "m_sensing": {
+        "eyesight_range": 10000.0,
+        "eyesight_fov": 180.0
+      },
+      "m_ai_head_node_name": "b_C_Head",
+      "m_ai_sight_node_name": [
+        "b_C_Head"
+      ],
+      "m_ai_aim_node_name": "b_C_Pelvis",
+      "m_perk_preset_id": 20700,
+      "m_hitstop_component": {
+        "ObjectName": "VGHitStopComponent'Default__BC_BOSS000_00_BaseBP_C:HitStopComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.79"
+      },
+      "m_status_ailment_component": {
+        "ObjectName": "SGStatusAilmentComponent'Default__BC_BOSS000_00_BaseBP_C:StatusAilmentComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.67"
+      },
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BC_BOSS000_00_BaseBP_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.68"
+      },
+      "m_hero_point_components": {
+        "ObjectName": "SGHeroPointComponent'Default__BC_BOSS000_00_BaseBP_C:HeroPointComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.62"
+      },
+      "m_level_component": {
+        "ObjectName": "SGCharacterLevelComponent'Default__BC_BOSS000_00_BaseBP_C:CharacterLevelComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.59"
+      },
+      "m_action_armor_component": {
+        "ObjectName": "SGActionArmorComponent'Default__BC_BOSS000_00_BaseBP_C:ActionArmorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.55"
+      },
+      "m_character_build_component": {
+        "ObjectName": "SGCharacterBuildComponent'Default__BC_BOSS000_00_BaseBP_C:CharacterBuildComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.58"
+      },
+      "m_hit_effect_stash_component": {
+        "ObjectName": "SGHitEffectStashComponent'Default__BC_BOSS000_00_BaseBP_C:HitEffectStashComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.63"
+      },
+      "m_action_invincible_component": {
+        "ObjectName": "SGActionInvincibleComponent'Default__BC_BOSS000_00_BaseBP_C:ActionInvincibleComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.56"
+      },
+      "m_is_perception_sight_collision_ignore_friend": true,
+      "m_debug_character_information_compoent": {
+        "ObjectName": "SGDebugCharacterInformationComponent'Default__BC_BOSS000_00_BaseBP_C:DebugCharacterInformationComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.61"
+      },
+      "m_state_machine_class": {
+        "ObjectName": "BlueprintGeneratedClass'SM_Enemy_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/SM_Enemy_00.0"
+      },
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 0,
+      "m_state_base_action_ids": 1000,
+      "m_common_action_library": {
+        "ObjectName": "VGActionLibrary'AL_BO000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/AL_BO000_00.0"
+      },
+      "m_common_triger_library": {
+        "ObjectName": "VGTriggerLibrary'TL_BOSS000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Trigger/TL_BOSS000_00.0"
+      },
+      "m_name": {
+        "Namespace": "",
+        "Key": "615CE69C416E6647BF7843AEC7C0DEBF",
+        "SourceString": "ILLFang the Kobold Lord",
+        "LocalizedString": "ILLFang the Kobold Lord"
+      },
+      "m_chara_type": "EVGCharaType::Monster",
+      "m_enemy_type": "ESGEnemyType::FieldBoss",
+      "m_character_management_id_name": "BOSS000_00",
+      "m_chara_voice": {
+        "ObjectName": "SoundAtomCueSheet'FBOSS000'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Enemy/BOSS/FBOSS000.0"
+      },
+      "m_chara_se": {
+        "ObjectName": "SoundAtomCueSheet'FBOSS000'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Enemy/BOSS/FBOSS000.0"
+      },
+      "m_behavior_component": {
+        "ObjectName": "VGBehaviorComponent'Default__BC_BOSS000_00_BaseBP_C:BehaviorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.74"
+      },
+      "m_action_component": {
+        "ObjectName": "VGActionComponent'Default__BC_BOSS000_00_BaseBP_C:ActionComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.72"
+      },
+      "m_trigger_component": {
+        "ObjectName": "VGTriggerComponent'Default__BC_BOSS000_00_BaseBP_C:TriggerComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.87"
+      },
+      "m_camera_component": {
+        "ObjectName": "VGCameraComponent'Default__BC_BOSS000_00_BaseBP_C:CameraComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.75"
+      },
+      "m_map_icon_component": {
+        "ObjectName": "VGMapIconComponent'Default__BC_BOSS000_00_BaseBP_C:MapIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.81"
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BC_BOSS000_00_BaseBP_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.88"
+      },
+      "m_sound_component": {
+        "ObjectName": "VGSoundComponent'Default__BC_BOSS000_00_BaseBP_C:SoundComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.86"
+      },
+      "m_skeletal_mesh_components": [
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_BOSS000_00_BaseBP_C:CharacterMesh0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.85"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize.HairMesh'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.84"
+        },
+        {
+          "ObjectName": "VGFacialMeshComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize.FaceMesh'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.78"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize.AccessoryMesh0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.82"
+        },
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_BOSS000_00_BaseBP_C:AvatarCustomize.AccessoryMesh1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.83"
+        }
+      ],
+      "k_camera_distance_unarm": 2000.0,
+      "k_camera_side_rotation_range": 0.0,
+      "k_speed_run": 2000.0,
+      "k_rotation_degree": 180.0,
+      "m_default_visible_meshes": [
+        "M_BOSS000_00_Skin",
+        "M_BOSS000_00_Cloth",
+        "M_BOSS000_00_Ax"
+      ],
+      "m_cam_locked_far_ratio": 1.3,
+      "Mesh": {
+        "ObjectName": "VGSkeletalMeshComponent'Default__BC_BOSS000_00_BaseBP_C:CharacterMesh0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.85"
+      },
+      "CharacterMovement": {
+        "ObjectName": "VGCharacterMovementComponent'Default__BC_BOSS000_00_BaseBP_C:CharMoveComp'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.77"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_BOSS000_00_BaseBP_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.76"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'AIC_BOSS000_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/AIC_BOSS000_00.2"
+      },
+      "bAlwaysRelevant": true,
+      "RootComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_BOSS000_00_BaseBP_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.76"
+      }
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BC_SGRBoss_AttachArmed_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.1"
+    },
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.69"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BC_BOSS000_00_BaseBP_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.46"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ExecuteUbergraph_BC_BOSS000_00_BaseBP'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.9"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.5"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.6"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetJumpModule'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.4"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.7"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpStageCenterPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.41"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpActionEdgePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.37"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.38"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpHSWKMovePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.39"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpPoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.40"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetRandomCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.13"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:JumpUpdate'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.24"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:JumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.23"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:InitializeTurningFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.21"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.34"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.12"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetTartgetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.36"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetTargetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.19"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:StopSpecial02SignVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.43"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:PlaySpecial02SignVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.29"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetReserveBurstPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.35"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.31"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetEquipSwordFlag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.10"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetEquipSwordFlag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.33"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial02EndPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.15"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial02StartPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.16"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial01StartPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.14"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetHSWKMovePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.11"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.18"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.17"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:InsideActionEdgePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.22"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.42"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.20"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:UpdateCurrentSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.44"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.45"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.30"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.32"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.28"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnDestroyAxAndShield'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.26"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnChangeSword'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.25"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_JumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.8"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnJumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.27"
+      },
+      {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ExecuteUbergraph_BC_BOSS000_00_BaseBP'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGProjectileDataHolder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGProjectileDataHolderComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SwitchChainComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'DefaultSwitchChainComponent_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGHomingTargetHolder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGHomingTargetHolderComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "m_character_parts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterPartsComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGMassiveLinkArts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGMassiveLinkArtsComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGBurstGauge",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGBurstGaugeComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "WarpAttackStartPosition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "WarpAttackEndPosition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEquipSword",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "HSWK_MovePoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "HSWK_MovePoint",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_MovePoint_Base_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/MovePoint/SGBP_MovePoint_Base.0"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Special01_StartPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Special02_StartPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Special02_EndPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ReserveBurstPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "Special02_Sign_Vfx",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_BOSS000_Special02_SignVfx_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Skill/VfxBP/SGBP_SkillAction_BOSS000_Special02_SignVfx.0"
+        }
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ShieldHitCollisionName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_BOSS000_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Blueprint/ABP_BOSS000_00.1"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JumpModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "JumpRequest",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Special01_Unit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Special01_Unit",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special01_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/CharacterRoleCoraboration/SGBP_BOSS000_Special01_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "ActionEdgePoints",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "ActionEdgePoints",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StageCenterPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_StageCenterPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_StageCenterPoint.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BC_BOSS000_00_BaseBP": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ExecuteUbergraph_BC_BOSS000_00_BaseBP'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.9"
+      },
+      "OnJumpStart": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnJumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.27"
+      },
+      "BPI_JumpStart": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_JumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.8"
+      },
+      "OnChangeSword": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnChangeSword'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.25"
+      },
+      "OnDestroyAxAndShield": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnDestroyAxAndShield'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.26"
+      },
+      "OnReceivedMessageEvent": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.28"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.32"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.30"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.45"
+      },
+      "UpdateCurrentSkill": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:UpdateCurrentSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.44"
+      },
+      "GetWarpAttackPosition": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.20"
+      },
+      "SetWarpAttackPosition": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.42"
+      },
+      "InsideActionEdgePoints": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:InsideActionEdgePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.22"
+      },
+      "GetStageCenterLocation": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.17"
+      },
+      "GetStageCenterRotation": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.18"
+      },
+      "GetHSWKMovePoints": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetHSWKMovePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.11"
+      },
+      "GetSpecial01StartPoint": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial01StartPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.14"
+      },
+      "GetSpecial02StartPoint": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial02StartPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.16"
+      },
+      "GetSpecial02EndPoint": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetSpecial02EndPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.15"
+      },
+      "SetEquipSwordFlag": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetEquipSwordFlag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.33"
+      },
+      "GetEquipSwordFlag": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetEquipSwordFlag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.10"
+      },
+      "ReceivedMessage": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.31"
+      },
+      "SetReserveBurstPoint": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetReserveBurstPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.35"
+      },
+      "PlaySpecial02SignVfx": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:PlaySpecial02SignVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.29"
+      },
+      "StopSpecial02SignVfx": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:StopSpecial02SignVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.43"
+      },
+      "GetTargetLocationToFace": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetTargetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.19"
+      },
+      "SetTartgetLocationToFace": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetTartgetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.36"
+      },
+      "GetInterpolationAlphaWhenTurningToFace": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.12"
+      },
+      "SetInterpolationAlphaWhenTurningToFace": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.34"
+      },
+      "InitializeTurningFace": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:InitializeTurningFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.21"
+      },
+      "JumpStart": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:JumpStart'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.23"
+      },
+      "JumpUpdate": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:JumpUpdate'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.24"
+      },
+      "GetRandomCharacterRoleCoraborativeUnit": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:GetRandomCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.13"
+      },
+      "SetUpPoints": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpPoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.40"
+      },
+      "SetUpHSWKMovePoints": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpHSWKMovePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.39"
+      },
+      "SetUpCharacterRoleCoraborativeUnit": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.38"
+      },
+      "SetUpActionEdgePoints": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpActionEdgePoints'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.37"
+      },
+      "SetUpStageCenterPoint": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:SetUpStageCenterPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.41"
+      },
+      "BPI_GetWarpAttackPosition": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetWarpAttackPosition'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.7"
+      },
+      "BPI_GetJumpModule": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetJumpModule'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.4"
+      },
+      "BPI_GetStageCenterRotation": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.6"
+      },
+      "BPI_GetStageCenterLocation": {
+        "ObjectName": "Function'BC_BOSS000_00_BaseBP_C:BPI_GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_BOSS000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Utility/BPI_BOSS000.0"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      },
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_Jump_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.0"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      },
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_BC_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_BC.0"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BC_BOSS000_00_BaseBP_C'Default__BC_BOSS000_00_BaseBP_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/Engine.BlueprintGeneratedClass'\"/Game/Product/Character/Enemy/Boss/BOSS000_00/Utility/BPI_BOSS000.BPI_BOSS000_C\"'),(Interface=/Script/Engine.BlueprintGeneratedClass'\"/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.BPI_Enemy_Jump_C\"'),(Interface=/Script/Engine.BlueprintGeneratedClass'\"/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_BC.BPI_Enemy_BC_C\"'))"
+    }
+  },
+  {
+    "Type": "DefaultSwitchChainComponent_C",
+    "Name": "SwitchChainComponent_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.DefaultSwitchChainComponent_C'",
+    "Template": {
+      "ObjectName": "DefaultSwitchChainComponent_C'Default__DefaultSwitchChainComponent_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.1"
+    },
+    "Properties": {
+      "k_chain_finish_action_id": 1800
+    }
+  },
+  {
+    "Type": "ECHC_Base_C",
+    "Name": "EnemyCharacterComponent_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/ECHC_Base.ECHC_Base_C'",
+    "Template": {
+      "ObjectName": "ECHC_Base_C'BC_SGRBoss_AttachArmed_Base_C:EnemyCharacterComponent_GEN_VARIABLE'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.2"
+    },
+    "Properties": {
+      "m_skill_infomation": {
+        "ObjectName": "DataTable'SDT_BOSS000_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/SDT_BOSS000_Skill.0"
+      }
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetJumpModule",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetStageCenterLocation",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetStageCenterRotation",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterRotation_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetWarpAttackPosition",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "StartPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EndPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWarpAttackPosition_StartPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetWarpAttackPosition_EndPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_JumpStart",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Param",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BC_BOSS000_00_BaseBP",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Event_message",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsEquipShield_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_DestroyCharacterHItComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_Param",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_Event_UseRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_Event_TargetRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_Param",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_UseRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_CustomEvent_TargetRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateTurningFaceToTarget_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_JumpUpdate_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction | FUNC_HasDefaults"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetEquipSwordFlag",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Flag",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetHSWKMovePoints",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "MovePoints",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Parm | OutParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "MovePoints",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_MovePoint_Base_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/MovePoint/SGBP_MovePoint_Base.0"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInterpolationAlphaWhenTurningToFace",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_AttachArmed_Base_C:GetInterpolationAlphaWhenTurningToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRandomCharacterRoleCoraborativeUnit",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGBattleCharacter:GetRandomCharacterRoleCoraborativeUnit'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "type_name",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Units",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Units",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Random_OutItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Random_OutIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSpecial01StartPoint",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSpecial02EndPoint",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetSpecial02StartPoint",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special_Point_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special_Point_Base.1"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetStageCenterLocation",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetStageCenterRotation",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTargetLocationToFace",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_AttachArmed_Base_C:GetTargetLocationToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.5"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetWarpAttackPosition",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "StartPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "EndPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeTurningFace",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_AttachArmed_Base_C:InitializeTurningFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VGActionComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGAnimInstance'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_BOSS000_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_BOSS000_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Blueprint/ABP_BOSS000_00.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InsideActionEdgePoints",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CheckLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Result",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "DirPoints",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "DirPoints",
+          "Flags": "RF_Public",
+          "ElementSize": 24,
+          "Struct": {
+            "ObjectName": "Class'Vector'",
+            "ObjectPath": "/Script/CoreUObject"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Cross_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Array_Get_Item_3",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Cross_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_4",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Vector_Normal2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure"
+  },
+  {
+    "Type": "Function",
+    "Name": "JumpStart",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Param",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDamaged_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDead_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "JumpUpdate",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDead_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDamaged_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateJump_IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsJumpEnd_End",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnChangeSword",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDestroyAxAndShield",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Net | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnJumpStart",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Param",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReceivedMessageEvent",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGCharacter:OnReceivedMessageEvent'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "PlaySpecial02SignVfx",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Position",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeTransform_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 96,
+        "Struct": {
+          "ObjectName": "Class'Transform'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetCharaUniqueIdInt32_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_BOSS000_Special02_SignVfx_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Skill/VfxBP/SGBP_SkillAction_BOSS000_Special02_SignVfx.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivedMessage",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "Message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ShieldHitParamName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReserveDamagePoint_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetOwner_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Actor'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReserveBurstPoint_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasAuthority_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGDamageAttr'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetEquipSwordFlag",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Flag",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetInterpolationAlphaWhenTurningToFace",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_AttachArmed_Base_C:SetInterpolationAlphaWhenTurningToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.12"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetReserveBurstPoint",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTartgetLocationToFace",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_AttachArmed_Base_C:SetTartgetLocationToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.13"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUpActionEdgePoints",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "FirstSet",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "SortActionEdgePoints",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "SortActionEdgePoints",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetNumber_Number",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetNumber_Number_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Add_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_ActionEdgePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_ActionEdgePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUpCharacterRoleCoraborativeUnit",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special01_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/CharacterRoleCoraboration/SGBP_BOSS000_Special01_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUpHSWKMovePoints",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_HSWK_MovePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_HSWK_MovePoint.1"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUpPoints",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetUpStageCenterPoint",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_StageCenterPoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_StageCenterPoint.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_StageCenterPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Gimmick/SGBP_BOSS000_StageCenterPoint.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetWarpAttackPosition",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "EndPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopSpecial02SignVfx",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateCurrentSkill",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCurrentSkillName_CurrentSkillName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special02_EndPoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special02_EndPoint.0"
+          }
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special02_EndPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special02_EndPoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special02_StartPoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special02_StartPoint.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special02_StartPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special02_StartPoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors_2",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors_2",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special01_StartPoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special01_StartPoint.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item_2",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_Special01_StartPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/MovePoint/SGBP_BOSS000_Special01_StartPoint.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "BlueprintGeneratedClass'ECHC_Base_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/ECHC_Base.0"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "ECHC_Base_C'BC_BOSS000_00_BaseBP_C:EnemyCharacterComponent_GEN_VARIABLE'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.3"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BC_SGRBoss_AttachArmed_Base_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.1"
+            },
+            "SCSVariableName": "EnemyCharacterComponent",
+            "AssociatedGuid": "2DFB06FC-4848CC22-6AD6318C-7D84F97D"
+          },
+          "CookedComponentInstancingData": {
+            "ChangedPropertyList": [],
+            "bHasValidCookedData": false
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BC_BOSS000_00_BaseBP_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.47"
+      },
+      "VariableGuid": "C9E52F42-450DFE42-BD6CEDBA-EF6B68E8",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGHomingTargetHolderComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGHomingTargetHolderComponent'BC_BOSS000_00_BaseBP_C:SGHomingTargetHolder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.64"
+      },
+      "VariableGuid": "5EBF48E6-4BC7E422-B4A7A1A8-EBC3F2A6",
+      "InternalVariableName": "SGHomingTargetHolder"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'DefaultSwitchChainComponent_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DefaultSwitchChainComponent_C'BC_BOSS000_00_BaseBP_C:SwitchChainComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.2"
+      },
+      "VariableGuid": "AF890392-41151097-3FA399B9-1D6EF530",
+      "InternalVariableName": "SwitchChainComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGBurstGaugeComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGBurstGaugeComponent'BC_BOSS000_00_BaseBP_C:SGBurstGauge_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.57"
+      },
+      "VariableGuid": "D35D683E-4E13931B-D357CE8B-EBB5395E",
+      "InternalVariableName": "SGBurstGauge"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGMassiveLinkArtsComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGMassiveLinkArtsComponent'BC_BOSS000_00_BaseBP_C:SGMassiveLinkArts_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.65"
+      },
+      "VariableGuid": "17C65C5F-4D7A55DB-7A8DDEBC-546E6A6E",
+      "InternalVariableName": "SGMassiveLinkArts"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGCharacterPartsComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGCharacterPartsComponent'BC_BOSS000_00_BaseBP_C:m_character_parts_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.60"
+      },
+      "VariableGuid": "06B7D64F-4BE4E542-35FB81B1-4E95D719",
+      "InternalVariableName": "m_character_parts"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGProjectileDataHolderComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGProjectileDataHolderComponent'BC_BOSS000_00_BaseBP_C:SGProjectileDataHolder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.66"
+      },
+      "VariableGuid": "4DBEDBA8-43F6F343-B379A381-23735BC8",
+      "InternalVariableName": "SGProjectileDataHolder"
+    }
+  },
+  {
+    "Type": "SGActionArmorComponent",
+    "Name": "ActionArmorComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGActionArmorComponent'",
+    "Template": {
+      "ObjectName": "SGActionArmorComponent'Default__BC_SGRBoss_AttachArmed_Base_C:ActionArmorComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.19"
+    }
+  },
+  {
+    "Type": "SGActionInvincibleComponent",
+    "Name": "ActionInvincibleComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGActionInvincibleComponent'",
+    "Template": {
+      "ObjectName": "SGActionInvincibleComponent'Default__BC_SGRBoss_AttachArmed_Base_C:ActionInvincibleComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.20"
+    }
+  },
+  {
+    "Type": "SGBurstGaugeComponent",
+    "Name": "SGBurstGauge_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGBurstGaugeComponent'",
+    "Properties": {
+      "m_burst_gauge_param_list": [
+        {
+          "k_burst_gauge_max": 2000.0,
+          "k_burst_down_time": 6.0
+        },
+        {
+          "k_burst_gauge_max": 200.0,
+          "k_burst_down_time": 15.0
+        },
+        {
+          "k_burst_gauge_max": 200.0,
+          "k_burst_down_time": 15.0
+        }
+      ],
+      "m_disable_add_gauge_action_ids": [
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        180,
+        181,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        160,
+        161,
+        165,
+        166,
+        167,
+        168,
+        169,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515
+      ],
+      "m_disable_gauge_max_action_ids": [
+        500
+      ]
+    }
+  },
+  {
+    "Type": "SGCharacterBuildComponent",
+    "Name": "CharacterBuildComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGCharacterBuildComponent'",
+    "Template": {
+      "ObjectName": "SGCharacterBuildComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CharacterBuildComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.22"
+    }
+  },
+  {
+    "Type": "SGCharacterLevelComponent",
+    "Name": "CharacterLevelComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGCharacterLevelComponent'",
+    "Template": {
+      "ObjectName": "SGCharacterLevelComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CharacterLevelComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.23"
+    }
+  },
+  {
+    "Type": "SGCharacterPartsComponent",
+    "Name": "m_character_parts_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGCharacterPartsComponent'"
+  },
+  {
+    "Type": "SGDebugCharacterInformationComponent",
+    "Name": "DebugCharacterInformationComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGDebugCharacterInformationComponent'",
+    "Template": {
+      "ObjectName": "SGDebugCharacterInformationComponent'Default__BC_SGRBoss_AttachArmed_Base_C:DebugCharacterInformationComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.24"
+    }
+  },
+  {
+    "Type": "SGHeroPointComponent",
+    "Name": "HeroPointComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGHeroPointComponent'",
+    "Template": {
+      "ObjectName": "SGHeroPointComponent'Default__BC_SGRBoss_AttachArmed_Base_C:HeroPointComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.25"
+    }
+  },
+  {
+    "Type": "SGHitEffectStashComponent",
+    "Name": "HitEffectStashComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGHitEffectStashComponent'",
+    "Template": {
+      "ObjectName": "SGHitEffectStashComponent'Default__BC_SGRBoss_AttachArmed_Base_C:HitEffectStashComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.26"
+    }
+  },
+  {
+    "Type": "SGHomingTargetHolderComponent",
+    "Name": "SGHomingTargetHolder_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGHomingTargetHolderComponent'"
+  },
+  {
+    "Type": "SGMassiveLinkArtsComponent",
+    "Name": "SGMassiveLinkArts_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGMassiveLinkArtsComponent'"
+  },
+  {
+    "Type": "SGProjectileDataHolderComponent",
+    "Name": "SGProjectileDataHolder_GEN_VARIABLE",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGProjectileDataHolderComponent'",
+    "Properties": {
+      "m_projectile_data_asset_array": [
+        {
+          "ObjectName": "DataTable'DT_ProjectileData_BOSS000'",
+          "ObjectPath": "/Game/Product/DataTable/Projectile/DT_ProjectileData_BOSS000.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SGStatusAilmentComponent",
+    "Name": "StatusAilmentComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGStatusAilmentComponent'",
+    "Template": {
+      "ObjectName": "SGStatusAilmentComponent'Default__BC_SGRBoss_AttachArmed_Base_C:StatusAilmentComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.27"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__BC_SGRBoss_AttachArmed_Base_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.28"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.51"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.52"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.53"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.49"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.50"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.54"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.51"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.52"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.53"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.49"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.50"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.54"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BC_BOSS000_00_BaseBP_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.48"
+      }
+    }
+  },
+  {
+    "Type": "VG3DHudDeadIconComponent",
+    "Name": "3DHudDeadIconComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VG3DHudDeadIconComponent'",
+    "Template": {
+      "ObjectName": "VG3DHudDeadIconComponent'Default__BC_SGRBoss_AttachArmed_Base_C:3DHudDeadIconComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.30"
+    }
+  },
+  {
+    "Type": "VG3DHudStatusComponent",
+    "Name": "3DHudStatusComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VG3DHudStatusComponent'",
+    "Template": {
+      "ObjectName": "VG3DHudStatusComponent'Default__BC_SGRBoss_AttachArmed_Base_C:3DHudStatusComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.31"
+    },
+    "Properties": {
+      "ActiveRange": 3000.0,
+      "IconDispRange": 3000.0,
+      "AimTargetDisplayTime": 1.0,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGActionComponent'",
+    "Template": {
+      "ObjectName": "VGActionComponent'Default__BC_SGRBoss_AttachArmed_Base_C:ActionComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.32"
+    },
+    "Properties": {
+      "PrimaryComponentTick": {
+        "TickGroup": "TG_PrePhysics"
+      }
+    }
+  },
+  {
+    "Type": "VGAvatarCustomizeComponent",
+    "Name": "AvatarCustomize",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGAvatarCustomizeComponent'",
+    "Template": {
+      "ObjectName": "VGAvatarCustomizeComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.33"
+    }
+  },
+  {
+    "Type": "VGBehaviorComponent",
+    "Name": "BehaviorComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGBehaviorComponent'",
+    "Template": {
+      "ObjectName": "VGBehaviorComponent'Default__BC_SGRBoss_AttachArmed_Base_C:BehaviorComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.34"
+    }
+  },
+  {
+    "Type": "VGCameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGCameraComponent'",
+    "Template": {
+      "ObjectName": "VGCameraComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CameraComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.35"
+    },
+    "Properties": {
+      "k_height_offset": 500.0,
+      "m_hit_correction": true,
+      "RelativeLocation": {
+        "X": 390.0,
+        "Y": 0.0,
+        "Z": -100.0
+      }
+    }
+  },
+  {
+    "Type": "VGCharaBodyComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGCharaBodyComponent'",
+    "Template": {
+      "ObjectName": "VGCharaBodyComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.36"
+    },
+    "Properties": {
+      "m_do_not_overwrite_profile": true,
+      "CapsuleHalfHeight": 370.0,
+      "CapsuleRadius": 180.0,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel15",
+        "CollisionProfileName": "BossBody",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaHit",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BossPhys",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "VGCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "VGCharacterMovementComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CharMoveComp'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.37"
+    },
+    "Properties": {
+      "WalkableFloorAngle": 48.0,
+      "WalkableFloorZ": 0.66913056,
+      "bOrientRotationToMovement": true,
+      "bIgnoreBaseRotation": true,
+      "bUseRVOAvoidance": true,
+      "AvoidanceConsiderationRadius": 200.0,
+      "AvoidanceGroup": {
+        "bGroup0": false,
+        "bGroup2": true
+      }
+    }
+  },
+  {
+    "Type": "VGFacialMeshComponent",
+    "Name": "FaceMesh",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGFacialMeshComponent'",
+    "Template": {
+      "ObjectName": "VGFacialMeshComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize.FaceMesh'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.38"
+    }
+  },
+  {
+    "Type": "VGHitStopComponent",
+    "Name": "HitStopComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGHitStopComponent'",
+    "Template": {
+      "ObjectName": "VGHitStopComponent'Default__BC_SGRBoss_AttachArmed_Base_C:HitStopComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.39"
+    }
+  },
+  {
+    "Type": "VGLookAtComponent",
+    "Name": "LookAt",
+    "Outer": "FaceMesh",
+    "Class": "UScriptClass'VGLookAtComponent'",
+    "Template": {
+      "ObjectName": "VGLookAtComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize.FaceMesh.LookAt'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.40"
+    }
+  },
+  {
+    "Type": "VGMapIconComponent",
+    "Name": "MapIconComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGMapIconComponent'",
+    "Template": {
+      "ObjectName": "VGMapIconComponent'Default__BC_SGRBoss_AttachArmed_Base_C:MapIconComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.41"
+    },
+    "Properties": {
+      "m_icon_type": "EVGMapIconType::Boss",
+      "m_icon_type_auto_set": false
+    }
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "AccessoryMesh0",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "VGSkeletalMeshComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize.AccessoryMesh0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.42"
+    }
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "AccessoryMesh1",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "VGSkeletalMeshComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize.AccessoryMesh1'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.43"
+    }
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "HairMesh",
+    "Outer": "AvatarCustomize",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "VGSkeletalMeshComponent'Default__BC_SGRBoss_AttachArmed_Base_C:AvatarCustomize.HairMesh'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.44"
+    }
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "VGSkeletalMeshComponent'Default__BC_SGRBoss_AttachArmed_Base_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.45"
+    },
+    "Properties": {
+      "bResetAfterTeleport": true,
+      "TeleportDistanceThreshold": 300.0,
+      "TeleportRotationThreshold": 0.0,
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SKM_BOSS000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Model/Mesh/SKM_BOSS000_00.0"
+      },
+      "SkinnedAsset": {
+        "ObjectName": "SkeletalMesh'SKM_BOSS000_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Model/Mesh/SKM_BOSS000_00.0"
+      },
+      "LightingChannels": {
+        "bChannel1": true
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel5",
+        "CollisionProfileName": "CharaPhys_L",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaHit",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_BOSS000_00_BaseBP_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/BattleCharacter/Base/BC_BOSS000_00_BaseBP.76"
+      },
+      "RelativeLocation": {
+        "X": -10.0,
+        "Y": 0.0,
+        "Z": -370.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGSoundComponent",
+    "Name": "SoundComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGSoundComponent'",
+    "Template": {
+      "ObjectName": "VGSoundComponent'Default__BC_SGRBoss_AttachArmed_Base_C:SoundComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.46"
+    }
+  },
+  {
+    "Type": "VGTriggerComponent",
+    "Name": "TriggerComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGTriggerComponent'",
+    "Template": {
+      "ObjectName": "VGTriggerComponent'Default__BC_SGRBoss_AttachArmed_Base_C:TriggerComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.47"
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BC_BOSS000_00_BaseBP_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__BC_SGRBoss_AttachArmed_Base_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_AttachArmed_Base.48"
+    }
+  }
+]

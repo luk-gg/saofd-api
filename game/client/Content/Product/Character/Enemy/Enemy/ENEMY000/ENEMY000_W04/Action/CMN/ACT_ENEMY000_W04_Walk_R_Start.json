@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_R_Start",
+      "action_id": 11,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_W04_WalkRight_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Animation/Montage/MNT_ENE000_W04_WalkRight_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 6,
+      "num_frames": 7,
+      "start_time": 0.20000002,
+      "end_time": 0.43333337,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 11,
+      "num_frames": 2,
+      "start_time": 0.36666667,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 44,
+      "end_time": 1.4666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_3.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY000_W04_Walk_R_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "終了",
+      "start_frame": 11,
+      "num_frames": 9,
+      "start_time": 0.36666667,
+      "end_time": 0.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W04_Walk_R_Start:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Walk_R_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 12
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L1_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L1_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        },
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Neutral'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Neutral.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 13,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Neutral'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Neutral.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 150.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 50.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

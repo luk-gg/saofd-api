@@ -1,0 +1,203 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 810.0,
+      "m_disable_change_of_movement_mode": true
+    }
+  },
+  {
+    "Type": "SGANSWeaponEmissive",
+    "Name": "SGANSWeaponEmissive_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSWeaponEmissive'",
+    "Properties": {
+      "fade_in_time": 0.0,
+      "enable_fade_out": false,
+      "emissive_intensity": 20.0,
+      "emissive_color": {
+        "R": 0.0,
+        "G": 0.805002,
+        "B": 4.0,
+        "A": 1.0,
+        "Hex": "00E8FF"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack03_Start2",
+      "action_id": 107,
+      "states": [
+        "EVGActionState::Skill"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_Attack03_Start2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/MNT_ENEMY508_Attack03_Start2.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack03_Start2:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack03_Start2:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack03_Start2:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack03_Start2:VGActionEvent_78'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack03_Start2:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 16,
+      "num_frames": 8,
+      "start_time": 0.53333336,
+      "end_time": 0.8000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_Attack03_Start2:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Dash",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_Attack03_Start2:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 66,
+      "end_time": 2.2,
+      "notify_state": {
+        "ObjectName": "SGANSWeaponEmissive'ACT_ENEMY508_Attack03_Start2:VGActionEvent_2.SGANSWeaponEmissive_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 16,
+      "num_frames": 6,
+      "start_time": 0.53333336,
+      "end_time": 0.73333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY508_Attack03_Start2:VGActionEvent_7.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_78",
+    "Outer": "ACT_ENEMY508_Attack03_Start2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ煙",
+      "start_frame": 13,
+      "num_frames": 3,
+      "start_time": 0.43333337,
+      "end_time": 0.53333336,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY508_Attack03_Start2:VGActionEvent_78.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack03_Start2.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 108
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_78",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Dash_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Dash_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": -50.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

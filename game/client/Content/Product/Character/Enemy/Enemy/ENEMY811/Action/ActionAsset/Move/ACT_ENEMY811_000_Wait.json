@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "parameter_data_asset": {
+        "ObjectName": "SGANSCharacterHorizontalPushDataAsset'APP_ENEMYY811_000_Default'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/EventKey/PushParam/APP_ENEMYY811_000_Default.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY811_000_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Idle",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY811_000_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Animation/Montage/MNT_ENEMY811_000_Wait.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Move/ACT_ENEMY811_000_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY811_000_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "キャラ押し出し",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_ENEMY811_000_Wait:VGActionEvent_1.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Move/ACT_ENEMY811_000_Wait.0"
+      }
+    }
+  }
+]

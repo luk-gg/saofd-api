@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY802_Electro_Shot",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Electro Shot",
+      "action_id": 610,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY802_ATK_Shot'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY802/Animation/Montage/MNT_ENEMY802_ATK_Shot.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.3
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY802_Electro_Shot:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY802/Action/ACT_ENEMY802_Electro_Shot.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY802_Electro_Shot",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 90,
+      "end_time": 3.0000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY802_Electro_Shot:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY802/Action/ACT_ENEMY802_Electro_Shot.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

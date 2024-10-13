@@ -1,0 +1,39 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_ENEMY300_Landing_Flap",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Landing_Flap",
+      "m_action_id": 1100,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R2_Press'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R2_Press.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::FlyingIdle",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Falling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingTurn",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_WaitAction'SBT_BOSS004_Phase_0:VGBTT_WaitAction_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBFloat'SBT_BOSS004_Phase_0:VGBTT_SetBBFloat_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.5"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SGBTT_ResetAttackAction'SBT_BOSS004_Phase_0:SGBTT_ResetAttackAction_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.3"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_BOSS004_Phase_0:VGBTT_SetBBName_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.6"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBBool'SBT_BOSS004_Phase_0:VGBTT_SetBBBool_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.4"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTT_SetBBInt_C'SBT_BOSS004_Phase_0:BTT_SetBBInt_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.2"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "Phase0",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      }
+    }
+  },
+  {
+    "Type": "BTT_SetBBInt_C",
+    "Name": "BTT_SetBBInt_C_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "BlueprintGeneratedClass'/Game/Product/AI/Task/BTT_SetBBInt.BTT_SetBBInt_C'",
+    "Template": {
+      "ObjectName": "BTT_SetBBInt_C'Default__BTT_SetBBInt_C'",
+      "ObjectPath": "/Game/Product/AI/Task/BTT_SetBBInt.1"
+    },
+    "Properties": {
+      "Blackboard Key": {
+        "SelectedKeyName": "Phase"
+      },
+      "SetInt": 1,
+      "NodeName": "フェーズ１へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTT_ResetAttackAction",
+    "Name": "SGBTT_ResetAttackAction_3",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'SGBTT_ResetAttackAction'",
+    "Properties": {
+      "m_attack_name_bb": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "攻撃リセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBBool",
+    "Name": "VGBTT_SetBBBool_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'VGBTT_SetBBBool'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "InitPhase"
+      },
+      "NodeName": "フェーズ未初期化",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBFloat",
+    "Name": "VGBTT_SetBBFloat_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'VGBTT_SetBBFloat'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "TurnWait"
+      },
+      "NodeName": "ターン待ち解除",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "EmotionName"
+      },
+      "NodeName": "エモーションリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_WaitAction",
+    "Name": "VGBTT_WaitAction_0",
+    "Outer": "SBT_BOSS004_Phase_0",
+    "Class": "UScriptClass'VGBTT_WaitAction'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS004_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_BOSS004_Phase_0:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS004_00/AI/BehaviorTree/SBT_BOSS004_Phase_0.1"
+      }
+    }
+  }
+]

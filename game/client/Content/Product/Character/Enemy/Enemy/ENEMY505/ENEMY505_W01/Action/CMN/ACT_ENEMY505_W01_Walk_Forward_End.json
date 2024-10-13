@@ -1,0 +1,145 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 5.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 250.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY505_W01_Walk_Forward_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WalkForward_End",
+      "action_id": 6,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY505_W01_WalkForward_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Animation/Montage/MNT_ENEMY505_W01_WalkForward_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY505_W01_Walk_Forward_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 2,
+      "num_frames": 12,
+      "start_time": 0.06666667,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_0.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY505_W01_Walk_Forward_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 5,
+      "start_time": 0.7666667,
+      "end_time": 0.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY505_W01_Walk_Forward_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_2.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY505_W01_Walk_Forward_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "中断可能",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY505_W01_Walk_Forward_End:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W01/Action/CMN/ACT_ENEMY505_W01_Walk_Forward_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::CharacterMovement",
+      "capsule_radius": 200.0,
+      "capsule_half_height": 400.0,
+      "character_movement_add_size": 50.0
+    }
+  },
+  {
+    "Type": "SGANSCharacterSnapshot",
+    "Name": "SGANSCharacterSnapshot_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSCharacterSnapshot'",
+    "Properties": {
+      "CharacterSnapshotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CharacterSnapShot_BOSS000_00_Dash_C'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/CharacterSnapshot/BP_CharacterSnapShot_BOSS000_00_Dash.0"
+      },
+      "SpawnInterval": 2
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BO000_WallKick_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WallKick_Start",
+      "action_id": 513,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_WallKick_Start_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_WallKick_Start_3.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_WallKick_Start:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_WallKick_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_WallKick_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_WallKick_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BO000_WallKick_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "残像BP",
+      "num_frames": 20,
+      "end_time": 0.6666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterSnapshot'ACT_BO000_WallKick_Start:VGActionEvent_0.SGANSCharacterSnapshot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BO000_WallKick_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 4,
+      "num_frames": 2,
+      "start_time": 0.13333334,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BO000_WallKick_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_BO000_WallKick_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_BO000_WallKick_Start:VGActionEvent_18.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BO000_WallKick_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BO000_WallKick_Start:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/ATK/ACT_BO000_WallKick_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 514
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18,
+        0
+      ]
+    }
+  }
+]

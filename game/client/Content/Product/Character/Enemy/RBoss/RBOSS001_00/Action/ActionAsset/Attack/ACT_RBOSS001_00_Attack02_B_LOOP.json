@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "location": {
+        "X": 450.0,
+        "Y": 6000.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 3.0,
+        "Roll": 0.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "is_ignore_actor_when_moving": true,
+      "box_half_extent_x": 375.0,
+      "box_half_extent_y": 800.0,
+      "box_half_extent_z": 300.0
+    }
+  },
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_44",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "location": {
+        "X": -300.0,
+        "Y": 6000.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": -5.0,
+        "Roll": 0.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "is_ignore_actor_when_moving": true,
+      "box_half_extent_x": 325.0,
+      "box_half_extent_y": 800.0,
+      "box_half_extent_z": 300.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Attack02_B_LOOP",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack02_Strike_Both_LOOP",
+      "action_id": 210,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Attack02_Strike_Both_LOOP'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Attack02_Strike_Both_LOOP.0"
+        },
+        "is_loop": true
+      },
+      "custom_speed_rate": 1.5,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_44'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS001_00_Attack02_B_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "終了へ",
+      "num_frames": 49,
+      "end_time": 1.6333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS001_00_Attack02_B_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 42,
+      "end_time": 1.4000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_1.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_44",
+    "Outer": "ACT_RBOSS001_00_Attack02_B_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 42,
+      "end_time": 1.4000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_RBOSS001_00_Attack02_B_LOOP:VGActionEvent_44.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack02_B_LOOP.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 220,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Y_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Y_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  }
+]

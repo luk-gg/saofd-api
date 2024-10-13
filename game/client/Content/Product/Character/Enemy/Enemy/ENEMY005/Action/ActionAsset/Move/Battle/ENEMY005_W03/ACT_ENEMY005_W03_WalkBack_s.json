@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W03_WalkBack_s",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W03_WalkBack_s",
+      "action_id": 20,
+      "states": [
+        "EVGActionState::Walk",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W03_Walk_Back_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/ENEMY005_W03/MNT_ENEMY005_W03_Walk_Back_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY005_W03_WalkBack_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ループへ",
+      "start_frame": 11,
+      "num_frames": 37,
+      "start_time": 0.36666667,
+      "end_time": 1.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY005_W03_WalkBack_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 11,
+      "start_time": 0.26666668,
+      "end_time": 0.6333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_3.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY005_W03_WalkBack_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "num_frames": 49,
+      "end_time": 1.6333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY005_W03_WalkBack_s:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_WalkBack_s.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

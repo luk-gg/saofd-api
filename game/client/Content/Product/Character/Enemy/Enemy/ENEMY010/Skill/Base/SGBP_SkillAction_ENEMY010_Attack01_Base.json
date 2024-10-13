@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_ENEMY010_Attack01_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_ENEMY010_Attack01_Base_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Skill/Base/SGBP_SkillAction_ENEMY010_Attack01_Base.1"
+      }
+    ],
+    "FuncMap": {
+      "UpdateProcess": {
+        "ObjectName": "Function'SGBP_SkillAction_ENEMY010_Attack01_Base_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Skill/Base/SGBP_SkillAction_ENEMY010_Attack01_Base.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_ENEMY010_Attack01_Base_C'Default__SGBP_SkillAction_ENEMY010_Attack01_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Skill/Base/SGBP_SkillAction_ENEMY010_Attack01_Base.2"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateProcess",
+    "Outer": "SGBP_SkillAction_ENEMY010_Attack01_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:UpdateProcess'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateTurn_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateIntervalAction_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateAttack_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateApproach_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_ENEMY010_Attack01_Base_C",
+    "Name": "Default__SGBP_SkillAction_ENEMY010_Attack01_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY010/Skill/Base/SGBP_SkillAction_ENEMY010_Attack01_Base.SGBP_SkillAction_ENEMY010_Attack01_Base_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'Default__SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.5"
+    },
+    "Properties": {
+      "JumpParamAsset": {
+        "ObjectName": "SGBP_SkillAction_JumpParameter_C'SGDT_SkillAction_ENEMY010_Attack01_JP'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Skill/SGDT_SkillAction_ENEMY010_Attack01_JP.0"
+      },
+      "DistanceToWalk": 0.0,
+      "MoveType": "SGCEnum_SkillAction_MoveType::NewEnumerator3",
+      "RunInput": [
+        15
+      ],
+      "ProcessNameToStart": "Turn"
+    }
+  }
+]

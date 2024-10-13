@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY007_Fall_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Fall_end",
+      "action_id": 51,
+      "states": [
+        "EVGActionState::Land",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY007_Fall_End'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Animation/Montage/MNT_ENEMY007_Fall_End.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Fall_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Fall_End.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY007_Fall_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 17,
+      "num_frames": 8,
+      "start_time": 0.5666667,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY007_Fall_End:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/CMN/ACT_ENEMY007_Fall_End.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

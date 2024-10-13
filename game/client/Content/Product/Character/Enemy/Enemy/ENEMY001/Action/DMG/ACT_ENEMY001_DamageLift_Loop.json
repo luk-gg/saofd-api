@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -100.0,
+        "Z": 0.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::Sphere",
+      "box_half_extent_x": 210.0,
+      "box_half_extent_y": 210.0,
+      "box_half_extent_z": 400.0,
+      "sphere_radius": 125.0,
+      "capsule_radius": 60.0,
+      "capsule_half_height": 40.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLift_Loop",
+      "action_id": 209,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Fall",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY001_DamageLift_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Animation/Montage/MNT_ENEMY001_DamageLift_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "Air",
+      "num_frames": 31,
+      "end_time": 1.0333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可",
+      "num_frames": 24,
+      "end_time": 0.8000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "落下を速く",
+      "start_frame": 1,
+      "num_frames": 9,
+      "start_time": 0.033333335,
+      "end_time": 0.33333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_6.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY001_DamageLift_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_ENEMY001_DamageLift_Loop:VGActionEvent_9.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY001/Action/DMG/ACT_ENEMY001_DamageLift_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 210
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 210,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 210,
+      "floor_check_distance": 50.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Add",
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -500.0
+      },
+      "is_reset": false,
+      "is_inertia": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27
+      ]
+    }
+  }
+]

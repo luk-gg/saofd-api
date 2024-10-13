@@ -1,0 +1,269 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Diving_s",
+      "action_id": 10,
+      "states": [
+        "EVGActionState::Emotion",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Diving_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Diving_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Diving_s:VGActionEvent_30'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ループへ",
+      "start_frame": 49,
+      "num_frames": 5,
+      "start_time": 1.6333334,
+      "end_time": 1.8000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Diving_s:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 89,
+      "end_time": 2.966667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS001_00_Diving_s:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 20,
+      "start_time": 0.6666667,
+      "end_time": 0.70000005,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_RBOSS001_00_Diving_s:VGActionEvent_25.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "泡(キャラアタッチ)",
+      "num_frames": 50,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_RBOSS001_00_Diving_s:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_30",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダイブ音",
+      "start_frame": 7,
+      "start_time": 0.23333335,
+      "end_time": 0.26666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS001_00_Diving_s:VGActionEvent_30.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダイブ時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS001_00_Diving_s:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_RBOSS001_00_Diving_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロックオン不可",
+      "num_frames": 51,
+      "end_time": 1.7,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS001_00_Diving_s:VGActionEvent_7.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Diving_s.13"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_RBOSS_Foot_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_RBOSS_Foot.0"
+      },
+      "outer_radius": 30000.0
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_30",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 54,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 53,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_RBOSS001_00_Bubble_Dive_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS001_00/efs_RBOSS001_00_Bubble_Dive_lo.0"
+      }
+    }
+  }
+]

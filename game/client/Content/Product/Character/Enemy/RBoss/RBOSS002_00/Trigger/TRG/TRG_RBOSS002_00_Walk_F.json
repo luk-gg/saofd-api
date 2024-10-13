@@ -1,0 +1,44 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_RBOSS002_00_Walk_F",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Walk_F",
+      "m_action_id": 100,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Forward_AutoChange'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Forward_AutoChange.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsEmotion",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Attacking",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Walking",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::ActionInterruptible",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

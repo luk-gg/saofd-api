@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "SDT_BOSS000_00_PhaseTask",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "Class'SGEnemyPhaseTaskRow'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      }
+    },
+    "Rows": {
+      "Phase1": {
+        "m_phase_name": "Phase1",
+        "m_phase_id": 0,
+        "m_angry_type": "ESGEnemyAngryType::None",
+        "m_anger_time": 90.0,
+        "m_animation_speed_when_anger": 1.0,
+        "m_pattern_param_in_phase": [],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_PhaseTaskUnit_ToPhase2_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Phase/SGBP_BOSS000_PhaseTaskUnit_ToPhase2.0"
+        }
+      },
+      "Phase2": {
+        "m_phase_name": "Phase2",
+        "m_phase_id": 1,
+        "m_angry_type": "ESGEnemyAngryType::None",
+        "m_anger_time": 90.0,
+        "m_animation_speed_when_anger": 1.0,
+        "m_pattern_param_in_phase": [
+          {
+            "m_use_action_select_param_name": "Default",
+            "m_use_skill_param_name": "Phase2",
+            "m_use_skill_param_name_while_angry": "None",
+            "m_normal_skill_param": {
+              "m_normal_skill_trigger_point_limit": 5.0,
+              "m_normal_skill_trigger_point_from_damage": 0.1,
+              "m_normal_skill_trigger_point_per_second": 1.0
+            },
+            "m_special_skill_param": {
+              "m_special_skill_trigger_point_limit": 50.0,
+              "m_special_skill_trigger_point_from_damage": 0.1,
+              "m_special_skill_trigger_point_per_second": 1.0,
+              "m_is_reset_the_special_skill_trigger_point_for_next_phase": false,
+              "m_special_skill_name": [
+                "AxForcePillar"
+              ],
+              "m_special_skill_prior_inspection_unit": []
+            },
+            "m_pattern_switching_time": 120.0
+          }
+        ],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_BOSS000_PhaseTaskUnit_ToPhase3_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/AI/Phase/SGBP_BOSS000_PhaseTaskUnit_ToPhase3.0"
+        }
+      },
+      "Phase3": {
+        "m_phase_name": "Phase3",
+        "m_phase_id": 2,
+        "m_angry_type": "ESGEnemyAngryType::None",
+        "m_anger_time": 90.0,
+        "m_animation_speed_when_anger": 1.0,
+        "m_pattern_param_in_phase": [
+          {
+            "m_use_action_select_param_name": "Default",
+            "m_use_skill_param_name": "Phase3",
+            "m_use_skill_param_name_while_angry": "None",
+            "m_normal_skill_param": {
+              "m_normal_skill_trigger_point_limit": 5.0,
+              "m_normal_skill_trigger_point_from_damage": 0.1,
+              "m_normal_skill_trigger_point_per_second": 1.0
+            },
+            "m_special_skill_param": {
+              "m_special_skill_trigger_point_limit": 50.0,
+              "m_special_skill_trigger_point_from_damage": 0.1,
+              "m_special_skill_trigger_point_per_second": 1.0,
+              "m_is_reset_the_special_skill_trigger_point_for_next_phase": false,
+              "m_special_skill_name": [
+                "AxForcePillar"
+              ],
+              "m_special_skill_prior_inspection_unit": []
+            },
+            "m_pattern_switching_time": 120.0
+          }
+        ],
+        "m_anger_transition_unit_class": null,
+        "m_phase_task_unit_class": null
+      }
+    }
+  }
+]

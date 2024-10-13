@@ -1,0 +1,272 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageDown_Start_Loop",
+      "action_id": 200,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY503_DamageDown_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Animation/Montage/MNT_ENEMY503_DamageDown_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "土煙",
+      "start_frame": 36,
+      "num_frames": 5,
+      "start_time": 1.2,
+      "end_time": 1.3666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_1.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウン音",
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_15.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 47,
+      "num_frames": 44,
+      "start_time": 1.5666667,
+      "end_time": 3.0333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_2.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウン開始",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 141,
+      "end_time": 4.7000003,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY503_DamageDown_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY503_DamageDown_Start_Loop:VGActionEvent_9.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY503/Action/DMG/ACT_ENEMY503_DamageDown_Start_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Heavy_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Heavy.0"
+      },
+      "outer_radius": 1000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 30,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 29,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 201,
+      "activation_time": 1.5,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        20
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 4.0,
+        "Y": 4.0,
+        "Z": 4.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

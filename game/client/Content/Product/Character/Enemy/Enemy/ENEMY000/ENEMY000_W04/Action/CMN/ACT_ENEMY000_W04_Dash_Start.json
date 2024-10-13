@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W04_Dash_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Run_Start",
+      "action_id": 10,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Run"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_W04_Dash_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Animation/Montage/MNT_ENE000_W04_Dash_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W04_Dash_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Dash_Start.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY000_W04_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "num_frames": 2,
+      "start_time": 0.33333334,
+      "end_time": 0.4,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W04_Dash_Start:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W04/Action/CMN/ACT_ENEMY000_W04_Dash_Start.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 20
+    }
+  }
+]

@@ -1,0 +1,208 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 15.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 130020,
+      "node": "Socket_Eye",
+      "scale": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Node",
+      "node_axis_type": "ESGActionProjectileShotNodeAxisType::X"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack04_Firing",
+      "action_id": 106,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Aim"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_ENEMY013_Attack04_Firing'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Animation/Montage/BS_ENEMY013_Attack04_Firing.0"
+        },
+        "is_loop": true,
+        "blend_time": 0.3,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_Attack04_Firing:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_Attack04_Firing:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_Attack04_Firing:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_Attack04_Firing:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY013_Attack04_Firing:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "邪眼光線",
+      "start_frame": 7,
+      "num_frames": 59,
+      "start_time": 0.23333335,
+      "end_time": 2.2000003,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY013_Attack04_Firing:VGActionEvent_0.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 61,
+      "end_time": 2.0333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_ENEMY013_Attack04_Firing:VGActionEvent_1.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "AIM限界角度を超えている場合の回転制御だけを無視",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY013_Attack04_Firing:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 63,
+      "end_time": 2.1000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY013_Attack04_Firing:VGActionEvent_4.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY013_Attack04_Firing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズルエフェクト(ループ)",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY013_Attack04_Firing:VGActionEvent_5.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY013/Action/ATK/ACT_ENEMY013_Attack04_Firing.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27
+      ]
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 23,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY013_Beam_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY013/efs_ENEMY013_Beam_Muzzle.0"
+      },
+      "emit_node_name": "Socket_Eye",
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

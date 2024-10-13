@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Attack13_END",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack13_Mow_END",
+      "action_id": 965,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Attack13_Mow_END'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Attack13_Mow_END.0"
+        }
+      },
+      "custom_speed_rate": 1.5,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Attack13_END:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack13_END.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_RBOSS001_00_Attack13_END",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 49,
+      "num_frames": 9,
+      "start_time": 1.6333334,
+      "end_time": 1.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Attack13_END:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack13_END.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

@@ -1,0 +1,470 @@
+[
+  {
+    "Type": "SGANAssistFollowCancel",
+    "Name": "SGANAssistFollowCancel_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANAssistFollowCancel'"
+  },
+  {
+    "Type": "SGANAssistFollowSocketChange",
+    "Name": "SGANAssistFollowSocketChange_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANAssistFollowSocketChange'",
+    "Properties": {
+      "m_change_socket_name": "Assist_Left_Socket"
+    }
+  },
+  {
+    "Type": "SGANAssistResetLocation",
+    "Name": "SGANAssistResetLocation_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANAssistResetLocation'",
+    "Properties": {
+      "m_set_location_type": "ESGAssistSetLocationType::Client"
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 2.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 1800.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "SGANSActionRotationHold",
+    "Name": "SGANSActionRotationHold_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSActionRotationHold'",
+    "Properties": {
+      "m_rotation_hold": "ERotationHold::YawPitch"
+    }
+  },
+  {
+    "Type": "SGANSAssistActionHomingRotation",
+    "Name": "SGANSAssistActionHomingRotation_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'SGANSAssistActionHomingRotation'",
+    "Properties": {
+      "m_rotation_type": "ESGAssistRotationType::YawPitch",
+      "m_is_use_generator_target": false,
+      "m_is_support_attack_target": true,
+      "m_is_ground_judge": false,
+      "m_rotate_degree_second": 3600.0,
+      "upper_limit_of_pitch_rotation": 25.0,
+      "lower_limit_of_pitch_rotation": 25.0,
+      "m_disable_change_of_movement_mode": true
+    }
+  },
+  {
+    "Type": "SGANSAssistAttack",
+    "Name": "SGANSAssistAttack_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSAssistAttack'",
+    "Properties": {
+      "position": {
+        "X": 0.0,
+        "Y": 20.0,
+        "Z": 20.0
+      },
+      "desc": {
+        "damage": 0.4,
+        "attr": [
+          "EVGDamageAttr::Melee"
+        ],
+        "impact": "ESGDamageImpact::Low",
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerDirection",
+          "velocity": {
+            "X": 500.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        }
+      },
+      "melee_hit_effect_type": "ESGMeleeHitEffectType::Blow_S",
+      "character_hit_decal": -1,
+      "shape_type": "ESGActionAssistAttackShape::Sphere",
+      "sphere_radius": 55.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Support_Attack_Start_Loop",
+      "action_id": 202,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Attack"
+      ],
+      "priority": 101,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_Support_Attack_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_Support_Attack_s_l.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.19"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.18"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.9"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.20"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.21"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_258'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "終了分岐",
+      "start_frame": 50,
+      "num_frames": 13,
+      "start_time": 1.6666667,
+      "end_time": 2.1000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 21,
+      "num_frames": 76,
+      "start_time": 0.70000005,
+      "end_time": 3.2333336,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_1.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "num_frames": 5,
+      "start_time": 0.33333334,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_10.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 65,
+      "start_time": 0.43333337,
+      "end_time": 2.6000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_12.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従ソケット変更,補間追従オン",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowSocketChange'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_13.SGANAssistFollowSocketChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 9,
+      "end_time": 0.3,
+      "notify_state": {
+        "ObjectName": "SGANSAssistActionHomingRotation'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_15.SGANSAssistActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従させない",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowCancel'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_2.SGANAssistFollowCancel_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_258",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ音",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_258.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 65,
+      "start_time": 0.43333337,
+      "end_time": 2.6000001,
+      "notify_state": {
+        "ObjectName": "SGANSAssistAttack'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_3.SGANSAssistAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "num_frames": 69,
+      "start_time": 0.3,
+      "end_time": 2.6000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionRotationHold'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_4.SGANSActionRotationHold_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "元の位置にリセット",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistResetLocation'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_5.SGANAssistResetLocation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ピナ風切り",
+      "start_frame": 10,
+      "num_frames": 72,
+      "start_time": 0.33333334,
+      "end_time": 2.7333333,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_8.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY900_Support_Attack_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "num_frames": 72,
+      "start_time": 0.33333334,
+      "end_time": 2.7333333,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY900_Support_Attack_Start_Loop:VGActionEvent_9.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_Support_Attack_Start_Loop.26"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_258",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20602,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true,
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 203
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveWave_s_st'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveWave_s_st.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveWave_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveWave_s_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_MoveLine_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_MoveLine_s_lo.0"
+      },
+      "emit_node_name": "VFX_g_x_VFX",
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      }
+    }
+  }
+]

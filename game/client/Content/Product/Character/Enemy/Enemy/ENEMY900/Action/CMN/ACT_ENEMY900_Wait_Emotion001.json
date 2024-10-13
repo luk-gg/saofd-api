@@ -1,0 +1,197 @@
+[
+  {
+    "Type": "SGANAssistFollowCancel",
+    "Name": "SGANAssistFollowCancel_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANAssistFollowCancel'",
+    "Properties": {
+      "m_cancel_flag": false
+    }
+  },
+  {
+    "Type": "SGANAssistResetLocation",
+    "Name": "SGANAssistResetLocation_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANAssistResetLocation'"
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "cancel_move_distance": 100.0,
+      "is_distance_attenuation": true
+    }
+  },
+  {
+    "Type": "SGANSAssistFollowSocketChange",
+    "Name": "SGANSAssistFollowSocketChange_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSAssistFollowSocketChange'",
+    "Properties": {
+      "m_begin_change_socket_name": "Assist_Head_Socket",
+      "m_is_begin_not_follow_lerp": true,
+      "m_end_change_socket_name": "Assist_Left_Socket"
+    }
+  },
+  {
+    "Type": "SGANSCharacterSnapshot",
+    "Name": "SGANSCharacterSnapshot_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'SGANSCharacterSnapshot'",
+    "Properties": {
+      "CharacterSnapshotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CharacterSnapShot_UCR18_SKL01_C'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/CharacterSnapshot/BP_CharacterSnapShot_UCR18_SKL01.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait_Emotion001",
+      "action_id": 51,
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "priority": 200,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_Wait_Emotion001'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_Wait_Emotion001.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従させる",
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "SGANAssistFollowCancel'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_0.SGANAssistFollowCancel_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 3,
+      "end_time": 0.10000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_14.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "残像BP",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterSnapshot'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_17.SGANSCharacterSnapshot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 158,
+      "num_frames": 47,
+      "start_time": 5.266667,
+      "end_time": 6.8333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "開始追従ソケット変更,開始補間追従オン、終了追従ソケット変更,終了補間追従オン",
+      "start_frame": 3,
+      "num_frames": 134,
+      "start_time": 0.10000001,
+      "end_time": 4.5666666,
+      "notify_state": {
+        "ObjectName": "SGANSAssistFollowSocketChange'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_3.SGANSAssistFollowSocketChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY900_Wait_Emotion001",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "元の位置にリセット",
+      "start_frame": 1,
+      "num_frames": 2,
+      "start_time": 0.033333335,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "SGANAssistResetLocation'ACT_ENEMY900_Wait_Emotion001:VGActionEvent_5.SGANAssistResetLocation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Wait_Emotion001.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

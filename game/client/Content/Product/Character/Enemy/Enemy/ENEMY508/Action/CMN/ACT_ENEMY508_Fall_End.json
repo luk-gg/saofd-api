@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_Fall_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Fall_End",
+      "action_id": 51,
+      "states": [
+        "EVGActionState::Land",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_Fall_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/MNT_ENEMY508_Fall_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Fall_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Fall_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Fall_End:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Fall_End:VGActionEvent_22'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_Fall_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "start_frame": 22,
+      "num_frames": 27,
+      "start_time": 0.73333335,
+      "end_time": 1.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_Fall_End:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_Fall_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "num_frames": 8,
+      "start_time": 0.8000001,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_Fall_End:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_22",
+    "Outer": "ACT_ENEMY508_Fall_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY508_Fall_End:VGActionEvent_22.VGANSignalVfx_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY508_Fall_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_Fall_End:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ACT_ENEMY508_Fall_End.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 10420,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_1",
+    "Outer": "VGActionEvent_22",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 10.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

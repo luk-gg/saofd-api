@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY017_000_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY017_000_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/Animation/Montage/MNT_ENEMY017_000_Wait.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY017_000_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/Action/ActionAsset/Move/ACT_ENEMY017_000_Wait.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY017_000_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 116,
+      "end_time": 3.8666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY017_000_Wait:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/Action/ActionAsset/Move/ACT_ENEMY017_000_Wait.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        9,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

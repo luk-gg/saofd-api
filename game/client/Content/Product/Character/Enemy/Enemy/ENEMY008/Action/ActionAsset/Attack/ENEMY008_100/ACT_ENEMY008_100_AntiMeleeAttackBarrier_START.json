@@ -1,0 +1,82 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY008_100_AntiMeleeAttackBarrier_START",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AntiMeleeAttackBarrier_START",
+      "action_id": 600,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY008_000_Attack04_Speciality_START'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Animation/Montage/MNT_ENEMY008_000_Attack04_Speciality_START.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_100_AntiMeleeAttackBarrier_START:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiMeleeAttackBarrier_START.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_100_AntiMeleeAttackBarrier_START:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiMeleeAttackBarrier_START.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY008_100_AntiMeleeAttackBarrier_START",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "詠唱ループへ",
+      "start_frame": 30,
+      "num_frames": 4,
+      "start_time": 1.0,
+      "end_time": 1.1333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY008_100_AntiMeleeAttackBarrier_START:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiMeleeAttackBarrier_START.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY008_100_AntiMeleeAttackBarrier_START",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無し",
+      "num_frames": 36,
+      "end_time": 1.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY008_100_AntiMeleeAttackBarrier_START:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiMeleeAttackBarrier_START.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 610
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

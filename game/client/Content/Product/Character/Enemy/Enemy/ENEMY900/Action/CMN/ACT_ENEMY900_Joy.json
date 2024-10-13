@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_Joy",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Joy",
+      "action_id": 50,
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_Joy'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_Joy.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Joy:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Joy.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY900_Joy",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 61,
+      "num_frames": 26,
+      "start_time": 2.0333335,
+      "end_time": 2.9000003,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_Joy:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Joy.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

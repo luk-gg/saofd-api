@@ -1,0 +1,258 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTTask_RunBehavior_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.9"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.2"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.7"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTDecorator_Blackboard_2'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.4"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTTask_RunBehavior_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.8"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTDecorator_Blackboard_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.5"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTTask_RunBehavior_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTDecorator_Blackboard_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.3"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "Phase Is Equal To 0",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_1",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "IntValue": 3,
+      "CachedDescription": "Phase Is Equal To 3",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_2",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "IntValue": 1,
+      "CachedDescription": "Phase Is Equal To 1",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_3",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "IntValue": 2,
+      "CachedDescription": "Phase Is Equal To 2",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_0",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_2_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/SBT_ENEMY006_W01_Phase_2_Battle.0"
+      },
+      "NodeName": "Battle",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_1_Patrol'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/SBT_ENEMY006_W01_Phase_1_Patrol.0"
+      },
+      "NodeName": "Patrol",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_2",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_2_BattleStart_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_2_BattleStart_BOSS000_Battle.0"
+      },
+      "NodeName": "Battle",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_3",
+    "Outer": "SBT_ENEMY006_W01_Phase_BOSS000_Battle",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/SBT_ENEMY006_W01_Phase_0.0"
+      },
+      "NodeName": "Phase0_初期化",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W01_Phase_BOSS000_Battle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W01_Phase_BOSS000_Battle:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/AI/BehaviorTree/Type/SBT_ENEMY006_W01_Phase_BOSS000_Battle.1"
+      }
+    }
+  }
+]

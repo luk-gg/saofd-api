@@ -1,0 +1,59 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_RBOSS004_Flying_Accell_2",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Flying_accell",
+      "m_action_id": 2300,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Run'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Run.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Air",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Falling",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingTurn",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingAttack",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingTakeOff",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingLanding",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::FlyingAccel",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

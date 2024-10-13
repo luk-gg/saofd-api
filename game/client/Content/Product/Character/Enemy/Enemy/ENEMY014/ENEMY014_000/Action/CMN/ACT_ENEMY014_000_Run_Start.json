@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 500.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY014_000_Run_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Run_Start",
+      "action_id": 20,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY014_Run_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Animation/Montage/MNT_ENEMY014_Run_s.0"
+        },
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Run_Start:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Run_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Run_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Run_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY014_000_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 6,
+      "start_time": 0.26666668,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY014_000_Run_Start:VGActionEvent_0.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY014_000_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 11,
+      "num_frames": 3,
+      "start_time": 0.36666667,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY014_000_Run_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY014_000_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 35,
+      "end_time": 1.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_ENEMY014_000_Run_Start:VGActionEvent_2.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY014_000_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "num_frames": 52,
+      "end_time": 1.7333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY014_000_Run_Start:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Run_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 360.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  }
+]

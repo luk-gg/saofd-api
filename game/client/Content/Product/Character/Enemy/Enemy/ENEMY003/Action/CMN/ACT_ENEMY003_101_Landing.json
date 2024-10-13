@@ -1,0 +1,338 @@
+[
+  {
+    "Type": "SGANStatusBuff",
+    "Name": "SGANStatusBuff_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANStatusBuff'",
+    "Properties": {
+      "buff_id": 27
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Landing",
+      "action_id": 41,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Land"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY003_Landing'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Animation/Montage/MNT_ENEMY003_Landing.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY003_101_Landing:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Landing",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY003_101_Landing:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "石化",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY003_101_Landing:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "半石像化バフ",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "SGANStatusBuff'ACT_ENEMY003_101_Landing:VGActionEvent_2.SGANStatusBuff_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "start_frame": 23,
+      "num_frames": 41,
+      "start_time": 0.7666667,
+      "end_time": 2.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY003_101_Landing:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スパアマ",
+      "start_frame": 9,
+      "num_frames": 51,
+      "start_time": 0.3,
+      "end_time": 2.0,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY003_101_Landing:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY003_101_Landing:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "羽ばたき",
+      "start_frame": 9,
+      "start_time": 0.3,
+      "end_time": 0.33333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY003_101_Landing:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY003_101_Landing",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "石化リム(全身発光処理)",
+      "num_frames": 63,
+      "end_time": 2.1000001,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY003_101_Landing:VGActionEvent_7.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY003/Action/CMN/ACT_ENEMY003_101_Landing.15"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 24,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 25,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 40
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 117.87341,
+        "G": 128.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "FFFF00"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 3.560808,
+        "G": 4.0,
+        "B": 0.0,
+        "A": 0.0,
+        "Hex": "FFFF00"
+      },
+      "dark_color": {
+        "R": 1.0,
+        "G": 0.994037,
+        "B": 0.947917,
+        "A": 0.0,
+        "Hex": "FFFFFA"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_StatusBuff_Up_Defense'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_StatusBuff_Up_Defense.0"
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  }
+]

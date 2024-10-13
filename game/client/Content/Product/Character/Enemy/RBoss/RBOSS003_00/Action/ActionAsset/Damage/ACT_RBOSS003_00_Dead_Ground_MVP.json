@@ -1,0 +1,329 @@
+[
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "AllEnemyKill"
+    }
+  },
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "DeadItemDrop",
+      "m_is_local_control_only": false
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dead_Ground_MVP",
+      "action_id": 2005,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 10000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS003_00_Dead'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Animation/Montage/MNT_RBOSS003_00_Dead.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.12"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ザコ全滅",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_0.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 336,
+      "end_time": 11.200001,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "死亡時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_19.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "非表示＆ヒット無視",
+      "num_frames": 277,
+      "end_time": 9.233334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "自身を破棄（必ず最後に実行される様に配置）",
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_4.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "死亡時エフェクト音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡時アイテムドロップの設定",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_6.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "アイテムドロップ",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANItemDrop'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_7.VGANItemDrop_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_RBOSS003_00_Dead_Ground_MVP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "死亡",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_RBOSS003_00_Dead_Ground_MVP:VGActionEvent_8.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Action/ActionAsset/Damage/ACT_RBOSS003_00_Dead_Ground_MVP.18"
+      }
+    }
+  },
+  {
+    "Type": "VGANItemDrop",
+    "Name": "VGANItemDrop_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANItemDrop'",
+    "Properties": {
+      "is_near_drop_point": true,
+      "is_manual": true,
+      "distance_min": 1000.0,
+      "distance_max": 1500.0
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 15,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 903,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        26
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS007_00_Dead'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS007_00/efs_BOSS007_00_Dead.0"
+      },
+      "emit_node_name": "b_C_Spine",
+      "scale_offset": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      }
+    }
+  }
+]

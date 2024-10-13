@@ -1,0 +1,84 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 250.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY014_000_Walk_Nav_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_Nav_Start",
+      "action_id": 23,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY014_Walk_Forward_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Animation/Montage/MNT_ENEMY014_Walk_Forward_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Walk_Nav_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Walk_Nav_Start.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_000_Walk_Nav_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Walk_Nav_Start.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY014_000_Walk_Nav_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 10,
+      "num_frames": 11,
+      "start_time": 0.33333334,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY014_000_Walk_Nav_Start:VGActionEvent_0.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Walk_Nav_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY014_000_Walk_Nav_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 16,
+      "num_frames": 5,
+      "start_time": 0.53333336,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY014_000_Walk_Nav_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_000/Action/CMN/ACT_ENEMY014_000_Walk_Nav_Start.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 24
+    }
+  }
+]

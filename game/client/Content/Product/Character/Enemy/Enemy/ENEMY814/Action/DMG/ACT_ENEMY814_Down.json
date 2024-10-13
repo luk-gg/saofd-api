@@ -1,0 +1,110 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY814_Down",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Down",
+      "action_id": 30,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Down"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY814_000_Down'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Animation/Montage/MNT_ENEMY814_000_Down.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_Down:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_Down:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_Down:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY814_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_Down:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY814_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "num_frames": 37,
+      "start_time": 0.10000001,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_Down:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY814_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 29,
+      "end_time": 0.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_Down:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_Down.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 31
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        9
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

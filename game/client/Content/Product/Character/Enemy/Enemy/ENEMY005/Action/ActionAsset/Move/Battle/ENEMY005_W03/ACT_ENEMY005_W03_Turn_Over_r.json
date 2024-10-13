@@ -1,0 +1,64 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W03_Turn_Over_r",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W03_Turn_Over_r",
+      "action_id": 51,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W03_Turn_Over_r'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/ENEMY005_W03/MNT_ENEMY005_W03_Turn_Over_r.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W03_Turn_Over_r:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_Turn_Over_r.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY005_W03_Turn_Over_r",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機へ",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W03_Turn_Over_r:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Move/Battle/ENEMY005_W03/ACT_ENEMY005_W03_Turn_Over_r.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Right_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Right_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  }
+]

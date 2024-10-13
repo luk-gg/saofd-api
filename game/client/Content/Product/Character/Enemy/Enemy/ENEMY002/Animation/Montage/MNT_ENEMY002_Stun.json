@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "MNT_ENEMY002_Stun",
+    "Class": "UScriptClass'AnimMontage'",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.5,
+        "BlendOption": "EAlphaBlendOption::Cubic"
+      },
+      "BlendOut": {
+        "BlendTime": 0.1
+      },
+      "BlendOutTriggerTime": 0.5,
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "None",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_ENEMY002_Stun'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Animation/Montage/MNT_ENEMY002_Stun.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 2.4444444,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ENE002_DamageStun'",
+            "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY002_000/ENE002_DamageStun.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'ENE002_DamageStun'",
+                  "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY002_000/ENE002_DamageStun.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.8333334,
+                "AnimPlayRate": 0.75,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "SequenceLength": 2.4444444,
+      "RawCurveData": {
+        "FloatCurves": [
+          {
+            "FloatCurve": {
+              "Keys": [],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "Name": {
+              "DisplayName": "Rim01"
+            },
+            "CurveTypeFlags": 4
+          }
+        ]
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SKL_ENEMY002_000'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Model/Mesh/SKL_ENEMY002_000.6"
+      }
+    },
+    "SkeletonGuid": "767B4292-45CAB22D-57FD09AB-02549A38"
+  }
+]

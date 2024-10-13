@@ -1,0 +1,554 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      },
+      "RootDecorators": [
+        {
+          "ObjectName": "VGBTD_CheckHealth'SBT_ENEMY501_000_Gimmick00:VGBTD_CheckHealth_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'SBT_ENEMY501_000_Gimmick00:SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.12"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.6"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_ENEMY501_GimmickModeCheck_C'SBT_ENEMY501_000_Gimmick00:SBTDecorator_ENEMY501_GimmickModeCheck_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.15"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_ENEMY501_GimmickModeCheck_C'SBT_ENEMY501_000_Gimmick00:SBTDecorator_ENEMY501_GimmickModeCheck_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.14"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_ENEMY501_000_Gimmick00:BTTask_Wait_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_ENEMY501_ActivateHeal_C'SBT_ENEMY501_000_Gimmick00:SBTTask_ENEMY501_ActivateHeal_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_2",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.7"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'SBT_ENEMY501_000_Gimmick00:SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C_2'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.13"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.8"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_ENEMY501_GimmicksReadyChecking_C'SBT_ENEMY501_000_Gimmick00:SBTTask_ENEMY501_OtherReadyChecking_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.18"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetInput'SBT_ENEMY501_000_Gimmick00:VGBTT_SetInput_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.20"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_ENEMY501_000_Gimmick00:BTTask_Wait_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.11"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_4",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_ENEMY501_ActivateHeal_C'SBT_ENEMY501_000_Gimmick00:SBTTask_ENEMY501_ActivateHeal_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.17"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.5"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_5",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishWithResult'SBT_ENEMY501_000_Gimmick00:BTTask_FinishWithResult_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.9"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.5"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishWithResult",
+    "Name": "BTTask_FinishWithResult_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTTask_FinishWithResult'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.8"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_2",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 4.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_3",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 96.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.6"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C",
+    "Name": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C_1",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate.SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'Default__SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate.2"
+    },
+    "Properties": {
+      "CheckHpBarRate": 0.5,
+      "NodeName": "回復発動チェック(HpBar割合0.5以下で発動)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C",
+    "Name": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C_2",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate.SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'Default__SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_CheckPassiveEnemyGimmickHpBarRate.2"
+    },
+    "Properties": {
+      "Comparision": "EVGBTComparision::GreaterEqual",
+      "CheckHpBarRate": 1.0,
+      "NodeName": "回復解除チェック(HpBar割合1以上で解除)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.5"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_ENEMY501_GimmickModeCheck_C",
+    "Name": "SBTDecorator_ENEMY501_GimmickModeCheck_C_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_GimmickModeCheck.SBTDecorator_ENEMY501_GimmickModeCheck_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_ENEMY501_GimmickModeCheck_C'Default__SBTDecorator_ENEMY501_GimmickModeCheck_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_GimmickModeCheck.2"
+    },
+    "Properties": {
+      "EnemyGimmickMode": "ESGEnemyGimmickMode::Heal",
+      "NodeName": "モード(回復)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_ENEMY501_GimmickModeCheck_C",
+    "Name": "SBTDecorator_ENEMY501_GimmickModeCheck_C_1",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_GimmickModeCheck.SBTDecorator_ENEMY501_GimmickModeCheck_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_ENEMY501_GimmickModeCheck_C'Default__SBTDecorator_ENEMY501_GimmickModeCheck_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTDecorator_ENEMY501_GimmickModeCheck.2"
+    },
+    "Properties": {
+      "NodeName": "モード(攻撃)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY501_000_Gimmick00:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_ENEMY501_ActivateHeal_C",
+    "Name": "SBTTask_ENEMY501_ActivateHeal_C_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_ActivateHeal.SBTTask_ENEMY501_ActivateHeal_C'",
+    "Template": {
+      "ObjectName": "SBTTask_ENEMY501_ActivateHeal_C'Default__SBTTask_ENEMY501_ActivateHeal_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_ActivateHeal.3"
+    },
+    "Properties": {
+      "NodeName": "回復状態へ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.4"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_ENEMY501_ActivateHeal_C",
+    "Name": "SBTTask_ENEMY501_ActivateHeal_C_1",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_ActivateHeal.SBTTask_ENEMY501_ActivateHeal_C'",
+    "Template": {
+      "ObjectName": "SBTTask_ENEMY501_ActivateHeal_C'Default__SBTTask_ENEMY501_ActivateHeal_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_ActivateHeal.3"
+    },
+    "Properties": {
+      "Deactive": true,
+      "NodeName": "回復を解除",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_4'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.7"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_ENEMY501_GimmicksReadyChecking_C",
+    "Name": "SBTTask_ENEMY501_OtherReadyChecking_C_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_GimmicksReadyChecking.SBTTask_ENEMY501_GimmicksReadyChecking_C'",
+    "Template": {
+      "ObjectName": "SBTTask_ENEMY501_GimmicksReadyChecking_C'Default__SBTTask_ENEMY501_GimmicksReadyChecking_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/TaskBP/SBTTask_ENEMY501_GimmicksReadyChecking.3"
+    },
+    "Properties": {
+      "NodeName": "他が準備完了しているかチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckHealth",
+    "Name": "VGBTD_CheckHealth_2",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'VGBTD_CheckHealth'",
+    "Properties": {
+      "m_target": "EVGBTActorTargetBB::Self",
+      "m_target_key": {},
+      "m_comparision": "EVGBTComparision::GreaterThan",
+      "NodeName": "生存",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetInput",
+    "Name": "VGBTT_SetInput_0",
+    "Outer": "SBT_ENEMY501_000_Gimmick00",
+    "Class": "UScriptClass'VGBTT_SetInput'",
+    "Properties": {
+      "m_inputs": [
+        {
+          "keys": [
+            27
+          ],
+          "cooldown_point": 0.0,
+          "cooldown_current_target": false,
+          "probability": 100.0
+        }
+      ],
+      "NodeName": "炎の壁",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY501_000_Gimmick00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY501_000_Gimmick00:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/AI/BehaviorTree/Type/SBT_ENEMY501_000_Gimmick00.6"
+      }
+    }
+  }
+]

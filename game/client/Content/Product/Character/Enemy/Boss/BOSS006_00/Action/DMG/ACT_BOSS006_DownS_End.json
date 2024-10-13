@@ -1,0 +1,276 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DownS_End",
+      "action_id": 1051,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS006_DownS_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Animation/Montage/MNT_BOSS006_DownS_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_38'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_DownS_End:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 24,
+      "start_time": 0.8000001,
+      "end_time": 0.83333343,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_DownS_End:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 31,
+      "num_frames": 29,
+      "start_time": 1.0333334,
+      "end_time": 2.0,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS006_DownS_End:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 18,
+      "start_time": 0.6,
+      "end_time": 0.6333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_DownS_End:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 11,
+      "start_time": 0.36666667,
+      "end_time": 0.4,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_DownS_End:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_38",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_DownS_End:VGActionEvent_38.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_BOSS006_DownS_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 29,
+      "start_time": 0.9666667,
+      "end_time": 1.0,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_DownS_End:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/DMG/ACT_BOSS006_DownS_End.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_38",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 33,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_BOSS007_00_Phase",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_BOSS007_00_Phase",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_BOSS007_00_Phase:BTTask_RunBehavior_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.4"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_BOSS007_00_Phase:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.2"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_BOSS007_00_Phase:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.3"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_BOSS007_00_Phase",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "Phase Is Equal To 0",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_BOSS007_00_Phase",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_PhaseTask'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_PhaseTask.0"
+      },
+      "NodeName": "フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_3",
+    "Outer": "SBT_BOSS007_00_Phase",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase_0.0"
+      },
+      "NodeName": "Phase0_初期化",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_BOSS007_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_BOSS007_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/AI/BehaviorTree/Tree/SBT_BOSS007_00_Phase.1"
+      }
+    }
+  }
+]

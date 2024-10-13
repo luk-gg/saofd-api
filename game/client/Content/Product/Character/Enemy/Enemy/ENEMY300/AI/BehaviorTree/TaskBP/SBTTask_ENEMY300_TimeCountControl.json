@@ -1,0 +1,194 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SBTTask_ENEMY300_TimeCountControl_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SBTTask_ENEMY300_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_Base.0"
+    },
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'SBTTask_ENEMY300_TimeCountControl_C:ExecuteUbergraph_SBTTask_ENEMY300_TimeCountControl'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SBTTask_ENEMY300_TimeCountControl_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.2"
+      },
+      {
+        "ObjectName": "Function'SBTTask_ENEMY300_TimeCountControl_C:ExecuteUbergraph_SBTTask_ENEMY300_TimeCountControl'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "TimeCountStopFlag",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SBTTask_ENEMY300_TimeCountControl": {
+        "ObjectName": "Function'SBTTask_ENEMY300_TimeCountControl_C:ExecuteUbergraph_SBTTask_ENEMY300_TimeCountControl'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.1"
+      },
+      "ReceiveExecuteAI": {
+        "ObjectName": "Function'SBTTask_ENEMY300_TimeCountControl_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SBTTask_ENEMY300_TimeCountControl_C'Default__SBTTask_ENEMY300_TimeCountControl_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SBTTask_ENEMY300_TimeCountControl",
+    "Outer": "SBTTask_ENEMY300_TimeCountControl_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Initialize_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_ENEMY300_000",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_ENEMY300_000_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/AIC_ENEMY300_000.2"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecuteAI",
+    "Outer": "SBTTask_ENEMY300_TimeCountControl_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveExecuteAI'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SBTTask_ENEMY300_TimeCountControl_C",
+    "Name": "Default__SBTTask_ENEMY300_TimeCountControl_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_TimeCountControl.SBTTask_ENEMY300_TimeCountControl_C'",
+    "Template": {
+      "ObjectName": "SBTTask_ENEMY300_Base_C'Default__SBTTask_ENEMY300_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/AI/BehaviorTree/TaskBP/SBTTask_ENEMY300_Base.4"
+    },
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

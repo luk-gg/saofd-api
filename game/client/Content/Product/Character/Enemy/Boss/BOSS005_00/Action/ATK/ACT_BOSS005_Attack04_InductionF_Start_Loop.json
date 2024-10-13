@@ -1,0 +1,233 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack04_InductionF_Start_Loop",
+      "action_id": 104,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS005_Attack03_Induction_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Animation/Montage/MNT_BOSS005_Attack03_Induction_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "誘導弾溜めエネルギー",
+      "start_frame": 29,
+      "num_frames": 77,
+      "start_time": 0.9666667,
+      "end_time": 3.5333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_0.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃時ボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_1.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 36,
+      "num_frames": 70,
+      "start_time": 1.2,
+      "end_time": 3.5333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_2.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "チャージ音",
+      "start_frame": 29,
+      "num_frames": 77,
+      "start_time": 0.9666667,
+      "end_time": 3.5333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_3.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_BOSS005_Attack04_InductionF_Start_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS005_Attack04_InductionF_Start_Loop:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/ATK/ACT_BOSS005_Attack04_InductionF_Start_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 8,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 105,
+      "activation_time": 2.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 9,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS005_00_MissileCharge_LongTime'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS005_00/efs_BOSS005_00_MissileCharge_LongTime.0"
+      },
+      "emit_owner_type": "EVGANVfxOwnerType::Weapon",
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY803_Revival",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Revival",
+      "action_id": 610,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY803_Idle'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Animation/Montage/MNT_ENEMY803_Idle.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Revival:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Revival:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Revival:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Revival:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY803_Revival",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現音",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY803_Revival:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY803_Revival",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY803_Revival:VGActionEvent_10.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY803_Revival",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 53,
+      "num_frames": 20,
+      "start_time": 1.7666668,
+      "end_time": 2.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY803_Revival:VGActionEvent_12.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY803_Revival",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 23,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY803_Revival:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Revival.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Respawn'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Respawn.0"
+      }
+    }
+  }
+]

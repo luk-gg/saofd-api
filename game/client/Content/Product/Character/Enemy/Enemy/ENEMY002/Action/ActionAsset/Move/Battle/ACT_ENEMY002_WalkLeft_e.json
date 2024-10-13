@@ -1,0 +1,204 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WalkLeft_e",
+      "action_id": 35,
+      "states": [
+        "EVGActionState::Walk",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY002_WalkLeft_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Animation/Montage/MNT_ENEMY002_WalkLeft_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_WalkLeft_e:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_WalkLeft_e:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_WalkLeft_e:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_WalkLeft_e:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_WalkLeft_e:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "後退へ",
+      "num_frames": 44,
+      "end_time": 1.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY002_WalkLeft_e:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "前進へ",
+      "num_frames": 44,
+      "end_time": 1.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY002_WalkLeft_e:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "中断可能",
+      "num_frames": 12,
+      "end_time": 0.40000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY002_WalkLeft_e:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "右へ",
+      "num_frames": 44,
+      "end_time": 1.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY002_WalkLeft_e:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY002_WalkLeft_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 9,
+      "num_frames": 9,
+      "start_time": 0.3,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY002_WalkLeft_e:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_WalkLeft_e.9"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 20,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Back'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Back.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 10,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Forward'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Forward.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 40,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_L_Stick_Right'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_L_Stick_Right.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  }
+]

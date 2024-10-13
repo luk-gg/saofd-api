@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageBackAir",
+      "action_id": 40,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY814_000_DamageBackAir'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Animation/Montage/MNT_ENEMY814_000_DamageBackAir.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageBackAir:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageBackAir:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageBackAir:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageBackAir:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY814_DamageBackAir:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 8,
+      "start_time": 0.43333337,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_DamageBackAir:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "重力無視",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_DamageBackAir:VGActionEvent_10.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 18,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY814_DamageBackAir:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地遷移",
+      "start_frame": 11,
+      "num_frames": 7,
+      "start_time": 0.36666667,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_DamageBackAir:VGActionEvent_12.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY814_DamageBackAir",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ中に地面についたらダウンへ",
+      "start_frame": 1,
+      "num_frames": 10,
+      "start_time": 0.033333335,
+      "end_time": 0.36666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY814_DamageBackAir:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY814/Action/DMG/ACT_ENEMY814_DamageBackAir.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "branch_priority": 200,
+      "action_id": 28
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 30
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 30
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        15
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16,
+        0
+      ]
+    }
+  }
+]

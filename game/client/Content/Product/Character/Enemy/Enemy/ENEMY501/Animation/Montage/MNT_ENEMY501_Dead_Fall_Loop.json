@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "AnimMontage",
+    "Name": "MNT_ENEMY501_Dead_Fall_Loop",
+    "Class": "UScriptClass'AnimMontage'",
+    "Properties": {
+      "BlendIn": {
+        "BlendTime": 0.1
+      },
+      "BlendOut": {
+        "BlendTime": 0.1
+      },
+      "BlendOutTriggerTime": 0.0,
+      "CompositeSections": [
+        {
+          "SectionName": "Default",
+          "NextSectionName": "Loop",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_ENEMY501_Dead_Fall_Loop'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Animation/Montage/MNT_ENEMY501_Dead_Fall_Loop.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 0,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 0.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 0.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ENE501_DeadDown_LOOP'",
+            "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY501_000/ENE501_DeadDown_LOOP.0"
+          }
+        },
+        {
+          "SectionName": "Loop",
+          "NextSectionName": "Loop",
+          "MetaData": [],
+          "LinkedMontage": {
+            "ObjectName": "AnimMontage'MNT_ENEMY501_Dead_Fall_Loop'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Animation/Montage/MNT_ENEMY501_Dead_Fall_Loop.0"
+          },
+          "SlotIndex": 0,
+          "SegmentIndex": 1,
+          "LinkMethod": "EAnimLinkMethod::Absolute",
+          "CachedLinkMethod": "EAnimLinkMethod::Absolute",
+          "SegmentBeginTime": 1.0,
+          "SegmentLength": 1.0,
+          "LinkValue": 1.0,
+          "LinkedSequence": {
+            "ObjectName": "AnimSequence'ENE501_DeadDown_LOOP'",
+            "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY501_000/ENE501_DeadDown_LOOP.0"
+          }
+        }
+      ],
+      "SlotAnimTracks": [
+        {
+          "SlotName": "DefaultSlot",
+          "AnimTrack": {
+            "AnimSegments": [
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'ENE501_DeadDown_LOOP'",
+                  "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY501_000/ENE501_DeadDown_LOOP.0"
+                },
+                "StartPos": 0.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.0,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              },
+              {
+                "AnimReference": {
+                  "ObjectName": "AnimSequence'ENE501_DeadDown_LOOP'",
+                  "ObjectPath": "/Game/Product/AnimSequence/Monster/ENEMY501_000/ENE501_DeadDown_LOOP.0"
+                },
+                "StartPos": 1.0,
+                "AnimStartTime": 0.0,
+                "AnimEndTime": 1.0,
+                "AnimPlayRate": 1.0,
+                "LoopingCount": 1
+              }
+            ]
+          }
+        }
+      ],
+      "SequenceLength": 2.0,
+      "RawCurveData": {
+        "FloatCurves": [
+          {
+            "FloatCurve": {
+              "Keys": [
+                {
+                  "InterpMode": "RCIM_Linear",
+                  "TangentMode": "RCTM_Auto",
+                  "TangentWeightMode": "RCTWM_WeightedNone",
+                  "Time": 0.06666667,
+                  "Value": 1.0,
+                  "ArriveTangent": 0.0,
+                  "ArriveTangentWeight": 0.0,
+                  "LeaveTangent": 0.0,
+                  "LeaveTangentWeight": 0.0
+                }
+              ],
+              "DefaultValue": 3.4028235E+38,
+              "PreInfinityExtrap": "RCCE_Constant",
+              "PostInfinityExtrap": "RCCE_Constant"
+            },
+            "Name": {
+              "DisplayName": "Rim02"
+            },
+            "CurveTypeFlags": 4
+          }
+        ]
+      },
+      "Skeleton": {
+        "ObjectName": "Skeleton'SKL_ENEMY501_000'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Model/Mesh/SKL_ENEMY501_000.9"
+      }
+    },
+    "SkeletonGuid": "5C824EAA-4B5826AA-2471459B-BFE36C0C"
+  }
+]

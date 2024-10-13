@@ -1,0 +1,261 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      },
+      "RootDecorators": [
+        {
+          "ObjectName": "VGBTD_CheckHealth'SBT_ENEMY006_W02:VGBTD_CheckHealth_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_11",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SGBTT_ResetAttackAction'SBT_ENEMY006_W02:SGBTT_ResetAttackAction_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_ENEMY006_W02:VGBTD_CheckActionState_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.8"
+            },
+            {
+              "ObjectName": "SGBTD_CheckDamageReaction'SBT_ENEMY006_W02:SGBTD_CheckDamageReaction_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.5"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_ENEMY006_W02:BTTask_Wait_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.3"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckHealth'SBT_ENEMY006_W02:VGBTD_CheckHealth_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.10"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_ENEMY006_W02:BTTask_Wait_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.4"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionInterruptible'SBT_ENEMY006_W02:VGBTD_CheckActionInterruptible_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.7"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_ENEMY006_W02:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.2"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02_Phase.0"
+      },
+      "NodeName": "フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_2",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_3",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 0.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTD_CheckDamageReaction",
+    "Name": "SGBTD_CheckDamageReaction_1",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'SGBTD_CheckDamageReaction'",
+    "Properties": {
+      "NodeName": "ダメージリアクション中",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "SGBTT_ResetAttackAction",
+    "Name": "SGBTT_ResetAttackAction_2",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'SGBTT_ResetAttackAction'",
+    "Properties": {
+      "m_attack_name_bb": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "攻撃アクションのリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionInterruptible",
+    "Name": "VGBTD_CheckActionInterruptible_0",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'VGBTD_CheckActionInterruptible'",
+    "Properties": {
+      "m_target_key": {},
+      "bInverseCondition": true,
+      "NodeName": "行動中チェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_3",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Dead",
+        "EVGActionState::Damage"
+      ],
+      "NodeName": "ダメージ系の発生チェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckHealth",
+    "Name": "VGBTD_CheckHealth_0",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'VGBTD_CheckHealth'",
+    "Properties": {
+      "m_target": "EVGBTActorTargetBB::Self",
+      "m_target_key": {},
+      "m_comparision": "EVGBTComparision::GreaterThan",
+      "NodeName": "生存",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckHealth",
+    "Name": "VGBTD_CheckHealth_1",
+    "Outer": "SBT_ENEMY006_W02",
+    "Class": "UScriptClass'VGBTD_CheckHealth'",
+    "Properties": {
+      "m_target": "EVGBTActorTargetBB::Self",
+      "m_target_key": {},
+      "m_comparision": "EVGBTComparision::LessEqual",
+      "NodeName": "死亡チェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY006_W02'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY006_W02:BTComposite_Selector_11'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W02/AI/BehaviorTree/SBT_ENEMY006_W02.1"
+      }
+    }
+  }
+]

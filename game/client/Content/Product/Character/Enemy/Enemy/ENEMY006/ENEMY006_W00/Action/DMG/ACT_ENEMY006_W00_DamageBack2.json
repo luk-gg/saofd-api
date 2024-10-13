@@ -1,0 +1,279 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 50.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageBack2",
+      "action_id": 201,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY006_W00_DamageBack2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Animation/Montage/MNT_ENEMY006_W00_DamageBack2.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 3,
+      "start_time": 0.033333335,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 20,
+      "num_frames": 6,
+      "start_time": 0.6666667,
+      "end_time": 0.8666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下遷移",
+      "start_frame": 5,
+      "num_frames": 31,
+      "start_time": 0.16666667,
+      "end_time": 1.2,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 3,
+      "start_time": 0.033333335,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_4.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 3,
+      "start_time": 0.033333335,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_5.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY006_W00_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 4,
+      "start_time": 0.13333334,
+      "end_time": 0.16666667,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY006_W00_DamageBack2:VGActionEvent_6.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/DMG/ACT_ENEMY006_W00_DamageBack2.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 4,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 50,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Brake_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Brake_s_lo.0"
+      },
+      "location_offset": {
+        "X": 40.0,
+        "Y": -25.0,
+        "Z": 0.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Brake_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Brake_s_lo.0"
+      },
+      "location_offset": {
+        "X": -40.0,
+        "Y": 35.0,
+        "Z": 0.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

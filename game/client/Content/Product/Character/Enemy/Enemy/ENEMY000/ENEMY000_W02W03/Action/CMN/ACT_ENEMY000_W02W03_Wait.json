@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "SGANNoticeSpawned",
+    "Name": "SGANNoticeSpawned_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANNoticeSpawned'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W02W03_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WaitB_Loop",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_W03_WaitB'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Animation/Montage/MNT_ENE000_W03_WaitB.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_Wait:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY000_W02W03_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANNoticeSpawned'ACT_ENEMY000_W02W03_Wait:VGActionEvent_0.SGANNoticeSpawned_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Wait.0"
+      }
+    }
+  }
+]

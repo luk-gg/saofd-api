@@ -1,0 +1,118 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY006_W01_ParryDamage",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "ParryDamage",
+      "action_id": 220,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY006_W01_ParryDamage'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Animation/Montage/MNT_ENEMY006_W01_ParryDamage.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY006_W01_ParryDamage",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY006_W01_ParryDamage",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 48,
+      "num_frames": 6,
+      "start_time": 1.6000001,
+      "end_time": 1.8000002,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_ENEMY006_W01_ParryDamage",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY006_W01_ParryDamage:VGActionEvent_14.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W01/Action/DMG/ACT_ENEMY006_W01_ParryDamage.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 4,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

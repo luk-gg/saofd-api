@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS002_00_DownS_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DownS_e",
+      "action_id": 2405,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS002_00_DownS_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Animation/Montage/MNT_RBOSS002_00_DownS_e.0"
+        }
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_DownS_e:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_DownS_e:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_DownS_e:VGActionEvent_64'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_RBOSS002_00_DownS_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 59,
+      "num_frames": 9,
+      "start_time": 1.9666668,
+      "end_time": 2.266667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS002_00_DownS_e:VGActionEvent_13.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS002_00_DownS_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウン中：部位破壊無効",
+      "num_frames": 170,
+      "end_time": 5.666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS002_00_DownS_e:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_64",
+    "Outer": "ACT_RBOSS002_00_DownS_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS002_00_DownS_e:VGActionEvent_64.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Damage/ACT_RBOSS002_00_DownS_e.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_64",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 6,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_c_base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  }
+]

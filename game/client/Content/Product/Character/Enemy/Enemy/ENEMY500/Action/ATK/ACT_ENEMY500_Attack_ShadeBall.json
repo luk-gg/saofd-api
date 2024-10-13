@@ -1,0 +1,516 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "SGANSActionRotationHold",
+    "Name": "SGANSActionRotationHold_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSActionRotationHold'"
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 250000200,
+      "position": {
+        "X": 350.0,
+        "Y": 0.0,
+        "Z": 280.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::CurrentAITarget",
+      "use_injection_limit_angle": true,
+      "injection_limit_angle": 45.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "ShadeBall",
+      "action_id": 120,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY500_Attack_FireBall'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Animation/Montage/MNT_ENEMY500_Attack_FireBall.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_153'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_30'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_102'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 6,
+      "end_time": 0.20000002,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_0.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "リム(全身発光処理)",
+      "num_frames": 105,
+      "end_time": 3.5000002,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_1.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 90,
+      "num_frames": 3,
+      "start_time": 3.0000002,
+      "end_time": 3.1000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_102",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 83,
+      "start_time": 2.766667,
+      "end_time": 2.8000002,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_102.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_153",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_153.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "火炎弾マズル",
+      "start_frame": 39,
+      "start_time": 1.3000001,
+      "end_time": 1.3333334,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_30",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 83,
+      "start_time": 2.766667,
+      "end_time": 2.8000002,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_30.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 31,
+      "start_time": 1.0333334,
+      "end_time": 1.0666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 39,
+      "num_frames": 29,
+      "start_time": 1.3000001,
+      "end_time": 2.266667,
+      "notify_state": {
+        "ObjectName": "SGANSActionRotationHold'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_6.SGANSActionRotationHold_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "num_frames": 7,
+      "start_time": 0.8000001,
+      "end_time": 1.0333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_7.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY500_Attack_ShadeBall",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "火炎弾",
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY500_Attack_ShadeBall:VGActionEvent_9.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/ATK/ACT_ENEMY500_Attack_ShadeBall.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_153",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 15,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 16,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_30",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.378116,
+        "G": 0.0,
+        "B": 0.984375,
+        "A": 0.0,
+        "Hex": "A600FE"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 0.043607,
+        "G": 0.031563,
+        "B": 0.286458,
+        "A": 0.0,
+        "Hex": "3B3192"
+      },
+      "dark_color": {
+        "R": 0.529885,
+        "G": 0.799854,
+        "B": 0.932292,
+        "A": 0.0,
+        "Hex": "C1E8F8"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_102",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "VFX_b_R_Toe",
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY500_100_FireBall_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY500/efs_ENEMY500_100_FireBall_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 400.0,
+        "Z": 300.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 90.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "VFX_b_R_Toe",
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  }
+]

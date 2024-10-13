@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_target_range": 1000.0,
+      "m_rotate_degree_second": 180.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY501_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY501_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Animation/Montage/MNT_ENEMY501_Wait.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_Wait:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/CMN/ACT_ENEMY501_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY501_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットの方へ向きを向かせる",
+      "num_frames": 205,
+      "end_time": 6.8333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY501_Wait:VGActionEvent_5.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/CMN/ACT_ENEMY501_Wait.0"
+      }
+    }
+  }
+]

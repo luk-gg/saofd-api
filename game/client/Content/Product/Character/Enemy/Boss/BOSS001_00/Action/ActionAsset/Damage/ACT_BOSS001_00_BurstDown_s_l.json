@@ -1,0 +1,254 @@
+[
+  {
+    "Type": "SGANCallQuestEvent",
+    "Name": "SGANCallQuestEvent_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'SGANCallQuestEvent'",
+    "Properties": {
+      "event_name": "BOSS_Down"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "BurstDown_START_LOOP",
+      "action_id": 2200,
+      "states": [
+        "EVGActionState::Down",
+        "EVGActionState::BurstDown"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS001_00_Down_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Animation/Montage/MNT_BOSS001_00_Down_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 97,
+      "end_time": 3.2333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤーボイス再生",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANCallQuestEvent'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_15.SGANCallQuestEvent_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダウン中：部位破壊無効",
+      "num_frames": 170,
+      "end_time": 5.666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "地面ダウン音",
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_BOSS001_00_BurstDown_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "起き上がり",
+      "start_frame": 38,
+      "num_frames": 63,
+      "start_time": 1.2666668,
+      "end_time": 3.3666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS001_00_BurstDown_s_l:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS001_00/Action/ActionAsset/Damage/ACT_BOSS001_00_BurstDown_s_l.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 25,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 31,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2210,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::BurstGaugeRatio",
+              "eval": "EVGTriggerStateConditionEval::Equal",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  }
+]

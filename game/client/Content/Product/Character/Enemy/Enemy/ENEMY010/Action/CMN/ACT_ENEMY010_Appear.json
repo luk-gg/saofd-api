@@ -1,0 +1,234 @@
+[
+  {
+    "Type": "SGANNoticeSpawned",
+    "Name": "SGANNoticeSpawned_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANNoticeSpawned'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Appear",
+      "action_id": 500,
+      "states": [
+        "EVGActionState::Appear"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY010_Appear'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Animation/Montage/MNT_ENEMY010_Appear.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY010_Appear:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 27,
+      "num_frames": 5,
+      "start_time": 0.90000004,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY010_Appear:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANNoticeSpawned'ACT_ENEMY010_Appear:VGActionEvent_1.SGANNoticeSpawned_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現リム(全身発光処理)",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY010_Appear:VGActionEvent_2.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 17,
+      "end_time": 0.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY010_Appear:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現エフェクト",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY010_Appear:VGActionEvent_4.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY010_Appear",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "出現SE",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY010_Appear:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY010/Action/CMN/ACT_ENEMY010_Appear.8"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 920,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.0,
+        "G": 64.0,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 1.0,
+        "G": 2.0,
+        "B": 4.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "dark_color": {
+        "R": 0.0,
+        "G": 24.0,
+        "B": 64.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENE_Respawn_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyCommon/efs_ENE_Respawn_s.0"
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  }
+]

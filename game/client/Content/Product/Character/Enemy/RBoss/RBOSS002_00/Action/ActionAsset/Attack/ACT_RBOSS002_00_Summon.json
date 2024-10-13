@@ -1,0 +1,237 @@
+[
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "SpawnSummonGate"
+    }
+  },
+  {
+    "Type": "SGANEnemySkillAddCount",
+    "Name": "SGANEnemySkillAddCount_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANEnemySkillAddCount'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Summon",
+      "action_id": 1300,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS002_00_Summon'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Animation/Montage/MNT_RBOSS002_00_Summon.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS002_00_Summon:VGActionEvent_25'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃カウンタ加算",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANEnemySkillAddCount'ACT_RBOSS002_00_Summon:VGActionEvent_0.SGANEnemySkillAddCount_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 189,
+      "num_frames": 9,
+      "start_time": 6.3,
+      "end_time": 6.6000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS002_00_Summon:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音2",
+      "start_frame": 12,
+      "start_time": 0.40000004,
+      "end_time": 0.43333337,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS002_00_Summon:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音1",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS002_00_Summon:VGActionEvent_13.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_25",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音3",
+      "start_frame": 120,
+      "start_time": 4.0,
+      "end_time": 4.0333333,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS002_00_Summon:VGActionEvent_25.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS002_00_Summon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "召喚ゲートの召喚",
+      "start_frame": 84,
+      "start_time": 2.8000002,
+      "end_time": 2.8333335,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_RBOSS002_00_Summon:VGActionEvent_3.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS002_00/Action/ActionAsset/Attack/ACT_RBOSS002_00_Summon.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 7,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_25",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 6,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

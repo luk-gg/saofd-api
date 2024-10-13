@@ -1,0 +1,297 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 360.0
+    }
+  },
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -225.0,
+        "Z": 0.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::Capsule",
+      "box_half_extent_x": 210.0,
+      "box_half_extent_y": 210.0,
+      "box_half_extent_z": 400.0,
+      "capsule_radius": 250.0,
+      "capsule_half_height": 250.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Right",
+      "action_id": 31,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY509_Turn_r'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Animation/Montage/MNT_ENEMY509_Turn_r.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_Turn_Right:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 36,
+      "num_frames": 19,
+      "start_time": 1.2,
+      "end_time": 1.8333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY509_Turn_Right:VGActionEvent_1.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動き音",
+      "start_frame": 58,
+      "start_time": 1.9333334,
+      "end_time": 1.9666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_Turn_Right:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動き音",
+      "start_frame": 36,
+      "start_time": 1.2,
+      "end_time": 1.2333333,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_Turn_Right:VGActionEvent_18.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "衝撃波",
+      "start_frame": 58,
+      "start_time": 1.9333334,
+      "end_time": 1.9666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY509_Turn_Right:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 86,
+      "num_frames": 7,
+      "start_time": 2.8666668,
+      "end_time": 3.1000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY509_Turn_Right:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "start_frame": 37,
+      "num_frames": 26,
+      "start_time": 1.2333333,
+      "end_time": 2.1000001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_ENEMY509_Turn_Right:VGActionEvent_8.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY509_Turn_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動き音",
+      "start_frame": 13,
+      "start_time": 0.43333337,
+      "end_time": 0.4666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_Turn_Right:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/CMN/ACT_ENEMY509_Turn_Right.12"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 21,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 19,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY509_TurnJump02'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY509/efs_ENEMY509_TurnJump02.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": -40.0,
+        "Z": 0.0
+      },
+      "scale_offset": {
+        "X": 1.1,
+        "Y": 1.1,
+        "Z": 1.1
+      }
+    }
+  }
+]

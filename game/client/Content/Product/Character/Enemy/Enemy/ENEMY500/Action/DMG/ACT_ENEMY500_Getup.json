@@ -1,0 +1,152 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY500_Getup",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Getup",
+      "action_id": 1051,
+      "states": [
+        "EVGActionState::Rise"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY500_Getup'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Animation/Montage/MNT_ENEMY500_Getup.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Getup:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Getup:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Getup:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY500_Getup:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY500_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 33,
+      "num_frames": 8,
+      "start_time": 1.1,
+      "end_time": 1.3666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY500_Getup:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY500_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 41,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY500_Getup:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY500_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 41,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY500_Getup:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY500_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 16,
+      "start_time": 0.53333336,
+      "end_time": 0.5666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY500_Getup:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY500/Action/DMG/ACT_ENEMY500_Getup.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  }
+]

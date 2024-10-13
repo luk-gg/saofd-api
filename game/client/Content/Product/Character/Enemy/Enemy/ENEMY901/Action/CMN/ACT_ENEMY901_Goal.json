@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY901_Goal",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Goal",
+      "action_id": 3,
+      "states": [
+        "EVGActionState::Idle",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY901_Goal'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Animation/Montage/MNT_ENEMY901_Goal.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY901_Goal:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Action/CMN/ACT_ENEMY901_Goal.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY901_Goal",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 72,
+      "end_time": 2.4,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY901_Goal:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Action/CMN/ACT_ENEMY901_Goal.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "Type": "VGTriggerAsset",
+    "Name": "TRG_BOSS007_00_ATTACK08_BOTH_HANDS_JUMP_ATTACK",
+    "Class": "UScriptClass'VGTriggerAsset'",
+    "Properties": {
+      "m_uid": "Attack08_BothHandsJumpAttack",
+      "m_action_id": 310,
+      "m_trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_Left_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_Left_Down.0"
+            },
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_X_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_X_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

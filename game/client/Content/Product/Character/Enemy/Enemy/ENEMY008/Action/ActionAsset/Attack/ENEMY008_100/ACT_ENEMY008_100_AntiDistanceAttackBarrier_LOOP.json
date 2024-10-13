@@ -1,0 +1,96 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "AntiDistanceAttackBarrier_LOOP",
+      "action_id": 710,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY008_000_Attack04_Speciality_LOOP'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Animation/Montage/MNT_ENEMY008_000_Attack04_Speciality_LOOP.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "詠唱終了判定",
+      "num_frames": 76,
+      "end_time": 2.5333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無し",
+      "num_frames": 47,
+      "end_time": 1.5666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY008/Action/ActionAsset/Attack/ENEMY008_100/ACT_ENEMY008_100_AntiDistanceAttackBarrier_LOOP.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 720,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R1_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R1_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        14
+      ]
+    }
+  }
+]

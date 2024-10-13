@@ -1,0 +1,66 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY009_Freeze",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Freeze",
+      "action_id": 250,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "priority": 150,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY009_Freeze'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Animation/Montage/MNT_ENEMY009_Freeze.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Freeze:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Freeze.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY009_Freeze",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 33,
+      "start_time": 0.033333335,
+      "end_time": 1.1333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY009_Freeze:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Freeze.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsAilmentFreeze",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY901_Turn_Left",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Left",
+      "action_id": 5,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY901_Turn_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Animation/Montage/MNT_ENEMY901_Turn_l.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY901_Turn_Left:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Action/CMN/ACT_ENEMY901_Turn_Left.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY901_Turn_Left",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 3,
+      "start_time": 0.7666667,
+      "end_time": 0.86666673,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY901_Turn_Left:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY901/Action/CMN/ACT_ENEMY901_Turn_Left.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

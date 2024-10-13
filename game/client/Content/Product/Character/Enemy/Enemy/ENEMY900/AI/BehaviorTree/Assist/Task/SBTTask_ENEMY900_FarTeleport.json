@@ -1,0 +1,170 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SBTTask_ENEMY900_FarTeleport_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SBTTask_Enemy_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_Base.0"
+    },
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'SBTTask_ENEMY900_FarTeleport_C:ExecuteUbergraph_SBTTask_ENEMY900_FarTeleport'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.1"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SBTTask_ENEMY900_FarTeleport_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.2"
+      },
+      {
+        "ObjectName": "Function'SBTTask_ENEMY900_FarTeleport_C:ExecuteUbergraph_SBTTask_ENEMY900_FarTeleport'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SBTTask_ENEMY900_FarTeleport": {
+        "ObjectName": "Function'SBTTask_ENEMY900_FarTeleport_C:ExecuteUbergraph_SBTTask_ENEMY900_FarTeleport'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.1"
+      },
+      "ReceiveExecuteAI": {
+        "ObjectName": "Function'SBTTask_ENEMY900_FarTeleport_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SBTTask_ENEMY900_FarTeleport_C'Default__SBTTask_ENEMY900_FarTeleport_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SBTTask_ENEMY900_FarTeleport",
+    "Outer": "SBTTask_ENEMY900_FarTeleport_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGAssistFollowMovementComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecuteAI",
+    "Outer": "SBTTask_ENEMY900_FarTeleport_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveExecuteAI'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SBTTask_ENEMY900_FarTeleport_C",
+    "Name": "Default__SBTTask_ENEMY900_FarTeleport_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY900/AI/BehaviorTree/Assist/Task/SBTTask_ENEMY900_FarTeleport.SBTTask_ENEMY900_FarTeleport_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Base_C'Default__SBTTask_Enemy_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_Base.6"
+    },
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 201100000,
+      "position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 400.0
+      },
+      "scale": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::CurrentAITarget"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01",
+      "action_id": 100,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY011_100_Attack01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Animation/Montage/MNT_ENEMY011_100_Attack01.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 85,
+      "num_frames": 8,
+      "start_time": 2.8333335,
+      "end_time": 3.1000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 50,
+      "num_frames": 26,
+      "start_time": 1.6666667,
+      "end_time": 2.5333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_1.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "EFXSpore",
+      "start_frame": 52,
+      "start_time": 1.7333335,
+      "end_time": 1.7666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 50,
+      "num_frames": 26,
+      "start_time": 1.6666667,
+      "end_time": 2.5333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 50,
+      "num_frames": 26,
+      "start_time": 1.6666667,
+      "end_time": 2.5333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_4.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "num_frames": 26,
+      "end_time": 0.86666673,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "EFXSpore",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY011_100_Attack01_Poison",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "アシッドボム",
+      "start_frame": 52,
+      "start_time": 1.7333335,
+      "end_time": 1.7666668,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY011_100_Attack01_Poison:VGActionEvent_9.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack01_Poison.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 250.0
+      },
+      "rotation_offset": {
+        "Pitch": 45.0,
+        "Yaw": 0.0,
+        "Roll": -30.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 250.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 250.0
+      },
+      "rotation_offset": {
+        "Pitch": -45.0,
+        "Yaw": 0.0,
+        "Roll": 30.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 250.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  }
+]

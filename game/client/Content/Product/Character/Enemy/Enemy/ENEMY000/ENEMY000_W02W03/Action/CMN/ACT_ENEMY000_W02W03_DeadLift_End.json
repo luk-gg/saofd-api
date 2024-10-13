@@ -1,0 +1,195 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DeadLift_End",
+      "action_id": 2006,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 1000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_W03_DeadLift_End'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Animation/Montage/MNT_ENE000_W03_DeadLift_End.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡リム(全身発光処理)",
+      "num_frames": 11,
+      "end_time": 0.36666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_0.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANIgnoreBody'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_2.VGANIgnoreBody_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANItemDrop'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_5.VGANItemDrop_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY000_W02W03_DeadLift_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡(スケール対応なし)",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY000_W02W03_DeadLift_End:VGActionEvent_7.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_DeadLift_End.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANIgnoreBody",
+    "Name": "VGANIgnoreBody_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANIgnoreBody'"
+  },
+  {
+    "Type": "VGANItemDrop",
+    "Name": "VGANItemDrop_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANItemDrop'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.0,
+        "G": 64.0,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 1.0,
+        "G": 2.0,
+        "B": 4.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "dark_color": {
+        "R": 0.0,
+        "G": 24.0,
+        "B": 64.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENE_Dead_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyCommon/efs_ENE_Dead_s.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": -40.0,
+        "Z": 0.0
+      },
+      "is_affected_mesh_scale": false
+    }
+  }
+]

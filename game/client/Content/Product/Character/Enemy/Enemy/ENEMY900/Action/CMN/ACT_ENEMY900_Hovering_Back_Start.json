@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_Hovering_Back_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Hovering_Back_Start",
+      "action_id": 23,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_Hovering_Back_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_Hovering_Back_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_Hovering_Back_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Hovering_Back_Start.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_Hovering_Back_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "num_frames": 9,
+      "start_time": 0.3,
+      "end_time": 0.6,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_Hovering_Back_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/CMN/ACT_ENEMY900_Hovering_Back_Start.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 24
+    }
+  }
+]

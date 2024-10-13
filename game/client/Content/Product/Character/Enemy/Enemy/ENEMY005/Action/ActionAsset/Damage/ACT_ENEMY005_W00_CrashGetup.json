@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W00_CrashGetup",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W00_CrashGetup",
+      "action_id": 2510,
+      "states": [
+        "EVGActionState::Rise"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_W00_CrashGetup'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/MNT_ENEMY005_W00_CrashGetup.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_20'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY005_W00_CrashGetup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "転倒状態",
+      "num_frames": 34,
+      "end_time": 1.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY005_W00_CrashGetup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 8,
+      "num_frames": 18,
+      "start_time": 0.26666668,
+      "end_time": 0.8666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_20",
+    "Outer": "ACT_ENEMY005_W00_CrashGetup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "起き上がり音",
+      "start_frame": 7,
+      "start_time": 0.23333335,
+      "end_time": 0.26666668,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY005_W00_CrashGetup:VGActionEvent_20.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Damage/ACT_ENEMY005_W00_CrashGetup.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_20",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 18,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        16
+      ]
+    }
+  }
+]

@@ -1,0 +1,888 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_ENEMY017_000_MovePatternUnit_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGBP_ENEMY017_000_MovePatternUnit_base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMoveSemicircle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.5"
+      },
+      {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMoveLinear'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.4"
+      },
+      {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMove'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.3"
+      },
+      {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:Start'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Param",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 368,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY017_000_MovePattern3_Param'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGStruct_ENEMY017_000_MovePattern3_Param.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "MoveOnFiringParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 32,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY017_000_MoveParam_FiringPattern3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGStruct_ENEMY017_000_MoveParam_FiringPattern3.0"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MoveStep",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "MoveParamIndex",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentMoveParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 56,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY017_000_MoveParam_FiringPattern3_Location'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGStruct_ENEMY017_000_MoveParam_FiringPattern3_Location.0"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BlendAlpha",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      }
+    ],
+    "FuncMap": {
+      "Start": {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:Start'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.1"
+      },
+      "UpdateAttack": {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.2"
+      },
+      "UpdateMove": {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMove'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.3"
+      },
+      "UpdateMoveLinear": {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMoveLinear'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.4"
+      },
+      "UpdateMoveSemicircle": {
+        "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_3_C:UpdateMoveSemicircle'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.5"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_ENEMY017_000_MovePatternUnit_3_C'Default__SGBP_ENEMY017_000_MovePatternUnit_3_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.6"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Start",
+    "Outer": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_base_C:Start'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGBP_ENEMY017_000_MovePatternUnit_base.2"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Owner",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGBattleCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "StartOwnerLocation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "StartOwnerRotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Start_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetParamRowName_RowName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_OutRow",
+        "Flags": "RF_Public",
+        "ElementSize": 368,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_ENEMY017_000_MovePattern3_Param'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGStruct_ENEMY017_000_MovePattern3_Param.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GetDataTableRowFromName_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateAttack",
+    "Outer": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_ENEMY017_000_MovePatternUnit_base_C:UpdateAttack'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGBP_ENEMY017_000_MovePatternUnit_base.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateMove_IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMove",
+    "Outer": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BlendAlpha_old",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchEnum_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Add_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchInteger_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMoveLinear",
+    "Outer": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_VEase_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_VEase_Alpha_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMoveSemicircle",
+    "Outer": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "CircleCenterPosition",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DirectionVector",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MakeLiteralDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_MakeLiteralDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Ease_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Multiply_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GreaterGreater_VectorRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Add_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_NegateVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Conv_FloatToVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Divide_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_FMin_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Name": "Default__SGBP_ENEMY017_000_MovePatternUnit_3_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SGBP_ENEMY017_000_MovePatternUnit_3.SGBP_ENEMY017_000_MovePatternUnit_3_C'",
+    "Template": {
+      "ObjectName": "SGBP_ENEMY017_000_MovePatternUnit_base_C'Default__SGBP_ENEMY017_000_MovePatternUnit_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/Base/SGBP_ENEMY017_000_MovePatternUnit_base.4"
+    },
+    "Properties": {
+      "Param": {
+        "SetupPositionParam_2_13AC8F0A416F6D90D3B47A9A2DA281DF": {
+          "InjectionOffsetLocation_59_43CB97044A700AA31180948FE5CDDD0E": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "InjectionStandbyOffsetTime_49_3BBBCA1E41969C0D4B79BC9D19DDAE24": 0.0,
+          "InjectionStandbyTime_47_F7A0E7A04852DCD3D15EC88799FD0E69": 0.0,
+          "InjectionMoveTIme_44_8C60EC16439A557A7C40069085668543": 0.0,
+          "MoveOffsetLocation_60_13AFFE50452C4EBCA1EC23A9652E69AA": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "MoveSpeed_51_DF781CB6472E3777CBBDC28EF6F6964D": 0.0,
+          "OnStageOffsetLocation_61_3DEC7771448598FAC90D849E6A52A24A": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          }
+        },
+        "MoveOnFiringParam_9_1D49331A40B7D5A9C22673AA971AFBB1": {
+          "Start_WaitTime_8_59E86B264431B3F4D27CFA9C767A18A9": 0.0,
+          "Update_Move_40_2CFB541E4AB6C67AF89695BAC62035F1": [
+            {
+              "MoveType_9_04C6BB98453C0ED44D2C3488865C52E7": "SGEnum_ENEMY017_000_MoveParam_MoveOnFiring_MoveType::NewEnumerator0",
+              "GoalLocation_5_5EB6DBD349061CF0CFB1F380F42E4152": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "MoveTime_6_16D9B8564BC4C9EC49B12FB95DA84C0B": 0.0,
+              "RotationDirection_12_DF77594341A261FA7C893CA3406D3E14": 1.0,
+              "WaitTime_14_6E07A1A74275123589AC52AD5DCC53D5": 0.0
+            }
+          ],
+          "End_WaitTime_21_C78ABA9949A87FF60A2E7FA84B03BDD1": 0.0
+        }
+      },
+      "MoveOnFiringParam": {
+        "Start_WaitTime_8_59E86B264431B3F4D27CFA9C767A18A9": 0.0,
+        "Update_Move_40_2CFB541E4AB6C67AF89695BAC62035F1": [],
+        "End_WaitTime_21_C78ABA9949A87FF60A2E7FA84B03BDD1": 0.0
+      },
+      "CurrentMoveParam": {
+        "MoveType_9_04C6BB98453C0ED44D2C3488865C52E7": "SGEnum_ENEMY017_000_MoveParam_MoveOnFiring_MoveType::NewEnumerator0",
+        "GoalLocation_5_5EB6DBD349061CF0CFB1F380F42E4152": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MoveTime_6_16D9B8564BC4C9EC49B12FB95DA84C0B": 0.0,
+        "RotationDirection_12_DF77594341A261FA7C893CA3406D3E14": 1.0,
+        "WaitTime_14_6E07A1A74275123589AC52AD5DCC53D5": 0.0
+      },
+      "MoveParam": {
+        "ObjectName": "DataTable'SDT_ENEMY017_000_MovePattern3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY017/AI/Param/MovePattern/SDT_ENEMY017_000_MovePattern3.0"
+      }
+    }
+  }
+]

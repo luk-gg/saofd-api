@@ -1,0 +1,330 @@
+[
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 280300000,
+      "target_direction": "ESGActionProjectileShotTargetDirection::CurrentAITarget",
+      "target_add_rotation": {
+        "Pitch": 0.0,
+        "Yaw": -15.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Explosion",
+      "action_id": 600,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "priority": 1000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY803_Dead'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Animation/Montage/MNT_ENEMY803_Dead.0"
+        }
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY803_Explosion:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "予兆音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY803_Explosion:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "start_time": 0.8000001,
+      "end_time": 0.83333343,
+      "notify": {
+        "ObjectName": "VGANIgnoreBody'ACT_ENEMY803_Explosion:VGActionEvent_1.VGANIgnoreBody_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "機雷爆発",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY803_Explosion:VGActionEvent_11.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "num_frames": 18,
+      "start_time": 0.8000001,
+      "end_time": 1.4000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY803_Explosion:VGActionEvent_12.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 151,
+      "end_time": 5.033334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY803_Explosion:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 24,
+      "num_frames": 34,
+      "start_time": 0.8000001,
+      "end_time": 1.9333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY803_Explosion:VGActionEvent_3.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "爆発音",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY803_Explosion:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "予兆",
+      "num_frames": 62,
+      "end_time": 2.0666668,
+      "is_ignore_loop": true,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY803_Explosion:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY803_Explosion",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 11,
+      "start_time": 0.7666667,
+      "end_time": 1.1333334,
+      "notify": {
+        "ObjectName": "VGANCancelVfx'ACT_ENEMY803_Explosion:VGActionEvent_8.VGANCancelVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/Action/ACT_ENEMY803_Explosion.11"
+      }
+    }
+  },
+  {
+    "Type": "VGANCancelVfx",
+    "Name": "VGANCancelVfx_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANCancelVfx'",
+    "Properties": {
+      "signal_name": "efs_GIM_Mine_exp_sign_lo"
+    }
+  },
+  {
+    "Type": "VGANIgnoreBody",
+    "Name": "VGANIgnoreBody_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANIgnoreBody'"
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 2,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 10
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_GIM_Mine_exp_sign_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Gimmick/efs_GIM_Mine_exp_sign_lo.0"
+      },
+      "scale_offset": {
+        "X": 0.625,
+        "Y": 0.625,
+        "Z": 0.625
+      }
+    }
+  }
+]

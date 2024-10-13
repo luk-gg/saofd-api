@@ -1,0 +1,193 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "VBT_ENEMY803",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_ENEMY803:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.3"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'VBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'VBT_ENEMY803:BTComposite_Sequence_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            null
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SGBTT_SetTargeting'VBT_ENEMY803:SGBTT_SetTargeting_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SGBTT_SetTowerRangeTargeting'VBT_ENEMY803:SGBTT_SetTowerRangeTargeting_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.8"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_ForceSuccess'VBT_ENEMY803:BTDecorator_ForceSuccess_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.5"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'VBT_ENEMY803:BTComposite_Sequence_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_4",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'VBT_ENEMY803:BTTask_Wait_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.6"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'VBT_ENEMY803:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_ForceSuccess",
+    "Name": "BTDecorator_ForceSuccess_0",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTDecorator_ForceSuccess'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_ENEMY803:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_2",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 1.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "SGBTT_SetTargeting",
+    "Name": "SGBTT_SetTargeting_0",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'SGBTT_SetTargeting'",
+    "Properties": {
+      "m_targeting_select_type": "EUSGBTTTargetingSlectType::SurvivalTime",
+      "m_search_range_limit": 10000.0,
+      "NodeName": "適当にターゲッティング",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  },
+  {
+    "Type": "SGBTT_SetTowerRangeTargeting",
+    "Name": "SGBTT_SetTowerRangeTargeting_0",
+    "Outer": "VBT_ENEMY803",
+    "Class": "UScriptClass'SGBTT_SetTowerRangeTargeting'",
+    "Properties": {
+      "m_search_tower_range_limit": 4500.0,
+      "m_is_same_enemy": false,
+      "NodeName": "タワー周辺の敵を検索",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_ENEMY803'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY803/AI/VBT_ENEMY803.0"
+      }
+    }
+  }
+]

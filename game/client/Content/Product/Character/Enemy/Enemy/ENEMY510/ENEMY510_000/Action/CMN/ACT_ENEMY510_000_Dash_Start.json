@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_000_Dash_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dash_Start",
+      "action_id": 20,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Run"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_000_Dash_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Animation/Montage/MNT_ENEMY510_000_Dash_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Dash_Start:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Dash_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Dash_Start:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY510_000_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 7,
+      "num_frames": 10,
+      "start_time": 0.23333335,
+      "end_time": 0.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_000_Dash_Start:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY510_000_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 5,
+      "num_frames": 0,
+      "start_time": 0.16666667,
+      "end_time": 0.16666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY510_000_Dash_Start:VGActionEvent_10.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY510_000_Dash_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "中断可能",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY510_000_Dash_Start:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/CMN/ACT_ENEMY510_000_Dash_Start.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 21
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        13
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Step_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Step_s.0"
+      },
+      "emit_node_name": "VFX_b_R_Foot",
+      "scale_offset": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.7
+      }
+    }
+  }
+]

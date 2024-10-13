@@ -1,0 +1,53 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Attack11_RIGHTLOOP",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack11_Strike_Both_COMBO_RIGHTLOOP",
+      "action_id": 930,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Attack11_Strike_Both_COMBO_RIGHTLOOP'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Attack11_Strike_Both_COMBO_RIGHTLOOP.0"
+        }
+      },
+      "custom_speed_rate": 1.5,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Attack11_RIGHTLOOP:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack11_RIGHTLOOP.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS001_00_Attack11_RIGHTLOOP",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "フィニッシュ",
+      "start_frame": 34,
+      "num_frames": 7,
+      "start_time": 1.1333334,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_RBOSS001_00_Attack11_RIGHTLOOP:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Attack/ACT_RBOSS001_00_Attack11_RIGHTLOOP.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 940
+    }
+  }
+]

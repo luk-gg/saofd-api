@@ -1,0 +1,83 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BO000_Damage_Rising_Top",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Damage_Rising_Top",
+      "action_id": 1201,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_Damage_Rising_Top'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_Damage_Rising_Top.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_Damage_Rising_Top:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/DMG/ACT_BO000_Damage_Rising_Top.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_Damage_Rising_Top:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/DMG/ACT_BO000_Damage_Rising_Top.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BO000_Damage_Rising_Top",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "num_frames": 6,
+      "start_time": 0.86666673,
+      "end_time": 1.0666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BO000_Damage_Rising_Top:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/DMG/ACT_BO000_Damage_Rising_Top.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_BO000_Damage_Rising_Top",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中制御不可",
+      "num_frames": 32,
+      "end_time": 1.0666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BO000_Damage_Rising_Top:VGActionEvent_9.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/DMG/ACT_BO000_Damage_Rising_Top.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1202
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

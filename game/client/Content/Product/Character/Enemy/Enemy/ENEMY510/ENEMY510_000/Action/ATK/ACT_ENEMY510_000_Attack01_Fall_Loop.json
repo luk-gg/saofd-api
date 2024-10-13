@@ -1,0 +1,160 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_000_Attack01_Fall_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01_Fall_Loop",
+      "action_id": 102,
+      "states": [
+        "EVGActionState::Fall",
+        "EVGActionState::Air"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_000_Attack01_fall_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Animation/Montage/MNT_ENEMY510_000_Attack01_fall_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY510_000_Attack01_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY510_000_Attack01_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_2.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY510_000_Attack01_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY510_000_Attack01_Fall_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_000_Attack01_Fall_Loop:VGActionEvent_5.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_000/Action/ATK/ACT_ENEMY510_000_Attack01_Fall_Loop.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 103
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 103,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 103,
+      "floor_check_distance": 100.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -500.0
+      }
+    }
+  }
+]

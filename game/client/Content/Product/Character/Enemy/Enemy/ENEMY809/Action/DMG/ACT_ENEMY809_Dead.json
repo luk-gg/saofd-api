@@ -1,0 +1,73 @@
+[
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "SGANCharacterSelfDestroy",
+    "Name": "SGANCharacterSelfDestroy_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANCharacterSelfDestroy'"
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY809_Dead",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dead",
+      "action_id": 2000,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 10000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY809_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Animation/Montage/MNT_ENEMY809_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_Dead:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/DMG/ACT_ENEMY809_Dead.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY809_Dead:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/DMG/ACT_ENEMY809_Dead.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY809_Dead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 81,
+      "start_time": 2.7,
+      "end_time": 2.7333333,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_ENEMY809_Dead:VGActionEvent_0.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/DMG/ACT_ENEMY809_Dead.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY809_Dead",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "SGANCharacterSelfDestroy'ACT_ENEMY809_Dead:VGActionEvent_1.SGANCharacterSelfDestroy_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY809/Action/DMG/ACT_ENEMY809_Dead.1"
+      }
+    }
+  }
+]

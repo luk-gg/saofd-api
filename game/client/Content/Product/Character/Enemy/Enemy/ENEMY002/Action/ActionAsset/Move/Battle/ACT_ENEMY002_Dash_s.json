@@ -1,0 +1,85 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 100.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY002_Dash_s",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dash_s",
+      "action_id": 70,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY002_Dash_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Animation/Montage/MNT_ENEMY002_Dash_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_Dash_s:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_Dash_s.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY002_Dash_s:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_Dash_s.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY002_Dash_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 25,
+      "num_frames": 5,
+      "start_time": 0.8333334,
+      "end_time": 1.0,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY002_Dash_s:VGActionEvent_1.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_Dash_s.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY002_Dash_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ループへ",
+      "start_frame": 25,
+      "num_frames": 2,
+      "start_time": 0.8333334,
+      "end_time": 0.90000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY002_Dash_s:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY002/Action/ActionAsset/Move/Battle/ACT_ENEMY002_Dash_s.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 71
+    }
+  }
+]

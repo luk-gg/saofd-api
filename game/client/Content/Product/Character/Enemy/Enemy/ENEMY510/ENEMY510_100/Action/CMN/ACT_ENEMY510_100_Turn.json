@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_100_Turn",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn",
+      "action_id": 30,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_100_Turn'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Animation/Montage/MNT_ENEMY510_100_Turn.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_100_Turn:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Action/CMN/ACT_ENEMY510_100_Turn.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY510_100_Turn",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 13,
+      "num_frames": 10,
+      "start_time": 0.43333337,
+      "end_time": 0.7666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_100_Turn:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Action/CMN/ACT_ENEMY510_100_Turn.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

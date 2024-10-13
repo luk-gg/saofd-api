@@ -1,0 +1,4644 @@
+[
+  {
+    "Type": "BC_RBOSS005_00_Base_C",
+    "Name": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.BC_RBOSS005_00_Base_C'",
+    "Template": {
+      "ObjectName": "BC_SGRBoss_Unarmed_Base_C'Default__BC_SGRBoss_Unarmed_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.0"
+    },
+    "Properties": {
+      "UberGraphFrame": {},
+      "CurrentPerk": {
+        "UseNormalPerk_7_AD70091247DB99131824EC8623797055": false,
+        "NormalPerk_13_E18C8A8A4C5C5CCD6260B79C210E331A": "SGEnum_RBOSS005_Perk::NewEnumerator12",
+        "UseAngryPerk_10_E8391E6348E70A3B988C3CA32323AC24": false,
+        "AngryPerk_14_331BA9C940B5AC5C16597390A1538ACD": "SGEnum_RBOSS005_Perk::NewEnumerator12"
+      },
+      "DeadDropItem": [
+        {
+          "Key": "Retreat",
+          "Value": "BOSS_Clear"
+        },
+        {
+          "Key": "Normal",
+          "Value": "BOSS_Clear"
+        },
+        {
+          "Key": "FinishArts",
+          "Value": "BOSS_Clear"
+        }
+      ],
+      "RotationYawSpeedToTarget": 180.0,
+      "IsEndTurnRotation": true,
+      "AttackPowerBuffTopId": 35,
+      "DefensePowerBuffTopId": 40,
+      "BuffMax": 5,
+      "FitTheFloor_Use": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "AttackBuffRimParam": {
+        "effect_rim_power": 13.0,
+        "effect_rim_mul": 1.0,
+        "effect_rim_color": {
+          "R": 100.0,
+          "G": 20.0,
+          "B": 200.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        "rim_power_curve": {
+          "ObjectName": "CurveFloat'SGC_RBOSS005_Constant01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Vfx/SGC_RBOSS005_Constant01.0"
+        },
+        "rim_color_curve": {
+          "ObjectName": "CurveFloat'SGC_RBOSS005_Rim01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Vfx/SGC_RBOSS005_Rim01.0"
+        },
+        "main_priority": "EVGMaterialPriority::StatusBuff",
+        "sub_priority": 1
+      },
+      "DefenseBuffRimParam": {
+        "effect_rim_power": 13.0,
+        "effect_rim_mul": 1.0,
+        "effect_rim_color": {
+          "R": 50.0,
+          "G": 200.0,
+          "B": 10.0,
+          "A": 1.0,
+          "Hex": "FFFFFF"
+        },
+        "rim_power_curve": {
+          "ObjectName": "CurveFloat'SGC_RBOSS005_Constant01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Vfx/SGC_RBOSS005_Constant01.0"
+        },
+        "rim_color_curve": {
+          "ObjectName": "CurveFloat'SGC_RBOSS005_Rim01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Vfx/SGC_RBOSS005_Rim01.0"
+        },
+        "main_priority": "EVGMaterialPriority::StatusBuff",
+        "sub_priority": 0
+      },
+      "TurningFaceAlphaInterpSpeed": 0.2,
+      "m_status_table": {
+        "ObjectName": "DataTable'STT_RBOSS005_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Status/STT_RBOSS005_00.0"
+      },
+      "m_calc_component_class": {
+        "ObjectName": "BlueprintGeneratedClass'CCC_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Calculator/CCC_RBOSS005_00.0"
+      },
+      "m_battle_character_const_status_id": 7005,
+      "k_speed_back": 0.0,
+      "k_speed_back_jog": 0.0,
+      "k_speed_ads": 0.0,
+      "k_speed_firing": 0.0,
+      "k_speed_firing_interp_rate": 0.0,
+      "k_speed_flying": 0.0,
+      "m_character_hit": {
+        "ObjectName": "VGCharacterHit'CH_RBOSS005_00'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Hit/CH_RBOSS005_00.0"
+      },
+      "m_damage_reaction_class": {
+        "AssetPathName": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/DMR_RBOSS005_00.DMR_RBOSS005_00_C",
+        "SubPathString": ""
+      },
+      "m_dead_reaction_class": {
+        "AssetPathName": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/DDR_RBOSS005_00.DDR_RBOSS005_00_C",
+        "SubPathString": ""
+      },
+      "m_is_disable_hit_stop": true,
+      "m_hud_status_component": {
+        "ObjectName": "VG3DHudStatusComponent'Default__BC_RBOSS005_00_Base_C:3DHudStatusComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.76"
+      },
+      "m_hud_dead_icon_component": {
+        "ObjectName": "VG3DHudDeadIconComponent'Default__BC_RBOSS005_00_Base_C:3DHudDeadIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.75"
+      },
+      "m_aim_range": 100000.0,
+      "m_raid_boss_entry_action_id": 5000,
+      "m_raid_boss_entry_skip_action_id": 5100,
+      "m_sensing": {
+        "eyesight_range": 100000.0,
+        "eyesight_fov": 180.0
+      },
+      "m_ai_head_node_name": "Sighting_Position",
+      "m_ai_sight_node_name": [
+        "Sighting_Position"
+      ],
+      "m_ai_aim_node_name": "b_C_Head",
+      "m_ai_aim_target_node_name": [
+        "b_C_Head",
+        "b_L_BackWnigS6",
+        "b_R_BackWnigS6",
+        "b_C_Tail4"
+      ],
+      "m_perk_preset_id": 30500,
+      "m_hitstop_component": {
+        "ObjectName": "VGHitStopComponent'Default__BC_RBOSS005_00_Base_C:HitStopComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.82"
+      },
+      "m_status_ailment_component": {
+        "ObjectName": "SGStatusAilmentComponent'Default__BC_RBOSS005_00_Base_C:StatusAilmentComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.72"
+      },
+      "m_status_buff_component": {
+        "ObjectName": "SGStatusBuffComponent'Default__BC_RBOSS005_00_Base_C:StatusBuffComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.73"
+      },
+      "m_hero_point_components": {
+        "ObjectName": "SGHeroPointComponent'Default__BC_RBOSS005_00_Base_C:HeroPointComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.67"
+      },
+      "m_level_component": {
+        "ObjectName": "SGCharacterLevelComponent'Default__BC_RBOSS005_00_Base_C:CharacterLevelComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.64"
+      },
+      "m_action_armor_component": {
+        "ObjectName": "SGActionArmorComponent'Default__BC_RBOSS005_00_Base_C:ActionArmorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.60"
+      },
+      "m_character_build_component": {
+        "ObjectName": "SGCharacterBuildComponent'Default__BC_RBOSS005_00_Base_C:CharacterBuildComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.63"
+      },
+      "m_hit_effect_stash_component": {
+        "ObjectName": "SGHitEffectStashComponent'Default__BC_RBOSS005_00_Base_C:HitEffectStashComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.68"
+      },
+      "m_action_invincible_component": {
+        "ObjectName": "SGActionInvincibleComponent'Default__BC_RBOSS005_00_Base_C:ActionInvincibleComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.61"
+      },
+      "m_is_perception_sight_collision_ignore_friend": true,
+      "m_debug_character_information_compoent": {
+        "ObjectName": "SGDebugCharacterInformationComponent'Default__BC_RBOSS005_00_Base_C:DebugCharacterInformationComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.66"
+      },
+      "m_state_machine_class": {
+        "ObjectName": "BlueprintGeneratedClass'SM_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/StateMachine/SM_RBOSS005_00.0"
+      },
+      "m_state_machine_state_shared_param_class": {
+        "ObjectName": "BlueprintGeneratedClass'SSP_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/StateMachine/SSP_RBOSS005_00.0"
+      },
+      "m_state_base_action_ids": -1,
+      "m_name": {
+        "Namespace": "",
+        "Key": "9A83FA0E4CA8F9B7DAEEC1BBCAB12B6A",
+        "SourceString": "Dorz'l the Chaos Drake",
+        "LocalizedString": "Dorz'l the Chaos Drake"
+      },
+      "m_enemy_type": "ESGEnemyType::RaidBoss",
+      "m_character_management_id_name": "RBOSS005_00",
+      "m_chara_voice": {
+        "ObjectName": "SoundAtomCueSheet'RBOSS005'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Enemy/BOSS/RBOSS005.0"
+      },
+      "m_chara_se": {
+        "ObjectName": "SoundAtomCueSheet'RBOSS005'",
+        "ObjectPath": "/Game/Product/Sound/Cue/Character/Enemy/BOSS/RBOSS005.0"
+      },
+      "m_behavior_component": {
+        "ObjectName": "VGBehaviorComponent'Default__BC_RBOSS005_00_Base_C:BehaviorComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.78"
+      },
+      "m_action_component": {
+        "ObjectName": "VGActionComponent'Default__BC_RBOSS005_00_Base_C:ActionComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.77"
+      },
+      "m_trigger_component": {
+        "ObjectName": "VGTriggerComponent'Default__BC_RBOSS005_00_Base_C:TriggerComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.86"
+      },
+      "m_camera_component": {
+        "ObjectName": "VGCameraComponent'Default__BC_RBOSS005_00_Base_C:CameraComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.79"
+      },
+      "m_map_icon_component": {
+        "ObjectName": "VGMapIconComponent'Default__BC_RBOSS005_00_Base_C:MapIconComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.83"
+      },
+      "m_vfx_component": {
+        "ObjectName": "VGVfxComponent'Default__BC_RBOSS005_00_Base_C:VfxComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.87"
+      },
+      "m_sound_component": {
+        "ObjectName": "VGSoundComponent'Default__BC_RBOSS005_00_Base_C:SoundComponent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.85"
+      },
+      "m_skeletal_mesh_components": [
+        {
+          "ObjectName": "VGSkeletalMeshComponent'Default__BC_RBOSS005_00_Base_C:CharacterMesh0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.84"
+        }
+      ],
+      "k_camera_fov_y": 60.0,
+      "k_camera_fov_y_air": 70.0,
+      "k_camera_distance_unarm": 5000.0,
+      "k_camera_lock_range": 10000.0,
+      "k_speed_walk": 0.0,
+      "k_speed_jog": 0.0,
+      "k_speed_run": 0.0,
+      "k_speed_run_second": 0.0,
+      "k_speed_kneeling": 0.0,
+      "k_rotation_degree": 45.0,
+      "k_shift_rotation_degree": 45.0,
+      "m_is_shift_rotation_degree": true,
+      "m_is_ignore_suction": true,
+      "m_default_visible_meshes": [
+        "M_RBOSS005_00_Skin_00",
+        "M_RBOSS005_00_Break_Chest_00",
+        "M_RBOSS005_00_Break_Head_00",
+        "M_RBOSS005_00_Break_Tail_00",
+        "M_RBOSS005_00_Break_WingLarge_00",
+        "M_RBOSS005_00_Break_WingSmall_00"
+      ],
+      "m_cam_far_distance": 100000.0,
+      "m_cam_far_coeff": 1.4,
+      "m_use_physicsasset_flag": true,
+      "m_use_invisible_spawn": true,
+      "m_action_state_shift_used_in_base_class": true,
+      "Mesh": {
+        "ObjectName": "VGSkeletalMeshComponent'Default__BC_RBOSS005_00_Base_C:CharacterMesh0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.84"
+      },
+      "CharacterMovement": {
+        "ObjectName": "VGCharacterMovementComponent'Default__BC_RBOSS005_00_Base_C:CharMoveComp'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.81"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_RBOSS005_00_Base_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.80"
+      },
+      "AIControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/AIC_RBOSS005_00.4"
+      },
+      "bAlwaysRelevant": true,
+      "ReplicatedMovement": {
+        "VelocityQuantizationLevel": "EVectorQuantization::RoundTwoDecimals",
+        "RotationQuantizationLevel": "ERotatorQuantization::ShortComponents"
+      },
+      "RootComponent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_RBOSS005_00_Base_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.80"
+      },
+      "Tags": [
+        "Enemy",
+        "Unarmed",
+        "AllRounder",
+        "RaidBoss"
+      ]
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'BC_SGRBoss_Unarmed_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.1"
+    },
+    "Properties": {
+      "NumReplicatedProperties": 1,
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.74"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BC_RBOSS005_00_Base_C:InheritableComponentHandler'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.50"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ExecuteUbergraph_BC_RBOSS005_00_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.9"
+      }
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:BPI_GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.5"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:BPI_GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.6"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBurstDownAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.45"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetFitTheFloor_Flag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.33"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SendFitTheFloorAlpha'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.30"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetAnim'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.10"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateFitTheFloor'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.47"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetFitTheFloor'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.32"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ResetFall'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.29"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeTurningFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.20"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.34"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.12"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetTartgetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.37"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetTargetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.16"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:EndBuffVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.8"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StartBuffVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.40"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBuffSetting'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.44"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBuff'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.43"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:AllRemoveBuff'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.4"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsInvincible'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.23"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsFalling'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.22"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsEndYawRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.21"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateYawRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.48"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:QuestGetSummonGateNum'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.25"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetRandomCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.13"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetReserveDamagePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.36"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetReserveBurstPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.35"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.17"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateCurrentSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.46"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetCurrentPerk'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.11"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetCurrentPerk'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.31"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.15"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.14"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SpawnSummonGate'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.39"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:DeadItemDropAndSetFinishEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.7"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.27"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeMovePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.18"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeStageInformation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.19"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.49"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StopRotationYawToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.42"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StartRotationYawToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.41"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetVisibility'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.38"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.28"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.24"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.26"
+      },
+      {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ExecuteUbergraph_BC_RBOSS005_00_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.9"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGProjectileDataHolder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGProjectileDataHolderComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SwitchChainComponent",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'DefaultSwitchChainComponent_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.0"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGHomingTargetHolder",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGHomingTargetHolderComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGMassiveLinkArts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGMassiveLinkArtsComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGCharacterParts",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterPartsComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGBurstGauge",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "Class'SGBurstGaugeComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ECHC_RBOSS005_00",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | InstancedReference | NonTransactional",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'ECHC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/ECHC_RBOSS005_00.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "RequestSummon",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CurrentPerk",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_00_PhasePerk'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Phase/Base/SGStruct_RBOSS005_00_PhasePerk.0"
+        }
+      },
+      {
+        "Type": "MapProperty",
+        "Name": "DeadDropItem",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 80,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "KeyProp": {
+          "Type": "NameProperty",
+          "Name": "DeadDropItem",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        },
+        "ValueProp": {
+          "Type": "NameProperty",
+          "Name": "DeadDropItem_Value",
+          "Flags": "RF_Public",
+          "ElementSize": 12
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ReserveBurstPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "ReserveDamagePoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ReserveDestructionPartsName",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "StageCenterPoint",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_StageCenterPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Gimmick/SGBP_RBOSS005_StageCenterPoint.0"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Special01_Unit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Special01_Unit",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_Special01_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/CharacterRoleCoraboration/SGBP_RBOSS005_Special01_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Special02_Unit",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Special02_Unit",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_Special02_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/CharacterRoleCoraboration/SGBP_RBOSS005_Special02_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "EnableTurnRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "RotationYawToTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "RotationYawSpeedToTarget",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "RotationYawToTargetTimeoutTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEndTurnRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "MovePoints",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate | DisableEditOnInstance",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "MovePoints",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "EnableInvincible",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | Net | DisableEditOnInstance",
+        "RepIndex": 46,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "DebugMovementMode",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Enum": {
+          "ObjectName": "Class'EMovementMode'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "BuffCheckTimer",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttackPowerBuffTopId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "DefensePowerBuffTopId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NumberOfAttackPowerBuff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NumberOfDefensePowerBuff",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "BuffMax",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimBP",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Animation/Blueprint/ABP_RBOSS005_00.1"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "FitTheFloor_Use",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Inner": {
+          "Type": "BoolProperty",
+          "Name": "FitTheFloor_Use",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "FieldSize": 1,
+          "ByteOffset": 0,
+          "ByteMask": 1,
+          "FieldMask": 255,
+          "BoolSize": 1,
+          "bIsNativeBool": true
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "SGEffectRim",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance | InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharaEffectRimComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "AttackBuffRimParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'SGCharaEffectRimLightParam'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "DefenseBuffRimParam",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 48,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'SGCharaEffectRimLightParam'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsAddedRimComp",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BC_RBOSS005_00_Base": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ExecuteUbergraph_BC_RBOSS005_00_Base'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.9"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceiveBeginPlay'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.26"
+      },
+      "OnReceivedMessageEvent": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:OnReceivedMessageEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.24"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceiveTick'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.28"
+      },
+      "SetVisibility": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetVisibility'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.38"
+      },
+      "StartRotationYawToTarget": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StartRotationYawToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.41"
+      },
+      "StopRotationYawToTarget": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StopRotationYawToTarget'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.42"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UserConstructionScript'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.49"
+      },
+      "InitializeStageInformation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeStageInformation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.19"
+      },
+      "InitializeMovePoint": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeMovePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.18"
+      },
+      "ReceivedMessage": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ReceivedMessage'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.27"
+      },
+      "DeadItemDropAndSetFinishEvent": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:DeadItemDropAndSetFinishEvent'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.7"
+      },
+      "SpawnSummonGate": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SpawnSummonGate'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.39"
+      },
+      "GetStageCenterLocation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.14"
+      },
+      "GetStageCenterRotation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.15"
+      },
+      "SetCurrentPerk": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetCurrentPerk'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.31"
+      },
+      "GetCurrentPerk": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetCurrentPerk'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.11"
+      },
+      "UpdateCurrentSkill": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateCurrentSkill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.46"
+      },
+      "InitializeCharacterRoleCoraborativeUnit": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.17"
+      },
+      "SetReserveBurstPoint": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetReserveBurstPoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.35"
+      },
+      "SetReserveDamagePoint": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetReserveDamagePoint'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.36"
+      },
+      "GetRandomCharacterRoleCoraborativeUnit": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetRandomCharacterRoleCoraborativeUnit'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.13"
+      },
+      "QuestGetSummonGateNum": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:QuestGetSummonGateNum'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.25"
+      },
+      "UpdateYawRotation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateYawRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.48"
+      },
+      "IsEndYawRotation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsEndYawRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.21"
+      },
+      "IsFalling": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsFalling'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.22"
+      },
+      "IsInvincible": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:IsInvincible'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.23"
+      },
+      "AllRemoveBuff": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:AllRemoveBuff'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.4"
+      },
+      "UpdateBuff": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBuff'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.43"
+      },
+      "UpdateBuffSetting": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBuffSetting'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.44"
+      },
+      "StartBuffVfx": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:StartBuffVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.40"
+      },
+      "EndBuffVfx": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:EndBuffVfx'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.8"
+      },
+      "GetTargetLocationToFace": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetTargetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.16"
+      },
+      "SetTartgetLocationToFace": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetTartgetLocationToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.37"
+      },
+      "GetInterpolationAlphaWhenTurningToFace": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.12"
+      },
+      "SetInterpolationAlphaWhenTurningToFace": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetInterpolationAlphaWhenTurningToFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.34"
+      },
+      "InitializeTurningFace": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:InitializeTurningFace'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.20"
+      },
+      "ResetFall": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:ResetFall'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.29"
+      },
+      "SetFitTheFloor": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetFitTheFloor'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.32"
+      },
+      "UpdateFitTheFloor": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateFitTheFloor'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.47"
+      },
+      "GetAnim": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:GetAnim'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.10"
+      },
+      "SendFitTheFloorAlpha": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SendFitTheFloorAlpha'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.30"
+      },
+      "SetFitTheFloor_Flag": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:SetFitTheFloor_Flag'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.33"
+      },
+      "UpdateBurstDownAction": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:UpdateBurstDownAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.45"
+      },
+      "BPI_GetStageCenterRotation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:BPI_GetStageCenterRotation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.6"
+      },
+      "BPI_GetStageCenterLocation": {
+        "ObjectName": "Function'BC_RBOSS005_00_Base_C:BPI_GetStageCenterLocation'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.5"
+      }
+    },
+    "ClassFlags": "CLASS_Config | CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "Interfaces": [
+      {
+        "Class": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_BC_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_BC.0"
+        },
+        "PointerOffset": 0,
+        "bImplementedByK2": true
+      }
+    ],
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BC_RBOSS005_00_Base_C'Default__BC_RBOSS005_00_Base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.0"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal",
+      "ImplementedInterfaces": "((Interface=/Script/Engine.BlueprintGeneratedClass'\"/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_BC.BPI_Enemy_BC_C\"'))"
+    }
+  },
+  {
+    "Type": "DefaultSwitchChainComponent_C",
+    "Name": "SwitchChainComponent_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.DefaultSwitchChainComponent_C'",
+    "Template": {
+      "ObjectName": "DefaultSwitchChainComponent_C'Default__DefaultSwitchChainComponent_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.1"
+    },
+    "Properties": {
+      "k_chain_finish_action_id": 2400
+    }
+  },
+  {
+    "Type": "ECHC_RBOSS005_00_C",
+    "Name": "ECHC_RBOSS005_00_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/ECHC_RBOSS005_00.ECHC_RBOSS005_00_C'",
+    "Template": {
+      "ObjectName": "ECHC_RBOSS005_00_C'Default__ECHC_RBOSS005_00_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/ECHC_RBOSS005_00.1"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AllRemoveBuff",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetStageCenterLocation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterLocation_Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "BPI_GetStageCenterRotation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetStageCenterRotation_Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "DeadItemDropAndSetFinishEvent",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAIController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsAIC_RBOSS005_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'AIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/AIC_RBOSS005_00.4"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/EAIC_RBOSS005_00.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetDeadEventType_EventType",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_Map_Find_Value",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Map_Find_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "EndBuffVfx",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "BuffTypeName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BC_RBOSS005_00_Base",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_CustomEvent_TargetYaw",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_CustomEvent_RotationSpeed",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "K2Node_CustomEvent_Timeout",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_CustomEvent_Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "K2Node_Event_DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "K2Node_Event_message",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateYawRotation_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateTurningFaceToTarget_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateBuff_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_UpdateFitTheFloor_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetAnim",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCurrentPerk",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Perk",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_00_PhasePerk'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Phase/Base/SGStruct_RBOSS005_00_PhasePerk.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetInterpolationAlphaWhenTurningToFace",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_Unarmed_Base_C:GetInterpolationAlphaWhenTurningToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.3"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetRandomCharacterRoleCoraborativeUnit",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGBattleCharacter:GetRandomCharacterRoleCoraborativeUnit'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "type_name",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "ConstParm | BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "Units",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "Units",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Random_OutItem",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterRoleCoraborativeUnit'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Random_OutIndex",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetStageCenterLocation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetStageCenterRotation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Rotation",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTargetLocationToFace",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_Unarmed_Base_C:GetTargetLocationToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.4"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeCharacterRoleCoraborativeUnit",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_Special02_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/CharacterRoleCoraboration/SGBP_RBOSS005_Special02_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors_1",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_Special01_CharacterRoleCoraborativeUnit_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/CharacterRoleCoraboration/SGBP_RBOSS005_Special01_CharacterRoleCoraborativeUnit.0"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeMovePoint",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_MovePoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/MovePoint/SGBP_RBOSS005_MovePoint.0"
+          }
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeStageInformation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_StageCenterPoint_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Gimmick/SGBP_RBOSS005_StageCenterPoint.0"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_StageCenterPoint_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Gimmick/SGBP_RBOSS005_StageCenterPoint.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "InitializeTurningFace",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_Unarmed_Base_C:InitializeTurningFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.6"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGAnimInstance'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_RBOSS005_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Animation/Blueprint/ABP_RBOSS005_00.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsEndYawRotation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsFalling",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGCharacter:IsFalling'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsFlying_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsFalling_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "IsInvincible",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGBattleCharacter:IsInvincible'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm | ReturnParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsInvincible_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "OnReceivedMessageEvent",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGCharacter:OnReceivedMessageEvent'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "QuestGetSummonGateNum",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EnumyNum",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetEnemyNumFromId_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceivedMessage",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "Message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Conv_NameToText_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "Class'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_SetFitTheFloor_Flag_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ConstParm | ReferenceParm",
+        "Inner": {
+          "Type": "EnumProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGDamageAttr'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          },
+          "UnderlyingProp": {
+            "Type": "ByteProperty",
+            "Name": "UnderlyingType",
+            "Flags": "RF_Public",
+            "ElementSize": 1,
+            "Enum": null
+          }
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReserveBurstPoint_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_GetReserveDamagePoint_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "FloatProperty",
+        "Name": "DeltaSeconds",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "ResetFall",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VGActionComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetActionComponent_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'VGActionComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSteerVelocity_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetSteerVelocity_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_X_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Y_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_BreakVector_Z_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SendFitTheFloorAlpha",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "AnimInstance",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Animation/Blueprint/ABP_RBOSS005_00.1"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Array_Index_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Loop_Counter_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Array_Get_Item",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetAnimInstance_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGAnimInstance'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsABP_RBOSS005_00",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Animation/Blueprint/ABP_RBOSS005_00.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetCurrentPerk",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Perk",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_RBOSS005_00_PhasePerk'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/Phase/Base/SGStruct_RBOSS005_00_PhasePerk.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetFitTheFloor",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ByteProperty",
+        "Name": "ControlName",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'SGEnum_RBOSS005_FitTheFloor_Type'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/SGEnum_RBOSS005_FitTheFloor_Type.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Enable",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetFitTheFloor_Flag",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "Message",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetInterpolationAlphaWhenTurningToFace",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_Unarmed_Base_C:SetInterpolationAlphaWhenTurningToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.11"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Alpha",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetReserveBurstPoint",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetReserveDamagePoint",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "Point",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "DestructionPartsName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTartgetLocationToFace",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'BC_SGRBoss_Unarmed_Base_C:SetTartgetLocationToFace'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.12"
+    },
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "Location",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SetVisibility",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "Visible",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Net | FUNC_NetReliable | FUNC_NetMulticast | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnSummonGate",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetController_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Controller'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsVGAIController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'VGAIController'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'EAIC_RBOSS005_00_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/AI/EAIC_RBOSS005_00.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartBuffVfx",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "BuffTypeName",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddComponentByClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharaEffectRimComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_AddComponentByClass_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharaEffectRimComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartRotationYawToTarget",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "TargetYaw",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "RotationSpeed",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "Timeout",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopRotationYawToTarget",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "FunctionFlags": "FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateBuff",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "PrevNumberOfBuff",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsDead_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanOR_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_UpdateBuffSetting_ResultNumberOfBuff",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_UpdateBuffSetting_ResultNumberOfBuff_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_4",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_5",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_EqualEqual_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateBuffSetting",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "SoftClassProperty",
+        "Name": "BuffClass",
+        "Flags": "RF_Public",
+        "ElementSize": 56,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_ENEMY804_001_base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY804/BattleCharacter/Base/BC_ENEMY804_001_base.1"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "BuffTopId",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NumberOfBuff",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "ResultNumberOfBuff",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "NumberOfBuffObject",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnTemplate"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "CallFunc_Conv_SoftClassReferenceToClass_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "UObjectWrapper",
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "Class'Object'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "ClassProperty",
+        "Name": "K2Node_ClassDynamicCast_AsBC_ENEMY804_001_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Class'",
+          "ObjectPath": "/Script/CoreUObject"
+        },
+        "MetaClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_ENEMY804_001_base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY804/BattleCharacter/Base/BC_ENEMY804_001_base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_ClassDynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "ObjectProperty",
+          "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+          "Flags": "RF_Public",
+          "ElementSize": 8,
+          "PropertyClass": {
+            "ObjectName": "BlueprintGeneratedClass'BC_ENEMY804_001_base_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY804/BattleCharacter/Base/BC_ENEMY804_001_base.1"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Subtract_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "Class'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_2",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "Int64Property",
+        "Name": "CallFunc_Conv_IntToInt64_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_FormatArgumentData_1",
+        "Flags": "RF_Public",
+        "ElementSize": 80,
+        "Struct": {
+          "ObjectName": "Class'FormatArgumentData'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_LessEqual_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "K2Node_MakeArray_Array_1",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "PropertyFlags": "ReferenceParm",
+        "Inner": {
+          "Type": "StructProperty",
+          "Name": "K2Node_MakeArray_Array_1",
+          "Flags": "RF_Public",
+          "ElementSize": 80,
+          "Struct": {
+            "ObjectName": "Class'FormatArgumentData'",
+            "ObjectPath": "/Script/Engine"
+          }
+        }
+      },
+      {
+        "Type": "TextProperty",
+        "Name": "CallFunc_Format_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue_3",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateBurstDownAction",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsLocalControl_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsAir_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateCurrentSkill",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_GetCurrentSkillName_CurrentSkillName",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateFitTheFloor",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateYawRotation",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Subtract_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_DegCos_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_MakeRotator_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Not_PreBool_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_RInterpTo_Constant_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Roll",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Pitch",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_BreakRotator_Yaw",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RInterpTo_Constant_DeltaTime_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_RInterpTo_Constant_InterpSpeed_ImplicitCast",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "FloatProperty",
+        "Name": "CallFunc_MakeRotator_Yaw_ImplicitCast_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "Temp_int_Variable_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Add_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetValidValue_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_Conv_IntToByte_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "CallFunc_GetEnumeratorValueFromIndex_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "Enum": null
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Conv_ByteToInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_MakeLiteralInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_GetCharacterBuildComponent_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "InstancedReference",
+        "PropertyClass": {
+          "ObjectName": "Class'SGCharacterBuildComponent'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_AcquirePerkForEnemy_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BC_RBOSS005_00_Base_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.51"
+      },
+      "VariableGuid": "142C83D7-422BE6B5-8F4A9395-7EB7729A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'ECHC_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/ECHC_RBOSS005_00.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ECHC_RBOSS005_00_C'BC_RBOSS005_00_Base_C:ECHC_RBOSS005_00_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.3"
+      },
+      "VariableGuid": "6032C4D7-4E283FDD-78C1A7A4-58FB0DF9",
+      "InternalVariableName": "ECHC_RBOSS005_00"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGBurstGaugeComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGBurstGaugeComponent'BC_RBOSS005_00_Base_C:SGBurstGauge_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.62"
+      },
+      "VariableGuid": "E47941A7-41012A7B-C7588AB3-DA923FCB",
+      "InternalVariableName": "SGBurstGauge"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGCharacterPartsComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGCharacterPartsComponent'BC_RBOSS005_00_Base_C:SGCharacterParts_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.65"
+      },
+      "VariableGuid": "6F0E4258-41E0DC34-E0B5A388-F5CE9E31",
+      "InternalVariableName": "SGCharacterParts"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGMassiveLinkArtsComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGMassiveLinkArtsComponent'BC_RBOSS005_00_Base_C:SGMassiveLinkArts_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.70"
+      },
+      "VariableGuid": "C1B8F671-40E171B7-0F6B9099-DF9E06CE",
+      "InternalVariableName": "SGMassiveLinkArts"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGHomingTargetHolderComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGHomingTargetHolderComponent'BC_RBOSS005_00_Base_C:SGHomingTargetHolder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.69"
+      },
+      "VariableGuid": "3208FD1B-40C9C2BB-92B3238A-9C8CF89C",
+      "InternalVariableName": "SGHomingTargetHolder"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass'DefaultSwitchChainComponent_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/DefaultSwitchChainComponent.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "DefaultSwitchChainComponent_C'BC_RBOSS005_00_Base_C:SwitchChainComponent_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.2"
+      },
+      "VariableGuid": "94FCC741-43D01EF8-9E2C308A-21988DB5",
+      "InternalVariableName": "SwitchChainComponent"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SGProjectileDataHolderComponent'",
+        "ObjectPath": "/Script/SEVEN_Product"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SGProjectileDataHolderComponent'BC_RBOSS005_00_Base_C:SGProjectileDataHolder_GEN_VARIABLE'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.71"
+      },
+      "VariableGuid": "FD654AB8-461EFFF1-20E322AD-4C0B9119",
+      "InternalVariableName": "SGProjectileDataHolder"
+    }
+  },
+  {
+    "Type": "SGActionArmorComponent",
+    "Name": "ActionArmorComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGActionArmorComponent'",
+    "Template": {
+      "ObjectName": "SGActionArmorComponent'Default__BC_SGRBoss_Unarmed_Base_C:ActionArmorComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.17"
+    }
+  },
+  {
+    "Type": "SGActionInvincibleComponent",
+    "Name": "ActionInvincibleComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGActionInvincibleComponent'",
+    "Template": {
+      "ObjectName": "SGActionInvincibleComponent'Default__BC_SGRBoss_Unarmed_Base_C:ActionInvincibleComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.18"
+    }
+  },
+  {
+    "Type": "SGBurstGaugeComponent",
+    "Name": "SGBurstGauge_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGBurstGaugeComponent'",
+    "Properties": {
+      "m_burst_gauge_param_list": [
+        {
+          "k_burst_gauge_max": 2000.0,
+          "k_burst_down_time": 8.0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SGCharacterBuildComponent",
+    "Name": "CharacterBuildComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGCharacterBuildComponent'",
+    "Template": {
+      "ObjectName": "SGCharacterBuildComponent'Default__BC_SGRBoss_Unarmed_Base_C:CharacterBuildComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.20"
+    }
+  },
+  {
+    "Type": "SGCharacterLevelComponent",
+    "Name": "CharacterLevelComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGCharacterLevelComponent'",
+    "Template": {
+      "ObjectName": "SGCharacterLevelComponent'Default__BC_SGRBoss_Unarmed_Base_C:CharacterLevelComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.21"
+    }
+  },
+  {
+    "Type": "SGCharacterPartsComponent",
+    "Name": "SGCharacterParts_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGCharacterPartsComponent'"
+  },
+  {
+    "Type": "SGDebugCharacterInformationComponent",
+    "Name": "DebugCharacterInformationComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGDebugCharacterInformationComponent'",
+    "Template": {
+      "ObjectName": "SGDebugCharacterInformationComponent'Default__BC_SGRBoss_Unarmed_Base_C:DebugCharacterInformationComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.22"
+    }
+  },
+  {
+    "Type": "SGHeroPointComponent",
+    "Name": "HeroPointComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGHeroPointComponent'",
+    "Template": {
+      "ObjectName": "SGHeroPointComponent'Default__BC_SGRBoss_Unarmed_Base_C:HeroPointComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.23"
+    }
+  },
+  {
+    "Type": "SGHitEffectStashComponent",
+    "Name": "HitEffectStashComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGHitEffectStashComponent'",
+    "Template": {
+      "ObjectName": "SGHitEffectStashComponent'Default__BC_SGRBoss_Unarmed_Base_C:HitEffectStashComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.24"
+    }
+  },
+  {
+    "Type": "SGHomingTargetHolderComponent",
+    "Name": "SGHomingTargetHolder_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGHomingTargetHolderComponent'"
+  },
+  {
+    "Type": "SGMassiveLinkArtsComponent",
+    "Name": "SGMassiveLinkArts_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGMassiveLinkArtsComponent'"
+  },
+  {
+    "Type": "SGProjectileDataHolderComponent",
+    "Name": "SGProjectileDataHolder_GEN_VARIABLE",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGProjectileDataHolderComponent'",
+    "Properties": {
+      "m_projectile_data_asset_array": [
+        {
+          "ObjectName": "DataTable'DT_ProjectileData_RBOSS005'",
+          "ObjectPath": "/Game/Product/DataTable/Projectile/DT_ProjectileData_RBOSS005.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SGStatusAilmentComponent",
+    "Name": "StatusAilmentComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGStatusAilmentComponent'",
+    "Template": {
+      "ObjectName": "SGStatusAilmentComponent'Default__BC_SGRBoss_Unarmed_Base_C:StatusAilmentComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.25"
+    }
+  },
+  {
+    "Type": "SGStatusBuffComponent",
+    "Name": "StatusBuffComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SGStatusBuffComponent'",
+    "Template": {
+      "ObjectName": "SGStatusBuffComponent'Default__BC_SGRBoss_Unarmed_Base_C:StatusBuffComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.26"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.53"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.54"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.55"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.56"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.57"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.58"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.59"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.53"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.54"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.55"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.56"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.57"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.58"
+        },
+        {
+          "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.59"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BC_RBOSS005_00_Base_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.52"
+      }
+    }
+  },
+  {
+    "Type": "VG3DHudDeadIconComponent",
+    "Name": "3DHudDeadIconComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VG3DHudDeadIconComponent'",
+    "Template": {
+      "ObjectName": "VG3DHudDeadIconComponent'Default__BC_SGRBoss_Unarmed_Base_C:3DHudDeadIconComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.28"
+    }
+  },
+  {
+    "Type": "VG3DHudStatusComponent",
+    "Name": "3DHudStatusComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VG3DHudStatusComponent'",
+    "Template": {
+      "ObjectName": "VG3DHudStatusComponent'Default__BC_SGRBoss_Unarmed_Base_C:3DHudStatusComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.29"
+    }
+  },
+  {
+    "Type": "VGActionComponent",
+    "Name": "ActionComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGActionComponent'",
+    "Template": {
+      "ObjectName": "VGActionComponent'Default__BC_SGRBoss_Unarmed_Base_C:ActionComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.30"
+    }
+  },
+  {
+    "Type": "VGBehaviorComponent",
+    "Name": "BehaviorComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGBehaviorComponent'",
+    "Template": {
+      "ObjectName": "VGBehaviorComponent'Default__BC_SGRBoss_Unarmed_Base_C:BehaviorComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.31"
+    }
+  },
+  {
+    "Type": "VGCameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGCameraComponent'",
+    "Template": {
+      "ObjectName": "VGCameraComponent'Default__BC_SGRBoss_Unarmed_Base_C:CameraComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.32"
+    },
+    "Properties": {
+      "k_height_offset": 1200.0,
+      "k_height_offset_kneeling": 1200.0,
+      "k_height_offset_tumble": 1200.0,
+      "m_hit_correction": true
+    }
+  },
+  {
+    "Type": "VGCharaBodyComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGCharaBodyComponent'",
+    "Template": {
+      "ObjectName": "VGCharaBodyComponent'Default__BC_SGRBoss_Unarmed_Base_C:CollisionCylinder'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.33"
+    },
+    "Properties": {
+      "m_do_not_overwrite_profile": true,
+      "CapsuleHalfHeight": 437.73355,
+      "CapsuleRadius": 400.0,
+      "bIgnoreRadialImpulse": true,
+      "bIgnoreRadialForce": true,
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel15",
+        "CollisionProfileName": "BossBody",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaBody_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaHit",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BossPhys",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "Type": "VGCharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGCharacterMovementComponent'",
+    "Template": {
+      "ObjectName": "VGCharacterMovementComponent'Default__BC_SGRBoss_Unarmed_Base_C:CharMoveComp'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.34"
+    },
+    "Properties": {
+      "MaxFlySpeed": 2000.0,
+      "BrakingFriction": 2.0,
+      "BrakingDecelerationFlying": 3.0,
+      "RotationRate": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "bUseSeparateBrakingFriction": true,
+      "bOrientRotationToMovement": false,
+      "NetworkSimulatedSmoothRotationTime": 0.5,
+      "NetworkMaxSmoothUpdateDistance": 512.0,
+      "NetworkNoSmoothUpdateDistance": 1024.0,
+      "bAlwaysCheckFloor": false,
+      "NavAgentProps": {
+        "bCanJump": false,
+        "bCanSwim": false
+      }
+    }
+  },
+  {
+    "Type": "VGHitStopComponent",
+    "Name": "HitStopComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGHitStopComponent'",
+    "Template": {
+      "ObjectName": "VGHitStopComponent'Default__BC_SGRBoss_Unarmed_Base_C:HitStopComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.35"
+    }
+  },
+  {
+    "Type": "VGMapIconComponent",
+    "Name": "MapIconComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGMapIconComponent'",
+    "Template": {
+      "ObjectName": "VGMapIconComponent'Default__BC_SGRBoss_Unarmed_Base_C:MapIconComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.36"
+    },
+    "Properties": {
+      "m_icon_type": "EVGMapIconType::Boss",
+      "m_icon_type_auto_set": false
+    }
+  },
+  {
+    "Type": "VGSkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGSkeletalMeshComponent'",
+    "Template": {
+      "ObjectName": "VGSkeletalMeshComponent'Default__BC_SGRBoss_Unarmed_Base_C:CharacterMesh0'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.37"
+    },
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_RBOSS005_00_C'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Animation/Blueprint/ABP_RBOSS005_00.1"
+      },
+      "bIgnoreRadialImpulse": true,
+      "bIgnoreRadialForce": true,
+      "CanCharacterStepUpOn": "ECB_No",
+      "LightingChannels": {
+        "bChannel1": true
+      },
+      "BodyInstance": {
+        "ObjectType": "ECC_GameTraceChannel16",
+        "CollisionProfileName": "BossPhys",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaPhys_L",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CharaHit",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BulletPenetrate",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CameraHitCheck",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Wire",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Bullet",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InvisibleWallFly",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BossBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "BossPhys",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "VGCharaBodyComponent'Default__BC_RBOSS005_00_Base_C:CollisionCylinder'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.80"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -378.08444
+      }
+    }
+  },
+  {
+    "Type": "VGSoundComponent",
+    "Name": "SoundComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGSoundComponent'",
+    "Template": {
+      "ObjectName": "VGSoundComponent'Default__BC_SGRBoss_Unarmed_Base_C:SoundComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.38"
+    }
+  },
+  {
+    "Type": "VGTriggerComponent",
+    "Name": "TriggerComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGTriggerComponent'",
+    "Template": {
+      "ObjectName": "VGTriggerComponent'Default__BC_SGRBoss_Unarmed_Base_C:TriggerComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.39"
+    }
+  },
+  {
+    "Type": "VGVfxComponent",
+    "Name": "VfxComponent",
+    "Outer": "Default__BC_RBOSS005_00_Base_C",
+    "Class": "UScriptClass'VGVfxComponent'",
+    "Template": {
+      "ObjectName": "VGVfxComponent'Default__BC_SGRBoss_Unarmed_Base_C:VfxComponent'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/BC_SGRBoss_Unarmed_Base.40"
+    }
+  }
+]

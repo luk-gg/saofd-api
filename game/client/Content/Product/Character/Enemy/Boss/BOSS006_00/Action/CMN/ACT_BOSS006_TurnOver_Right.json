@@ -1,0 +1,481 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 120.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::Capsule",
+      "box_half_extent_x": 210.0,
+      "box_half_extent_y": 210.0,
+      "box_half_extent_z": 400.0,
+      "capsule_radius": 230.0,
+      "capsule_half_height": 350.0
+    }
+  },
+  {
+    "Type": "SGANSNotifyTurningFaceToTarget",
+    "Name": "SGANSNotifyTurningFaceToTarget_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSNotifyTurningFaceToTarget'",
+    "Properties": {
+      "is_enable": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Right",
+      "action_id": 33,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS006_TurnOver_r'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Animation/Montage/MNT_BOSS006_TurnOver_r.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.6"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_TurnOver_Right:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 47,
+      "start_time": 1.5666667,
+      "end_time": 1.6,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 58,
+      "num_frames": 13,
+      "start_time": 1.9333334,
+      "end_time": 2.3666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS006_TurnOver_Right:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 55,
+      "end_time": 1.8333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_BOSS006_TurnOver_Right:VGActionEvent_13.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットに顔を向ける様に通知",
+      "num_frames": 64,
+      "end_time": 2.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSNotifyTurningFaceToTarget'ACT_BOSS006_TurnOver_Right:VGActionEvent_2.SGANSNotifyTurningFaceToTarget_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 38,
+      "start_time": 1.2666668,
+      "end_time": 1.3000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 12,
+      "start_time": 0.40000004,
+      "end_time": 0.43333337,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 27,
+      "start_time": 0.90000004,
+      "end_time": 0.9333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 37,
+      "start_time": 1.2333333,
+      "end_time": 1.2666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_BOSS006_TurnOver_Right",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 23,
+      "start_time": 0.7666667,
+      "end_time": 0.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS006_TurnOver_Right:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_TurnOver_Right.21"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "node_name": "b_C_Base"
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

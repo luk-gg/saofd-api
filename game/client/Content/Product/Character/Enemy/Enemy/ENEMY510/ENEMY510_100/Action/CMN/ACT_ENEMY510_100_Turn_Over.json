@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY510_100_Turn_Over",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Turn_Over_Left",
+      "action_id": 32,
+      "states": [
+        "EVGActionState::Turn"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY510_100_Turn_Over'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Animation/Montage/MNT_ENEMY510_100_Turn_Over.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY510_100_Turn_Over:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Action/CMN/ACT_ENEMY510_100_Turn_Over.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY510_100_Turn_Over",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 25,
+      "num_frames": 16,
+      "start_time": 0.8333334,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY510_100_Turn_Over:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY510/ENEMY510_100/Action/CMN/ACT_ENEMY510_100_Turn_Over.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

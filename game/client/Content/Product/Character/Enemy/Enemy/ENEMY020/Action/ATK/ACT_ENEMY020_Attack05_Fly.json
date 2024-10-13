@@ -1,0 +1,372 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 180.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 202000030,
+      "position": {
+        "X": 500.0,
+        "Y": 0.0,
+        "Z": 390.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::CurrentAITarget",
+      "use_injection_limit_angle": true,
+      "injection_limit_angle": 40.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack05_Fly",
+      "action_id": 109,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY020_Attack05_Fly'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Animation/Montage/MNT_ENEMY020_Attack05_Fly.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Attack05_Fly:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY020_Attack05_Fly:VGActionEvent_0.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 59,
+      "num_frames": 6,
+      "start_time": 1.9666668,
+      "end_time": 2.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY020_Attack05_Fly:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "鳴き声",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY020_Attack05_Fly:VGActionEvent_15.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 40,
+      "start_time": 1.3333334,
+      "end_time": 1.3666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY020_Attack05_Fly:VGActionEvent_2.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "羽ばたき音",
+      "start_frame": 58,
+      "start_time": 1.9333334,
+      "end_time": 1.9666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY020_Attack05_Fly:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行状態",
+      "num_frames": 77,
+      "end_time": 2.5666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY020_Attack05_Fly:VGActionEvent_4.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "羽ばたき音",
+      "start_frame": 39,
+      "start_time": 1.3000001,
+      "end_time": 1.3333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY020_Attack05_Fly:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "真空弾",
+      "start_frame": 41,
+      "start_time": 1.3666668,
+      "end_time": 1.4000001,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY020_Attack05_Fly:VGActionEvent_6.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY020_Attack05_Fly",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発射音",
+      "start_frame": 40,
+      "start_time": 1.3333334,
+      "end_time": 1.3666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY020_Attack05_Fly:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/ATK/ACT_ENEMY020_Attack05_Fly.15"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 3,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 19,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 40
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        20
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY020_VacuumBlast_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY020/efs_ENEMY020_VacuumBlast_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 200.0,
+        "Z": 150.0
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "scale_offset": {
+        "X": 2.5,
+        "Y": 2.5,
+        "Z": 2.5
+      }
+    }
+  }
+]

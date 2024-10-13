@@ -1,0 +1,191 @@
+[
+  {
+    "Type": "SGANSActionBranchSet",
+    "Name": "SGANSActionBranchSet_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSActionBranchSet'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "SGActionBranchDataAsset'ABS_BOSS009_TeleportDodge'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/_BranchSet/ABS_BOSS009_TeleportDodge.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Run_End",
+      "action_id": 12,
+      "states": [
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS009_Run_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Animation/Montage/MNT_BOSS009_Run_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS009_Run_End:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS009_Run_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS009_Run_End:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS009_Run_End:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS009_Run_End:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 7,
+      "num_frames": 14,
+      "start_time": 0.23333335,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_BOSS009_Run_End:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 36,
+      "num_frames": 43,
+      "start_time": 1.2,
+      "end_time": 2.6333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS009_Run_End:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ブレーキ音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS009_Run_End:VGActionEvent_10.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 15,
+      "end_time": 0.5,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_BOSS009_Run_End:VGActionEvent_2.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS009_Run_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 41,
+      "end_time": 1.3666668,
+      "notify_state": {
+        "ObjectName": "SGANSActionBranchSet'ACT_BOSS009_Run_End:VGActionEvent_3.SGANSActionBranchSet_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS009_00/Action/CMN/ACT_BOSS009_Run_End.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10431,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOp::Attenuation",
+      "move_value": {
+        "X": 6.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 550.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  }
+]

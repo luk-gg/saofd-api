@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY009_Down",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Down",
+      "action_id": 206,
+      "states": [
+        "EVGActionState::Down"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY009_Down'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Animation/Montage/MNT_ENEMY009_Down.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Down:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Down.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY009_Down:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Down.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY009_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 23,
+      "num_frames": 29,
+      "start_time": 0.7666667,
+      "end_time": 1.7333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY009_Down:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Down.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY009_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 65,
+      "end_time": 2.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY009_Down:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY009/Action/DMG/ACT_ENEMY009_Down.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 207
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

@@ -1,0 +1,516 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_GotoTarget_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:GetJumpParameter'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.1"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.3"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.4"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.2"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "AttackProcess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JumpModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "StartPosition",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsFallingAnimationAlreadyPlayed",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "JumpParamAsset",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_JumpParameter_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseOwnerJumpModule",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "UseRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetRotation",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance",
+        "Struct": {
+          "ObjectName": "Class'Rotator'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FuncMap": {
+      "StartAction": {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.2"
+      },
+      "UpdateProcess": {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.4"
+      },
+      "UpdateAttack": {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.3"
+      },
+      "GetJumpParameter": {
+        "ObjectName": "Function'SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C:GetJumpParameter'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'Default__SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "GetJumpParameter",
+    "Outer": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "PropertyFlags": "Parm | OutParm",
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "K2Node_MakeStruct_SGStruct_SkillAction_JumpParameter",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetParameter_JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent | FUNC_BlueprintPure | FUNC_Const"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAction",
+    "Outer": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_GotoTarget_C:StartAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget.7"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_StartAction_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBPI_Enemy_Jump",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_Jump_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_BPI_GetJumpModule_Module",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "CallFunc_SpawnObject_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_Jump_Module_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGBP_SkillAction_Jump_Module.0"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateAttack",
+    "Outer": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateAttack'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsJumpEnd_End",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_UpdateJump_IsEnd",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "InterfaceProperty",
+        "Name": "K2Node_DynamicCast_AsBPI_Enemy_Jump",
+        "Flags": "RF_Public",
+        "ElementSize": 16,
+        "InterfaceClass": {
+          "ObjectName": "BlueprintGeneratedClass'BPI_Enemy_Jump_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Utility/BPI_Enemy_Jump.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetJumpParameter_JumpParam",
+        "Flags": "RF_Public",
+        "ElementSize": 32,
+        "Struct": {
+          "ObjectName": "UserDefinedStruct'SGStruct_SkillAction_JumpParameter'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/Module/SGStruct_SkillAction_JumpParameter.0"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_HasDefaults | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateProcess",
+    "Outer": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateProcess'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.25"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateTurn_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateIntervalAction_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateAttack_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateApproach_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Name": "Default__SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement.SGBP_SkillAction_GotoTarget_Jump_ParabolicMovement_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_GotoTarget_C'Default__SGBP_SkillAction_GotoTarget_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget.11"
+    },
+    "Properties": {
+      "StartPosition": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TargetRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]

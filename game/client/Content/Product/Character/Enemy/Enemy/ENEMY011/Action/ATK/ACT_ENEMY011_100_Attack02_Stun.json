@@ -1,0 +1,308 @@
+[
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 201110100,
+      "position": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 100.0
+      },
+      "scale": {
+        "X": 1.25,
+        "Y": 1.25,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack02",
+      "action_id": 101,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY011_100_Attack02'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Animation/Montage/MNT_ENEMY011_100_Attack02.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 114,
+      "num_frames": 8,
+      "start_time": 3.8000002,
+      "end_time": 4.066667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "煙",
+      "start_frame": 46,
+      "num_frames": 26,
+      "start_time": 1.5333334,
+      "end_time": 2.4,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_10.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "リム(全身発光処理)",
+      "num_frames": 142,
+      "end_time": 4.7333336,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_13.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "アシッドウェーブ",
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_4.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "num_frames": 7,
+      "end_time": 0.23333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動き",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY011_100_Attack02_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ミスト",
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY011_100_Attack02_Stun:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY011/Action/ATK/ACT_ENEMY011_100_Attack02_Stun.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 6,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.734899,
+        "G": 1.0,
+        "B": 0.5,
+        "A": 0.0,
+        "Hex": "DFFFBC"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 0.574765,
+        "G": 1.0,
+        "B": 0.01,
+        "A": 0.0,
+        "Hex": "C8FF19"
+      },
+      "dark_color": {
+        "R": 0.982013,
+        "G": 1.0,
+        "B": 0.33,
+        "A": 0.0,
+        "Hex": "FDFF9C"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_001_mist'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_001_mist.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 125.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY011_001_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY011/efs_ENEMY011_001_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 200.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  }
+]

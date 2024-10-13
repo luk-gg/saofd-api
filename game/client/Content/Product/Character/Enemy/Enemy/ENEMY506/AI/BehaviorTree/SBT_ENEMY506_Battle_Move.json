@@ -1,0 +1,316 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_Interval_C'SBT_ENEMY506_Battle_Move:SBTTask_Enemy_Move_Interval_C_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.8"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY506_Battle_Move:BTDecorator_Blackboard_6'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.4"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_Interval_C'SBT_ENEMY506_Battle_Move:SBTTask_ENEMY005_FlyingMove_Battle_Interval_C_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY506_Battle_Move:BTDecorator_Blackboard_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.2"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_Interval_C'SBT_ENEMY506_Battle_Move:SBTTask_Enemy_Move_Interval_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.7"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY506_Battle_Move:BTDecorator_Blackboard_5'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.3"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_Interval_C'SBT_ENEMY506_Battle_Move:SBTTask_Enemy_Move_Interval_C_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.9"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY506_Battle_Move:BTDecorator_Blackboard_7'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.5"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Wait_WaitPhaseTime_C'SBT_ENEMY506_Battle_Move:SBTTask_Enemy_Wait_WaitPhaseTime_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_3",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Left",
+      "CachedDescription": "SelectedActionName Is Equal To [Left]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "左",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_5",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Right",
+      "CachedDescription": "SelectedActionName Is Equal To [Right]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "右",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_6",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Near",
+      "CachedDescription": "SelectedActionName Is Equal To [Near]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "接近",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_7",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "Back",
+      "CachedDescription": "SelectedActionName Is Equal To [Back]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "後退",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_Interval_C",
+    "Name": "SBTTask_ENEMY005_FlyingMove_Battle_Interval_C_2",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.SBTTask_Enemy_Move_Interval_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_Interval_C'Default__SBTTask_Enemy_Move_Interval_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.16"
+    },
+    "Properties": {
+      "IntervalType": "SBTEnum_Enemy_Move_IntervalType::NewEnumerator3",
+      "MoveTimeMin": 2.0,
+      "MoveTimeMax": 3.0,
+      "RunInput": [],
+      "UseNaviMesh": true,
+      "UseShift": true,
+      "NodeName": "左旋回",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_Interval_C",
+    "Name": "SBTTask_Enemy_Move_Interval_C_1",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.SBTTask_Enemy_Move_Interval_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_Interval_C'Default__SBTTask_Enemy_Move_Interval_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.16"
+    },
+    "Properties": {
+      "IntervalType": "SBTEnum_Enemy_Move_IntervalType::NewEnumerator2",
+      "MoveTimeMin": 2.0,
+      "MoveTimeMax": 3.0,
+      "RunInput": [],
+      "UseNaviMesh": true,
+      "UseShift": true,
+      "NodeName": "右旋回",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_Interval_C",
+    "Name": "SBTTask_Enemy_Move_Interval_C_3",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.SBTTask_Enemy_Move_Interval_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_Interval_C'Default__SBTTask_Enemy_Move_Interval_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.16"
+    },
+    "Properties": {
+      "IntervalType": "SBTEnum_Enemy_Move_IntervalType::NewEnumerator4",
+      "AddInput": [
+        17
+      ],
+      "MoveTimeMin": 2.0,
+      "MoveTimeMax": 3.0,
+      "RunInput": [],
+      "UseNaviMesh": true,
+      "UseShift": true,
+      "NodeName": "接近",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_Interval_C",
+    "Name": "SBTTask_Enemy_Move_Interval_C_4",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.SBTTask_Enemy_Move_Interval_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_Interval_C'Default__SBTTask_Enemy_Move_Interval_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_Interval.16"
+    },
+    "Properties": {
+      "IntervalType": "SBTEnum_Enemy_Move_IntervalType::NewEnumerator0",
+      "MoveTimeMin": 2.0,
+      "MoveTimeMax": 3.0,
+      "RunInput": [],
+      "UseNaviMesh": true,
+      "UseShift": true,
+      "NodeName": "後退",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Wait_WaitPhaseTime_C",
+    "Name": "SBTTask_Enemy_Wait_WaitPhaseTime_C_1",
+    "Outer": "SBT_ENEMY506_Battle_Move",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_Wait_WaitPhaseTime.SBTTask_Enemy_Wait_WaitPhaseTime_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Wait_WaitPhaseTime_C'Default__SBTTask_Enemy_Wait_WaitPhaseTime_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_Wait_WaitPhaseTime.4"
+    },
+    "Properties": {
+      "NodeName": "待機時間分待機",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY506_Battle_Move'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY506_Battle_Move:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/AI/BehaviorTree/SBT_ENEMY506_Battle_Move.1"
+      }
+    }
+  }
+]

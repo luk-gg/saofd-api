@@ -1,0 +1,235 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_Enemy_Skill:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_SkillUse_C'SBT_Enemy_Skill:SBTTask_Enemy_SkillUse_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.4"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckAvailableSkills_C'SBT_Enemy_Skill:SBTDecorator_RBOSS004_CheckAvailableSkills_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.3"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_Enemy_Skill:VGBTT_SetBBName_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_Enemy_Skill:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_Enemy_Skill:VGBTT_SetBBName_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_Enemy_Skill:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBName'SBT_Enemy_Skill:VGBTT_SetBBName_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.6"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckAvailableSkills_C",
+    "Name": "SBTDecorator_RBOSS004_CheckAvailableSkills_C_0",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAvailableSkills.SBTDecorator_Enemy_CheckAvailableSkills_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckAvailableSkills_C'Default__SBTDecorator_Enemy_CheckAvailableSkills_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTDecorator_Enemy_CheckAvailableSkills.2"
+    },
+    "Properties": {
+      "NodeName": "スキルが登録されているかチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_Enemy_Skill:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_SkillUse_C",
+    "Name": "SBTTask_Enemy_SkillUse_C_0",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_SkillUse.SBTTask_Enemy_SkillUse_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_SkillUse_C'Default__SBTTask_Enemy_SkillUse_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_SkillUse.9"
+    },
+    "Properties": {
+      "Services": [
+        {
+          "ObjectName": "VGBTS_UpdateAim'SBT_Enemy_Skill:VGBTS_UpdateAim_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.5"
+        }
+      ],
+      "NodeName": "スキルの実行",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_Enemy_Skill:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTS_UpdateAim",
+    "Name": "VGBTS_UpdateAim_1",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'VGBTS_UpdateAim'",
+    "Properties": {
+      "m_target_key": {
+        "SelectedKeyName": "AttackTargetActor"
+      },
+      "m_aim_mode": "EVGAIAimMode::Node",
+      "m_aim_node_key": {
+        "SelectedKeyName": "TargetingAimNode"
+      },
+      "m_homing_rate": 100.0,
+      "m_result_aim_node_key": {},
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_upper_angle_key": {},
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_Enemy_Skill:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_0",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "スキル名リセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_Enemy_Skill:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_1",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "アクション選択をリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_Enemy_Skill:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBName",
+    "Name": "VGBTT_SetBBName_2",
+    "Outer": "SBT_Enemy_Skill",
+    "Class": "UScriptClass'VGBTT_SetBBName'",
+    "Properties": {
+      "m_destination_key": {
+        "SelectedKeyName": "AttackName"
+      },
+      "NodeName": "スキル名リセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_Enemy_Skill'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_Enemy_Skill:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/Tree/Skill/SBT_Enemy_Skill.1"
+      }
+    }
+  }
+]

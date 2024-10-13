@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "SGANSNotifyTurningFaceToTarget",
+    "Name": "SGANSNotifyTurningFaceToTarget_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSNotifyTurningFaceToTarget'",
+    "Properties": {
+      "is_enable": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS005_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS005_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Animation/Montage/MNT_BOSS005_Wait.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS005_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットに顔を向ける様に通知",
+      "num_frames": 64,
+      "end_time": 2.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSNotifyTurningFaceToTarget'ACT_BOSS005_Wait:VGActionEvent_1.SGANSNotifyTurningFaceToTarget_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/CMN/ACT_BOSS005_Wait.0"
+      }
+    }
+  }
+]

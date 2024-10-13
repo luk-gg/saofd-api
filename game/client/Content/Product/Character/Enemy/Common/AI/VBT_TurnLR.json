@@ -1,0 +1,412 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "VBT_TurnLR",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'VBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.4"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDirection'VBT_TurnLR:VGBTD_CheckDirection_3'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.8"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_9'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDirection'VBT_TurnLR:VGBTD_CheckDirection_11'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.6"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_10'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDirection'VBT_TurnLR:VGBTD_CheckDirection_12'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.7"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "分岐：前左右",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBVector'VBT_TurnLR:VGBTT_SetBBVector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.9"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "タゲ位置更新→ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_10",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetInput'VBT_TurnLR:VGBTT_SetInput_7'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.11"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_WaitActionStateFinish'VBT_TurnLR:VGBTT_WaitActionStateFinish_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "右ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetRotation'VBT_TurnLR:VGBTT_SetRotation_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "モーション無し",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_9",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetInput'VBT_TurnLR:VGBTT_SetInput_6'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_WaitActionStateFinish'VBT_TurnLR:VGBTT_WaitActionStateFinish_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "左ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDirection",
+    "Name": "VGBTD_CheckDirection_11",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTD_CheckDirection'",
+    "Properties": {
+      "m_target_key": {},
+      "m_angle": -90.0,
+      "m_range": 180.0,
+      "NodeName": "ターゲットが左",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDirection",
+    "Name": "VGBTD_CheckDirection_12",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTD_CheckDirection'",
+    "Properties": {
+      "m_target_key": {},
+      "m_angle": 90.0,
+      "m_range": 180.0,
+      "NodeName": "ターゲットが右",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDirection",
+    "Name": "VGBTD_CheckDirection_3",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTD_CheckDirection'",
+    "Properties": {
+      "m_target_key": {},
+      "m_range": 30.0,
+      "NodeName": "ターゲットが前",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'VBT_TurnLR:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBVector",
+    "Name": "VGBTT_SetBBVector_0",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_SetBBVector'",
+    "Properties": {
+      "m_source_key": {
+        "SelectedKeyName": "HomeLocation"
+      },
+      "m_destination_key": {
+        "SelectedKeyName": "TargetLocation"
+      },
+      "NodeName": "ターゲット位置更新",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetInput",
+    "Name": "VGBTT_SetInput_6",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_SetInput'",
+    "Properties": {
+      "m_inputs": [
+        {
+          "keys": [
+            16
+          ],
+          "cooldown_point": 0.0,
+          "cooldown_current_target": false,
+          "probability": 100.0
+        }
+      ],
+      "NodeName": "左ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_9'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetInput",
+    "Name": "VGBTT_SetInput_7",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_SetInput'",
+    "Properties": {
+      "m_inputs": [
+        {
+          "keys": [
+            17
+          ],
+          "cooldown_point": 0.0,
+          "cooldown_current_target": false,
+          "probability": 100.0
+        }
+      ],
+      "NodeName": "右ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_10'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetRotation",
+    "Name": "VGBTT_SetRotation_2",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_SetRotation'",
+    "Properties": {
+      "m_target_key": {
+        "SelectedKeyName": "HomeLocation"
+      },
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_long_throw_key": {},
+      "NodeName": "モーション無しで向く",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_3'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_WaitActionStateFinish",
+    "Name": "VGBTT_WaitActionStateFinish_0",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_WaitActionStateFinish'",
+    "Properties": {
+      "m_states": [
+        "EVGActionState::Turn"
+      ],
+      "NodeName": "振り向き終了待ち",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_9'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_WaitActionStateFinish",
+    "Name": "VGBTT_WaitActionStateFinish_1",
+    "Outer": "VBT_TurnLR",
+    "Class": "UScriptClass'VGBTT_WaitActionStateFinish'",
+    "Properties": {
+      "m_states": [
+        "EVGActionState::Turn"
+      ],
+      "NodeName": "振り向き終了待ち",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'VBT_TurnLR'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'VBT_TurnLR:BTComposite_Sequence_10'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/VBT_TurnLR.3"
+      }
+    }
+  }
+]

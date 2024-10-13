@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DMR_RBOSS005_00_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "SuperStruct": {
+      "ObjectName": "Class'VGDamageReaction'",
+      "ObjectPath": "/Script/SEVEN_Product"
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DMR_RBOSS005_00_C'Default__DMR_RBOSS005_00_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/DMR_RBOSS005_00.1"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "DMR_RBOSS005_00_C",
+    "Name": "Default__DMR_RBOSS005_00_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/DMR_RBOSS005_00.DMR_RBOSS005_00_C'",
+    "Properties": {
+      "m_ignore_the_reaction_decision_later": true,
+      "m_reaction_impact": [
+        {
+          "impact": "ESGDamageImpact::LinkArtsBlow",
+          "reaction": {
+            "names": [],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": null,
+            "id": 2410,
+            "change_ids": [],
+            "attr": [],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          }
+        }
+      ],
+      "m_reaction_extra": [
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS005_00_Cancel_Mouth'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/PTS_RBOSS005_00_Cancel_Mouth.0"
+          },
+          "type": "EVGDamageReactionExtra::CancelAnimation",
+          "threshold": 0.0,
+          "decrease": 0.0,
+          "motion_ids": [],
+          "attribute": "ESGDamageAttribute::None",
+          "unique_reaction_unit": null,
+          "reaction": {
+            "names": [
+              "Mouth"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": null,
+            "id": 2100,
+            "change_ids": [],
+            "attr": [],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Parry'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_CMN_Parry.0"
+              },
+              "vfx_node_name": "Bullet_Point"
+            }
+          ],
+          "m_accum_damage": 0.0
+        }
+      ],
+      "m_burst_down_action_id": [
+        {
+          "Key": "Standard",
+          "Value": 2410
+        },
+        {
+          "Key": "Air",
+          "Value": 2420
+        }
+      ],
+      "m_next_health_bar_use_inspetion_unit": true,
+      "m_next_health_bar_reaction": [
+        {
+          "m_inspection_unit": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_00_NextHealthBarReaction_Ground_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/SGBP_RBOSS005_00_NextHealthBarReaction_Ground.0"
+          },
+          "m_action_id": 2300
+        },
+        {
+          "m_inspection_unit": {
+            "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS005_00_NextHealthBarReaction_Air_C'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Reaction/SGBP_RBOSS005_00_NextHealthBarReaction_Air.0"
+          },
+          "m_action_id": 2310
+        }
+      ]
+    }
+  }
+]

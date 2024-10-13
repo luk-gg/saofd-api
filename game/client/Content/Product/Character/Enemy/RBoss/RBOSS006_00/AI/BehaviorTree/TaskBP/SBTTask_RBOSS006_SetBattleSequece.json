@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SBTTask_RBOSS006_SetBattleSequece_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFunction": {
+        "ObjectName": "Function'SBTTask_RBOSS006_SetBattleSequece_C:ExecuteUbergraph_SBTTask_RBOSS006_SetBattleSequece'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.1"
+      }
+    },
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SBTTask_RBOSS006_SetBattleSequece_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.2"
+      },
+      {
+        "ObjectName": "Function'SBTTask_RBOSS006_SetBattleSequece_C:ExecuteUbergraph_SBTTask_RBOSS006_SetBattleSequece'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "StructProperty",
+        "Name": "UberGraphFrame",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Transient | DuplicateTransient",
+        "Struct": {
+          "ObjectName": "Class'PointerToUberGraphFrame'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ByteProperty",
+        "Name": "BattleSequenceType",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Enum": {
+          "ObjectName": "UserDefinedEnum'SGEnum_RBOSS006_BattleSequenceType'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/BattleCharacter/Base/SGEnum_RBOSS006_BattleSequenceType.0"
+        }
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SBTTask_RBOSS006_SetBattleSequece": {
+        "ObjectName": "Function'SBTTask_RBOSS006_SetBattleSequece_C:ExecuteUbergraph_SBTTask_RBOSS006_SetBattleSequece'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.1"
+      },
+      "ReceiveExecuteAI": {
+        "ObjectName": "Function'SBTTask_RBOSS006_SetBattleSequece_C:ReceiveExecuteAI'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SBTTask_RBOSS006_SetBattleSequece_C'Default__SBTTask_RBOSS006_SetBattleSequece_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.3"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SBTTask_RBOSS006_SetBattleSequece",
+    "Outer": "SBTTask_RBOSS006_SetBattleSequece_C",
+    "Class": "UScriptClass'Function'",
+    "ChildProperties": [
+      {
+        "Type": "IntProperty",
+        "Name": "EntryPoint",
+        "Flags": "RF_Public",
+        "ElementSize": 4,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_Event_ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_RBOSS006_00_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS006_00_base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/BattleCharacter/Base/BC_RBOSS006_00_base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Final | FUNC_UbergraphFunction"
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecuteAI",
+    "Outer": "SBTTask_RBOSS006_SetBattleSequece_C",
+    "Class": "UScriptClass'Function'",
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase:ReceiveExecuteAI'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "OwnerController",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'AIController'",
+          "ObjectPath": "/Script/AIModule"
+        }
+      },
+      {
+        "Type": "ObjectProperty",
+        "Name": "ControlledPawn",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'Pawn'",
+          "ObjectPath": "/Script/Engine"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Event | FUNC_Protected | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SBTTask_RBOSS006_SetBattleSequece_C",
+    "Name": "Default__SBTTask_RBOSS006_SetBattleSequece_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/TaskBP/SBTTask_RBOSS006_SetBattleSequece.SBTTask_RBOSS006_SetBattleSequece_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

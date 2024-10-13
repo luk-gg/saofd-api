@@ -1,0 +1,386 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_op": "EVGActMoveOpSG::Attenuation",
+      "move_value": {
+        "X": 4.0,
+        "Y": 0.0,
+        "Z": 10.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -2000.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Dead_Blowaway_Loop",
+      "action_id": 2008,
+      "states": [
+        "EVGActionState::Dead"
+      ],
+      "priority": 1000,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY004_Blowaway_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Animation/Montage/MNT_ENEMY004_Blowaway_l.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.9"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落下",
+      "start_frame": 3,
+      "num_frames": 23,
+      "start_time": 0.10000001,
+      "end_time": 0.86666673,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "start_frame": 3,
+      "num_frames": 47,
+      "start_time": 0.10000001,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 14,
+      "end_time": 0.4666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_13.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "start_frame": 3,
+      "num_frames": 47,
+      "start_time": 0.10000001,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "着地分岐",
+      "start_frame": 3,
+      "num_frames": 47,
+      "start_time": 0.10000001,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "死亡リム(全身発光処理)",
+      "num_frames": 37,
+      "end_time": 1.2333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_5.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "接地しなくても強制爆散",
+      "start_frame": 11,
+      "num_frames": 2,
+      "start_time": 0.36666667,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 12,
+      "start_time": 0.033333335,
+      "end_time": 0.43333337,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_7.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 84,
+      "end_time": 2.8000002,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY004_Dead_Blowaway_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY004_Dead_Blowaway_Loop:VGActionEvent_9.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY004/Action/DMG/ACT_ENEMY004_Dead_Blowaway_Loop.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::FloorHit",
+      "action_id": 2009,
+      "floor_check_distance": 20.0
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 2009,
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Landing",
+      "action_id": 2009
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 2009
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -900.0,
+        "Y": 0.0,
+        "Z": -850.0
+      },
+      "is_reset": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        23,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 0.0,
+        "G": 64.0,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 1.0,
+        "G": 2.0,
+        "B": 4.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "dark_color": {
+        "R": 0.0,
+        "G": 24.0,
+        "B": 64.0,
+        "A": 0.0,
+        "Hex": "00FFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  }
+]

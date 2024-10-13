@@ -1,0 +1,54 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY300_Attack_FireBall_e",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FireBall_e",
+      "action_id": 104,
+      "states": [
+        "EVGActionState::Fire",
+        "EVGActionState::Aim",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_ENEMY300_FireBall_Ground_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Animation/Montage/BS_ENEMY300_FireBall_Ground_e.0"
+        },
+        "blend_time": 0.05,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FireBall_e:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FireBall_e.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY300_Attack_FireBall_e",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 22,
+      "num_frames": 9,
+      "start_time": 0.73333335,
+      "end_time": 1.0333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY300_Attack_FireBall_e:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FireBall_e.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

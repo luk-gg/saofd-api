@@ -1,0 +1,215 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 180.0,
+      "m_limit_rotate": 200.0,
+      "m_disable_change_of_movement_mode": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "W00_Guard_s",
+      "action_id": 201,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY005_Guard_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Animation/Montage/MNT_ENEMY005_Guard_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_s:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_s:VGActionEvent_30'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_s:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.5"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_s:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY005_W00_Guard_s:VGActionEvent_26'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガードループへ",
+      "start_frame": 23,
+      "num_frames": 3,
+      "start_time": 0.7666667,
+      "end_time": 0.86666673,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY005_W00_Guard_s:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_26",
+    "Outer": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード音",
+      "start_frame": 19,
+      "start_time": 0.6333334,
+      "end_time": 0.66666675,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY005_W00_Guard_s:VGActionEvent_26.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_30",
+    "Outer": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スーパーアーマー",
+      "num_frames": 34,
+      "end_time": 1.1333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY005_W00_Guard_s:VGActionEvent_30.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 103,
+      "end_time": 3.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY005_W00_Guard_s:VGActionEvent_4.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY005_W00_Guard_s",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "ガード",
+      "num_frames": 29,
+      "end_time": 0.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSCharaRim'ACT_ENEMY005_W00_Guard_s:VGActionEvent_8.VGANSCharaRim_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/Action/ActionAsset/Guard/ACT_ENEMY005_W00_Guard_s.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_26",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 200
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_30",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  },
+  {
+    "Type": "VGANSCharaRim",
+    "Name": "VGANSCharaRim_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSCharaRim'",
+    "Properties": {
+      "is_weapon": false,
+      "rim_sub": 2.0,
+      "rim_color": {
+        "R": 71.41574,
+        "G": 95.52159,
+        "B": 128.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "brush_multi": 128.0,
+      "brush_sub": 1.0,
+      "bright_color": {
+        "R": 1.400254,
+        "G": 3.720891,
+        "B": 4.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "dark_color": {
+        "R": 51.421356,
+        "G": 57.29026,
+        "B": 64.0,
+        "A": 0.0,
+        "Hex": "FFFFFF"
+      },
+      "rim_fcurve_name": "Rim02",
+      "brush_fcurve_name": "Rim02"
+    }
+  }
+]

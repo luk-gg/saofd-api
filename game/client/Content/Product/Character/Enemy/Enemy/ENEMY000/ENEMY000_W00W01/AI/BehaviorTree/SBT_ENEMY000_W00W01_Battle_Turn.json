@@ -1,0 +1,487 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.4"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.5"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDirection'SBT_ENEMY000_W00W01_Battle_Turn:VGBTD_CheckDirection_8'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.11"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.6"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckDirection'SBT_ENEMY000_W00W01_Battle_Turn:VGBTD_CheckDirection_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.10"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishWithResult'SBT_ENEMY000_W00W01_Battle_Turn:BTTask_FinishWithResult_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "目標地点へ向く",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_5",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.3"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "VGBTD_CheckActionState'SBT_ENEMY000_W00W01_Battle_Turn:VGBTD_CheckActionState_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.9"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Move_SetMoveForward_C'SBT_ENEMY000_W00W01_Battle_Turn:SBTTask_Enemy_Move_SetMoveForward_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetBBVector'SBT_ENEMY000_W00W01_Battle_Turn:VGBTT_SetBBVector_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_5'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_1",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "FinishMode": "EBTParallelMode::WaitForBackground",
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetRotation'SBT_ENEMY000_W00W01_Battle_Turn:VGBTT_SetRotation_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.15"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetInput'SBT_ENEMY000_W00W01_Battle_Turn:VGBTT_SetInput_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_2",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "FinishMode": "EBTParallelMode::WaitForBackground",
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetRotation'SBT_ENEMY000_W00W01_Battle_Turn:VGBTT_SetRotation_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_SetInput'SBT_ENEMY000_W00W01_Battle_Turn:VGBTT_SetInput_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishWithResult",
+    "Name": "BTTask_FinishWithResult_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'BTTask_FinishWithResult'",
+    "Properties": {
+      "NodeName": "ターン終了",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Move_SetMoveForward_C",
+    "Name": "SBTTask_Enemy_Move_SetMoveForward_C_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_SetMoveForward.SBTTask_Enemy_Move_SetMoveForward_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Move_SetMoveForward_C'Default__SBTTask_Enemy_Move_SetMoveForward_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Move/SBTTask_Enemy_Move_SetMoveForward.4"
+    },
+    "Properties": {
+      "UseBBShiftFlag": true,
+      "NodeName": "攻撃対象の方を向く判定を行って正面方向を設定",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckActionState",
+    "Name": "VGBTD_CheckActionState_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTD_CheckActionState'",
+    "Properties": {
+      "m_is_self": true,
+      "m_states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Damage",
+        "EVGActionState::Down",
+        "EVGActionState::Air",
+        "EVGActionState::Land",
+        "EVGActionState::Dead"
+      ],
+      "bInverseCondition": true,
+      "NodeName": "攻撃中、ダメージ中、ダウン中、空中、着地、死亡、以外",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_5'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDirection",
+    "Name": "VGBTD_CheckDirection_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTD_CheckDirection'",
+    "Properties": {
+      "m_target_location": "EVGBTLocationTargetBB::BlackBoard",
+      "m_target_key": {
+        "SelectedKeyName": "MoveTargetForward"
+      },
+      "m_angle": 135.0,
+      "NodeName": "ターゲットが右",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTD_CheckDirection",
+    "Name": "VGBTD_CheckDirection_8",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTD_CheckDirection'",
+    "Properties": {
+      "m_target_location": "EVGBTLocationTargetBB::BlackBoard",
+      "m_target_key": {
+        "SelectedKeyName": "MoveTargetForward"
+      },
+      "m_angle": -135.0,
+      "NodeName": "ターゲットが左",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.1"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetBBVector",
+    "Name": "VGBTT_SetBBVector_4",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTT_SetBBVector'",
+    "Properties": {
+      "m_source_key": {
+        "SelectedKeyName": "SelfActor"
+      },
+      "m_destination_key": {
+        "SelectedKeyName": "MoveTargetLocation"
+      },
+      "NodeName": "ターン方向",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.4"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetInput",
+    "Name": "VGBTT_SetInput_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTT_SetInput'",
+    "Properties": {
+      "m_inputs": [
+        {
+          "keys": [
+            29
+          ],
+          "cooldown_point": 0.0,
+          "cooldown_current_target": false,
+          "probability": 100.0
+        }
+      ],
+      "NodeName": "左ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetInput",
+    "Name": "VGBTT_SetInput_3",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTT_SetInput'",
+    "Properties": {
+      "m_inputs": [
+        {
+          "keys": [
+            29
+          ],
+          "cooldown_point": 0.0,
+          "cooldown_current_target": false,
+          "probability": 100.0
+        }
+      ],
+      "NodeName": "右ターン",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.6"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetRotation",
+    "Name": "VGBTT_SetRotation_0",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTT_SetRotation'",
+    "Properties": {
+      "m_target_location": "EVGBTLocationTargetBB::BlackBoard",
+      "m_target_key": {
+        "SelectedKeyName": "MoveTargetForward"
+      },
+      "m_time": 0.8,
+      "m_turn_mode": "EVGBTTurnMode::YawLeft",
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_long_throw_key": {},
+      "NodeName": "Yaw回転(Left)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.5"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_SetRotation",
+    "Name": "VGBTT_SetRotation_3",
+    "Outer": "SBT_ENEMY000_W00W01_Battle_Turn",
+    "Class": "UScriptClass'VGBTT_SetRotation'",
+    "Properties": {
+      "m_target_location": "EVGBTLocationTargetBB::BlackBoard",
+      "m_target_key": {
+        "SelectedKeyName": "MoveTargetForward"
+      },
+      "m_time": 0.8,
+      "m_turn_mode": "EVGBTTurnMode::YawRight",
+      "m_skill_layer_key": {},
+      "m_skill_key_key": {},
+      "m_long_throw_key": {},
+      "NodeName": "Yaw回転(Right)",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY000_W00W01_Battle_Turn'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'SBT_ENEMY000_W00W01_Battle_Turn:BTComposite_SimpleParallel_2'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W00W01/AI/BehaviorTree/SBT_ENEMY000_W00W01_Battle_Turn.6"
+      }
+    }
+  }
+]

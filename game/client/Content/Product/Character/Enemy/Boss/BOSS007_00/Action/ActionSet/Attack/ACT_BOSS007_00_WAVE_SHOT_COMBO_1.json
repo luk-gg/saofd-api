@@ -1,0 +1,548 @@
+[
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "position": {
+        "X": 0.0,
+        "Y": 85.0,
+        "Z": 90.0
+      },
+      "rotation": {
+        "Pitch": 50.0,
+        "Yaw": 0.0,
+        "Roll": 5.0
+      },
+      "desc": {
+        "damage": 2.0,
+        "attr": [
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::ForceReaction"
+        ],
+        "impact": "ESGDamageImpact::High",
+        "guard_impact": "ESGGuardDamageImpact::High",
+        "guard_damage_cut_rate": 0.75,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle",
+          "rotation": "EVGKnockBackRotation::EVGKnockBackRotation_MAX",
+          "velocity": {
+            "X": 750.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        },
+        "reaction_value": 0.0
+      },
+      "hit_effects": [
+        {
+          "type": "EVGHitType::Normal",
+          "asset": {
+            "ObjectName": "VGVfxSignalAsset'efs_ENE_Hit_Slash_CMN_m'",
+            "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/EnemyHit/efs_ENE_Hit_Slash_CMN_m.0"
+          },
+          "is_socket_location": false,
+          "socket_name": "None",
+          "is_move_directivity": false,
+          "is_attaker_direction": false,
+          "is_causer_direction": false,
+          "is_ignore_rotation": false,
+          "offset_rotate": {
+            "Pitch": 0.0,
+            "Yaw": 0.0,
+            "Roll": 0.0
+          },
+          "is_affected_mesh_scale": true,
+          "sound": {
+            "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+            "CueId": 270,
+            "CueName": "",
+            "BlockIndex": 0,
+            "Volume": 1.0,
+            "Pitch": 0.0,
+            "AisacParam": [],
+            "IsStopForChangedAction": false,
+            "IsReportPlayEnd": false,
+            "IsPhysicalSurface": false,
+            "IsPitchChangeByScale": false,
+            "CueSheetIndex": 0
+          },
+          "ai_noise": []
+        }
+      ],
+      "box_half_extent_x": 160.0,
+      "box_half_extent_y": 120.0,
+      "box_half_extent_z": 25.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 307000,
+      "position": {
+        "X": 100.0,
+        "Y": 0.0,
+        "Z": 30.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 45.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Owner"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "WaveShotCombo1",
+      "action_id": 410,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS007_00_Waveshot01'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Animation/Montage/Attack/MNT_BOSS007_00_Waveshot01.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.11"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_57'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_19'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "構え直し音",
+      "start_frame": 53,
+      "start_time": 1.7666668,
+      "end_time": 1.8000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 30,
+      "num_frames": 13,
+      "start_time": 1.0,
+      "end_time": 1.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 31,
+      "start_time": 1.0333334,
+      "end_time": 1.0666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_10.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 36,
+      "num_frames": 3,
+      "start_time": 1.2,
+      "end_time": 1.3000001,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_11.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 43,
+      "end_time": 1.4333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_12.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "構え音",
+      "start_frame": 5,
+      "start_time": 0.16666667,
+      "end_time": 0.2,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_18.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_19",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風切り音",
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_19.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 33,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "VGANSActionHoming'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_3.VGANSActionHoming_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_5.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_57",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 31,
+      "start_time": 1.0333334,
+      "end_time": 1.0666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_57.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "軌跡",
+      "start_frame": 31,
+      "start_time": 1.0333334,
+      "end_time": 1.0666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_6.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_BOSS007_00_WAVE_SHOT_COMBO_1",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 56,
+      "num_frames": 9,
+      "start_time": 1.8666668,
+      "end_time": 2.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS007_00_WAVE_SHOT_COMBO_1:VGActionEvent_8.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS007_00/Action/ActionSet/Attack/ACT_BOSS007_00_WAVE_SHOT_COMBO_1.19"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 43,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 39,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_19",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 36,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 420,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R2_Down'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R2_Down.0"
+            }
+          ],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::Attacking",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            },
+            {
+              "type": "EVGTriggerStateCondition::Ground",
+              "eval": "EVGTriggerStateConditionEval::b_True",
+              "value": 0.0
+            }
+          ]
+        }
+      ],
+      "early_frame": 6,
+      "early_time": 0.2
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionHoming",
+    "Name": "VGANSActionHoming_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionHoming'",
+    "Properties": {
+      "target_rotate": 90.0,
+      "rotate_per_sec": 90.0,
+      "end_range": 3000.0
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        37
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS007_00_SlashBullet_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS007_00/efs_BOSS007_00_SlashBullet_Muzzle.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 120.0,
+        "Z": 90.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_57",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS007_00_Locus_Sword_bl'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS007_00/efs_BOSS007_00_Locus_Sword_bl.0"
+      },
+      "location_offset": {
+        "X": 10.0,
+        "Y": 45.0,
+        "Z": 100.0
+      },
+      "rotation_offset": {
+        "Pitch": 145.0,
+        "Yaw": -10.0,
+        "Roll": 60.0
+      }
+    }
+  }
+]

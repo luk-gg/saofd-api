@@ -1,0 +1,207 @@
+[
+  {
+    "Type": "SGANSActionMovement",
+    "Name": "SGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": -600.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "BackRolling",
+      "action_id": 500,
+      "states": [
+        "EVGActionState::Step"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY505_W00_BackRolling'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Animation/Montage/MNT_ENEMY505_W00_BackRolling.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W00_BackRolling:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W00_BackRolling:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W00_BackRolling:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W00_BackRolling:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY505_W00_BackRolling:VGActionEvent_28'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 17,
+      "start_time": 0.26666668,
+      "end_time": 0.8333334,
+      "notify_state": {
+        "ObjectName": "SGANSActionMovement'ACT_ENEMY505_W00_BackRolling:VGActionEvent_0.SGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 34,
+      "num_frames": 6,
+      "start_time": 1.1333334,
+      "end_time": 1.3333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY505_W00_BackRolling:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "バックローリング音",
+      "start_frame": 8,
+      "start_time": 0.26666668,
+      "end_time": 0.3,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY505_W00_BackRolling:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_28",
+    "Outer": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足元煙",
+      "start_frame": 24,
+      "start_time": 0.8000001,
+      "end_time": 0.83333343,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY505_W00_BackRolling:VGActionEvent_28.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY505_W00_BackRolling",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダッシュ煙",
+      "start_frame": 8,
+      "num_frames": 6,
+      "start_time": 0.26666668,
+      "end_time": 0.4666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY505_W00_BackRolling:VGActionEvent_9.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY505/ENEMY505_W00/Action/CMN/ACT_ENEMY505_W00_BackRolling.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 12,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_28",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "scale_offset": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 0.8
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Dash_s_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Dash_s_lo.0"
+      },
+      "rotation_offset": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      },
+      "scale_offset": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      }
+    }
+  }
+]

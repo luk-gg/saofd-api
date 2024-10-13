@@ -1,0 +1,186 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY020_Stun",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Stun",
+      "action_id": 253,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "priority": 150,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY020_Stun'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Animation/Montage/MNT_ENEMY020_Stun.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Stun:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Stun:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Stun:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY020_Stun:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY020_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 84,
+      "start_time": 0.033333335,
+      "end_time": 2.8333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY020_Stun:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY020_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スタン",
+      "num_frames": 100,
+      "end_time": 3.3333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY020_Stun:VGActionEvent_1.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY020_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 85,
+      "end_time": 2.8333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY020_Stun:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY020_Stun",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ピヨりループ",
+      "num_frames": 76,
+      "end_time": 2.5333335,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_ENEMY020_Stun:VGActionEvent_3.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY020/Action/DMG/ACT_ENEMY020_Stun.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "trigger_conditions": [
+        {
+          "commands": [],
+          "not_commands": [],
+          "states": [
+            {
+              "type": "EVGTriggerStateCondition::IsAilmentStun",
+              "eval": "EVGTriggerStateConditionEval::b_False",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        24,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 10200,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_State_Stun_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_State_Stun_lo.0"
+      },
+      "emit_node_name": "b_C_Head",
+      "location_offset": {
+        "X": 25.0,
+        "Y": 0.0,
+        "Z": 50.0
+      },
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  }
+]

@@ -1,0 +1,137 @@
+[
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "BranchWait"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY807_Appearance",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Appearance",
+      "action_id": 1,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY807_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Animation/Montage/MNT_ENEMY807_Wait.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY807_Appearance:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY807_Appearance:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY807_Appearance:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY807_Appearance:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY807_Appearance",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 101,
+      "end_time": 3.3666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY807_Appearance:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY807_Appearance",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY807_Appearance:VGActionEvent_1.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY807_Appearance",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 48,
+      "num_frames": 13,
+      "start_time": 1.6000001,
+      "end_time": 2.0333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY807_Appearance:VGActionEvent_2.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY807_Appearance",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "待機遷移",
+      "start_frame": 46,
+      "start_time": 1.5333334,
+      "end_time": 1.5666667,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_ENEMY807_Appearance:VGActionEvent_4.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY807/Action/CMN/ACT_ENEMY807_Appearance.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        12
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS006_00_ElectricCore_Appearance'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS006_00/efs_BOSS006_00_ElectricCore_Appearance.0"
+      }
+    }
+  }
+]

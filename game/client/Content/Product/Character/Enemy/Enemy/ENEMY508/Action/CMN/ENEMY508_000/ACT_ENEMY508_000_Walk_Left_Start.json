@@ -1,0 +1,196 @@
+[
+  {
+    "Type": "SGANSCharacterSnapshot",
+    "Name": "SGANSCharacterSnapshot_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'SGANSCharacterSnapshot'",
+    "Properties": {
+      "CharacterSnapshotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CharacterSnapShot_Common01_C'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/CharacterSnapshot/BP_CharacterSnapShot_Common01.0"
+      },
+      "SpawnInterval": 6
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_Left_Start",
+      "action_id": 7,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_000_Walk_Left_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/ENEMY508_000/MNT_ENEMY508_000_Walk_Left_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.4"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "num_frames": 31,
+      "end_time": 1.0333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "残像BP(不要なら非表示か削除お願いします)",
+      "start_frame": 7,
+      "num_frames": 21,
+      "start_time": 0.23333335,
+      "end_time": 0.9333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterSnapshot'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_17.SGANSCharacterSnapshot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 9,
+      "num_frames": 12,
+      "start_time": 0.3,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 7,
+      "num_frames": 15,
+      "start_time": 0.23333335,
+      "end_time": 0.73333335,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_5.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY508_000_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発見",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_000_Walk_Left_Start:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/CMN/ENEMY508_000/ACT_ENEMY508_000_Walk_Left_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5000,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 8
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": -150.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  }
+]

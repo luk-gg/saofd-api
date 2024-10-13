@@ -1,0 +1,368 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_RBOSS005_Flying_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:StopAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.4"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.3"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.1"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "ArrayProperty",
+        "Name": "AttackInput",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "AttackInput",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGPadKey'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "InterruptActionId",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttackCountMin",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttackCountMax",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "AttackCounter",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 4,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "ProcessNameAfterToAttack",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      }
+    ],
+    "FuncMap": {
+      "StartAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.1"
+      },
+      "UpdateAttack": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:UpdateAttack'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.3"
+      },
+      "UpdateProcess": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:UpdateProcess'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.4"
+      },
+      "StopAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C:StopAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.2"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C'Default__SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.5"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAction",
+    "Outer": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_base_C:StartAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_base.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_StartAction_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_RandomIntegerInRange_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StopAction",
+    "Outer": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_RBOSS005_Flying_base_C:StopAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_base.10"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "K2Node_DynamicCast_AsBC_RBOSS005_00_Base",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyClass": {
+          "ObjectName": "BlueprintGeneratedClass'BC_RBOSS005_00_Base_C'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/BattleCharacter/Base/BC_RBOSS005_00_Base.1"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_DynamicCast_bSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateAttack",
+    "Outer": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateAttack'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.24"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_GetSkillAttackCount_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Less_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsValid_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_IsPlayingActionId_Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateProcess",
+    "Outer": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_Base_C:UpdateProcess'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/SGBP_SkillAction_Base.25"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Playing",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateTurn_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateLanding_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateAttack_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateTakeOff_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Name": "Default__SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_FlyingAttack_Times.SGBP_SkillAction_RBOSS005_FlyingAttack_Times_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_RBOSS005_Flying_base_C'Default__SGBP_SkillAction_RBOSS005_Flying_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS005_00/Skill/Base/SGBP_SkillAction_RBOSS005_Flying_base.14"
+    },
+    "Properties": {
+      "InterruptActionId": -1,
+      "ProcessNameAfterToAttack": "Landing"
+    }
+  }
+]

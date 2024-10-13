@@ -1,0 +1,112 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_target_range": 45.0,
+      "m_target_rotate_yaw": 45.0,
+      "m_target_rotate_pitch": 45.0,
+      "m_rotate_degree_second": 120.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY014_001_Getup",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Getup",
+      "action_id": 207,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY014_001_Getup'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Animation/Montage/MNT_ENEMY014_001_Getup.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_001_Getup:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_001_Getup:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY014_001_Getup:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY014_001_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 79,
+      "num_frames": 10,
+      "start_time": 2.6333334,
+      "end_time": 2.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY014_001_Getup:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY014_001_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 81,
+      "end_time": 2.7,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY014_001_Getup:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY014_001_Getup",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 48,
+      "num_frames": 30,
+      "start_time": 1.6000001,
+      "end_time": 2.6000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY014_001_Getup:VGActionEvent_4.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY014/ENEMY014_001/Action/DMG/ACT_ENEMY014_001_Getup.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

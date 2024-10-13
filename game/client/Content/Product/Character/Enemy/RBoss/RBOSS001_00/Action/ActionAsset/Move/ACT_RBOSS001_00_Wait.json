@@ -1,0 +1,90 @@
+[
+  {
+    "Type": "SGANSCharacterPush",
+    "Name": "SGANSCharacterPush_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSCharacterPush'",
+    "Properties": {
+      "node": "b_C_Root",
+      "location": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1700.0
+      },
+      "push_speed": 3000.0,
+      "is_horizontal": true,
+      "shape_type": "ESGCharacterPushShape::Capsule",
+      "capsule_radius": 1500.0,
+      "capsule_half_height": 2500.0
+    }
+  },
+  {
+    "Type": "SGANSNotifyTurningFaceToTarget",
+    "Name": "SGANSNotifyTurningFaceToTarget_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSNotifyTurningFaceToTarget'",
+    "Properties": {
+      "is_enable": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS001_00_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS001_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Animation/Montage/MNT_RBOSS001_Wait.0"
+        },
+        "is_loop": true
+      },
+      "custom_speed_rate": 1.5,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Wait:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Wait.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS001_00_Wait:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Wait.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS001_00_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットに顔を向ける様に通知",
+      "num_frames": 133,
+      "end_time": 4.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSNotifyTurningFaceToTarget'ACT_RBOSS001_00_Wait:VGActionEvent_0.SGANSNotifyTurningFaceToTarget_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Wait.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS001_00_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 131,
+      "end_time": 4.366667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterPush'ACT_RBOSS001_00_Wait:VGActionEvent_1.SGANSCharacterPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Action/ActionAsset/Move/ACT_RBOSS001_00_Wait.0"
+      }
+    }
+  }
+]

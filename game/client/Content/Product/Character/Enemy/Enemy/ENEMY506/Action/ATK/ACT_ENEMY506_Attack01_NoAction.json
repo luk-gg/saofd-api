@@ -1,0 +1,128 @@
+[
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 506030,
+      "node": "VFX_BarrierPoint",
+      "update_transform_type": "ESGUpdateTransformType::Actor_Transform",
+      "projectile_attach_type": "ESGProjectileAttachType::Actor_Transform",
+      "owned_by_character": true,
+      "spawn_server_only": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY506_Attack01_NoAction",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01_NoAction",
+      "action_id": 99,
+      "states": [
+        "EVGActionState::Skill"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY506_Attack01_NoAction'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Animation/Montage/MNT_ENEMY506_Attack01_NoAction.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_18'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY506_Attack01_NoAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 71,
+      "start_time": 0.033333335,
+      "end_time": 2.4,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY506_Attack01_NoAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "バリア",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_1.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_18",
+    "Outer": "ACT_ENEMY506_Attack01_NoAction",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ホログラム発生（仮）",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY506_Attack01_NoAction:VGActionEvent_18.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY506/Action/ATK/ACT_ENEMY506_Attack01_NoAction.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_18",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 19,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

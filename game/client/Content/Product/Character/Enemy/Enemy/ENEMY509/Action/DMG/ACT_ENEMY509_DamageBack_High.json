@@ -1,0 +1,359 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageBack_High",
+      "action_id": 221,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY509_DamageBack_High'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Animation/Montage/MNT_ENEMY509_DamageBack_High.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.9"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY509_DamageBack_High:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY509_DamageBack_High:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 89,
+      "num_frames": 5,
+      "start_time": 2.966667,
+      "end_time": 3.1333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY509_DamageBack_High:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 116,
+      "end_time": 3.8666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY509_DamageBack_High:VGActionEvent_15.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 82,
+      "start_time": 2.7333336,
+      "end_time": 2.766667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_DamageBack_High:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 14,
+      "start_time": 0.4666667,
+      "end_time": 0.50000006,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_DamageBack_High:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_DamageBack_High:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動き音",
+      "start_frame": 58,
+      "start_time": 1.9333334,
+      "end_time": 1.9666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_DamageBack_High:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ声",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY509_DamageBack_High:VGActionEvent_6.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY509_DamageBack_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY509_DamageBack_High:VGActionEvent_7.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY509/Action/DMG/ACT_ENEMY509_DamageBack_High.10"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "outer_radius": 3500.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 19,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 13,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        17
+      ]
+    }
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'",
+    "Properties": {
+      "is_ignore_z_velocity": true
+    }
+  }
+]

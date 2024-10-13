@@ -1,0 +1,573 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_UseComboSkill_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.9"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckLastPhase_C'SBT_RBOSS001_00_PhaseChange:SBTDecorator_Enemy_CheckLastPhase_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.5"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_UseComboSkill_C_2'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.1"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_RBOSS001_CheckArmBreaked_C'SBT_RBOSS001_00_PhaseChange:SBTDecorator_RBOSS001_CheckArmBreaked_C_1'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.6"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_UseComboSkill_C_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.11"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "SBTDecorator_Enemy_CheckLastPhase_C'SBT_RBOSS001_00_PhaseChange:SBTDecorator_Enemy_CheckLastPhase_C_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.4"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseComboSkill_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_UseComboSkill_C_4'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_WaitAction'SBT_RBOSS001_00_PhaseChange:VGBTT_WaitAction_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.17"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C'SBT_RBOSS001_00_PhaseChange:SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_RBOSS001_PhaseChange_SetNextPhase_C'SBT_RBOSS001_00_PhaseChange:SBTTask_RBOSS001_PhaseChange_SetNextPhase_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.16"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_ResetAngry_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_ResetAngry_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_ResetPhaseChangeRequest_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_ResetPhaseChangeRequest_C_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable_C'SBT_RBOSS001_00_PhaseChange:SBTTask_Enemy_SetNormalSkillTriggerPointFull_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C'SBT_RBOSS001_00_PhaseChange:SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.15"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "NodeName": "PhaseChange",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckLastPhase_C",
+    "Name": "SBTDecorator_Enemy_CheckLastPhase_C_0",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckLastPhase.SBTDecorator_Enemy_CheckLastPhase_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckLastPhase_C'Default__SBTDecorator_Enemy_CheckLastPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckLastPhase.2"
+    },
+    "Properties": {
+      "NodeName": "最終フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_Enemy_CheckLastPhase_C",
+    "Name": "SBTDecorator_Enemy_CheckLastPhase_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckLastPhase.SBTDecorator_Enemy_CheckLastPhase_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_Enemy_CheckLastPhase_C'Default__SBTDecorator_Enemy_CheckLastPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTDecorator_Enemy_CheckLastPhase.2"
+    },
+    "Properties": {
+      "NodeName": "最終フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTDecorator_RBOSS001_CheckArmBreaked_C",
+    "Name": "SBTDecorator_RBOSS001_CheckArmBreaked_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/SBTDecorator_RBOSS001_CheckArmBreaked.SBTDecorator_RBOSS001_CheckArmBreaked_C'",
+    "Template": {
+      "ObjectName": "SBTDecorator_RBOSS001_CheckArmBreaked_C'Default__SBTDecorator_RBOSS001_CheckArmBreaked_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/SBTDecorator_RBOSS001_CheckArmBreaked.2"
+    },
+    "Properties": {
+      "NodeName": "腕の部位破壊チェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_ResetAngry_C",
+    "Name": "SBTTask_Enemy_ResetAngry_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTTask_Enemy_ResetAngry.SBTTask_Enemy_ResetAngry_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_ResetAngry_C'Default__SBTTask_Enemy_ResetAngry_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Angry/SBTTask_Enemy_ResetAngry.3"
+    },
+    "Properties": {
+      "NodeName": "怒り解除",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_ResetPhaseChangeRequest_C",
+    "Name": "SBTTask_Enemy_ResetPhaseChangeRequest_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTTask_Enemy_ResetPhaseChangeRequest.SBTTask_Enemy_ResetPhaseChangeRequest_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_ResetPhaseChangeRequest_C'Default__SBTTask_Enemy_ResetPhaseChangeRequest_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Phase/SBTTask_Enemy_ResetPhaseChangeRequest.3"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え要求をリセット",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Emotion_PhaseChange_Final_ArmDestruction",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Emotion_PhaseChange_Final_ArmDestruction",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "エモーション",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_2",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Emotion_PhaseChange_Normal_ArmDestruction",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Emotion_PhaseChange_Normal_ArmDestruction",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "エモーション",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_3",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Emotion_PhaseChange_Final",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Emotion_PhaseChange_Final",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "エモーション",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseComboSkill_C",
+    "Name": "SBTTask_Enemy_UseComboSkill_C_4",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.SBTTask_Enemy_UseComboSkill_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseComboSkill_C'Default__SBTTask_Enemy_UseComboSkill_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseComboSkill.9"
+    },
+    "Properties": {
+      "ComboSkillsSettingImmediate": {
+        "m_combo_name": "Emotion_PhaseChange_Normal",
+        "m_skill_setting": [
+          {
+            "m_skill_name": "Emotion_PhaseChange_Normal",
+            "m_use_without_target": true,
+            "m_targetting_unit": null,
+            "m_lockon_node_name": "b_C_Chest",
+            "m_end_action_state": [
+              "EVGActionState::Idle",
+              "EVGActionState::Hovering",
+              "EVGActionState::FlyingIdle"
+            ],
+            "m_skill_name_when_unknown_target": [],
+            "m_wait_time_range_low": 0.0,
+            "m_wait_time_range_high": 0.0
+          }
+        ],
+        "m_reset_normal_skill_trigger_points_at_the_end_of_the_skills": false
+      },
+      "bShowPropertyDetails": false,
+      "NodeName": "エモーション",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS001_00_PhaseChange:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable_C",
+    "Name": "SBTTask_Enemy_SetNormalSkillTriggerPointFull_C_0",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable.SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable_C'Default__SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_UseNormalSkillWhenImmediatelyAvailable.4"
+    },
+    "Properties": {
+      "NodeName": "通常技を即使用可能にする",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C",
+    "Name": "SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C_0",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_AllKillSupportActor.SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C'",
+    "Template": {
+      "ObjectName": "SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C'Default__SBTTask_RBOSS001_PhaseChange_AllKillSupportActor_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_AllKillSupportActor.4"
+    },
+    "Properties": {
+      "NodeName": "ザコ敵全削除",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C",
+    "Name": "SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C_0",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_CallQuestEvent.SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C'",
+    "Template": {
+      "ObjectName": "SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C'Default__SBTTask_RBOSS001_PhaseChange_CallQuestEvent_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_CallQuestEvent.4"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え時のクエストイベント",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_RBOSS001_PhaseChange_SetNextPhase_C",
+    "Name": "SBTTask_RBOSS001_PhaseChange_SetNextPhase_C_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_SetNextPhase.SBTTask_RBOSS001_PhaseChange_SetNextPhase_C'",
+    "Template": {
+      "ObjectName": "SBTTask_RBOSS001_PhaseChange_SetNextPhase_C'Default__SBTTask_RBOSS001_PhaseChange_SetNextPhase_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/TaskBP/PhaseChange/SBTTask_RBOSS001_PhaseChange_SetNextPhase.6"
+    },
+    "Properties": {
+      "NodeName": "フェーズ切り替え",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_WaitAction",
+    "Name": "VGBTT_WaitAction_1",
+    "Outer": "SBT_RBOSS001_00_PhaseChange",
+    "Class": "UScriptClass'VGBTT_WaitAction'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS001_00_PhaseChange'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS001_00_PhaseChange:BTComposite_Sequence_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/AI/BehaviorTree/Tree/SBT_RBOSS001_00_PhaseChange.3"
+      }
+    }
+  }
+]

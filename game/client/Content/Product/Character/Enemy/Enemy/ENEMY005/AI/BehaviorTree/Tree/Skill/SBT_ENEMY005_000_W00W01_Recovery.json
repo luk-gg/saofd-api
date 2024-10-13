@@ -1,0 +1,90 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_ENEMY005_000_W00W01_Recovery",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY005_000_W00W01_Recovery:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_0",
+    "Outer": "SBT_ENEMY005_000_W00W01_Recovery",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_Skill_SimpleInput_C'SBT_ENEMY005_000_W00W01_Recovery:SBTTask_Enemy_Skill_SimpleInput_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.3"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_ENEMY005_000_W00W01_Recovery:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.2"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY005_000_W00W01_Recovery'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_ENEMY005_000_W00W01_Recovery",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "StringValue": "HealthRecovery",
+      "CachedDescription": "SelectedActionName Is Equal To [HealthRecovery]",
+      "BlackboardKey": {
+        "SelectedKeyName": "SelectedActionName"
+      },
+      "NodeName": "回復",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY005_000_W00W01_Recovery'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY005_000_W00W01_Recovery:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.1"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_Skill_SimpleInput_C",
+    "Name": "SBTTask_Enemy_Skill_SimpleInput_C_0",
+    "Outer": "SBT_ENEMY005_000_W00W01_Recovery",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_Skill_SimpleInput.SBTTask_Enemy_Skill_SimpleInput_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_Skill_SimpleInput_C'Default__SBTTask_Enemy_Skill_SimpleInput_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/Skill/SBTTask_Enemy_Skill_SimpleInput.3"
+    },
+    "Properties": {
+      "SkillName": "Attack05_Chant",
+      "Timer": 3.0,
+      "NodeName": "回復",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_ENEMY005_000_W00W01_Recovery'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_ENEMY005_000_W00W01_Recovery:BTComposite_Selector_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY005/AI/BehaviorTree/Tree/Skill/SBT_ENEMY005_000_W00W01_Recovery.1"
+      }
+    }
+  }
+]

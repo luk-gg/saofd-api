@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 120.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::Capsule",
+      "box_half_extent_x": 210.0,
+      "box_half_extent_y": 210.0,
+      "box_half_extent_z": 400.0,
+      "capsule_radius": 230.0,
+      "capsule_half_height": 350.0
+    }
+  },
+  {
+    "Type": "SGANSNotifyTurningFaceToTarget",
+    "Name": "SGANSNotifyTurningFaceToTarget_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSNotifyTurningFaceToTarget'",
+    "Properties": {
+      "is_enable": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Run_Start",
+      "action_id": 10,
+      "states": [
+        "EVGActionState::StartAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS006_Run_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Animation/Montage/MNT_BOSS006_Run_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS006_Run_Start:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 5,
+      "num_frames": 12,
+      "start_time": 0.16666667,
+      "end_time": 0.5666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_BOSS006_Run_Start:VGActionEvent_0.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.11"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 6,
+      "num_frames": 67,
+      "start_time": 0.20000002,
+      "end_time": 2.4333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS006_Run_Start:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.9"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "中断可能",
+      "num_frames": 71,
+      "end_time": 2.3666668,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS006_Run_Start:VGActionEvent_10.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "num_frames": 33,
+      "end_time": 1.1,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_BOSS006_Run_Start:VGActionEvent_13.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 26,
+      "end_time": 0.86666673,
+      "notify_state": {
+        "ObjectName": "VGANSActionInputRotate'ACT_BOSS006_Run_Start:VGActionEvent_2.VGANSActionInputRotate_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.10"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BOSS006_Run_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ターゲットに顔を向ける様に通知",
+      "num_frames": 64,
+      "end_time": 2.1333334,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSNotifyTurningFaceToTarget'ACT_BOSS006_Run_Start:VGActionEvent_3.SGANSNotifyTurningFaceToTarget_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS006_00/Action/CMN/ACT_BOSS006_Run_Start.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 11
+    }
+  },
+  {
+    "Type": "VGANSActionInputRotate",
+    "Name": "VGANSActionInputRotate_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionInputRotate'",
+    "Properties": {
+      "rotate_per_sec": 180.0
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 1400.0,
+        "Y": 0.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        18
+      ]
+    }
+  }
+]

@@ -1,0 +1,118 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_000_DamageLeft_High",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageLeft_High",
+      "action_id": 223,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_000_DamageLeft_High'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/ENEMY508_000/MNT_ENEMY508_000_DamageLeft_High.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_000_DamageLeft_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "モーション依存に",
+      "num_frames": 4,
+      "end_time": 0.13333334,
+      "notify_state": {
+        "ObjectName": "VGANSKnockBack'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_0.VGANSKnockBack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY508_000_DamageLeft_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 25,
+      "num_frames": 5,
+      "start_time": 0.8333334,
+      "end_time": 1.0,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_000_DamageLeft_High",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ大",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY508_000_DamageLeft_High:VGActionEvent_2.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_DamageLeft_High.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 5600,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSKnockBack",
+    "Name": "VGANSKnockBack_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSKnockBack'"
+  }
+]

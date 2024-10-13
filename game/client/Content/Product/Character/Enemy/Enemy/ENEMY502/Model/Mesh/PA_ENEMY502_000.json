@@ -1,0 +1,372 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "PA_ENEMY502_000",
+    "Class": "UScriptClass'PhysicsAsset'",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup'PA_ENEMY502_000:SkeletalBodySetup_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.4"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PA_ENEMY502_000:SkeletalBodySetup_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.5"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PA_ENEMY502_000:SkeletalBodySetup_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.6"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup'PA_ENEMY502_000:SkeletalBodySetup_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.7"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PA_ENEMY502_000:PhysicsConstraintTemplate_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PA_ENEMY502_000:PhysicsConstraintTemplate_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate'PA_ENEMY502_000:PhysicsConstraintTemplate_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Model/Mesh/PA_ENEMY502_000.3"
+        }
+      ],
+      "SolverSettings": {
+        "CullDistance": 1.0,
+        "bUseLinearJointSolver": false
+      },
+      "ThumbnailInfo": null
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "w_NC_BeamCannonBarrel",
+        "ConstraintBone1": "w_NC_BeamCannonBarrel",
+        "ConstraintBone2": "b_C_Pelvis",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -170.0,
+          "Z": 24.00002
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "b_C_Root",
+        "ConstraintBone1": "b_C_Root",
+        "ConstraintBone2": "b_C_Base"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_6",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'PhysicsConstraintTemplate'",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "b_C_Pelvis",
+        "ConstraintBone1": "b_C_Pelvis",
+        "ConstraintBone2": "b_C_Root",
+        "Pos2": {
+          "X": 0.0,
+          "Y": -225.99998,
+          "Z": 0.0
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 219.7443,
+              "Y": -44.60066,
+              "Z": 218.41644
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.99988
+            },
+            "Radius": 57.5,
+            "Length": 280.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": -221.20236,
+              "Y": -44.60066,
+              "Z": 218.41548
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.99988
+            },
+            "Radius": 57.5,
+            "Length": 280.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 218.81912,
+              "Y": -44.599743,
+              "Z": -221.73976
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.99988
+            },
+            "Radius": 57.5,
+            "Length": 280.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": -215.31052,
+              "Y": -44.599743,
+              "Z": -221.74092
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 89.99988
+            },
+            "Radius": 57.5,
+            "Length": 280.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": -30.0,
+              "Z": 0.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 90.0
+            },
+            "Radius": 270.0,
+            "Length": 250.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "b_C_Base",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "7AC4CC694C4814F1ADE62EB3212F4AAA"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.03292477,
+              "Y": -29.695267,
+              "Z": 225.34201
+            },
+            "Rotation": {
+              "Pitch": -1.5939133,
+              "Yaw": -89.99923,
+              "Roll": 0.00814559
+            },
+            "Radius": 74.81522,
+            "Length": 406.15125,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 76.9267,
+              "Y": -23.464268,
+              "Z": 206.35097
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 66.0,
+            "Length": 397.25,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": -87.60974,
+              "Y": -22.001198,
+              "Z": 201.85709
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 62.75,
+            "Length": 396.0,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "w_NC_BeamCannonBarrel",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex",
+      "CollisionReponse": "EBodyCollisionResponse::BodyCollision_Disabled"
+    },
+    "BodySetupGuid": "7021601D49D6A5D958A7B99DA67C7CE0"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.00030899048,
+              "Y": -169.19073,
+              "Z": 0.00048634157
+            },
+            "Rotation": {
+              "Pitch": 1.3660378E-05,
+              "Yaw": -89.999954,
+              "Roll": -4.1395524E-06
+            },
+            "Radius": 87.38977,
+            "Length": 238.13983,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": -118.48969,
+              "Y": -169.19083,
+              "Z": -0.00055084086
+            },
+            "Rotation": {
+              "Pitch": 1.3660378E-05,
+              "Yaw": -89.999954,
+              "Roll": -4.1395524E-06
+            },
+            "Radius": 87.38977,
+            "Length": 238.13983,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          },
+          {
+            "Center": {
+              "X": 128.12485,
+              "Y": -169.19064,
+              "Z": 0.0004240634
+            },
+            "Rotation": {
+              "Pitch": 1.3660378E-05,
+              "Yaw": -89.999954,
+              "Roll": -4.1395524E-06
+            },
+            "Radius": 87.38977,
+            "Length": 238.13983,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "b_C_Root",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "8917BCFB40F43D5BB0CBBD92D73D7228"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_7",
+    "Outer": "PA_ENEMY502_000",
+    "Class": "UScriptClass'SkeletalBodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "SphereElems": [
+          {
+            "Center": {
+              "X": -2.7076569,
+              "Y": -64.548065,
+              "Z": -6.481538
+            },
+            "Radius": 217.13339,
+            "RestOffset": 0.0,
+            "Name": "None",
+            "bContributeToMass": true,
+            "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+          }
+        ]
+      },
+      "BoneName": "b_C_Pelvis",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "52462FD2496DCFD99FD3A492E9835F82"
+  }
+]

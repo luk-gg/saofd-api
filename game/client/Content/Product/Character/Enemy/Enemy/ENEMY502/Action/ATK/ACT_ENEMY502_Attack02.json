@@ -1,0 +1,397 @@
+[
+  {
+    "Type": "SGANSActionAimLimitChange",
+    "Name": "SGANSActionAimLimitChange_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANSActionAimLimitChange'"
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 250200010,
+      "node": "Muzzle_Socket_01",
+      "scale": {
+        "X": 0.75,
+        "Y": 0.75,
+        "Z": 0.75
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Aim",
+      "use_injection_limit_angle": true,
+      "injection_limit_angle": 0.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 250200011,
+      "spawn_target": "ESGActionProjectileShotSpawnTarget::WeaponNode",
+      "node": "Muzzle_Socket_01",
+      "position": {
+        "X": -100.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Node",
+      "injection_limit_angle": 0.0,
+      "spawn_server_only": true
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack02",
+      "action_id": 103,
+      "states": [
+        "EVGActionState::Attack",
+        "EVGActionState::Aim"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "BlendSpace'BS_ENEMY502_Aim_90'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Animation/Montage/BS_ENEMY502_Aim_90.0"
+        },
+        "blend_time": 0.5,
+        "blend_space_param_x": "EVGBlendParam::AimYaw",
+        "blend_space_param_y": "EVGBlendParam::AimPitch"
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.14"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Attack02:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 154,
+      "end_time": 5.1333337,
+      "notify_state": {
+        "ObjectName": "SGANSActionAimLimitChange'ACT_ENEMY502_Attack02:VGActionEvent_0.SGANSActionAimLimitChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY502_Attack02:VGActionEvent_1.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発射音",
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY502_Attack02:VGActionEvent_10.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 154,
+      "end_time": 5.1333337,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY502_Attack02:VGActionEvent_11.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "バレットライン",
+      "start_frame": 15,
+      "num_frames": 18,
+      "start_time": 0.5,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY502_Attack02:VGActionEvent_3.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 58,
+      "num_frames": 121,
+      "start_time": 1.9333334,
+      "end_time": 5.966667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY502_Attack02:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "マズル",
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY502_Attack02:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 33,
+      "start_time": 1.1,
+      "end_time": 1.1333333,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY502_Attack02:VGActionEvent_6.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "チャージ",
+      "num_frames": 33,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY502_Attack02:VGActionEvent_7.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "チャージ音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY502_Attack02:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY502_Attack02",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 54,
+      "num_frames": 123,
+      "start_time": 1.8000001,
+      "end_time": 5.9000006,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY502_Attack02:VGActionEvent_9.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/ATK/ACT_ENEMY502_Attack02.19"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Weapon_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Weapon_Middle.0"
+      },
+      "outer_radius": 2000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 99
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        27
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY502_Muzzle'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY502/efs_ENEMY502_Muzzle.0"
+      },
+      "emit_node_name": "Muzzle_Socket_01"
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY502_Bullet_Charge_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY502/efs_ENEMY502_Bullet_Charge_lo.0"
+      }
+    }
+  }
+]

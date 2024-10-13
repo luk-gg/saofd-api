@@ -1,0 +1,236 @@
+[
+  {
+    "Type": "SGANAssistFollowCancel",
+    "Name": "SGANAssistFollowCancel_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANAssistFollowCancel'",
+    "Properties": {
+      "m_cancel_flag": false
+    }
+  },
+  {
+    "Type": "SGANAssistFollowSocketChange",
+    "Name": "SGANAssistFollowSocketChange_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANAssistFollowSocketChange'",
+    "Properties": {
+      "m_change_socket_name": "Assist_Left_Socket"
+    }
+  },
+  {
+    "Type": "SGANAssistResetLocation",
+    "Name": "SGANAssistResetLocation_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'SGANAssistResetLocation'"
+  },
+  {
+    "Type": "SGANSCharacterSnapshot",
+    "Name": "SGANSCharacterSnapshot_0",
+    "Outer": "VGActionEvent_17",
+    "Class": "UScriptClass'SGANSCharacterSnapshot'",
+    "Properties": {
+      "CharacterSnapshotClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_CharacterSnapShot_UCR18_SKL01_C'",
+        "ObjectPath": "/Game/Product/VFX_seven/BP/CharacterSnapshot/BP_CharacterSnapShot_UCR18_SKL01.0"
+      },
+      "SpawnInterval": 2
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "SKL_SS004",
+      "action_id": 150,
+      "states": [
+        "EVGActionState::Skill"
+      ],
+      "priority": 101,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY900_DGR_SKL_SS004'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Animation/Montage/MNT_ENEMY900_DGR_SKL_SS004.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_17'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 86,
+      "num_frames": 2,
+      "start_time": 2.8666668,
+      "end_time": 2.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ピナ粒子エフェクト",
+      "num_frames": 88,
+      "end_time": 2.9333334,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_1.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_17",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "残像BP",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterSnapshot'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_17.SGANSCharacterSnapshot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従させる",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowCancel'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_2.SGANAssistFollowCancel_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "エフェクト音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "元の位置にリセット",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistResetLocation'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_5.SGANAssistResetLocation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY900_DGR_SKL_SS004",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "追従ソケット変更,補間追従オン",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "SGANAssistFollowSocketChange'ACT_ENEMY900_DGR_SKL_SS004:VGActionEvent_6.SGANAssistFollowSocketChange_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY900/Action/ATK/ACT_ENEMY900_DGR_SKL_SS004.1"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20682,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_SKL_DGR_Pina_FeatherParticle_lo_BL'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Chara/efs_SKL_DGR_Pina_FeatherParticle_lo_BL.0"
+      },
+      "emit_node_name": "VFX_Center"
+    }
+  }
+]

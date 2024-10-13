@@ -1,0 +1,92 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY501_DamageBack2",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "DamageBack2",
+      "action_id": 225,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY501_DamageBack2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Animation/Montage/MNT_ENEMY501_DamageBack2.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_DamageBack2:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/DMG/ACT_ENEMY501_DamageBack2.1"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY501_DamageBack2:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/DMG/ACT_ENEMY501_DamageBack2.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY501_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 16,
+      "num_frames": 3,
+      "start_time": 0.53333336,
+      "end_time": 0.6333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY501_DamageBack2:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/DMG/ACT_ENEMY501_DamageBack2.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY501_DamageBack2",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ音",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY501_DamageBack2:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY501/Action/DMG/ACT_ENEMY501_DamageBack2.3"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 7,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

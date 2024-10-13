@@ -1,0 +1,208 @@
+[
+  {
+    "Type": "VGDamageReactionBreakAsset",
+    "Name": "BRK_RBOSS001_00",
+    "Class": "UScriptClass'VGDamageReactionBreakAsset'",
+    "Properties": {
+      "m_damage_reaction_break_params": [
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS001_Break_Head'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Reaction/PTS_RBOSS001_Break_Head.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS001_00_Break_Head_01",
+              "hide_material_slot_name": "M_RBOSS001_00_Break_Head_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "VFX_SkullBreak",
+              "sound_cue_infos": []
+            }
+          ],
+          "reaction": {
+            "names": [
+              "Skull"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": null,
+            "id": 2100,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "SkullBreaked",
+          "quest_event_name": [
+            "RBOSS001_00_HeadBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS001_Break_Arm02'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Reaction/PTS_RBOSS001_Break_Arm02.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS001_00_Break_Arm02_L_01",
+              "hide_material_slot_name": "M_RBOSS001_00_Break_Arm02_L_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_L_SideFront_Tentacles4",
+              "sound_cue_infos": []
+            },
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_L_SideFront_Tentacles6",
+              "sound_cue_infos": []
+            },
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_L_SideFront_Tentacles8",
+              "sound_cue_infos": []
+            }
+          ],
+          "reaction": {
+            "names": [
+              "Arm02_L"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS001_00_DMR_BU_Arm_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Reaction/SGBP_RBOSS001_00_DMR_BU_Arm.0"
+            },
+            "id": 2100,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "Arm02_L_Breaked",
+          "quest_event_name": [
+            "RBOSS001_00_ArmBreak"
+          ]
+        },
+        {
+          "parts_status_table": {
+            "ObjectName": "DataTable'PTS_RBOSS001_Break_Arm02'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Reaction/PTS_RBOSS001_Break_Arm02.0"
+          },
+          "is_hit_collision_destroy": true,
+          "is_weapon_destroy": false,
+          "weapon_hand_type": "EVGWeaponHandType::Left",
+          "material": [
+            {
+              "is_mesh_change": true,
+              "material": null,
+              "material_slot_name": "None",
+              "show_material_slot_name": "M_RBOSS001_00_Break_Arm02_R_01",
+              "hide_material_slot_name": "M_RBOSS001_00_Break_Arm02_R_00"
+            }
+          ],
+          "vfx": [
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_R_SideFront_Tentacles4",
+              "sound_cue_infos": []
+            },
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_R_SideFront_Tentacles6",
+              "sound_cue_infos": []
+            },
+            {
+              "vfx": {
+                "ObjectName": "VGVfxSignalAsset'efs_CMN_Hit_Explode'",
+                "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/CharaHit/efs_CMN_Hit_Explode.0"
+              },
+              "vfx_node_name": "b_R_SideFront_Tentacles8",
+              "sound_cue_infos": []
+            }
+          ],
+          "reaction": {
+            "names": [
+              "Arm02_R"
+            ],
+            "use_branch_action_id": false,
+            "branch_action_id": [],
+            "branch_unit_class": {
+              "ObjectName": "BlueprintGeneratedClass'SGBP_RBOSS001_00_DMR_BU_Arm_C'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS001_00/Reaction/SGBP_RBOSS001_00_DMR_BU_Arm.0"
+            },
+            "id": 2100,
+            "change_ids": [],
+            "attr": [
+              "ESGDamageReactionAttr::DoNotAcceptWhileDown"
+            ],
+            "action_state": [],
+            "action_state_comparison": "EVGDamageReactionActionStateComparison::Valid",
+            "action_id": [],
+            "action_id_comparison": "EVGDamageReactionActionIdComparison::Playing",
+            "hp_rate": 0.0,
+            "damage_option": [],
+            "unique_reaction_unit": null
+          },
+          "is_reaction_link_chance": false,
+          "enable_group": "Arm02_R_Breaked",
+          "quest_event_name": [
+            "RBOSS001_00_ArmBreak"
+          ]
+        }
+      ]
+    }
+  }
+]

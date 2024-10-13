@@ -1,0 +1,168 @@
+[
+  {
+    "Type": "SGANMassiveLinkArtsEntry",
+    "Name": "SGANMassiveLinkArtsEntry_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANMassiveLinkArtsEntry'",
+    "Properties": {
+      "is_reception_key": true,
+      "reception_time": 3.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_RBOSS000_00_Damage_LinkArts_s_l",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Damage_LInkArts_START_LOOP",
+      "action_id": 2350,
+      "states": [
+        "EVGActionState::Damage"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_RBOSS000_00_Damage_LinkArts_s_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Animation/Montage/MNT_RBOSS000_00_Damage_LinkArts_s_l.0"
+        },
+        "is_loop": true,
+        "loop_section": "Loop"
+      },
+      "is_inherit_vel_x": false,
+      "is_inherit_vel_y": false,
+      "is_inherit_vel_z": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.2"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_RBOSS000_00_Damage_LinkArts_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ループ解除タイマー（終了へ）",
+      "start_frame": 19,
+      "num_frames": 79,
+      "start_time": 0.6333334,
+      "end_time": 3.266667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionLoopSafety'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_0.VGANSActionLoopSafety_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.7"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_RBOSS000_00_Damage_LinkArts_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "無敵",
+      "num_frames": 336,
+      "end_time": 11.200001,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_RBOSS000_00_Damage_LinkArts_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "SGANMassiveLinkArtsEntry'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_2.SGANMassiveLinkArtsEntry_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_RBOSS000_00_Damage_LinkArts_s_l",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージ時ボイス",
+      "start_frame": 2,
+      "start_time": 0.06666667,
+      "end_time": 0.10000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_RBOSS000_00_Damage_LinkArts_s_l:VGActionEvent_3.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS000_00/Action/ActionAsset/Damage/ACT_RBOSS000_00_Damage_LinkArts_s_l.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 45,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ],
+      "is_attach": true
+    }
+  },
+  {
+    "Type": "VGANSActionLoopSafety",
+    "Name": "VGANSActionLoopSafety_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionLoopSafety'",
+    "Properties": {
+      "action_id": 2510,
+      "activation_time": 3.0,
+      "check_autonomous": false
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        19
+      ]
+    }
+  }
+]

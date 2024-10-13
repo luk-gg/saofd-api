@@ -1,0 +1,456 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Super": {
+      "ObjectName": "BlueprintGeneratedClass'SGBP_SkillAction_GotoTarget_CloseAttack_Times_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_CloseAttack_Times.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:SetIntervalActionInput'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.1"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.2"
+      },
+      {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:UpdateIntervalAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.3"
+      }
+    ],
+    "ChildProperties": [
+      {
+        "Type": "NameProperty",
+        "Name": "LocalProcess",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 12,
+        "PropertyFlags": "Edit | BlueprintVisible | DisableEditOnInstance"
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "SideAngleForInterval",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 8,
+        "PropertyFlags": "Edit | BlueprintVisible"
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "IntervalActionInput_Left",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "IntervalActionInput_Left",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGPadKey'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      },
+      {
+        "Type": "ArrayProperty",
+        "Name": "IntervalActionInput_Right",
+        "Flags": "RF_Public | RF_LoadCompleted",
+        "ElementSize": 16,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Inner": {
+          "Type": "ByteProperty",
+          "Name": "IntervalActionInput_Right",
+          "Flags": "RF_Public",
+          "ElementSize": 1,
+          "Enum": {
+            "ObjectName": "Class'EVGPadKey'",
+            "ObjectPath": "/Script/SEVEN_Product"
+          }
+        }
+      }
+    ],
+    "FuncMap": {
+      "UpdateIntervalAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:UpdateIntervalAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.3"
+      },
+      "StartAction": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:StartAction'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.2"
+      },
+      "SetIntervalActionInput": {
+        "ObjectName": "Function'SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C:SetIntervalActionInput'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.1"
+      }
+    },
+    "ClassFlags": "CLASS_ReplicationDataIsSetUp | CLASS_CompiledFromBlueprint | CLASS_HasInstancedReference",
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C'Default__SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.4"
+    },
+    "EditorTags": {
+      "BlueprintType": "BPTYPE_Normal"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetIntervalActionInput",
+    "Outer": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_GotoTarget_C:SetIntervalActionInput'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget.6"
+    },
+    "ChildProperties": [
+      {
+        "Type": "BoolProperty",
+        "Name": "IsRight",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "IsLeft",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "TargetDirection",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "Edit | BlueprintVisible",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "IntProperty",
+        "Name": "CallFunc_Array_Length_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 4
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_Greater_IntInt_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_BooleanAND_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_DegCos_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorRightVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_DegCos_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetActorRightVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "DoubleProperty",
+        "Name": "CallFunc_Dot_VectorVector_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 8
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_GreaterEqual_DoubleDouble_ReturnValue_1",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_GetBasePosition_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "PropertyFlags": "ConstParm",
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      },
+      {
+        "Type": "StructProperty",
+        "Name": "CallFunc_Vector_Normal2D_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 24,
+        "Struct": {
+          "ObjectName": "Class'Vector'",
+          "ObjectPath": "/Script/CoreUObject"
+        }
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "StartAction",
+    "Outer": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_GotoTarget_CloseAttack_Times_C:StartAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_CloseAttack_Times.1"
+    },
+    "ChildProperties": [
+      {
+        "Type": "ObjectProperty",
+        "Name": "Character",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm",
+        "PropertyClass": {
+          "ObjectName": "Class'VGCharacter'",
+          "ObjectPath": "/Script/SEVEN_Product"
+        }
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "PropertyFlags": "Parm | OutParm",
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_StartAction_Success",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateIntervalAction",
+    "Outer": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Class": "UScriptClass'Function'",
+    "Super": {
+      "ObjectName": "Function'SGBP_SkillAction_GotoTarget_C:UpdateIntervalAction'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget.9"
+    },
+    "ChildProperties": [
+      {
+        "Type": "DoubleProperty",
+        "Name": "DeltaTime",
+        "Flags": "RF_Public",
+        "ElementSize": 8,
+        "PropertyFlags": "BlueprintVisible | BlueprintReadOnly | Parm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12,
+        "PropertyFlags": "Parm | OutParm"
+      },
+      {
+        "Type": "NameProperty",
+        "Name": "CallFunc_UpdateIntervalAction_Process",
+        "Flags": "RF_Public",
+        "ElementSize": 12
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "CallFunc_HasActionState_ReturnValue",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      },
+      {
+        "Type": "BoolProperty",
+        "Name": "K2Node_SwitchName_CmpSuccess",
+        "Flags": "RF_Public",
+        "ElementSize": 1,
+        "FieldSize": 1,
+        "ByteOffset": 0,
+        "ByteMask": 1,
+        "FieldMask": 255,
+        "BoolSize": 1,
+        "bIsNativeBool": true
+      }
+    ],
+    "FunctionFlags": "FUNC_Public | FUNC_HasOutParms | FUNC_BlueprintCallable | FUNC_BlueprintEvent"
+  },
+  {
+    "Type": "SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Name": "Default__SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/RBoss/RBOSS003_00/Skill/Base/SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base.SGBP_SkillAction_RBOSS003_GotoTarget_AttackTimes_base_C'",
+    "Template": {
+      "ObjectName": "SGBP_SkillAction_GotoTarget_CloseAttack_Times_C'Default__SGBP_SkillAction_GotoTarget_CloseAttack_Times_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/Skill/SkillAction/StandardAction/SGBP_SkillAction_GotoTarget_CloseAttack_Times.4"
+    },
+    "Properties": {
+      "SideAngleForInterval": 45.0,
+      "IntervalActionInput_Left": [
+        27,
+        0
+      ],
+      "IntervalActionInput_Right": [
+        28,
+        0
+      ],
+      "NameOfTheNextProcessAfterTheTurn": "Approach",
+      "NameOfTheNextProcessAfterTheInterval": "Turn",
+      "IntervalActionDistance": 3000.0,
+      "IntervalActionInput": [
+        26,
+        0
+      ],
+      "IntervalActionTime": 0.20000000298023224
+    }
+  }
+]

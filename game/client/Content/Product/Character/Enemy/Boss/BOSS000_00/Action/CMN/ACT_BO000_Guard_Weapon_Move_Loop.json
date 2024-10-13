@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BO000_Guard_Weapon_Move_Loop",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Guard_Weapon_Move_Loop",
+      "action_id": 64,
+      "states": [
+        "EVGActionState::Guard"
+      ],
+      "layer_index": 1,
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_Guard_Weapon_Move_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_Guard_Weapon_Move_l.0"
+        },
+        "is_loop": true
+      },
+      "is_reset_subaction": false,
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_Guard_Weapon_Move_Loop:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_Loop.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BO000_Guard_Weapon_Move_Loop:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_Loop.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BO000_Guard_Weapon_Move_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ガード解除",
+      "num_frames": 67,
+      "end_time": 2.2333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BO000_Guard_Weapon_Move_Loop:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_Loop.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_BO000_Guard_Weapon_Move_Loop",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "移動終了",
+      "num_frames": 67,
+      "end_time": 2.2333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BO000_Guard_Weapon_Move_Loop:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Action/CMN/ACT_BO000_Guard_Weapon_Move_Loop.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 65,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Enemy_R1_Up'",
+              "ObjectPath": "/Game/Product/Character/Enemy/Common/Command/CMD_Enemy_R1_Up.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "type": "EVGActionBranch::Trigger",
+      "action_id": 68,
+      "trigger_conditions": [
+        {
+          "commands": [
+            {
+              "ObjectName": "VGCommandAsset'CMD_Human_Neutral'",
+              "ObjectPath": "/Game/Product/Character/Human/Common/Command/CMD_Human_Neutral.0"
+            }
+          ],
+          "not_commands": [],
+          "states": []
+        }
+      ]
+    }
+  }
+]

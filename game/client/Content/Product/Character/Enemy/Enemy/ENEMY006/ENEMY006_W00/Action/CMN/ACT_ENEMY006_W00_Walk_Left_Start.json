@@ -1,0 +1,149 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY006_W00_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Walk_Left_Start",
+      "action_id": 7,
+      "states": [
+        "EVGActionState::StartAction",
+        "EVGActionState::Shift"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY006_W00_WalkLeft_s'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Animation/Montage/MNT_ENEMY006_W00_WalkLeft_s.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_15'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_15",
+    "Outer": "ACT_ENEMY006_W00_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 74,
+      "end_time": 2.4666667,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSIKState'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_15.VGANSIKState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.8"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY006_W00_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 8,
+      "num_frames": 2,
+      "start_time": 0.26666668,
+      "end_time": 0.33333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_4.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY006_W00_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 5,
+      "num_frames": 8,
+      "start_time": 0.16666667,
+      "end_time": 0.43333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionMovement'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_5.VGANSActionMovement_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.6"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY006_W00_Walk_Left_Start",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "中断可能",
+      "num_frames": 27,
+      "end_time": 0.90000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY006_W00_Walk_Left_Start:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY006/ENEMY006_W00/Action/CMN/ACT_ENEMY006_W00_Walk_Left_Start.7"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 8
+    }
+  },
+  {
+    "Type": "VGANSActionMovement",
+    "Name": "VGANSActionMovement_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionMovement'",
+    "Properties": {
+      "move_value": {
+        "X": 0.0,
+        "Y": -250.0,
+        "Z": 0.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  },
+  {
+    "Type": "VGANSIKState",
+    "Name": "VGANSIKState_0",
+    "Outer": "VGActionEvent_15",
+    "Class": "UScriptClass'VGANSIKState'",
+    "Properties": {
+      "ik_type": [
+        14
+      ],
+      "lerp_time": 0.1,
+      "enable_IK_melee_weapon": true
+    }
+  }
+]

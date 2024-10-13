@@ -1,0 +1,51 @@
+[
+  {
+    "Type": "SGANSSetBlendSpace",
+    "Name": "SGANSSetBlendSpace_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'SGANSSetBlendSpace'",
+    "Properties": {
+      "m_blend_space_param_x": "EVGBlendParam::AimYaw",
+      "m_blend_space_param_y": "EVGBlendParam::AimPitch"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY502_Wait",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Wait",
+      "states": [
+        "EVGActionState::Idle"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY502_Wait'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Animation/Montage/MNT_ENEMY502_Wait.0"
+        },
+        "is_loop": true
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY502_Wait:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/CMN/ACT_ENEMY502_Wait.2"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY502_Wait",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 153,
+      "end_time": 5.1000004,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSSetBlendSpace'ACT_ENEMY502_Wait:VGActionEvent_13.SGANSSetBlendSpace_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY502/Action/CMN/ACT_ENEMY502_Wait.0"
+      }
+    }
+  }
+]

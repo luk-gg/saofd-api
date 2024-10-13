@@ -1,0 +1,571 @@
+[
+  {
+    "Type": "SGANEnemySpawn",
+    "Name": "SGANEnemySpawn_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANEnemySpawn'",
+    "Properties": {
+      "m_enemy_id": "ENEMY011_102",
+      "m_random_num_flag": true,
+      "m_random_enemy_spawn_num": [
+        {
+          "Key": "2",
+          "Value": 100.0
+        }
+      ],
+      "m_random_location_flag": true,
+      "m_spawn_range_min": 200.0,
+      "m_spawn_range_max": 1500.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "EnemySummon",
+      "action_id": 500,
+      "states": [
+        "EVGActionState::Emotion"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY012_EnemySummon'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Animation/Montage/MNT_ENEMY012_EnemySummon.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_13'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_12'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.13"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY012_100_EnemySummon:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "菌糸エフェクト",
+      "start_frame": 3,
+      "num_frames": 83,
+      "start_time": 0.10000001,
+      "end_time": 2.8666668,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_0.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.27"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 146,
+      "num_frames": 9,
+      "start_time": 4.866667,
+      "end_time": 5.166667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY012_100_EnemySummon:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_10.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "発動エフェクト(ループ)",
+      "num_frames": 21,
+      "end_time": 0.70000005,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_11.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.28"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_12",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 21,
+      "start_time": 0.70000005,
+      "end_time": 0.7333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY012_100_EnemySummon:VGActionEvent_12.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_13",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "スキル発動（敵）",
+      "end_time": 0.033333335,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY012_100_EnemySummon:VGActionEvent_13.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "召喚",
+      "start_frame": 112,
+      "start_time": 3.7333336,
+      "end_time": 3.766667,
+      "notify": {
+        "ObjectName": "SGANEnemySpawn'ACT_ENEMY012_100_EnemySummon:VGActionEvent_2.SGANEnemySpawn_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落ちる木の葉",
+      "start_frame": 49,
+      "start_time": 1.6333334,
+      "end_time": 1.6666667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_3.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.23"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落ちる木の葉",
+      "start_frame": 66,
+      "start_time": 2.2,
+      "end_time": 2.2333333,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_4.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.24"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落ちる木の葉",
+      "start_frame": 105,
+      "start_time": 3.5000002,
+      "end_time": 3.5333335,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.25"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "落ちる木の葉",
+      "start_frame": 82,
+      "start_time": 2.7333336,
+      "end_time": 2.766667,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY012_100_EnemySummon:VGActionEvent_6.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.26"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "胞子撒き音",
+      "start_frame": 48,
+      "start_time": 1.6000001,
+      "end_time": 1.6333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY012_100_EnemySummon:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "足音",
+      "start_frame": 131,
+      "start_time": 4.366667,
+      "end_time": 4.4,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY012_100_EnemySummon:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY012_100_EnemySummon",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "動作音",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY012_100_EnemySummon:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY012/Action/Emotion/ACT_ENEMY012_100_EnemySummon.20"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_12",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_13",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 22,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 23,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 1,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 0,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_SKL_Enemy_st'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_SKL_Enemy_st.0"
+      },
+      "emit_node_name": "VFX_Base",
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 50.0
+      },
+      "scale_offset": {
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 3.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY012_100_LeafBodyShake'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY012/efs_ENEMY012_100_LeafBodyShake.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 450.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY012_100_LeafBodyShake'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY012/efs_ENEMY012_100_LeafBodyShake.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 450.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY012_100_LeafBodyShake'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY012/efs_ENEMY012_100_LeafBodyShake.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 450.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY012_100_LeafBodyShake'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY012/efs_ENEMY012_100_LeafBodyShake.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 450.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY012_Summon_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY012/efs_ENEMY012_Summon_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 500.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Aura_SKL_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Aura_SKL_lo.0"
+      },
+      "emit_node_name": "b_C_Base",
+      "scale_offset": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      }
+    }
+  }
+]

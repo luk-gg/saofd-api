@@ -1,0 +1,374 @@
+[
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "position": {
+        "X": 0.0,
+        "Y": 400.0,
+        "Z": 100.0
+      },
+      "desc": {
+        "damage": 0.5,
+        "impact": "ESGDamageImpact::Blow",
+        "guard_impact": "ESGGuardDamageImpact::High",
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::CauserDirection",
+          "rotation": "EVGKnockBackRotation::FrontFace",
+          "velocity": {
+            "X": 1000.0,
+            "Y": 0.0,
+            "Z": 0.0
+          }
+        }
+      },
+      "box_half_extent_x": 400.0,
+      "box_half_extent_y": 400.0,
+      "box_half_extent_z": 150.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 204510,
+      "node": "Bullet_Point",
+      "target_direction": "ESGActionProjectileShotTargetDirection::Node",
+      "node_axis_type": "ESGActionProjectileShotNodeAxisType::X"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "FlameBreath_LtoR",
+      "action_id": 107,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY300_FlameBreath_LtoR'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Animation/Montage/MNT_ENEMY300_FlameBreath_LtoR.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.6"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 42,
+      "num_frames": 85,
+      "start_time": 1.4000001,
+      "end_time": 4.2333336,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_0.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 135,
+      "start_time": 4.5,
+      "end_time": 4.5333333,
+      "notify": {
+        "ObjectName": "VGANStopSound'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_1.VGANStopSound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 159,
+      "num_frames": 9,
+      "start_time": 5.3,
+      "end_time": 5.6000004,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_10.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 48,
+      "num_frames": 79,
+      "start_time": 1.6000001,
+      "end_time": 4.2333336,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_2.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 17,
+      "start_time": 0.5666667,
+      "end_time": 0.6000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 42,
+      "num_frames": 86,
+      "start_time": 1.4000001,
+      "end_time": 4.266667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_5.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "event_name": "胴体",
+      "start_frame": 41,
+      "num_frames": 16,
+      "start_time": 1.3666668,
+      "end_time": 1.9000001,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_6.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "火炎放射",
+      "start_frame": 42,
+      "start_time": 1.4000001,
+      "end_time": 1.4333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY300_Attack_FlameBreath_LtoR",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "火炎放射発射の唸り声",
+      "start_frame": 17,
+      "start_time": 0.5666667,
+      "end_time": 0.6000001,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_Attack_FlameBreath_LtoR:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/ATK/ACT_ENEMY300_Attack_FlameBreath_LtoR.15"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::CMN_BATTLE_SE",
+          "CueId": 1262,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 6.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 20,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 6.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 12,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 11,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_RBOSS004_00_FireBreath_Indication_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS004_00/efs_RBOSS004_00_FireBreath_Indication_lo.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANStopSound",
+    "Name": "VGANStopSound_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANStopSound'",
+    "Properties": {
+      "sound_type": "EVGSoundType::CMN_BATTLE_SE",
+      "cue_id": 1262
+    }
+  }
+]

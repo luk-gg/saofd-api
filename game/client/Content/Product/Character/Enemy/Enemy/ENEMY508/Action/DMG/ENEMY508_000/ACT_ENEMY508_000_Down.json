@@ -1,0 +1,81 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_000_Down",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Down",
+      "action_id": 206,
+      "states": [
+        "EVGActionState::Down"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_000_Down'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/ENEMY508_000/MNT_ENEMY508_000_Down.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Down:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Down.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_000_Down:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Down.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY508_000_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "num_frames": 58,
+      "start_time": 0.033333335,
+      "end_time": 1.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_000_Down:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Down.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY508_000_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 65,
+      "end_time": 2.1666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY508_000_Down:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/DMG/ENEMY508_000/ACT_ENEMY508_000_Down.4"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 207
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  }
+]

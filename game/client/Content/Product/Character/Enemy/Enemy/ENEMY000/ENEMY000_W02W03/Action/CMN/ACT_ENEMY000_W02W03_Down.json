@@ -1,0 +1,111 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY000_W02W03_Down",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Down_Loop",
+      "action_id": 202,
+      "states": [
+        "EVGActionState::Damage",
+        "EVGActionState::Down"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENE000_W03_Down_l'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Animation/Montage/MNT_ENE000_W03_Down_l.0"
+        },
+        "blend_time": 0.0
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_Down:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_Down:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY000_W02W03_Down:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY000_W02W03_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 3,
+      "num_frames": 37,
+      "start_time": 0.10000001,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY000_W02W03_Down:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY000_W02W03_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 40,
+      "end_time": 1.3333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY000_W02W03_Down:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.5"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY000_W02W03_Down",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 29,
+      "end_time": 0.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY000_W02W03_Down:VGActionEvent_2.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY000/ENEMY000_W02W03/Action/CMN/ACT_ENEMY000_W02W03_Down.6"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 203
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        10
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        11
+      ]
+    }
+  }
+]

@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS006_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'SBB_Enemy'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/SBB_Enemy.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Selector",
+    "Name": "BTComposite_Selector_1",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTComposite_Selector'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'SBT_RBOSS006_00_Phase:BTComposite_Sequence_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.2"
+          },
+          "ChildTask": null,
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Blackboard'SBT_RBOSS006_00_Phase:BTDecorator_Blackboard_0'",
+              "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.3"
+            }
+          ],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_RBOSS006_00_Phase:BTTask_RunBehavior_1'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.4"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "SBTTask_Enemy_WaitGameStart_C'SBT_RBOSS006_00_Phase:SBTTask_Enemy_WaitGameStart_C_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_RunBehavior'SBT_RBOSS006_00_Phase:BTTask_RunBehavior_3'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.5"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'SBT_RBOSS006_00_Phase:BTTask_Wait_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.6"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "VGBTT_WaitAction'SBT_RBOSS006_00_Phase:VGBTT_WaitAction_0'",
+            "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS006_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Blackboard",
+    "Name": "BTDecorator_Blackboard_0",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTDecorator_Blackboard'",
+    "Properties": {
+      "CachedDescription": "Phase Is Equal To 0",
+      "BlackboardKey": {
+        "SelectedKeyName": "Phase"
+      },
+      "NodeName": "フェーズチェック",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS006_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_1",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_PhaseTask'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_PhaseTask.0"
+      },
+      "NodeName": "フェーズ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Selector'SBT_RBOSS006_00_Phase:BTComposite_Selector_1'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_RunBehavior",
+    "Name": "BTTask_RunBehavior_3",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTTask_RunBehavior'",
+    "Properties": {
+      "BehaviorAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase_0.0"
+      },
+      "NodeName": "Phase0_初期化",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS006_00_Phase:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "WaitTime": 1.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS006_00_Phase:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.2"
+      }
+    }
+  },
+  {
+    "Type": "SBTTask_Enemy_WaitGameStart_C",
+    "Name": "SBTTask_Enemy_WaitGameStart_C_0",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "BlueprintGeneratedClass'/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_WaitGameStart.SBTTask_Enemy_WaitGameStart_C'",
+    "Template": {
+      "ObjectName": "SBTTask_Enemy_WaitGameStart_C'Default__SBTTask_Enemy_WaitGameStart_C'",
+      "ObjectPath": "/Game/Product/Character/Enemy/Common/AI/BehaviorTree/TaskBP/SBTTask_Enemy_WaitGameStart.3"
+    },
+    "Properties": {
+      "NodeName": "バトル開始まで待つ",
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS006_00_Phase:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.2"
+      }
+    }
+  },
+  {
+    "Type": "VGBTT_WaitAction",
+    "Name": "VGBTT_WaitAction_0",
+    "Outer": "SBT_RBOSS006_00_Phase",
+    "Class": "UScriptClass'VGBTT_WaitAction'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'SBT_RBOSS006_00_Phase'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'SBT_RBOSS006_00_Phase:BTComposite_Sequence_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/RBoss/RBOSS006_00/AI/BehaviorTree/Tree/SBT_RBOSS006_00_Phase.2"
+      }
+    }
+  }
+]

@@ -1,0 +1,373 @@
+[
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "VisibleVfx",
+      "m_is_local_control_only": false
+    }
+  },
+  {
+    "Type": "SGANCharacterSendMessage",
+    "Name": "SGANCharacterSendMessage_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'SGANCharacterSendMessage'",
+    "Properties": {
+      "message": "HiddenVfx",
+      "m_is_local_control_only": false
+    }
+  },
+  {
+    "Type": "SGANCharacterWarpTrigger",
+    "Name": "SGANCharacterWarpTrigger_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANCharacterWarpTrigger'"
+  },
+  {
+    "Type": "SGANEnemySkillAddCount",
+    "Name": "SGANEnemySkillAddCount_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'SGANEnemySkillAddCount'"
+  },
+  {
+    "Type": "SGANSCharaBodyProfileName",
+    "Name": "SGANSCharaBodyProfileName_0",
+    "Outer": "VGActionEvent_14",
+    "Class": "UScriptClass'SGANSCharaBodyProfileName'",
+    "Properties": {
+      "m_profile_name": "BossBody"
+    }
+  },
+  {
+    "Type": "SGANSCharacterHorizontalPush",
+    "Name": "SGANSCharacterHorizontalPush_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANSCharacterHorizontalPush'",
+    "Properties": {
+      "parameter_data_asset": {
+        "ObjectName": "SGANSCharacterHorizontalPushDataAsset'APP_ENEMYY811_000_Default'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/EventKey/PushParam/APP_ENEMYY811_000_Default.0"
+      },
+      "node": "b_C_Base",
+      "location": {
+        "X": 0.0,
+        "Y": -200.0,
+        "Z": 0.0
+      },
+      "rotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 90.0
+      },
+      "ignore_moving_direction_for_push": true,
+      "shape_type": "ESGCharacterHorizontalPushShape::CharacterMovement",
+      "capsule_radius": 200.0,
+      "capsule_half_height": 400.0,
+      "character_movement_add_size": 100.0,
+      "character_movement_origin_type": "ESGCharacterHorizontalPushOriginType::CapsuleCenter"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Warp",
+      "action_id": 300,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY811_000_Warp'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Animation/Montage/MNT_ENEMY811_000_Warp.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.16"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_14'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.15"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.17"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.12"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.14"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY811_000_Warp:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.13"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "表示",
+      "start_frame": 29,
+      "start_time": 0.9666667,
+      "end_time": 1.0,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_ENEMY811_000_Warp:VGActionEvent_0.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ロックオン不可",
+      "num_frames": 31,
+      "end_time": 1.0333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY811_000_Warp:VGActionEvent_1.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "非表示",
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "SGANCharacterSendMessage'ACT_ENEMY811_000_Warp:VGActionEvent_11.SGANCharacterSendMessage_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_14",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "コリジョン接触無し（レイドボスと同等、背景のみ）",
+      "num_frames": 30,
+      "end_time": 1.0,
+      "notify_state": {
+        "ObjectName": "SGANSCharaBodyProfileName'ACT_ENEMY811_000_Warp:VGActionEvent_14.SGANSCharaBodyProfileName_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.4"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃カウンタ加算",
+      "end_time": 0.033333335,
+      "is_loop_event": true,
+      "notify": {
+        "ObjectName": "SGANEnemySkillAddCount'ACT_ENEMY811_000_Warp:VGActionEvent_2.SGANEnemySkillAddCount_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.3"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "補間のピク付き緩和",
+      "start_frame": 59,
+      "num_frames": 30,
+      "start_time": 1.9666668,
+      "end_time": 2.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY811_000_Warp:VGActionEvent_3.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 29,
+      "start_time": 0.9666667,
+      "end_time": 1.0,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY811_000_Warp:VGActionEvent_4.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 1,
+      "start_time": 0.033333335,
+      "end_time": 0.06666667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY811_000_Warp:VGActionEvent_5.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ワープ発動",
+      "start_frame": 28,
+      "start_time": 0.9333334,
+      "end_time": 0.96666676,
+      "notify": {
+        "ObjectName": "SGANCharacterWarpTrigger'ACT_ENEMY811_000_Warp:VGActionEvent_6.SGANCharacterWarpTrigger_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "無敵",
+      "num_frames": 31,
+      "end_time": 1.0333334,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY811_000_Warp:VGActionEvent_8.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY811_000_Warp",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "プレイヤー押し出し",
+      "start_frame": 30,
+      "num_frames": 4,
+      "start_time": 1.0,
+      "end_time": 1.1333333,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSCharacterHorizontalPush'ACT_ENEMY811_000_Warp:VGActionEvent_9.SGANSCharacterHorizontalPush_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY811/Action/ActionAsset/Attack/ACT_ENEMY811_000_Warp.5"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        21
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_RBOSS006_00_BarrierWarp'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS006_00/efs_RBOSS006_00_BarrierWarp.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -200.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_RBOSS006_00_BarrierWarp'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS006_00/efs_RBOSS006_00_BarrierWarp.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -200.0
+      }
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY508_Attack05_Failed_End",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack05_Failed_End",
+      "action_id": 119,
+      "states": [
+        "EVGActionState::Land",
+        "EVGActionState::EndAction"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY508_Attack05_Failed_e'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Animation/Montage/MNT_ENEMY508_Attack05_Failed_e.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY508_Attack05_Failed_End:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Failed_End.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY508_Attack05_Failed_End",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 52,
+      "num_frames": 4,
+      "start_time": 1.7333335,
+      "end_time": 1.8666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY508_Attack05_Failed_End:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY508/Action/ATK/ACT_ENEMY508_Attack05_Failed_End.2"
+      }
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  }
+]

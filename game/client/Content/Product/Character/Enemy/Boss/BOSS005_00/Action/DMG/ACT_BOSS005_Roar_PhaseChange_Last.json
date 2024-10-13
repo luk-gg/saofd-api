@@ -1,0 +1,373 @@
+[
+  {
+    "Type": "SGANCallQuestEvent",
+    "Name": "SGANCallQuestEvent_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'SGANCallQuestEvent'",
+    "Properties": {
+      "event_name": "BOSS_PhaseChange_Final_Navi"
+    }
+  },
+  {
+    "Type": "SGANSHackCameraCut",
+    "Name": "SGANSHackCameraCut_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'SGANSHackCameraCut'",
+    "Properties": {
+      "start": {
+        "distance": 200.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 200.0
+        },
+        "rotation": {
+          "Pitch": 10.0,
+          "Yaw": -120.0,
+          "Roll": 10.0
+        },
+        "fov": 90.0
+      },
+      "end": {
+        "distance": 300.0,
+        "offset": {
+          "X": 0.0,
+          "Y": 50.0,
+          "Z": 210.0
+        },
+        "rotation": {
+          "Pitch": -8.0,
+          "Yaw": -120.0,
+          "Roll": -10.0
+        },
+        "fov": 90.0,
+        "blend": {
+          "BlendTime": 0.3
+        }
+      },
+      "is_hidden_friend": true
+    }
+  },
+  {
+    "Type": "SGANSMeleeAttack",
+    "Name": "SGANSMeleeAttack_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'SGANSMeleeAttack'",
+    "Properties": {
+      "desc": {
+        "damage": 0.0,
+        "attr": [
+          "EVGDamageAttr::Melee",
+          "EVGDamageAttr::HideDamageValue",
+          "EVGDamageAttr::HideHitEffect"
+        ],
+        "impact": "ESGDamageImpact::Roar",
+        "guard_damage_cut_rate": 0.75,
+        "knock_back": {
+          "factor": "EVGKnockBackFactor::AttackerRelativeAngle"
+        }
+      },
+      "shape_type": "ESGActionAttackShape::Sphere",
+      "sphere_radius": 3000.0
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Roar_PhaseChange_Last",
+      "action_id": 1010,
+      "states": [
+        "EVGActionState::Skill"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BOSS005_Squeeze_PhaseChange'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Animation/Montage/MNT_BOSS005_Squeeze_PhaseChange.0"
+        }
+      },
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_BO000_SubCancel'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS000_00/Animation/Montage/MNT_BO000_SubCancel.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.12"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.7"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風圧",
+      "start_frame": 7,
+      "num_frames": 106,
+      "start_time": 0.23333335,
+      "end_time": 3.766667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_0.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "咆哮",
+      "start_frame": 6,
+      "num_frames": 107,
+      "start_time": 0.20000002,
+      "end_time": 3.766667,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_1.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "威嚇",
+      "start_frame": 6,
+      "num_frames": 97,
+      "start_time": 0.20000002,
+      "end_time": 3.4333336,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "SGANSMeleeAttack'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_10.SGANSMeleeAttack_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.2"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 6,
+      "start_time": 0.20000002,
+      "end_time": 0.23333335,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_11.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージボイス（叫び）",
+      "start_frame": 3,
+      "start_time": 0.10000001,
+      "end_time": 0.13333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_4.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ダメージリアクション無効",
+      "num_frames": 225,
+      "end_time": 7.5000005,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_5.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 129,
+      "num_frames": 6,
+      "start_time": 4.3,
+      "end_time": 4.5,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_6.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 113,
+      "end_time": 3.766667,
+      "notify_state": {
+        "ObjectName": "SGANSHackCameraCut'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_8.SGANSHackCameraCut_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_BOSS005_Roar_PhaseChange_Last",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "Phase２→３キャラメッセ",
+      "start_frame": 128,
+      "start_time": 4.266667,
+      "end_time": 4.3,
+      "notify": {
+        "ObjectName": "SGANCallQuestEvent'ACT_BOSS005_Roar_PhaseChange_Last:VGActionEvent_9.SGANCallQuestEvent_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Boss/BOSS005_00/Action/DMG/ACT_BOSS005_Roar_PhaseChange_Last.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_RBOSS003_Roar_Long_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_RBOSS003_Roar_Long.0"
+      },
+      "outer_radius": 8000.0,
+      "falloff": 0.2
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 28,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        29
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS005_00_Roar_Wind_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS005_00/efs_BOSS005_00_Roar_Wind_lo.0"
+      }
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_BOSS005_00_Roar_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/BOSS005_00/efs_BOSS005_00_Roar_lo.0"
+      },
+      "location_offset": {
+        "X": -25.0,
+        "Y": 0.0,
+        "Z": -75.0
+      },
+      "scale_offset": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      }
+    }
+  }
+]

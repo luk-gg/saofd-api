@@ -1,0 +1,424 @@
+[
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "TakeOff_Vertical",
+      "action_id": 1000,
+      "states": [
+        "EVGActionState::Air",
+        "EVGActionState::StartAction",
+        "EVGActionState::FlyingTakeOff"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY300_TakeOff_Vertical'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Animation/Montage/MNT_ENEMY300_TakeOff_Vertical.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.1"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.2"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.10"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.8"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_11'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.3"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_4'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_2'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "num_frames": 59,
+      "end_time": 1.9666668,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_0.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛行中へ",
+      "start_frame": 58,
+      "num_frames": 3,
+      "start_time": 1.9333334,
+      "end_time": 2.0333333,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_1.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_11",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "飛び立つ瞬間",
+      "start_frame": 28,
+      "start_time": 0.9333334,
+      "end_time": 0.96666676,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_11.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_2",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "start_time": 0.86666673,
+      "end_time": 0.9000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_2.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.20"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 35,
+      "start_time": 1.1666667,
+      "end_time": 1.2,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_3.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_4",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "start_time": 0.86666673,
+      "end_time": 0.9000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_4.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.21"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 26,
+      "start_time": 0.86666673,
+      "end_time": 0.9000001,
+      "notify": {
+        "ObjectName": "VGANSignalVfx'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_5.VGANSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.22"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "空中判定用（任意タイミング）",
+      "start_frame": 27,
+      "num_frames": 32,
+      "start_time": 0.90000004,
+      "end_time": 1.9666667,
+      "notify_state": {
+        "ObjectName": "VGANSActionState'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_6.VGANSActionState_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.19"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風圧時",
+      "start_frame": 27,
+      "start_time": 0.90000004,
+      "end_time": 0.9333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_7.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.15"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 28,
+      "start_time": 0.9333334,
+      "end_time": 0.96666676,
+      "notify": {
+        "ObjectName": "VGANCameraShake'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_8.VGANCameraShake_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY300_TakeOff_Vertical",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "風圧時",
+      "start_frame": 27,
+      "start_time": 0.90000004,
+      "end_time": 0.9333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY300_TakeOff_Vertical:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY300/Action/CMN/ACT_ENEMY300_TakeOff_Vertical.16"
+      }
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Middle_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Middle.0"
+      },
+      "outer_radius": 3000.0
+    }
+  },
+  {
+    "Type": "VGANCameraShake",
+    "Name": "VGANCameraShake_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANCameraShake'",
+    "Properties": {
+      "shake": {
+        "ObjectName": "BlueprintGeneratedClass'VCS_CMN_Jump_End_Heavy_C'",
+        "ObjectPath": "/Game/Product/Character/Common/CameraShake/VCS_CMN_Jump_End_Heavy.0"
+      },
+      "outer_radius": 3000.0
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_11",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_VOICE",
+          "CueId": 4,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": -1000.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 8,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 8,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'VGANSActionBranch'",
+    "Properties": {
+      "action_id": 1020
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        22,
+        0
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionState",
+    "Name": "VGANSActionState_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'VGANSActionState'",
+    "Properties": {
+      "state_codes": [
+        20
+      ]
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_2",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "b_R_Middleclaw1",
+      "scale_offset": {
+        "X": 8.0,
+        "Y": 8.0,
+        "Z": 8.0
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_4",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_RBOSS004_00_Takeoff'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/RBOSS004_00/efs_RBOSS004_00_Takeoff.0"
+      },
+      "scale_offset": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "VGANSignalVfx",
+    "Name": "VGANSignalVfx_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_CMN_Smoke_Wave_s'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Common/efs_CMN_Smoke_Wave_s.0"
+      },
+      "emit_node_name": "b_L_Middleclaw1",
+      "scale_offset": {
+        "X": 8.0,
+        "Y": 8.0,
+        "Z": 8.0
+      }
+    }
+  }
+]

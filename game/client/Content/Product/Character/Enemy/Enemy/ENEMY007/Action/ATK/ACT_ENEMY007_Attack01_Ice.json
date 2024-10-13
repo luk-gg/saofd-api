@@ -1,0 +1,376 @@
+[
+  {
+    "Type": "SGANSActionHomingRotation",
+    "Name": "SGANSActionHomingRotation_0",
+    "Outer": "VGActionEvent_6",
+    "Class": "UScriptClass'SGANSActionHomingRotation'",
+    "Properties": {
+      "m_is_camlock_only_not_homing": false,
+      "m_rotate_degree_second": 120.0
+    }
+  },
+  {
+    "Type": "SGANSProjectileShot",
+    "Name": "SGANSProjectileShot_0",
+    "Outer": "VGActionEvent_1",
+    "Class": "UScriptClass'SGANSProjectileShot'",
+    "Properties": {
+      "projectile_id": 200700200,
+      "position": {
+        "X": 200.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "target_direction": "ESGActionProjectileShotTargetDirection::Owner"
+    }
+  },
+  {
+    "Type": "VGActionAsset",
+    "Name": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionAsset'",
+    "Properties": {
+      "name": "Attack01_Ice",
+      "action_id": 100,
+      "states": [
+        "EVGActionState::Attack"
+      ],
+      "anim_assets": {
+        "animation": {
+          "ObjectName": "AnimMontage'MNT_ENEMY007_Attack01_S'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Animation/Montage/MNT_ENEMY007_Attack01_S.0"
+        }
+      },
+      "action_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_6'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.8"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_1'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.4"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_0'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.3"
+        }
+      ],
+      "post_phys_events": [
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_3'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.6"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_10'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.5"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_5'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.7"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_7'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.9"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_9'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.11"
+        },
+        {
+          "ObjectName": "VGActionEvent'ACT_ENEMY007_Attack01_Ice:VGActionEvent_8'",
+          "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_0",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 55,
+      "num_frames": 2,
+      "start_time": 1.8333334,
+      "end_time": 1.9000001,
+      "notify_state": {
+        "ObjectName": "VGANSActionBranch'ACT_ENEMY007_Attack01_Ice:VGActionEvent_0.VGANSActionBranch_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.16"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_1",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "アイススペル",
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify_state": {
+        "ObjectName": "SGANSProjectileShot'ACT_ENEMY007_Attack01_Ice:VGActionEvent_1.SGANSProjectileShot_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.1"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_10",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃始動",
+      "num_frames": 2,
+      "end_time": 0.06666667,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY007_Attack01_Ice:VGActionEvent_10.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.12"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_3",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "チャージ",
+      "start_frame": 6,
+      "num_frames": 27,
+      "start_time": 0.20000002,
+      "end_time": 1.1,
+      "is_loop_event": true,
+      "notify_state": {
+        "ObjectName": "VGANSSignalVfx'ACT_ENEMY007_Attack01_Ice:VGActionEvent_3.VGANSSignalVfx_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.18"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_5",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃タメ",
+      "start_frame": 10,
+      "num_frames": 2,
+      "start_time": 0.33333334,
+      "end_time": 0.4,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY007_Attack01_Ice:VGActionEvent_5.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.13"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_6",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "start_frame": 6,
+      "num_frames": 36,
+      "start_time": 0.20000002,
+      "end_time": 1.4000001,
+      "notify_state": {
+        "ObjectName": "SGANSActionHomingRotation'ACT_ENEMY007_Attack01_Ice:VGActionEvent_6.SGANSActionHomingRotation_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.0"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_7",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "is_invalidate": true,
+      "start_frame": 10,
+      "num_frames": 40,
+      "start_time": 0.33333334,
+      "end_time": 1.6666667,
+      "notify_state": {
+        "ObjectName": "VGANSPlaySound'ACT_ENEMY007_Attack01_Ice:VGActionEvent_7.VGANSPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.17"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_8",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "攻撃発射",
+      "start_frame": 32,
+      "num_frames": 2,
+      "start_time": 1.0666667,
+      "end_time": 1.1333334,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY007_Attack01_Ice:VGActionEvent_8.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.14"
+      }
+    }
+  },
+  {
+    "Type": "VGActionEvent",
+    "Name": "VGActionEvent_9",
+    "Outer": "ACT_ENEMY007_Attack01_Ice",
+    "Class": "UScriptClass'VGActionEvent'",
+    "Properties": {
+      "event_name": "ループ停止",
+      "start_frame": 32,
+      "start_time": 1.0666667,
+      "end_time": 1.1,
+      "notify": {
+        "ObjectName": "VGANPlaySound'ACT_ENEMY007_Attack01_Ice:VGActionEvent_9.VGANPlaySound_0'",
+        "ObjectPath": "/Game/Product/Character/Enemy/Enemy/ENEMY007/Action/ATK/ACT_ENEMY007_Attack01_Ice.15"
+      }
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_10",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 11,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_5",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 26,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_8",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 28,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANPlaySound",
+    "Name": "VGANPlaySound_0",
+    "Outer": "VGActionEvent_9",
+    "Class": "UScriptClass'VGANPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 27,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": false,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSActionBranch",
+    "Name": "VGANSActionBranch_0",
+    "Outer": "VGActionEvent_0",
+    "Class": "UScriptClass'VGANSActionBranch'"
+  },
+  {
+    "Type": "VGANSPlaySound",
+    "Name": "VGANSPlaySound_0",
+    "Outer": "VGActionEvent_7",
+    "Class": "UScriptClass'VGANSPlaySound'",
+    "Properties": {
+      "cue_infos": [
+        {
+          "SoundType": "EVGSoundType::COMPONENT_SE",
+          "CueId": 12,
+          "CueName": "",
+          "BlockIndex": 0,
+          "Volume": 1.0,
+          "Pitch": 0.0,
+          "AisacParam": [],
+          "IsStopForChangedAction": true,
+          "IsReportPlayEnd": false,
+          "IsPhysicalSurface": false,
+          "IsPitchChangeByScale": false,
+          "CueSheetIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "VGANSSignalVfx",
+    "Name": "VGANSSignalVfx_0",
+    "Outer": "VGActionEvent_3",
+    "Class": "UScriptClass'VGANSSignalVfx'",
+    "Properties": {
+      "asset": {
+        "ObjectName": "VGVfxSignalAsset'efs_ENEMY007_002_MagicBall_Ice_lo'",
+        "ObjectPath": "/Game/Product/VFX_seven/VfxSignal/Enemy/ENEMY007/efs_ENEMY007_002_MagicBall_Ice_lo.0"
+      },
+      "location_offset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 150.0
+      }
+    }
+  }
+]
