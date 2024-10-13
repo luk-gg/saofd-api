@@ -5,6 +5,7 @@ import CHARACTER_PASSIVE_SKILLS from "./character_passive_skills.js"
 import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
 import { getBriefArr } from "./utils/index.js";
+import WEAPONS from "./weapons.js"
 
 // TODO: images
 // TODO: roles
@@ -22,16 +23,26 @@ const entries = await Promise.all(
             const icon = `/Content/Product/UI/Texture/HUD/hud_switchchain/cut_in_chara/hud_switchchain_cutin_${charId.substring(3)}.png`;
             const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${charId}`)
             const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(charId))
+            
+            const elements = WEAPONS.reduce((acc, wep) => {
+                if (wep.charId === charId) {
+                    wep.elements.forEach(element => {
+                        if (!acc.includes(element)) acc.push(element)
+                    })
+                }
+                return acc
+            }, [])
 
             return {
                 id: charId,
                 name,
+                elements,
                 baseStats,
                 rankRewards,
                 awakeningStats,
                 icon,
                 passiveSkills,
-                advancedSkills
+                advancedSkills,
             };
         })
 )
