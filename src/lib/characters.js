@@ -4,14 +4,13 @@ import CHARACTER_ADVANCED_SKILLS from "./character_advanced_skills.js"
 import CHARACTER_PASSIVE_SKILLS from "./character_passive_skills.js"
 import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
-import { getBriefArr } from "./utils/index.js";
+import { getBriefArr, getBriefData } from "./utils/index.js";
 import WEAPONS from "./weapons.js"
 import WPS_Melee from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Melee.json"
 import WPS_Range from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Range.json"
 
 // TODO: images
 // TODO: roles
-// TODO: weapons they can equip (EVGWeaponDivision::DualSword)
 
 const entries = await Promise.all(
     Object.entries(DT_BattleCharacterConstStatusData[0].Rows)
@@ -26,8 +25,10 @@ const entries = await Promise.all(
             const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${charId}`)
             const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(charId))
 
+            const weapons = []
             const elements = WEAPONS.reduce((acc, wep) => {
                 if (wep.charId === charId) {
+                    weapons.push(getBriefData(wep));
                     wep.elements.forEach(element => {
                         if (!acc.includes(element)) acc.push(element)
                     })
@@ -35,9 +36,6 @@ const entries = await Promise.all(
                 return acc
             }, [])
 
-            const weapons = [...Object.values(WPS_Melee[0].Rows), ...Object.values(WPS_Range[0].Rows)]
-                .filter(weapon => weapon.character_unique === `EVGCharaUnique::${charId}`)
-            if (weapons.length === 0) console.log(name)
             return {
                 id: charId,
                 name,

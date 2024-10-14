@@ -1,4 +1,5 @@
 import fs from "fs"
+import data from "../weapon_special_effects"
 
 // Uses linear interpolation to incrementally add missing values to an UnrealEngine array of [{ Time, Value }] objects and return them as [{ x, y }]
 export function RCIM_Linear(arr) {
@@ -27,11 +28,12 @@ export function imgPath(path) {
 
 // Shrinks each entries[] object to only have the necessary keys for displaying in a list, i.e. name and icon.
 export function getBriefArr(arr) {
-    return arr
-        .map(data => {
-            const { id, name, type, elements, icon } = data || {}
-            return { id, name, type, elements, icon }
-        })
+    return arr.map(data => getBriefData(data))
+}
+
+export function getBriefData(fullData) {
+    const { id, name, type, elements, icon } = fullData || {}
+    return { id, name, type, elements, icon }
 }
 
 // Ensure case-insensitivity as svelte's routing (or the browser?) transforms links like /Characters/UCR001 to /characters/ucr001. 
