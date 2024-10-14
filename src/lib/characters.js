@@ -6,8 +6,6 @@ import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
 import { getBriefArr, getBriefData } from "./utils/index.js";
 import WEAPONS from "./weapons.js"
-import WPS_Melee from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Melee.json"
-import WPS_Range from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Range.json"
 
 // TODO: images
 // TODO: roles
