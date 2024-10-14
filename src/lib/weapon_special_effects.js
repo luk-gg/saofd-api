@@ -35,8 +35,8 @@ for (const key in data) {
         return acc
     }, { Normal: 0, Legendary: 0 })
 
-    // Since all the line rates add up to some high number (1312~1425), I assume it's (rate / sumOfRates)
-    data[key] = data[key].map(obj => ({ ...obj, rate: obj.rate / sumOfRates[obj.lot] }))
+    // Since all the line rates add up to some high number (1312~1425), I assume it's (rate / sumOfRates) inside each lot ("Normal"/"Legendary")
+    data[key] = data[key].map(obj => ({ ...obj, rateInLot: obj.rate / sumOfRates[obj.lot] }))
 }
 
 export default data

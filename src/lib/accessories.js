@@ -5,6 +5,7 @@ import DT_OrnamentGenerateLotData from "../../game/client/Content/Product/DataTa
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import { getBriefArr, imgPath } from "./utils";
 import ACCESSORY_HEALTH from "./accessory_health"
+import ACCESSORY_SPECIAL_EFFECTS from "./accessory_special_effects"
 
 const entries = Object.entries(DT_OrnamentData[0].Rows)
     .map(([accId, accessory]) => {
@@ -15,6 +16,7 @@ const entries = Object.entries(DT_OrnamentData[0].Rows)
         const dlc = accessory.dlc.split("::").pop()
         const baseStatus = accessory.base_status.split("::").pop()
         const craftingRates = DT_OrnamentGenerateLotData[0].Rows[accId]
+        const specialEffects = ACCESSORY_SPECIAL_EFFECTS[accId]
 
         return {
             // ...accessory,
@@ -26,6 +28,7 @@ const entries = Object.entries(DT_OrnamentData[0].Rows)
             baseStatus,
             icon,
             craftingRates,
+            specialEffects,
             health: ACCESSORY_HEALTH[accId]
         }
     })
