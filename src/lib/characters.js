@@ -6,6 +6,8 @@ import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
 import { getBriefArr } from "./utils/index.js";
 import WEAPONS from "./weapons.js"
+import WPS_Melee from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Melee.json"
+import WPS_Range from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Range.json"
 
 // TODO: images
 // TODO: roles
@@ -33,6 +35,9 @@ const entries = await Promise.all(
                 return acc
             }, [])
 
+            const weapons = [...Object.values(WPS_Melee[0].Rows), ...Object.values(WPS_Range[0].Rows)]
+                .filter(weapon => weapon.character_unique === `EVGCharaUnique::${charId}`)
+            if (weapons.length === 0) console.log(name)
             return {
                 id: charId,
                 name,
@@ -43,6 +48,7 @@ const entries = await Promise.all(
                 icon,
                 passiveSkills,
                 advancedSkills,
+                weapons
             };
         })
 )
