@@ -2,7 +2,7 @@ import DT_OrnamentSpecialEffectLotData from "../../game/client/Content/Product/D
 import DT_EquipSpecialEffectData from "../../game/client/Content/Product/DataTable/Inventory/DT_EquipSpecialEffectData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 
-export default Object.entries(DT_OrnamentSpecialEffectLotData[0].Rows)
+const data = Object.entries(DT_OrnamentSpecialEffectLotData[0].Rows)
     .reduce((acc, [key, value]) => {
         const { rate } = value
         const [itemId, effectId] = key.split(":")
@@ -28,3 +28,15 @@ export default Object.entries(DT_OrnamentSpecialEffectLotData[0].Rows)
 
         return acc
     }, {})
+
+for (const key in data) {
+    const sumOfRates = data[key].reduce((acc, curr) => {
+        acc[curr.lot] += curr.rate
+        return acc
+    }, { Normal: 0, Legendary: 0 })
+
+    // Since all the line rates add up to some high number (1312~1425), I assume it's (rate / sumOfRates)
+    data[key] = data[key].map(obj => ({ ...obj, rateInLot: obj.rate / sumOfRates[obj.lot] }))
+}
+
+export default data
