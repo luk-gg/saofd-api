@@ -1,4 +1,5 @@
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
+import { imgPath } from "./utils";
 
 // Link skill ids to characters that can use them
 const skillIdCharIdMap = Object.entries(
@@ -29,6 +30,7 @@ export default await Promise.all(
 
             // SkillHeader (SKH) file contains id, name, description, type, icon...
             const headerData = HeaderFile[0].Properties
+            const icon = imgPath(headerData.icon_active?.ObjectPath)
 
             const charIds = skillIdCharIdMap[headerData.id]
 
@@ -39,7 +41,8 @@ export default await Promise.all(
                 ...headerData,
                 headerType: headerData.type,
                 name: headerData.name_text_id === "回復結晶" ? en.ST_SevenUI.OptionsItem_70 : en.ST_SevenUI[headerData.name_text_id],
-                desc: en.ST_SevenUI[headerData.info_text_id]
+                desc: en.ST_SevenUI[headerData.info_text_id],
+                icon
             }
         })
 )
