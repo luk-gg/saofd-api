@@ -25,7 +25,7 @@ async function getCharacterData(id) {
 
         // Also: SGDodgeActionComponent, and skeletal mesh stuff 
 
-        return { role: (m_chara_role ?? m_seven_chara_role).split("::").pop().replace("Shooter", "Ranger") }
+        return { role: (m_seven_chara_role ?? m_chara_role).split("::").pop().replace("Shooter", "Ranger") }
     }
     catch (err) {
         console.error(`Error when importing "/game/client/Content/Product/Character/Human/${id}/BC_${id}.json"`)
