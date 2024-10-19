@@ -9,7 +9,6 @@ import WPS_Range from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_
 import WEAPON_SPECIAL_EFFECTS from "./weapon_special_effects"
 import WEAPON_CRAFTING_RATES from "./weapon_crafting_rates"
 
-
 const entries = Object.entries(DT_WeaponBaseData[0].Rows)
     .map(([wepId, weapon]) => {
         const name = en.ST_SevenUI[weapon.name]
