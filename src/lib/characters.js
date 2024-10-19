@@ -46,15 +46,6 @@ const entries = await Promise.all(
             const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${charId}`)
             const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(charId))
 
-            // const weapons = WEAPONS_BRIEF.filter(wep => wep.charId === charId)
-            // const elements = weapons.reduce((acc, wep) => {
-            //     wep.elements.forEach(element => {
-            //         if (!acc.includes(element)) acc.push(element)
-            //     })
-            //     return acc
-            // }, [])
-            // const accessories = ACCESSORIES_BRIEF.filter(acc => acc.role === role)
-
             return {
                 id: charId,
                 name,
@@ -65,9 +56,6 @@ const entries = await Promise.all(
                 icon,
                 passiveSkills,
                 advancedSkills,
-                // elements,
-                // weapons,
-                // accessories
             };
         })
 )
