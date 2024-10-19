@@ -23,6 +23,7 @@ export function RCIM_Linear(arr) {
 }
 
 export function imgPath(path) {
+    if (!path) return
     return path.replace("/Game", "/Content").split(".")[0] + ".png"
 }
 

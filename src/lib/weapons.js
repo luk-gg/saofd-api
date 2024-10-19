@@ -29,8 +29,9 @@ const entries = Object.entries(DT_WeaponBaseData[0].Rows)
 
         const stats = [...Object.values(WPS_Melee[0].Rows), ...Object.values(WPS_Range[0].Rows)]
             .filter(wepStats =>
-                type.includes(wepStats.division.split("::").pop())
-                && wepStats.character_unique === `EVGCharaUnique::${charId}`
+                // LLENN's types are SubMachineGun and HandGun, but she also uses DualHandGun.
+                // type.includes(wepStats.division.split("::").pop()) && 
+                wepStats.character_unique === `EVGCharaUnique::${charId}`
             )
 
         const specialEffects = WEAPON_SPECIAL_EFFECTS[wepId]
