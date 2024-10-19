@@ -7,7 +7,6 @@ import ACCESSORY_HEALTH from "./accessory_health"
 import ACCESSORY_SPECIAL_EFFECTS from "./accessory_special_effects"
 import ACCESSORY_CRAFTING_RATES from "./accessory_crafting_rates"
 
-
 const entries = Object.entries(DT_OrnamentData[0].Rows)
     .map(([accId, accessory]) => {
         const name = en.ST_SevenUI[accessory.name]
@@ -30,7 +29,7 @@ const entries = Object.entries(DT_OrnamentData[0].Rows)
             icon,
             craftingRates,
             specialEffects,
-            health: ACCESSORY_HEALTH[accId]
+            health: ACCESSORY_HEALTH[accId],
         }
     })
     // Remove duplicates that don't have crafting rates
