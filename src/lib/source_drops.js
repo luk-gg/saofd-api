@@ -28,6 +28,7 @@ const itemDropSources = Object.entries(DT_DropItemData[0].Rows)
 
 // export default itemDropSources
 
+const dropGroups = Object.entries(DT_ItemPresetData[0].Rows)
 
 // Next, map each DT_ItemData id to 
 
@@ -58,8 +59,8 @@ export default Object.values(DT_ItemData[0].Rows)
 
         if (item.type === "ESGItemType::Preset") {
             console.log("Preset", item.id, item.name, Boolean(itemDropSources[item.id]))
-
-            // const preset = Object.entries(DT_ItemPresetData[0].Rows).find(([key, data]) => data.id === item.id)
+            const dropGroup = dropGroups.find(([key, data]) => data.id === item.id)
+            console.log(dropGroup)
             // const presetDropSource = itemDropSources[preset.id]
         }
         else {
