@@ -2,6 +2,13 @@ import DT_DropItemData from "../../game/client/Content/Product/DataTable/DT_Drop
 import DT_ItemData from "../../game/client/Content/Product/DataTable/DT_ItemData.json"
 import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_ItemPresetData.json"
 
+// Direct drops and preset (lottery) drops
+
+const itemDatas = Object.values(DT_ItemData[0].Rows)
+const dropGroups = Object.entries(DT_ItemPresetData[0].Rows)
+    .map(([key, data]) => ({ name: key, ...data }))
+
+
 // First, gather all the sources for each DT_ItemData id, such as
 // 300015: [{ content, rate }]
 // 300016: [{ content, rate }]
@@ -26,9 +33,12 @@ const itemDropSources = Object.entries(DT_DropItemData[0].Rows)
         return acc
     }, {})
 
-// export default itemDropSources
+export default itemDropSources
 
-const dropGroups = Object.entries(DT_ItemPresetData[0].Rows)
+
+
+
+
 
 // Next, map each DT_ItemData id to 
 
@@ -53,26 +63,40 @@ const dropGroups = Object.entries(DT_ItemPresetData[0].Rows)
 //     "rate": 50.0
 //   }
 
-export default Object.values(DT_ItemData[0].Rows)
+const dSources = Object.entries(DT_DropItemData[0].Rows)
+    .map(([key, data]) => ({ content: key, ...data }))
+
+ Object.values(DT_ItemData[0].Rows)
     .map((item) => {
-        let dropSources = []
+ 
+        
+        let indirectDrops = []
 
-        if (item.type === "ESGItemType::Preset") {
-            console.log("Preset", item.id, item.name, Boolean(itemDropSources[item.id]))
-            const dropGroup = dropGroups.find(([key, data]) => data.id === item.id)
-            console.log(dropGroup)
-            // const presetDropSource = itemDropSources[preset.id]
+        // Direct drops: the item exists in DT_DropItemData
+        const directDrops = itemDropSources[item.id] ?? []
+
+        // Indirect drops: the item exists inside of a preset which exists in DT_DropItemData
+        const presetsContainingItem = dropGroups.filter(group => group.item_infos.some(drop => drop.id === item.id))
+
+        for (const preset of presetsContainingItem) {
+            const presetTotalRate = preset.item_infos.reduce((acc, curr) => acc += curr.rate, 0)
+            const itemRateInPreset = preset.find(drop => drop.id === item.id).rate
+            const presetDropSources = itemDropSources[preset.id] ?? []
+
+            
+            indirectDrops = presetDropSources.map(source => ({ ...source, rate: 0 }))
+
+            for (const { rate } of preset.item_infos) {
+                
+            }
+            // rateInPreset
         }
-        else {
-            dropSources = itemDropSources[item.id]
-        }
-
-        // if (!dropSources) console.log(`No drop sources for ${item.id} (${item.name})!`)
-
 
         return {
             ...item,
-            dropSources
+            // sources: [...directDrops, ...indirectDrops]
+            directDrops,
+            indirectDrops
         }
     })
 
