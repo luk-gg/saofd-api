@@ -2,12 +2,12 @@ import DT_DropItemData from "../../game/client/Content/Product/DataTable/DT_Drop
 import DT_ItemData from "../../game/client/Content/Product/DataTable/DT_ItemData.json"
 import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_ItemPresetData.json"
 
-// Direct drops and preset (lottery) drops
+// True drop rates are too complex and likely not as useful to end users, so just keep rates as-is and display on front-end.
+// See discussion: https://discord.com/channels/862600196704829440/862600196704829443/1298794064581234758
 
 const itemDatas = Object.values(DT_ItemData[0].Rows)
-const dropGroups = Object.entries(DT_ItemPresetData[0].Rows)
+const itemPresets = Object.entries(DT_ItemPresetData[0].Rows)
     .map(([key, data]) => ({ name: key, ...data }))
-
 
 // First, gather all the sources for each DT_ItemData id, such as
 // 300015: [{ content, rate }]
@@ -33,72 +33,39 @@ const itemDropSources = Object.entries(DT_DropItemData[0].Rows)
         return acc
     }, {})
 
-export default itemDropSources
 
+export default itemDatas.map((item) => {
+    // Direct drops: the item exists in DT_DropItemData
+    const sources = itemDropSources[item.id] ?? []
 
+    // Indirect drops (not implemented): the item exists inside of a preset which exists in DT_DropItemData
 
+    // Preset: item is a lottery that contains other items
+    let presetContents;
 
-
-
-// Next, map each DT_ItemData id to 
-
-// // Heal (small) 10% + quartz
-// {
-//     "id": 31001,
-//     "rate": 50.0
-//   },
-//   // Add-on L-XL at 2:1
-//   {
-//     "id": 32007,
-//     "rate": 50.0
-//   },
-//   // Accessory R~E 2:1
-//   {
-//     "id": 33024,
-//     "rate": 50.0
-//   },
-//   // Col 1000~5000 (期待値2100); 1000 is 50%, 2000 is 30%, 5000 is 20%
-//   {
-//     "id": 31016,
-//     "rate": 50.0
-//   }
-
-const dSources = Object.entries(DT_DropItemData[0].Rows)
-    .map(([key, data]) => ({ content: key, ...data }))
-
- Object.values(DT_ItemData[0].Rows)
-    .map((item) => {
- 
-        
-        let indirectDrops = []
-
-        // Direct drops: the item exists in DT_DropItemData
-        const directDrops = itemDropSources[item.id] ?? []
-
-        // Indirect drops: the item exists inside of a preset which exists in DT_DropItemData
-        const presetsContainingItem = dropGroups.filter(group => group.item_infos.some(drop => drop.id === item.id))
-
-        for (const preset of presetsContainingItem) {
-            const presetTotalRate = preset.item_infos.reduce((acc, curr) => acc += curr.rate, 0)
-            const itemRateInPreset = preset.find(drop => drop.id === item.id).rate
-            const presetDropSources = itemDropSources[preset.id] ?? []
-
-            
-            indirectDrops = presetDropSources.map(source => ({ ...source, rate: 0 }))
-
-            for (const { rate } of preset.item_infos) {
-                
+    // ASSUMPTION: Only 1 item in a preset is selected
+    if (item.type === "ESGItemType::Preset") {
+        const preset = itemPresets.find(preset => preset.id === item.id)
+        // Sum of all "rate" in preset.item_infos because sometimes it goes over 100.
+        const presetTotalRate = preset.item_infos.reduce((acc, curr) => acc += curr.rate, 0)
+        // Add data from DT_ItemData into each drop
+        const presetDrops = preset.item_infos.map(drop => {
+            const dropData = itemDatas.find(i => i.id === drop.id)
+            return {
+                ...drop,
+                ...dropData,
+                rateInPreset: drop.rate / presetTotalRate
             }
-            // rateInPreset
-        }
+        })
+        presetContents = { ...preset, item_infos: presetDrops }
+    }
 
-        return {
-            ...item,
-            // sources: [...directDrops, ...indirectDrops]
-            directDrops,
-            indirectDrops
-        }
-    })
+    return {
+        ...item,
+        presetContents,
+        sources
+    }
+})
 
 
 
