@@ -4,6 +4,9 @@ import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import { getBriefArr, imgPath } from "./utils/index.js";
 import { getDropSources } from "./source_drops.js";
 
+// TODO: split cosmetics/decorations/weapon skins
+// TODO: add weapon skins
+
 const entries =
     [
         ...Object.entries(DT_ClothData[0].Rows),
