@@ -5,10 +5,15 @@ import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_It
 // True drop rates are too complex and likely not as useful to end users, so just keep rates as-is and display on front-end. Can be revisited in the future to display in "20%~30%" notation.
 // See discussion: https://discord.com/channels/862600196704829440/862600196704829443/1298794064581234758
 
+// DropItemData: rates do not always add up to 100, for example Kraken phase 3 clear drops add up to 9.2. Min~max number of drops are specified.
+// ItemPresetData: rates seem to add up to >= 100. Presumably only 1 drop.
+
+// "Items" such as mods, Col:50~2000 preset, Weapon:Common, Whale Hat, etc.
 const allItems = Object.values(DT_ItemData[0].Rows)
+
+// Presets are a group of drops with various rates. Append full item data to each item in each preset.
 const allPresets = Object.entries(DT_ItemPresetData[0].Rows)
     .map(([key, data]) => {
-        // Append full item data to the id and rate.
         const item_infos = data.item_infos
             .map(obj => ({ ...obj, ...allItems.find(item => item.id === obj.id) }))
         return {
@@ -18,6 +23,7 @@ const allPresets = Object.entries(DT_ItemPresetData[0].Rows)
         }
     })
 
+// Get the item info, along with preset info if the item is a preset.
 function getDropInfo(itemId, dropRateObj) {
     const item = allItems.find(item => item.id === itemId)
     let presetContents;
@@ -25,9 +31,9 @@ function getDropInfo(itemId, dropRateObj) {
         presetContents = allPresets.find(obj => obj.id === itemId)
     }
     return {
-        ...dropRateObj,
+        ...dropRateObj, // If item is part of a preset, include its "rate" inside of the preset
         ...item,
-        presetContents
+        presetContents // If item itself is a preset, include the items inside of that preset
     }
 }
 
@@ -51,7 +57,7 @@ const sources = Object.entries(DT_DropItemData[0].Rows)
 export default sources
 
 export function getDropSources(id, type, value) {
-    function isItemMatch(item) {
+    function isTargetItem(item) {
         const idMatch = id ? item.id === id : true
         const typeMatch = type ? item.type === type : true
         const valueMatch = value ? item.value === value : true
@@ -62,31 +68,32 @@ export function getDropSources(id, type, value) {
         .reduce((acc, source) => {
             [...source.guaranteedDrops, ...source.rngDrops]
                 .forEach(drop => {
-                    if (isItemMatch(drop)) {
+                    // Case: the item is dropped directly
+                    if (isTargetItem(drop)) {
                         acc.push({
                             content: source.content,
                             rate: drop.rate ?? 100
                         })
                     }
 
-                    // Assume the same id wouldn't exist twice, so filter() is unnecessary and find() is fine.
-                    const dropInPreset = drop.presetContents?.item_infos.find(presetDrop => isItemMatch(presetDrop))
+                    // Case: preset containing the item is dropped
+                    // Assume the same id wouldn't exist twice, so find() is fine.
+                    const dropInPreset = drop.presetContents?.item_infos.find(presetDrop => isTargetItem(presetDrop))
 
                     if (dropInPreset) {
+                        // Drop rate of the preset
+                        const presetRate = drop.rate ?? 100
+
+                        // Sum of all rates because it can be >= 100
                         const presetTotalRate = drop.presetContents.item_infos.reduce((acc, curr) => acc += curr.rate, 0)
 
-                        const otherRatesInPreset = drop.presetContents.item_infos.reduce((acc, curr) => {
-                            if (!isItemMatch(curr)) acc.push(parseInt(curr.rate))
-                            return acc
-                        }, [])
-                            .sort((a, b) => a - b)
+                        const itemRate = dropInPreset.rate
+                        const itemRateInPreset = itemRate / presetTotalRate                      
 
                         acc.push({
                             content: source.content,
-                            rate: drop.rate ?? 100, // drop rate of the preset/group
-                            rateInPreset: dropInPreset.rate, // drop rate of the target item
-                            presetTotalRate, // sum rates in group
-                            otherRatesInPreset // other rates in group, for sampling without replacement
+                            rate: presetRate,
+                            itemRateInPreset
                         })
                     }
                 })
