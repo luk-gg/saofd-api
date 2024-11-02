@@ -60,7 +60,7 @@ export function getDropSources(id, type, value) {
     function isTargetItem(item) {
         const idMatch = id ? item.id === id : true
         const typeMatch = type ? item.type === type : true
-        const valueMatch = value ? item.value === value : true
+        const valueMatch = typeof value === "number" ? item.value === value : true
         return idMatch && typeMatch && valueMatch
     }
 
@@ -71,6 +71,7 @@ export function getDropSources(id, type, value) {
                     // Case: the item is dropped directly
                     if (isTargetItem(drop)) {
                         acc.push({
+                            source: "drop",
                             content: source.content,
                             rate: drop.rate ?? 100
                         })
@@ -78,6 +79,7 @@ export function getDropSources(id, type, value) {
 
                     // Case: preset containing the item is dropped
                     // Assume the same id wouldn't exist twice, so find() is fine.
+                    // If this drop is a preset, find the item within presetContents if its exists.
                     const dropInPreset = drop.presetContents?.item_infos.find(presetDrop => isTargetItem(presetDrop))
 
                     if (dropInPreset) {
@@ -91,6 +93,7 @@ export function getDropSources(id, type, value) {
                         const itemRateInPreset = itemRate / presetTotalRate                      
 
                         acc.push({
+                            source: "drop",
                             content: source.content,
                             rate: presetRate,
                             itemRateInPreset
