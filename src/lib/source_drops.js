@@ -1,6 +1,7 @@
 import DT_DropItemData from "../../game/client/Content/Product/DataTable/DT_DropItemData.json"
 import DT_ItemData from "../../game/client/Content/Product/DataTable/DT_ItemData.json"
 import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_ItemPresetData.json"
+// DT_RaidBossQuestData lists the items shown in the in-game UI for raid rewards
 
 // True drop rates are too complex and likely not as useful to end users, so just keep rates as-is and display on front-end. Can be revisited in the future to display in "20%~30%" notation.
 // See discussion: https://discord.com/channels/862600196704829440/862600196704829443/1298794064581234758
