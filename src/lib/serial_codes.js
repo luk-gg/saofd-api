@@ -8,8 +8,8 @@ export default [
         end: "2024-12-27T23:59",
         link: "https://x.com/saogames/status/1842420960051462436/photo/1", 
         contents: [
-            "", // Green Desert Battlewear 
-            "" // Green Rabbit Cap
+            "Cos00066", // Green Desert Battlewear 
+            "Dec00072" // Green Rabbit Cap
         ]
     },
     {
@@ -17,7 +17,7 @@ export default [
         end: "2024-10-18T23:59",
         link: "https://x.com/saogames/status/1844763643583266967/photo/1",
         contents: [
-            "" // Gun Metal SPB Potassium
+            "Wsk11008" // Gun Metal SPB Potassium
         ]
     },
     {
@@ -25,7 +25,7 @@ export default [
         end: "2024-10-25T23:59",
         link: "https://x.com/saogames/status/1847300360672542825/photo/1",
         contents: [
-            "" // GGO Black Casual Wear (M)
+            "Cos10045" // GGO Black Casual Wear (M)
         ]
     },
     {
@@ -33,7 +33,7 @@ export default [
         end: "",
         link: "https://x.com/saogames/status/1847975394647195784/photo/1",
         contents: [
-            // Dark Otherworldly Singer (F)
+            "Cos00061" // Dark Otherworldly Singer (F)
         ]
     },
     {
@@ -41,7 +41,7 @@ export default [
         end: "2024-11-1T23:59",
         link: "https://x.com/saogames/status/1849858469731631487/photo/1",
         contents: [
-            // GGO Black Casual Wear (F)
+            "Cos00070" // GGO Black Casual Wear (F)
         ]
     },
     {
@@ -49,7 +49,7 @@ export default [
         end: "2024-11-8T23:59",
         link: "https://x.com/saogames/status/1852373793382998354/photo/1",
         contents: [
-            // AGGO1 stamp
+            "AGGO1 stamp"
         ]
     },
     {
@@ -57,7 +57,7 @@ export default [
         end: "2024-11-15T23:59",
         link: "https://x.com/saogames/status/1854925608377053270/photo/1",
         contents: [
-            // GGO White Casual Wear (M)
+            "Cos10043" // GGO White Casual Wear (M)
         ]
     },
     {
@@ -65,7 +65,7 @@ export default [
         end: "2024-11-22T23:59",
         link: "https://x.com/saogames/status/1857447221811163307/photo/1",
         contents: [
-            // GGO White Casual Wear (F)
+            "Cos00068" // GGO White Casual Wear (F)
         ]
     },
     {
@@ -73,7 +73,7 @@ export default [
         end: "2024-11-29T23:59",
         link: "https://x.com/saogames/status/1859983937012973910/photo/1",
         contents: [
-            // GGO Pink Casual Wear (M)
+            "Cos10044" // GGO Pink Casual Wear (M)
         ]
     },
     {
@@ -81,7 +81,7 @@ export default [
         end: "2024-12-6T23:59",
         link: "https://x.com/saogames/status/1862521280479863228/photo/1",
         contents: [
-            // AGGO2 stamp
+            "AGGO2 stamp"
         ]
     }
 ]
