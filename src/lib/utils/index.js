@@ -1,5 +1,4 @@
 import fs from "fs"
-import data from "../weapon_special_effects"
 
 // Uses linear interpolation to incrementally add missing values to an UnrealEngine array of [{ Time, Value }] objects and return them as [{ x, y }]
 export function RCIM_Linear(arr) {
