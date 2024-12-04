@@ -38,7 +38,7 @@ export default [
     },
     {
         code: "MOVE-OPTO-EASY",
-        end: "2024-11-1T23:59",
+        end: "2024-11-01T23:59",
         link: "https://x.com/saogames/status/1849858469731631487/photo/1",
         contents: [
             "Cos00070" // GGO Black Casual Wear (F)
@@ -46,7 +46,7 @@ export default [
     },
     {
         code: "AWAY-UNKN-BTRY",
-        end: "2024-11-8T23:59",
+        end: "2024-11-08T23:59",
         link: "https://x.com/saogames/status/1852373793382998354/photo/1",
         contents: [
             "AGGO1 stamp"
@@ -78,7 +78,7 @@ export default [
     },
     {
         code: "HOME-PURE-CALL",
-        end: "2024-12-6T23:59",
+        end: "2024-12-06T23:59",
         link: "https://x.com/saogames/status/1862521280479863228/photo/1",
         contents: [
             "AGGO2 stamp"
