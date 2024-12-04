@@ -1,7 +1,10 @@
 import DT_CharacterRankUpRewardData from "../../game/client/Content/Product/DataTable/Rank/DT_CharacterRankUpRewardData.json";
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 
-const sources = Object.entries(DT_CharacterRankUpRewardData[0].Rows)
+const DT_CharacterRankUpRewardData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Rank/DT_CharacterRankUpRewardData*", { eager: true, import: "default" })
+const CharacterRankUpRewardData = Object.values(DT_CharacterRankUpRewardData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const sources = Object.entries(CharacterRankUpRewardData)
     .reduce((acc, [key, rewards]) => {
         const [id, rankStr] = key.split(":") // "UCR001:25"
         const rank = parseInt(rankStr)

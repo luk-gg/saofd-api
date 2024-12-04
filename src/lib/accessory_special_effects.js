@@ -3,11 +3,17 @@ import DT_EquipSpecialEffectData from "../../game/client/Content/Product/DataTab
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import SPECIAL_EFFECT_CATEGORIES from "./special_effect_categories"
 
-const data = Object.entries(DT_OrnamentSpecialEffectLotData[0].Rows)
+const DT_OrnamentSpecialEffectLotData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_OrnamentSpecialEffectLotData*", { eager: true, import: "default" })
+const OrnamentSpecialEffectLotData = Object.values(DT_OrnamentSpecialEffectLotData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const DT_EquipSpecialEffectData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_EquipSpecialEffectData*", { eager: true, import: "default" })
+const EquipSpecialEffectData = Object.values(DT_EquipSpecialEffectData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const data = Object.entries(OrnamentSpecialEffectLotData)
     .reduce((acc, [key, value]) => {
         const { rate } = value
         const [itemId, effectId] = key.split(":")
-        const effectData = DT_EquipSpecialEffectData[0].Rows[effectId]
+        const effectData = EquipSpecialEffectData[effectId]
         const { no_duplication, lot_category, param_value, param_additional_value, level, exclusive_character } = effectData
         const name = en.ST_SevenUI[effectData.name]
         const lot = lot_category.split("::").pop()
