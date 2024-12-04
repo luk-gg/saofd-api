@@ -7,7 +7,10 @@ import ACCESSORY_HEALTH from "./accessory_health"
 import ACCESSORY_SPECIAL_EFFECTS from "./accessory_special_effects"
 import ACCESSORY_CRAFTING_RATES from "./accessory_crafting_rates"
 
-const entries = Object.entries(DT_OrnamentData[0].Rows)
+const DT_OrnamentData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_OrnamentData*", { eager: true, import: "default" })
+const OrnamentData = Object.values(DT_OrnamentData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const entries = Object.entries(OrnamentData)
     .map(([accId, accessory]) => {
         const name = en.ST_SevenUI[accessory.name]
         const icon = imgPath(accessory.icon.AssetPathName)

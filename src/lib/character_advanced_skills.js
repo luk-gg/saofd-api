@@ -3,7 +3,7 @@ import { imgPath } from "./utils";
 
 // Link skill ids to characters that can use them
 const skillIdCharIdMap = Object.entries(
-    import.meta.glob("../../game/client/Content/Product/Character/Human/**/CPS_*.json",
+    import.meta.glob("../../game/client/Content/(Product|Season*)/Character/Human/**/CPS_*.json",
         { eager: true, import: "default" }
     ))
     .reduce((acc, [path, data]) => {
@@ -21,12 +21,13 @@ const skillIdCharIdMap = Object.entries(
 // Heavy Attacks are considered an "Advanced Skill"
 // Combine SkillAsset (SKA) and SkillHeader (SKH) files
 export default await Promise.all(
-    Object.values(import.meta.glob("../../game/client/Content/Product/Character/Human/Common/Skill/Asset/*.json", { eager: true, import: "default" }))
+    Object.values(import.meta.glob("../../game/client/Content/(Product|Season*)/Character/Human/Common/Skill/Asset/*.json", { eager: true, import: "default" }))
         .map(async (arr) => {
             // SkillAsset (SKA) file contains recast_time, type, action_id...
             const { Properties: assetData } = arr[0]
             const fileName = assetData.header.ObjectPath.split("/").pop().split(".")[0]
-            const { default: HeaderFile } = await import(`../../game/client/Content/Product/Character/Human/Common/Skill/Header/${fileName}.json`)
+            const seasonFolder = assetData.header.ObjectPath.split("/")[2]
+            const { default: HeaderFile } = await import(`../../game/client/Content/${seasonFolder}/Character/Human/Common/Skill/Header/${fileName}.json`)
 
             // SkillHeader (SKH) file contains id, name, description, type, icon...
             const headerData = HeaderFile[0].Properties

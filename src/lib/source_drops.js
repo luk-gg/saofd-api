@@ -3,6 +3,15 @@ import DT_ItemData from "../../game/client/Content/Product/DataTable/DT_ItemData
 import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_ItemPresetData.json"
 // DT_RaidBossQuestData lists the items shown in the in-game UI for raid rewards
 
+const DT_DropItemData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/DT_DropItemData*", { eager: true, import: "default" })
+const DropItemData = Object.values(DT_DropItemData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const DT_ItemData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/DT_ItemData*", { eager: true, import: "default" })
+const ItemData = Object.values(DT_ItemData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+const DT_ItemPresetData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/DT_ItemPresetData*", { eager: true, import: "default" })
+const ItemPresetData = Object.values(DT_ItemPresetData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
 // True drop rates are too complex and likely not as useful to end users, so just keep rates as-is and display on front-end. Can be revisited in the future to display in "20%~30%" notation.
 // See discussion: https://discord.com/channels/862600196704829440/862600196704829443/1298794064581234758
 
@@ -10,10 +19,10 @@ import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_It
 // ItemPresetData: rates seem to add up to >= 100. Presumably only 1 drop.
 
 // "Items" such as mods, Col:50~2000 preset, Weapon:Common, Whale Hat, etc.
-const allItems = Object.values(DT_ItemData[0].Rows)
+const allItems = Object.values(ItemData)
 
 // Presets are a group of drops with various rates. Append full item data to each item in each preset.
-const allPresets = Object.entries(DT_ItemPresetData[0].Rows)
+const allPresets = Object.entries(ItemPresetData)
     .map(([key, data]) => {
         const item_infos = data.item_infos
             .map(obj => ({ ...obj, ...allItems.find(item => item.id === obj.id) }))
@@ -38,7 +47,7 @@ function getDropInfo(itemId, dropRateObj) {
     }
 }
 
-const sources = Object.entries(DT_DropItemData[0].Rows)
+const sources = Object.entries(DropItemData)
     .map(([key, data]) => {
         const { id, fixed_item_ids, drop_num_max, drop_num_min, item_infos, exp } = data
         const guaranteedDrops = fixed_item_ids.map(itemId => getDropInfo(itemId))

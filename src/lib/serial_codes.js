@@ -1,8 +1,8 @@
 
 // Note: a stamp was given for the SAO clear date anniversary
 
-// Times are JST. Links are the English twitter posts; JP links currently not provided;
-const codes = [
+// Times are JST. Links are the English twitter posts if available, otherwise JP twitter
+export default [
     {
         code: "SJ03-UNIT-LPFM",
         end: "2024-12-27T23:59",

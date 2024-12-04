@@ -1,6 +1,9 @@
 import DA_GenerateItemData from "../../game/client/Content/Product/DataTable/Inventory/DA_GenerateItemData.json"
 
-export default Object.entries(DA_GenerateItemData[0].Properties).reduce((acc, [key, values]) => {
+const DA_GenerateItemData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DA_GenerateItemData*", { eager: true, import: "default" })
+const GenerateItemData = Object.values(DA_GenerateItemData_files).reduce((acc, file) => ({ ...acc, ...file[0].Properties }), {})
+
+export default Object.entries(GenerateItemData).reduce((acc, [key, values]) => {
     if (key === "price_data") return acc
     acc[key] = {}
     values.forEach(({ Key, Value }) => {

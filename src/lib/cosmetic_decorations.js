@@ -5,13 +5,10 @@ import { imgPath } from "./utils/index.js";
 import { getDropSources } from "./source_drops.js";
 import { getCharacterRankSources } from "./source_character_rank.js";
 
-const gameFiles = import.meta.glob(
-    "/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_DecorationData*",
-    { eager: true, import: "default" }
-)
-const data = Object.values(gameFiles).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+const DT_DecorationData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_DecorationData*", { eager: true, import: "default" })
+const DecorationData = Object.values(DT_DecorationData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
 
-export default Object.entries(data)
+export default Object.entries(DecorationData)
     .map(([id, item]) => {
         const { model_id, paid_only, entitlement, override_material_id, effect_id, category } = item
         const name = en.ST_SevenUI[item.name]

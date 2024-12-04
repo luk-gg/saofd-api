@@ -1,9 +1,8 @@
 import path from "path"
 
-export default Object.entries(
-    import.meta.glob("../../game/client/Content/Product/Character/Human/**/*_BaseStatus.json",
-        { eager: true, import: "default" }
-    ))
+const BaseStatus_files = import.meta.glob("/game/client/Content/(Product|Season*)/Character/Human/**/*_BaseStatus*", { eager: true, import: "default" })
+
+export default Object.entries(BaseStatus_files)
     .reduce((acc, [filePath, data]) => {
         const charId = path.basename(filePath, ".json").split("_")[0]
         const levels = Object.entries(data[0].Rows).map(([key, value]) => {
