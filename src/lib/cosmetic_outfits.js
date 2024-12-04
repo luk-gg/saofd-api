@@ -4,7 +4,13 @@ import { imgPath } from "./utils/index.js";
 import { getDropSources } from "./source_drops.js";
 import { getCharacterRankSources } from "./source_character_rank.js";
 
-export default Object.entries(DT_ClothData[0].Rows)
+const gameFiles = import.meta.glob(
+    "/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_ClothData*",
+    { eager: true, import: "default" }
+)
+const data = Object.values(gameFiles).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
+
+export default Object.entries(data)
     .map(([id, item]) => {
         const { model_id, paid_only, entitlement, override_material_id, effect_id, tail_decoration_allowed, is_override_ultimate_skill } = item
         const name = en.ST_SevenUI[item.name]
