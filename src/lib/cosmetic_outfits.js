@@ -16,11 +16,16 @@ export default Object.entries(ClothData)
         const icon = imgPath(item.icon.AssetPathName)
         const charId = item.exclusive_character.split("::").pop()
         const sources = [...getDropSources(null, "ESGItemType::ClothSkin", Number(id.slice(3))), ...getCharacterRankSources(id)]
+        // Couldn't find any code referencing gender for outfits, so the following is derived from description. Some outfits that don't mention a gender can only be worn by a specific character, so in this case default to "None" since charId will contain the condition--avoids needing to look up Sinon to find that she's Female.
+        let gender = "None"
+        if (desc.includes("female")) gender = "Female"
+        else if (desc.includes("male")) gender = "Male"
 
         return {
             id,
             name,
             desc,
+            gender,
             charId,
             rarity,
             entitlement, // ??

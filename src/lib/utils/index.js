@@ -43,3 +43,6 @@ export function writeJson(dir, fileName, data) {
     }
     fs.writeFileSync(`${dir}/${fileName.toLowerCase()}.json`, JSON.stringify(data))
 }
+
+// Split-pop function for removing Unreal Engine variable types, i.e. "ESkillType::Attack" → "Attack".
+export const sp = (str, delimiter = "::") => str.split(delimiter).pop()
