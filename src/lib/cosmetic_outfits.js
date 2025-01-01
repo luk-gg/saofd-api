@@ -32,7 +32,7 @@ export default Object.entries(ClothData)
             entitlement, // ??
             icon,
             model_id,
-            paid_only,
+            paid_only, // does not specify whether the item is in the battle pass, store, collab item (yellow rabbit cap), or serial code (green rabbit cap)
             override_material_id,
             effect_id,
             tail_decoration_allowed,
