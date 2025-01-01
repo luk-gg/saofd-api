@@ -84,6 +84,7 @@ const sources = Object.entries(DropItemData)
 
         // key ("マルチ_ALOレイドボス（クラーケン）_Phase３クリアー") gives a hint to the content
         // id (10220999) connects us to クラーケン in DT_Quest_Enemy_Data_Rboss_220 with enemy_id RBOSS001_00
+        // the enemy id can be linked to the text in DT_EnemyData
 
         return {
             id,
