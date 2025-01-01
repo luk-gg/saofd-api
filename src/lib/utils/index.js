@@ -32,8 +32,8 @@ export function getBriefArr(arr) {
 }
 
 export function getBriefData(fullData) {
-    const { id, name, type, elements, icon, role, charId, rarity, category } = fullData || {}
-    return { id, name, type, elements, icon, role, charId, rarity, category }
+    const { id, name, type, elements, icon, role, charId, gender, rarity, category } = fullData || {}
+    return { id, name, type, elements, icon, role, charId, gender, rarity, category }
 }
 
 // Ensure case-insensitivity as svelte's routing (or the browser?) transforms links like /Characters/UCR001 to /characters/ucr001. 
