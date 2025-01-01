@@ -5,7 +5,7 @@ import CHARACTER_ADVANCED_SKILLS from "./character_advanced_skills.js"
 import CHARACTER_PASSIVE_SKILLS from "./character_passive_skills.js"
 import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
-import { getBriefArr } from "./utils/index.js";
+import { getBriefArr, sp } from "./utils/index.js";
 
 // TODO: find icon paths from game files
 
@@ -19,7 +19,7 @@ async function getCharacterData(id, seasonFolder) {
         // DT_CharacterPreset => CPS_UCR001 => BC_UCR001 except that DT_CharacterPreset contains few characters
         const { default: data } = await import(`../../game/client/Content/${seasonFolder}/Character/Human/${id}/BC_${id}.json`)
 
-        const { m_chara_role, k_health_recover_time, m_stamina_recover, k_stamina_recover_attack_hit, k_skill_gauge_recover_attack_hit, k_resuscitable_range, k_speed_firing_interp_rate, m_guard_range, m_state_base_action_ids, k_name_id, m_name, k_speed_walk, k_speed_run, k_speed_run_second, k_speed_kneeling, k_blend_time_walk_jog, m_weapon_load_name_list, m_chara_role_link_action_types, m_seven_chara_role } = data[0].Properties ?? {}
+        const { m_chara_role, k_health_recover_time, m_stamina_recover, k_stamina_recover_attack_hit, k_skill_gauge_recover_attack_hit, k_resuscitable_range, k_speed_firing_interp_rate, m_guard_range, m_state_base_action_ids, k_name_id, m_name, k_speed_walk, k_speed_run, k_speed_run_second, k_speed_kneeling, k_blend_time_walk_jog, m_weapon_load_name_list, m_chara_role_link_action_types, m_seven_chara_role, m_chara_gender } = data[0].Properties ?? {}
 
         // Various keys depending on the unique skill here, such as SGUniqueAbilityFly for flying parameters
         // const uniqueAbilities = data.filter(obj => obj.Type.includes("SGUniqueAbility")).map(obj => {
@@ -32,7 +32,10 @@ async function getCharacterData(id, seasonFolder) {
 
         // Also: SGDodgeActionComponent, and skeletal mesh stuff 
 
-        return { role: (m_seven_chara_role ?? m_chara_role).split("::").pop().replace("Shooter", "Ranger") }
+        return { 
+            role: (m_seven_chara_role ?? m_chara_role).split("::").pop().replace("Shooter", "Ranger"),
+            gender: sp(m_chara_gender)
+        }
     }
     catch (err) {
         // console.error(`Error when importing "/game/client/Content/${seasonFolder}/Character/Human/${id}/BC_${id}.json"`)
@@ -41,7 +44,7 @@ async function getCharacterData(id, seasonFolder) {
 
 const entries = await Promise.all(
     Characters.map(async ({ id, seasonFolder }) => {
-        const { role } = await getCharacterData(id, seasonFolder) ?? {}
+        const { role, gender } = await getCharacterData(id, seasonFolder) ?? {}
         const name = en.ST_SevenUI[`CharaName_${id}`].replace('{Change}|index(\"Nautilus\",\"Eiji\")', "Eiji");
         const rankRewards = CHARACTER_RANK_REWARDS[id];
         const awakeningStats = CHARACTER_AWAKENING_STATS[id];
@@ -53,6 +56,7 @@ const entries = await Promise.all(
             id,
             name,
             role,
+            gender,
             rankRewards,
             awakeningStats,
             icon,

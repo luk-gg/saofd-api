@@ -91,5 +91,22 @@ export default [
         contents: [
             "AGGO3 stamp"
         ]
-    }
+    }, 
+    {
+        code: "FORT-TEAM-COOP",
+        end: "2024-12-20T23:59",
+        link: "https://x.com/saogames/status/1867596151752638654",
+        contents: [
+            "Cos00069" // GGO Pink Casual Wear (F)
+        ]
+    }, 
+    {
+        code: "TIME-3MIN-FEAR",
+        end: "2024-12-27T23:59",
+        link: "https://x.com/saogames/status/1870130796884787629",
+        contents: [
+            "Wsk11009" // Pink Sirius
+        ]
+    }, 
+
 ]

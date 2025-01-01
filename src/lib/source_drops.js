@@ -2,6 +2,7 @@ import DT_DropItemData from "../../game/client/Content/Product/DataTable/DT_Drop
 import DT_ItemData from "../../game/client/Content/Product/DataTable/DT_ItemData.json"
 import DT_ItemPresetData from "../../game/client/Content/Product/DataTable/DT_ItemPresetData.json"
 // DT_RaidBossQuestData lists the items shown in the in-game UI for raid rewards
+import en from "../../game/client/Content/Localization/Game/en/Game.json";
 
 const DT_DropItemData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/DT_DropItemData*", { eager: true, import: "default" })
 const DropItemData = Object.values(DT_DropItemData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
@@ -47,15 +48,48 @@ function getDropInfo(itemId, dropRateObj) {
     }
 }
 
+// Enemy names
+const DT_EnemyData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/DT_EnemyData*", { eager: true, import: "default" })
+
+const enemyIdToName = Object.values(DT_EnemyData_files).reduce((acc, file) => {
+    for (const enemyData of Object.values(file[0].Rows)) {
+        acc[enemyData.id] = en.ST_SevenUI[enemyData.name_text_id]
+    }
+    return acc
+}, {})
+
+// Quest enemies' drop contents
+const DT_Quest_Enemy_Data_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Quest/Enemy/DT_*", { eager: true, import: "default" })
+
+const enemyDropsById = Object.entries(DT_Quest_Enemy_Data_files).reduce((acc, [path, file]) => {
+    const contentId = path.split("/")[8].split(".")[0].replace("DT_Quest_Enemy_Data_", "")
+    for (const [key, value] of Object.entries(file[0].Rows)) {
+        if (!acc[value.drop_id]) acc[value.drop_id] = []
+        acc[value.drop_id].push({ 
+            key, 
+            enemy_name: enemyIdToName[value.enemy_id], 
+            contentId, 
+            ...value, 
+            drop_id: undefined 
+        })
+    }
+    return acc
+}, {})
+
 const sources = Object.entries(DropItemData)
     .map(([key, data]) => {
         const { id, fixed_item_ids, drop_num_max, drop_num_min, item_infos, exp } = data
         const guaranteedDrops = fixed_item_ids.map(itemId => getDropInfo(itemId))
         const rngDrops = item_infos.map(obj => getDropInfo(obj.id, obj))
 
+        // key ("マルチ_ALOレイドボス（クラーケン）_Phase３クリアー") gives a hint to the content
+        // id (10220999) connects us to クラーケン in DT_Quest_Enemy_Data_Rboss_220 with enemy_id RBOSS001_00
+        // the enemy id can be linked to the text in DT_EnemyData
+
         return {
             id,
             content: key,
+            enemies: enemyDropsById[id],
             drop_num_max,
             drop_num_min,
             exp,
@@ -83,6 +117,7 @@ export function getDropSources(id, type, value) {
                         acc.push({
                             source: "drop",
                             content: source.content,
+                            enemies: source.enemies,
                             rate: drop.rate ?? 100
                         })
                     }
@@ -100,11 +135,12 @@ export function getDropSources(id, type, value) {
                         const presetTotalRate = drop.presetContents.item_infos.reduce((acc, curr) => acc += curr.rate, 0)
 
                         const itemRate = dropInPreset.rate
-                        const itemRateInPreset = itemRate / presetTotalRate                      
+                        const itemRateInPreset = itemRate / presetTotalRate
 
                         acc.push({
                             source: "drop",
                             content: source.content,
+                            enemies: source.enemies,
                             rate: presetRate,
                             itemRateInPreset
                         })
