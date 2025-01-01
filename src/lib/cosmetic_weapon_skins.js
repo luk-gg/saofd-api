@@ -26,6 +26,7 @@ export default Object.entries(WeaponSkinData)
             name,
             desc,
             charId,
+            gender: "None",
             rarity,
             division,
             division_sub,
