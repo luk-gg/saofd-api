@@ -105,7 +105,7 @@ export default [
         end: "2024-12-27T23:59",
         link: "https://x.com/saogames/status/1870130796884787629",
         contents: [
-            "Cos00069" // Pink Sirius
+            "Wsk11009" // Pink Sirius
         ]
     }, 
 

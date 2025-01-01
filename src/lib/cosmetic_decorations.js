@@ -4,6 +4,7 @@ import en from "../../game/client/Content/Localization/Game/en/Game.json";
 import { imgPath } from "./utils/index.js";
 import { getDropSources } from "./source_drops.js";
 import { getCharacterRankSources } from "./source_character_rank.js";
+import { getSerialCodeSources } from "./source_serial_codes.js";
 
 const DT_DecorationData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_DecorationData*", { eager: true, import: "default" })
 const DecorationData = Object.values(DT_DecorationData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
@@ -17,7 +18,7 @@ export default Object.entries(DecorationData)
         const icon = imgPath(item.icon.AssetPathName)
         const charId = item.exclusive_character.split("::").pop()
         const gender = item.gender.split("::").pop()
-        const sources = [...getDropSources(null, "ESGItemType::DecorationSkin", Number(id.slice(3))), ...getCharacterRankSources(id)]
+        const sources = [...getDropSources(null, "ESGItemType::DecorationSkin", Number(id.slice(3))), ...getCharacterRankSources(id), ...getSerialCodeSources(id)]
 
         return {
             id,
