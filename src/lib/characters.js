@@ -48,7 +48,7 @@ const entries = await Promise.all(
         const name = en.ST_SevenUI[`CharaName_${id}`].replace('{Change}|index(\"Nautilus\",\"Eiji\")', "Eiji");
         const rankRewards = CHARACTER_RANK_REWARDS[id];
         const awakeningStats = CHARACTER_AWAKENING_STATS[id];
-        const icon = `/Content/${id === "UCR030" ? "Season1_1" : "Product"}/UI/Texture/HUD/hud_switchchain/cut_in_chara/hud_switchchain_cutin_${id.substring(3)}.png`;
+        const icon = `/Content/${id === "UCR030" ? "Season1_1" : ["UCR022", "UCR031", "UCR032"].includes(id) ? "Season2" : "Product"}/UI/Texture/HUD/hud_switchchain/cut_in_chara/hud_switchchain_cutin_${id.substring(3)}.png`;
         const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${id}`)
         const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(id))
 
