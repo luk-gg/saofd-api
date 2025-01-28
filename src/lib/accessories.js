@@ -11,28 +11,28 @@ const DT_OrnamentData_files = import.meta.glob("/game/client/Content/(Product|Se
 const OrnamentData = Object.values(DT_OrnamentData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
 
 const entries = Object.entries(OrnamentData)
-    .map(([accId, accessory]) => {
+    .map(([id, accessory]) => {
         const name = en.ST_SevenUI[accessory.name]
         const icon = imgPath(accessory.icon.AssetPathName)
         const role = accessory.role.split("::").pop()
         const type = accessory.type.split("::").pop()
         const dlc = accessory.dlc.split("::").pop()
         const baseStatus = accessory.base_status.split("::").pop()
-        const craftingRates = ACCESSORY_CRAFTING_RATES[accId]
-        const specialEffects = ACCESSORY_SPECIAL_EFFECTS[accId]
+        const craftingRates = ACCESSORY_CRAFTING_RATES[id]
+        const specialEffects = ACCESSORY_SPECIAL_EFFECTS[id]
 
         return {
             // ...accessory,
-            id: accId,
+            id,
             name,
-            type,
+            type: id.slice(0, 3),
             role,
             dlc,
             baseStatus,
             icon,
             craftingRates,
             specialEffects,
-            health: ACCESSORY_HEALTH[accId],
+            health: ACCESSORY_HEALTH[id],
         }
     })
     // Remove duplicates that don't have crafting rates

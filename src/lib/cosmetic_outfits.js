@@ -26,6 +26,7 @@ export default Object.entries(ClothData)
         return {
             id,
             name,
+            type: id.slice(0, 3),
             desc,
             gender,
             charId,

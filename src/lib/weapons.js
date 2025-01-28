@@ -19,7 +19,7 @@ const WPS_Range_files = import.meta.glob("/game/client/Content/(Product|Season*)
 const Range = Object.values(WPS_Range_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
 
 const entries = Object.entries(WeaponBaseData)
-    .map(([wepId, weapon]) => {
+    .map(([id, weapon]) => {
         const name = en.ST_SevenUI[weapon.name]
         const icon = imgPath(weapon.icon.AssetPathName)
 
@@ -27,13 +27,13 @@ const entries = Object.entries(WeaponBaseData)
             .map(value => value.split("::").pop())
             .filter(element => element !== "None")
 
-        const type = [weapon.division, weapon.division_sub]
+        const subtypes = [weapon.division, weapon.division_sub]
             .map(value => value.split("::").pop())
             .filter(type => type !== "None")
 
         const charId = weapon.character.split("::").pop()
         const dlc = weapon.dlc.split("::").pop()
-        const craftingRates = WEAPON_CRAFTING_RATES[wepId]
+        const craftingRates = WEAPON_CRAFTING_RATES[id]
         const { weak_attribute_damage_up, all_attribute_damage_resist, named_special_effect } = weapon
 
         const stats = [...Object.values(Melee), ...Object.values(Range)]
@@ -43,14 +43,15 @@ const entries = Object.entries(WeaponBaseData)
                 wepStats.character_unique === `EVGCharaUnique::${charId}`
             )
 
-        const specialEffects = WEAPON_SPECIAL_EFFECTS[wepId]
+        const specialEffects = WEAPON_SPECIAL_EFFECTS[id]
 
         return {
             // ...weapon,
-            id: wepId,
+            id,
             name,
             charId,
-            type,
+            type: id.slice(0, 3),
+            subtypes,
             elements,
             weak_attribute_damage_up,
             all_attribute_damage_resist,
@@ -60,7 +61,7 @@ const entries = Object.entries(WeaponBaseData)
             stats,
             craftingRates,
             specialEffects,
-            attack: WEAPON_ATTACK[wepId],
+            attack: WEAPON_ATTACK[id],
         }
     })
 
