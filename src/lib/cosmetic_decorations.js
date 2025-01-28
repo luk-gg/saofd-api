@@ -24,6 +24,7 @@ export default Object.entries(DecorationData)
         return {
             id,
             name,
+            type: id.slice(0, 3),
             desc,
             charId,
             rarity,

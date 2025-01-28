@@ -32,7 +32,7 @@ async function getCharacterData(id, seasonFolder) {
 
         // Also: SGDodgeActionComponent, and skeletal mesh stuff 
 
-        return { 
+        return {
             role: (m_seven_chara_role ?? m_chara_role).split("::").pop().replace("Shooter", "Ranger"),
             gender: sp(m_chara_gender)
         }
@@ -43,27 +43,31 @@ async function getCharacterData(id, seasonFolder) {
 }
 
 const entries = await Promise.all(
-    Characters.map(async ({ id, seasonFolder }) => {
-        const { role, gender } = await getCharacterData(id, seasonFolder) ?? {}
-        const name = en.ST_SevenUI[`CharaName_${id}`].replace('{Change}|index(\"Nautilus\",\"Eiji\")', "Eiji");
-        const rankRewards = CHARACTER_RANK_REWARDS[id];
-        const awakeningStats = CHARACTER_AWAKENING_STATS[id];
-        const icon = `/Content/${id === "UCR030" ? "Season1_1" : ["UCR022", "UCR031", "UCR032"].includes(id) ? "Season2" : "Product"}/UI/Texture/HUD/hud_switchchain/cut_in_chara/hud_switchchain_cutin_${id.substring(3)}.png`;
-        const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${id}`)
-        const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(id))
+    Characters
+        // Remove Nejue, Cardinal. Nejue exists in the legacy base file for characters (currently unused) and Cardinal exists in the current implementation.
+        .filter((character) => !["UCR023", "UCR024"].includes(character.id))
+        .map(async ({ id, seasonFolder }) => {
+            const { role, gender } = await getCharacterData(id, seasonFolder) ?? {}
+            const name = en.ST_SevenUI[`CharaName_${id}`].replace('{Change}|index(\"Nautilus\",\"Eiji\")', "Eiji");
+            const rankRewards = CHARACTER_RANK_REWARDS[id];
+            const awakeningStats = CHARACTER_AWAKENING_STATS[id];
+            const icon = `/Content/${id === "UCR030" ? "Season1_1" : ["UCR022", "UCR031", "UCR032"].includes(id) ? "Season2" : "Product"}/UI/Texture/HUD/hud_switchchain/cut_in_chara/hud_switchchain_cutin_${id.substring(3)}.png`;
+            const passiveSkills = CHARACTER_PASSIVE_SKILLS.filter(skill => skill.m_passive_skill_info.m_use_character_unique === `EVGCharaUnique::${id}`)
+            const advancedSkills = CHARACTER_ADVANCED_SKILLS.filter(skill => skill.charIds?.includes(id))
 
-        return {
-            id,
-            name,
-            role,
-            gender,
-            rankRewards,
-            awakeningStats,
-            icon,
-            passiveSkills,
-            advancedSkills,
-        };
-    })
+            return {
+                id,
+                name,
+                type: id.slice(0, 3),
+                role,
+                gender,
+                rankRewards,
+                awakeningStats,
+                icon,
+                passiveSkills,
+                advancedSkills,
+            };
+        })
 )
 
 export const entries_brief = getBriefArr(entries)

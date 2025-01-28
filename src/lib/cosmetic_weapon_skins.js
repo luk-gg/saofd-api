@@ -16,20 +16,21 @@ export default Object.entries(WeaponSkinData)
         const desc = en.ST_SevenUI[item.information]
         const icon = imgPath(item.icon.AssetPathName)
         const rarity = item.rarity.split("::").pop()
-        const division = item.division.split("::").pop()
-        const division_sub = item.division_sub.split("::").pop()
+        const subtypes = [item.division, item.division_sub]
+            .map(value => value.split("::").pop())
+            .filter(type => type !== "None")
         const charId = item.character.split("::").pop()
         const sources = [...getDropSources(null, "ESGItemType::WeaponSkin", Number(id.slice(3))), ...getCharacterRankSources(id), ...getSerialCodeSources(id), ...getDefaultUnlockedSources(id)]
 
         return {
             id,
             name,
+            type: id.slice(0, 3),
+            subtypes,
             desc,
             charId,
             gender: "None",
             rarity,
-            division,
-            division_sub,
             icon,
             paid_only,
             sources
