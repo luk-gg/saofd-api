@@ -32,8 +32,8 @@ export function getBriefArr(arr) {
 }
 
 export function getBriefData(fullData) {
-    const { id, name, type, subtypes, elements, icon, role, charId, gender, rarity, category } = fullData || {}
-    return { id, name, type, subtypes, elements, icon, role, charId, gender, rarity, category }
+    const { id, name, type, subtypes, elements, icon, role, charId, gender, rarity, category, weak_attribute_damage_up, all_attribute_damage_resist } = fullData || {}
+    return { id, name, type, subtypes, elements, icon, role, charId, gender, rarity, category, elePower: weak_attribute_damage_up || all_attribute_damage_resist || undefined }
 }
 
 // Ensure case-insensitivity as svelte's routing (or the browser?) transforms links like /Characters/UCR001 to /characters/ucr001. 
