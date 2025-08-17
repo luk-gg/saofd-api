@@ -1,6 +1,6 @@
 import DT_ClothData from "../../game/client/Content/Product/DataTable/Inventory/DT_ClothData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { imgPath } from "./utils/index.js";
+import { imgPath } from "/utils/index.js";
 import { getDropSources } from "./source_drops.js";
 import { getCharacterRankSources } from "./source_character_rank.js";
 import { getSerialCodeSources } from "./source_serial_codes.js";

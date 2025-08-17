@@ -1,5 +1,5 @@
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { imgPath } from "./utils";
+import { imgPath } from "/utils";
 
 // Link skill ids to characters that can use them
 const skillIdCharIdMap = Object.entries(

@@ -1,5 +1,5 @@
 import DT_OrnamentBaseStatusData from "../../game/client/Content/Product/DataTable/Inventory/DT_OrnamentBaseStatusData.json"
-import { RCIM_Linear } from "./utils"
+import { RCIM_Linear } from "/utils"
 
 const DT_OrnamentBaseStatusData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_OrnamentBaseStatusData*", { eager: true, import: "default" })
 const OrnamentBaseStatusData = Object.values(DT_OrnamentBaseStatusData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})
