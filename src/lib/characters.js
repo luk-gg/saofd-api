@@ -53,7 +53,7 @@ const entries = await Promise.all(
             const rankRewards = CHARACTER_RANK_REWARDS[id];
             const awakeningStats = CHARACTER_AWAKENING_STATS[id];
             const seasonIconMap = {
-                "UCR30": "Season1_1", // Strea
+                "UCR030": "Season1_1", // Strea
                 "UCR022": "Season2", // Fuuka
                 "UCR031": "Season2", // Pitohui
                 "UCR032": "Season2", // M
