@@ -4,7 +4,8 @@ import DT_WeaponBaseData from "../../game/client/Content/Product/DataTable/Inven
 import WPS_Melee from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Melee.json"
 import WPS_Range from "../../game/client/Content/Product/Weapon/Common/Spec/WPS_Range.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { getBriefArr, imgPath } from "./utils";
+import { getBriefArr } from "./utils";
+import { imgPath } from "/utils";
 import WEAPON_ATTACK from "./weapon_attack"
 import WEAPON_SPECIAL_EFFECTS from "./weapon_special_effects"
 import WEAPON_CRAFTING_RATES from "./weapon_crafting_rates"

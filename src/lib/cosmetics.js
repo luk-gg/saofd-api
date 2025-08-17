@@ -1,7 +1,7 @@
 import COSMETIC_DECORATIONS from "./cosmetic_decorations"
 import COSMETIC_OUTFITS from "./cosmetic_outfits"
 import COSMETIC_WEAPON_SKINS from "./cosmetic_weapon_skins"
-import { getBriefArr } from "./utils/index.js";
+import { getBriefArr } from "./utils";
 
 const entries = [...COSMETIC_OUTFITS, ...COSMETIC_DECORATIONS, ...COSMETIC_WEAPON_SKINS]
 

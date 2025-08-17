@@ -5,7 +5,8 @@ import CHARACTER_ADVANCED_SKILLS from "./character_advanced_skills.js"
 import CHARACTER_PASSIVE_SKILLS from "./character_passive_skills.js"
 import CHARACTER_RANK_REWARDS from "./character_rank_rewards.js"
 import CHARACTER_AWAKENING_STATS from "./character_awakening_stats.js"
-import { getBriefArr, sp } from "./utils/index.js";
+import { getBriefArr } from "./utils";
+import { sp } from "/utils";
 
 // TODO: find icon paths from game files
 

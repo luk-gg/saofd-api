@@ -1,5 +1,5 @@
 import DT_WeaponBaseStatusData from "../../game/client/Content/Product/DataTable/Inventory/DT_WeaponBaseStatusData.json"
-import { RCIM_Linear } from "./utils"
+import { RCIM_Linear } from "/utils"
 
 const DT_WeaponBaseStatusData_files = import.meta.glob("/game/client/Content/(Product|Season*)/DataTable/Inventory/DT_WeaponBaseStatusData*", { eager: true, import: "default" })
 const WeaponBaseStatusData = Object.values(DT_WeaponBaseStatusData_files).reduce((acc, file) => ({ ...acc, ...file[0].Rows }), {})

@@ -2,7 +2,8 @@
 // import DT_WeaponData from "../../game/client/Content/Product/Weapon/Common/DT_WeaponData.json"
 import DT_OrnamentData from "../../game/client/Content/Product/DataTable/Inventory/DT_OrnamentData.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { getBriefArr, imgPath } from "./utils";
+import { getBriefArr } from "./utils";
+import { imgPath } from "/utils";
 import ACCESSORY_HEALTH from "./accessory_health"
 import ACCESSORY_SPECIAL_EFFECTS from "./accessory_special_effects"
 import ACCESSORY_CRAFTING_RATES from "./accessory_crafting_rates"

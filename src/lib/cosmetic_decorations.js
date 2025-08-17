@@ -1,7 +1,7 @@
 import DT_DecorationData from "../../game/client/Content/Product/DataTable/Inventory/DT_DecorationData.json"
 import DT_DecorationData_s1 from "../../game/client/Content/Season1/DataTable/Inventory/DT_DecorationData_s1.json"
 import en from "../../game/client/Content/Localization/Game/en/Game.json";
-import { imgPath } from "./utils/index.js";
+import { imgPath } from "/utils/index.js";
 import { getDropSources } from "./source_drops.js";
 import { getCharacterRankSources } from "./source_character_rank.js";
 import { getSerialCodeSources } from "./source_serial_codes.js";
